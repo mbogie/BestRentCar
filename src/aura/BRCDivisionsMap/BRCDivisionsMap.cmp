@@ -1,0 +1,24 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global" description="BRCDivisionsMap" controller="BRCDivisionController">
+    <!-- attributes -->
+    <aura:attribute name="mapMarkers" type="Object" />
+    <aura:attribute name="center" type="Object" />
+    <aura:attribute name="zoomLevel" type="Integer" default="7" />
+    <aura:attribute name="markersTitle" type="String"  default="Google Maps"/>
+    <aura:attribute name="showFooter" type="Boolean" default="true" />
+    <aura:attribute name="title" type="String" default="Google Maps"/>
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+    <!-- the map component -->
+    <aura:if isTrue="{!v.mapMarkers.length > 0}" >
+
+        <lightning:map
+                mapMarkers="{!v.mapMarkers}"
+                center="{! v.center }"
+                zoomLevel="{! v.zoomLevel }"
+                markersTitle="{! v.markersTitle }"
+                showFooter="{ !v.showFooter }" >
+        </lightning:map>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,39 @@
+<aura:component description="BRCDivisionsSearch">
+    <aura:attribute name="searchedDivision"
+                    type="Account"
+                    default="{'sobjectType':'Account',
+                              'ShippingCountry':'',
+                              'ShippingState':'',
+                              'ShippingCity':'',
+                              }"/>
+    <div aria-labelledby="searchedDivision">
+        <fieldset class="slds-box slds-theme--default slds-container--small">
+            <legend id="searchedDivision" class="slds-text-heading--small slds-p-vertical--medium">
+                Division Search
+            </legend>
+
+            <form class="slds-form--stacked">
+
+                <lightning:input aura:id="searchForm"
+                                 label="Country"
+                                 name="divisionShippingCountry"
+                                 value="{!v.searchedDivision.ShippingCountry}"/>
+
+                <lightning:input aura:id="searchForm"
+                                 label="State"
+                                 name="divisionShippingState"
+                                 value="{!v.searchedDivision.ShippingState}"/>
+
+                <lightning:input aura:id="searchForm"
+                                 label="City"
+                                 name="divisionShippingCity"
+                                 value="{!v.searchedDivision.ShippingCity}"/>
+
+                <lightning:button label="Search"
+                                  class="slds-m-top--medium"
+                                  variant="brand"
+                                  onclick="{!c.searchDivision}"/>
+            </form>
+        </fieldset>
+    </div>
+</aura:component>

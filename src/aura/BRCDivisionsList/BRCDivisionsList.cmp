@@ -1,0 +1,33 @@
+<aura:component description="BRCDivisionsList" controller="BRCDivisionController">
+    <aura:attribute name="accounts" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div aria-labelledby="searchedDivision">
+        <fieldset class="slds-box slds-theme--default slds-container--small">
+            <legend id="searchedDivision" class="slds-text-heading--small slds-p-vertical--medium">
+                Division List
+            </legend>
+
+            <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <thead>
+        <tr class="slds-text-heading_label">
+            <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+            <th scope="col"><div class="slds-truncate" title="Country">Country</div></th>
+            <th scope="col"><div class="slds-truncate" title="State">State</div></th>
+            <th scope="col"><div class="slds-truncate" title="City">City</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <aura:iteration items="{!v.accounts}" var="account">
+            <tr>
+<!--                <th scope="row"><div class="slds-truncate" title="{!account.Id}">{!account.Id}</div></th>-->
+                <td><div class="slds-truncate" title="{!account.Name}">{!account.Name}</div></td>
+                <td><div class="slds-truncate" title="{!account.BillingCountry}">{!account.BillingCountry}</div></td>
+                <td><div class="slds-truncate" title="{!account.BillingState}">{!account.BillingState}</div></td>
+                <td><div class="slds-truncate" title="{!account.BillingCity}">{!account.BillingCity}</div></td>
+            </tr>
+        </aura:iteration>
+        </tbody>
+    </table>
+        </fieldset>
+    </div>
+</aura:component>

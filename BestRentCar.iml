@@ -52,10 +52,10 @@
                             <option name="name" value="CsFaultPartnerSoapSforceCom" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="CsITrigger" />
+                            <option name="name" value="CsImageCropper" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="CsImageCropper" />
+                            <option name="name" value="CsITrigger" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CsLocationCallouts" />
@@ -179,6 +179,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="testClass" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDivisionController" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -305,13 +309,13 @@
                             <option name="name" value="StdExceptionTemplate" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="testPage" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Unauthorized" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="UnderConstruction" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="testPage" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -386,6 +390,26 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDivisionsSearch" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDivisions" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDivisionsList" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDivisionsMap" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="AuraDefinitionBundle" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -581,13 +605,13 @@
                             <option name="name" value="Account.NumberofLocations__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.SLA__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.SLAExpirationDate__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.SLASerialNumber__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Account.SLA__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.UpsellOpportunity__c" />
@@ -647,10 +671,10 @@
                             <option name="name" value="Contract__c.Mechanic__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Contract__c.Start_Date_Plus_One_Year__c" />
+                            <option name="name" value="Contract__c.Start_Date__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Contract__c.Start_Date__c" />
+                            <option name="name" value="Contract__c.Start_Date_Plus_One_Year__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Contract__c.Status__c" />
@@ -938,6 +962,9 @@
                             <option name="name" value="Error_Wrong_Type" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Export_to_CSV" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Export_To_Json" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -945,9 +972,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Export_To_XML" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Export_to_CSV" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Group_PL_Users" />
@@ -1004,13 +1028,13 @@
                             <option name="name" value="Search_For" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Search_Results_Label" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="Search_for_Tomeks_Mechanics" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Search_for_Tomeks_Workshops" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Search_Results_Label" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Section_Address" />
@@ -1125,6 +1149,7 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Account" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountCleanInfo" />
@@ -1193,10 +1218,10 @@
                             <option name="name" value="Contract" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="ContractContactRole" />
+                            <option name="name" value="Contract__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Contract__c" />
+                            <option name="name" value="ContractContactRole" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Cs_Settings__c" />
@@ -1426,15 +1451,6 @@
                             <option name="name" value="Search_Mechanic" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Tomeks_Mechanics" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Tomeks_Workshops" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Workshop__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="standard-Account" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1498,6 +1514,9 @@
                             <option name="name" value="standard-Forecasting3" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="standard-home" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="standard-Idea" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1543,6 +1562,9 @@
                             <option name="name" value="standard-Recommendation" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="standard-report" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="standard-Sites" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1564,10 +1586,13 @@
                             <option name="name" value="standard-Workspace" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard-home" />
+                            <option name="name" value="Tomeks_Mechanics" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard-report" />
+                            <option name="name" value="Tomeks_Workshops" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Workshop__c" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1666,18 +1691,6 @@
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SalesNewCustomerEmail" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
@@ -1706,11 +1719,23 @@
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SupportSelfServiceNewLoginandPassword" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SupportSelfServiceResetPassword" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2507,10 +2532,10 @@
                             <option name="name" value="Standard" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="StandardAul" />
+                            <option name="name" value="Standard_User%5F%5Fc" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Standard_User%5F%5Fc" />
+                            <option name="name" value="StandardAul" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Work%2Ecom Only User" />
@@ -2547,12 +2572,6 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="PT2_profileSessionSetting1563523636644" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Random_Mechanics_Profile_profileSessionSetting1563057247115" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="null_profileSessionSetting1563523872950" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2560,6 +2579,12 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="null_profileSessionSetting1565183542954" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="PT2_profileSessionSetting1563523636644" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Random_Mechanics_Profile_profileSessionSetting1563057247115" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -2733,10 +2758,10 @@
                             <option name="name" value="CFO" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="COO" />
+                            <option name="name" value="ChannelSalesTeam" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="ChannelSalesTeam" />
+                            <option name="name" value="COO" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CustomerSupportInternational" />
@@ -3182,9 +3207,6 @@
                             <option name="name" value="DefaultPicture" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="SiteSamples" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="iEditCSS" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3195,6 +3217,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="jQueryUI" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteSamples" />
                           </MetadataEntry>
                         </list>
                       </option>
