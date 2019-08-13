@@ -1,4 +1,5 @@
-<aura:component description="BRCDivisionsSearch">
+<aura:component description="BRCDivisionsSearch" controller="BRCDivisionController" implements="forceCommunity:searchInterface,flexipage:availableForAllPageTypes">
+    <aura:registerEvent name="getDivisions" type="c:BRCGetDivisionsListEvent"/>
     <aura:attribute name="searchedDivision"
                     type="Account"
                     default="{'sobjectType':'Account',
@@ -6,14 +7,8 @@
                               'ShippingState':'',
                               'ShippingCity':'',
                               }"/>
-    <div aria-labelledby="searchedDivision">
-        <fieldset class="slds-box slds-theme--default slds-container--small">
-            <legend id="searchedDivision" class="slds-text-heading--small slds-p-vertical--medium">
-                Division Search
-            </legend>
-
-            <form class="slds-form--stacked">
-
+    <lightning:card title="Divisions Search" class="slds-container--small">
+            <form class="slds-form-element" style="padding:20px">
                 <lightning:input aura:id="searchForm"
                                  label="Country"
                                  name="divisionShippingCountry"
@@ -28,12 +23,14 @@
                                  label="City"
                                  name="divisionShippingCity"
                                  value="{!v.searchedDivision.ShippingCity}"/>
-
                 <lightning:button label="Search"
                                   class="slds-m-top--medium"
                                   variant="brand"
                                   onclick="{!c.searchDivision}"/>
+                <lightning:button label="Clear"
+                                  class="slds-m-top--medium"
+                                  variant="brand"
+                                  onclick="{!c.clearDivision}"/>
             </form>
-        </fieldset>
-    </div>
+    </lightning:card>
 </aura:component>

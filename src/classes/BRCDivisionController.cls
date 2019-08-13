@@ -1,16 +1,28 @@
 public with sharing class BRCDivisionController {
+
     @AuraEnabled
-    public static List <Account> getAccounts() {
-        return [SELECT Id, Name, BillingCountry, BillingState, BillingCity, TickerSymbol, Phone FROM Account ORDER BY createdDate ASC];
+    public static List<AccountDetails> getAccounts(String country, String city, String state) {
+        BRCQueryBuilder queryBuilder = new BRCQueryBuilder();
+        queryBuilder.addResultField('Id').
+                addResultField('Name').
+                addResultField('BillingCity').
+                addResultField('BillingCountry').
+                addResultField('BillingState').
+                addTableName('Account').
+                addSearchFieldStartsWithValue('BillingCountry', country).
+                addSearchFieldStartsWithValue('BillingState', state).
+                addSearchFieldStartsWithValue('BillingCity', city).
+                build();
+
+        System.debug('aaa -- > ' + queryBuilder.getQueryString());
+        return Database.query(queryBuilder.getQueryString());
     }
 
     @AuraEnabled
     public static List<Location> getAccount() {
         List< Account> accs =  [Select Id, Name,Type, Industry, BillingAddress,BillingStreet,
                 BillingCity, BillingCountry, BillingPostalCode,
-                BillingState,Phone from Account  where BillingStreet!=NULL AND
-        BillingCity!=NULL AND BillingCountry!=NULL AND  BillingPostalCode!=NULL AND
-        BillingState!=NULL] ;
+                BillingState,Phone from Account] ;
 
         List<Location> loc = new List<Location>();
         for(Account acc :accs){
@@ -51,5 +63,12 @@ public with sharing class BRCDivisionController {
         public String State{get;set;}
         @AuraEnabled
         public String Country{get;set;}
+    }
+
+    public class AccountDetails{
+        @AuraEnabled
+        public Account account{get;set;}
+        @AuraEnabled
+        public Location location{get;set;}
     }
 }

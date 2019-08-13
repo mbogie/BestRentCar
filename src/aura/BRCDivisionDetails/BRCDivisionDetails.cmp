@@ -1,0 +1,21 @@
+<aura:component description="BRCDivisionDetails" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:handler event="c:BRCGetDivisionDetailEvent" action="{!c.BRCGetDivisionDetailEvent}"/>
+    <aura:attribute name="division" type="Account"/>
+    <aura:attribute name="isSelected" type="Boolean" default="false"/>
+    <aura:attribute name="showFields" type="String[]" default="Name,Phone,Site,BillingCity,BillingCountry,BillingState,BillingPostalCode,BillingStreet,Website,Fax,Employees"/>
+    <lightning:card title="Division Detail">
+        <div style="padding:20px">
+        <aura:if isTrue="{!v.isSelected}">
+            <lightning:recordForm aura:id="brokerForm"
+                              recordId="{!v.division.Id}"
+                              objectApiName="Account"
+                              columns="3"
+                              layoutType="Full"
+                              mode="View"/>
+            <aura:set attribute="else">
+                    <h3 class="slds-text-small slds-text-color_error">Click on Division Name to see details.</h3>
+            </aura:set>
+        </aura:if>
+        </div>
+    </lightning:card>
+</aura:component>

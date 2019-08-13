@@ -1,5 +1,4 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
-                access="global" description="BRCDivisionsMap" controller="BRCDivisionController">
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" description="BRCDivisionsMap" controller="BRCDivisionController">
     <!-- attributes -->
     <aura:attribute name="mapMarkers" type="Object" />
     <aura:attribute name="center" type="Object" />
@@ -9,16 +8,22 @@
     <aura:attribute name="title" type="String" default="Google Maps"/>
     <!-- handlers-->
     <aura:handler name="init" value="{! this }" action="{! c.init }"/>
-
+    <lightning:card>
     <!-- the map component -->
+        <div style="padding:0px 20px 10px 20px">
     <aura:if isTrue="{!v.mapMarkers.length > 0}" >
 
         <lightning:map
                 mapMarkers="{!v.mapMarkers}"
                 center="{! v.center }"
                 zoomLevel="{! v.zoomLevel }"
-                markersTitle="{! v.markersTitle }"
-                showFooter="{ !v.showFooter }" >
+                >
         </lightning:map>
+
+            <aura:set attribute="else">
+                    <h3 class="slds-text-small slds-text-color_error">Search for Divisions to see map.</h3>
+            </aura:set>
     </aura:if>
+        </div>
+    </lightning:card>
 </aura:component>

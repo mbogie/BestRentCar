@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="BRCGetDivisionsListEvent">
+    <aura:attribute name="divisions" type="Account[]"/>
+</aura:event>

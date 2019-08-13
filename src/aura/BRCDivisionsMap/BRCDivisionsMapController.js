@@ -13,7 +13,7 @@
                         City: 'Denver'
                     }
                 });
-                component.set('v.mapMarkers',obj);
+                component.set('v.mapMarkers',[]);
                 component.set('v.zoomLevel', 4);
                 component.set('v.markersTitle', 'Salesforce locations');
                 component.set('v.showFooter', true);
