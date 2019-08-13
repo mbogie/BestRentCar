@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
               </folding>
@@ -46,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="75" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="75" />
+            <state relative-caret-position="187">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -88,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="153">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -148,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" />
       </list>
     </option>
   </component>
@@ -192,7 +178,7 @@
                       <entry key="AURA/BRCDIVISIONDETAILS" value="1565730614000" />
                       <entry key="AURA/BRCDIVISIONSLIST" value="1565729330000" />
                       <entry key="AURA/BRCDIVISIONSLISTITEM" value="1565728206000" />
-                      <entry key="AURA/BRCDIVISIONSMAP" value="1565731209013" />
+                      <entry key="AURA/BRCDIVISIONSMAP" value="1565731506000" />
                       <entry key="AURA/BRCDIVISIONSSEARCH" value="1565730381000" />
                       <entry key="AURA/BRCGETDIVISIONDETAILEVENT" value="1565727903000" />
                       <entry key="AURA/BRCGETDIVISIONSLISTEVENT" value="1565697765000" />
@@ -1737,7 +1723,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18390192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18390192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1757,7 +1743,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38219616" side_tool="true" visible="true" weight="0.25135428" />
       <window_info anchor="bottom" id="Anonymous Apex" order="11" sideWeight="0.586887" weight="0.3445287" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6178038" visible="true" weight="0.25135428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6178038" visible="true" weight="0.25135428" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1957,13 +1943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1978,20 +1957,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
