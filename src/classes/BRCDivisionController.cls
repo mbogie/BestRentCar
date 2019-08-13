@@ -1,19 +1,23 @@
 public with sharing class BRCDivisionController {
 
     @AuraEnabled
-    public static List<AccountDetails> getAccounts(String country, String city, String state) {
+    public static List <Account> getAccounts(String country, String city, String state) {
         BRCQueryBuilder queryBuilder = new BRCQueryBuilder();
         queryBuilder.addResultField('Id').
                 addResultField('Name').
                 addResultField('BillingCity').
                 addResultField('BillingCountry').
+                addResultField('BillingAddress').
                 addResultField('BillingState').
+                addResultField('BillingPostalCode').
+                addResultField('BillingStreet').
+                addResultField('Website').
+                addResultField('Fax').
                 addTableName('Account').
                 addSearchFieldStartsWithValue('BillingCountry', country).
                 addSearchFieldStartsWithValue('BillingState', state).
                 addSearchFieldStartsWithValue('BillingCity', city).
                 build();
-
         System.debug('aaa -- > ' + queryBuilder.getQueryString());
         return Database.query(queryBuilder.getQueryString());
     }
@@ -63,12 +67,5 @@ public with sharing class BRCDivisionController {
         public String State{get;set;}
         @AuraEnabled
         public String Country{get;set;}
-    }
-
-    public class AccountDetails{
-        @AuraEnabled
-        public Account account{get;set;}
-        @AuraEnabled
-        public Location location{get;set;}
     }
 }

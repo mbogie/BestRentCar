@@ -7,6 +7,21 @@
                        "division" : division
                        });
            appEvent.fire();
+           var mapEvent = $A.get("e.c:BRCSetMapMarkerEvent");
+                      mapEvent.setParams({
+                                  "markers" : [
+                                      {
+                                        location: {
+                                            Street: division.BillingStreet,
+                                            City: division.BillingCity,
+                                            PostalCode: division.BillingPostalCode,
+                                            State: division.BillingState,
+                                            Country: division.Country
+                                       },
+                                        title: division.Name,
+                                      }
+                                  ]
+                                  });
+           mapEvent.fire();
      },
-
 })

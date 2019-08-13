@@ -1,25 +1,14 @@
 ({
-    init: function (component, event, helper) {
-        var action = component.get("c.getAccount");
-        action.setCallback(this, function(response) {
-            console.log('response'+response);
-            var state = response.getState();
-            console.log(state);
-            if (state == "SUCCESS") {
-                var obj =response.getReturnValue() ;
-                console.log(obj);
-                component.set('v.center', {
-                    location: {
-                        City: 'Denver'
-                    }
-                });
-                component.set('v.mapMarkers',[]);
-                component.set('v.zoomLevel', 4);
-                component.set('v.markersTitle', 'Salesforce locations');
-                component.set('v.showFooter', true);
-            }
-
-        });
-        $A.enqueueAction(action);
+    BRCSetMapMarkerEvent: function(component, event, helper) {
+        component.set('v.mapMarkers',[]);
+        var markers = event.getParam("markers");
+        component.set('v.mapMarkers',markers);
+        if(markers.length == 1){
+           component.set('v.zoomLevel', 8);
+        } else if(markers.length > 5){
+           component.set('v.zoomLevel', 3);
+        }else{
+           component.set('v.zoomLevel', 4);
+        }
     }
 })

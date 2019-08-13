@@ -22,6 +22,10 @@
           	handleCancel : function(component, event, helper) {
               helper.showHide(component);
               event.preventDefault();
-          }
-
+          },
+        BRCClearDivisionDetails : function(component, event, helper) {
+            var division = event.getParam("division");
+            component.set("v.division", division);
+            component.set("v.isSelected", false);
+        },
 })

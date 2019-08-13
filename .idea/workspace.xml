@@ -2,31 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCGetDivisionDetailEvent/BRCGetDivisionDetailEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCGetDivisionDetailEvent/BRCGetDivisionDetailEvent.evt-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCGetDivisionsListEvent/BRCGetDivisionsListEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCGetDivisionsListEvent/BRCGetDivisionsListEvent.evt-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCQueryBuilder.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCQueryBuilder.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisions/BRCDivisions.app" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisions/BRCDivisions.app-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="136">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
               </folding>
@@ -54,19 +44,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="51">
+              <caret line="3" column="75" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="87" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -79,10 +105,10 @@
         <option value="Lightning Helper" />
         <option value="Apex Class" />
         <option value="Lightning Application" />
-        <option value="Lightning Application Event" />
         <option value="Lightning Component" />
-        <option value="Apex Metadata" />
         <option value="Lightning Controller" />
+        <option value="Lightning Application Event" />
+        <option value="Apex Metadata" />
       </list>
     </option>
   </component>
@@ -110,18 +136,20 @@
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionListItem/BRCDivisionListItem.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCGetDivisionDetailEvent/BRCGetDivisionDetailEvent.evt" />
         <option value="$PROJECT_DIR$/src/aura/BRCGetDivisionsListEvent/BRCGetDivisionsListEvent.evt" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" />
         <option value="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" />
-        <option value="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp" />
+        <option value="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" />
       </list>
     </option>
   </component>
@@ -131,7 +159,8 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1565689511320" />
+              <option name="moduleContentsLastModified" value="1565730058776" />
+              <option name="serverMetadataLastPopulated" value="1565728865420" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
@@ -159,19 +188,21 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCDIVISIONDETAILS" value="1565721834000" />
-                      <entry key="AURA/BRCDIVISIONSLIST" value="1565721835000" />
-                      <entry key="AURA/BRCDIVISIONSLISTITEM" value="1565710088000" />
-                      <entry key="AURA/BRCDIVISIONSMAP" value="1565722013880" />
-                      <entry key="AURA/BRCDIVISIONSSEARCH" value="1565708169000" />
-                      <entry key="AURA/BRCGETDIVISIONDETAILEVENT" value="1565692343000" />
+                      <entry key="AURA/BRCCLEARDIVISIONDETAILS" value="1565730156000" />
+                      <entry key="AURA/BRCDIVISIONDETAILS" value="1565730614000" />
+                      <entry key="AURA/BRCDIVISIONSLIST" value="1565729330000" />
+                      <entry key="AURA/BRCDIVISIONSLISTITEM" value="1565728206000" />
+                      <entry key="AURA/BRCDIVISIONSMAP" value="1565731209013" />
+                      <entry key="AURA/BRCDIVISIONSSEARCH" value="1565730381000" />
+                      <entry key="AURA/BRCGETDIVISIONDETAILEVENT" value="1565727903000" />
                       <entry key="AURA/BRCGETDIVISIONSLISTEVENT" value="1565697765000" />
+                      <entry key="AURA/BRCSETMAPMARKEREVENT" value="1565723699000" />
                       <entry key="AURA/DIVISIONSTEST" value="1565704103000" />
-                      <entry key="CLASSES/BRCDIVISIONCONTROLLER.CLS" value="1565709682463" />
+                      <entry key="CLASSES/BRCDIVISIONCONTROLLER.CLS" value="1565723425000" />
                       <entry key="CLASSES/BRCQUERYBUILDER.CLS" value="1565678944979" />
                     </map>
                   </option>
-                  <option name="lastBuildScope" value="CONTEXT" />
+                  <option name="lastBuildScope" value="CUSTOM" />
                   <option name="lastBuildViewToggles">
                     <map>
                       <entry key="RETRIEVE">
@@ -186,6 +217,11 @@
                       </entry>
                     </map>
                   </option>
+                  <option name="lastCustomSelectionUrls">
+                    <set>
+                      <option value="metadata://FlexiPage/Divisions" />
+                    </set>
+                  </option>
                 </ConnectionWorkspaceSettings>
               </value>
             </entry>
@@ -196,459 +232,9 @@
             <entry key="BestRentCar">
               <value>
                 <MetadataContents>
-                  <option name="lastPopulated" value="1565607980282" />
+                  <option name="lastPopulated" value="1565728963944" />
                   <option name="metadataTypes">
                     <set>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Custom%3A Support Profile" />
-                            <option value="Customer Community Plus Login User" />
-                            <option value="High Volume Customer Portal User" />
-                            <option value="Analytics Cloud Integration User" />
-                            <option value="Cross Org Data Proxy User" />
-                            <option value="Force%2Ecom - Free User" />
-                            <option value="PlatformPortal" />
-                            <option value="External Identity User" />
-                            <option value="Force%2Ecom - App Subscription User" />
-                            <option value="Standard" />
-                            <option value="Chatter External User" />
-                            <option value="Identity User" />
-                            <option value="Custom%3A Sales Profile" />
-                            <option value="Partner Community Login User" />
-                            <option value="ContractManager" />
-                            <option value="Customer Community Plus User" />
-                            <option value="Partner Community User" />
-                            <option value="Random Mechanics Profile" />
-                            <option value="StandardAul" />
-                            <option value="Chatter Moderator User" />
-                            <option value="Gold Partner User" />
-                            <option value="SolutionManager" />
-                            <option value="ReadOnly" />
-                            <option value="Chatter Free User" />
-                            <option value="BRC_SalesRep" />
-                            <option value="Guest" />
-                            <option value="HighVolumePortal" />
-                            <option value="Customer Community Login User" />
-                            <option value="MarketingProfile" />
-                            <option value="Customer Portal Manager Standard" />
-                            <option value="Analytics Cloud Security User" />
-                            <option value="Admin" />
-                            <option value="Partner App Subscription User" />
-                            <option value="Work%2Ecom Only User" />
-                            <option value="Silver Partner User" />
-                            <option value="Authenticated Website" />
-                            <option value="Customer Community User" />
-                            <option value="Custom%3A Marketing Profile" />
-                            <option value="Standard_User%5F%5Fc" />
-                            <option value="Customer Portal Manager Custom" />
-                            <option value="BRC_Service" />
-                          </set>
-                        </option>
-                        <option name="name" value="Profile" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="ApexDevNet" />
-                            <option value="TomeksMechanic" />
-                            <option value="Google_Maps_API" />
-                            <option value="SalesforceLogin" />
-                          </set>
-                        </option>
-                        <option name="name" value="RemoteSiteSetting" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Workshop__c" />
-                            <option value="Mechanic__c" />
-                          </set>
-                        </option>
-                        <option name="name" value="Workflow" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Workshop__c.Assign_External_Id" />
-                            <option value="Workshop__c.Copy_value_From_Custom_Name_To_Name" />
-                            <option value="Mechanic__c.Next_Birthday_Evaluate" />
-                          </set>
-                        </option>
-                        <option name="name" value="WorkflowFieldUpdate" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Mechanic__c.Birthday_Reminder_Email" />
-                          </set>
-                        </option>
-                        <option name="name" value="WorkflowAlert" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Lead.Standard_Lead_Duplicate_Rule" />
-                            <option value="Account.Standard_Account_Duplicate_Rule" />
-                            <option value="Contact.Standard_Contact_Duplicate_Rule" />
-                            <option value="Mechanic__c.Duplicate_Mechanic" />
-                          </set>
-                        </option>
-                        <option name="name" value="DuplicateRule" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Workshop__c.Copy Custom Name to Name" />
-                            <option value="Mechanic__c.Birthday Change" />
-                            <option value="Mechanic__c.Send Birthday Reminder" />
-                            <option value="Workshop__c.Create External Id" />
-                          </set>
-                        </option>
-                        <option name="name" value="WorkflowRule" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="PL_Users" />
-                            <option value="USA_Users" />
-                          </set>
-                        </option>
-                        <option name="name" value="Group" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Account" />
-                            <option value="Company" />
-                            <option value="Address" />
-                            <option value="Org" />
-                            <option value="Macro" />
-                            <option value="Product" />
-                            <option value="Security" />
-                            <option value="Knowledge" />
-                            <option value="Case" />
-                            <option value="Ideas" />
-                            <option value="Name" />
-                            <option value="FieldService" />
-                            <option value="OmniChannel" />
-                            <option value="Opportunity" />
-                            <option value="Search" />
-                            <option value="FileUploadAndDownloadSecurity" />
-                            <option value="Activities" />
-                            <option value="Order" />
-                            <option value="OrgPreference" />
-                            <option value="GoogleApps" />
-                            <option value="Bot" />
-                            <option value="BusinessHours" />
-                            <option value="UserInterface" />
-                            <option value="Forecasting" />
-                            <option value="Mobile" />
-                            <option value="Analytics" />
-                            <option value="ExperienceBundle" />
-                            <option value="Quote" />
-                            <option value="LiveAgent" />
-                            <option value="UserManagement" />
-                            <option value="Entitlement" />
-                            <option value="Notifications" />
-                            <option value="Contract" />
-                            <option value="PathAssistant" />
-                          </set>
-                        </option>
-                        <option name="name" value="Settings" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="DataCloudGeoLocation" />
-                          </set>
-                        </option>
-                        <option name="name" value="CleanDataService" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Case.Standard" />
-                          </set>
-                        </option>
-                        <option name="name" value="EscalationRule" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Case" />
-                          </set>
-                        </option>
-                        <option name="name" value="EscalationRules" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Account-Account %28Sales%29 Layout" />
-                            <option value="Contact-Contact %28Support%29 Layout" />
-                            <option value="Product2-Product Layout" />
-                            <option value="Lead-Lead Layout" />
-                            <option value="ConsumptionRate-Consumption Rate Layout" />
-                            <option value="Case-Case %28Sales%29 Layout" />
-                            <option value="Contact-Contact Layout" />
-                            <option value="Callout_Log__c-Callout Log Layout" />
-                            <option value="Lead-Lead %28Support%29 Layout" />
-                            <option value="DandBCompany-D%26B Company Layout" />
-                            <option value="Case-Case %28Support%29 Layout" />
-                            <option value="AssetRelationship-Asset Relationship Layout" />
-                            <option value="Macro-Macro Layout" />
-                            <option value="Order-Order Layout" />
-                            <option value="UserProvisioningRequest-User Provisioning Request Layout" />
-                            <option value="ScorecardMetric-Scorecard Metric Layout" />
-                            <option value="Solution-Solution Layout" />
-                            <option value="Event-Event Layout" />
-                            <option value="Pricebook2-Price Book Layout" />
-                            <option value="UserProvisioningLog-User Provisioning Log Layout" />
-                            <option value="UserProvAccount-User Provisioning Account Layout" />
-                            <option value="Contact-Contact %28Marketing%29 Layout" />
-                            <option value="Task-Task Layout" />
-                            <option value="ConsumptionSchedule-Consumption Schedule Layout" />
-                            <option value="Mechanic__c-Workshop Layout" />
-                            <option value="Opportunity-Opportunity Layout" />
-                            <option value="Asset-Asset Layout" />
-                            <option value="OrderItem-Order Product Layout" />
-                            <option value="DuplicateRecordSet-Duplicate Record Set Layout" />
-                            <option value="OpportunityLineItem-Opportunity Product Layout" />
-                            <option value="Case-Case Layout" />
-                            <option value="Contract-Contract Layout" />
-                            <option value="Account-Account Layout" />
-                            <option value="Campaign-Campaign Layout" />
-                            <option value="CommunityMemberLayout-Community Member Layout" />
-                            <option value="ScorecardAssociation-Scorecard Association Layout" />
-                            <option value="Opportunity-Opportunity %28Sales%29 Layout" />
-                            <option value="SocialPersona-Social Persona Layout" />
-                            <option value="Scorecard-Scorecard Layout" />
-                            <option value="Case-Case %28Marketing%29 Layout" />
-                            <option value="Mechanic__c-Mechanic Layout With Address Section" />
-                            <option value="PricebookEntry-Price Book Entry Layout" />
-                            <option value="CaseClose-Close Case Layout" />
-                            <option value="Contract__c-Contract Layout" />
-                            <option value="FeedItem-Feed Item Layout" />
-                            <option value="Idea-Idea Layout" />
-                            <option value="ContentVersion-Content Version Layout" />
-                            <option value="Opportunity-Opportunity %28Support%29 Layout" />
-                            <option value="Workshop__c-Workshop Layout With Address Section" />
-                            <option value="Global-Global Layout" />
-                            <option value="Account-Account %28Marketing%29 Layout" />
-                            <option value="Lead-Lead %28Sales%29 Layout" />
-                            <option value="EmailMessage-Email Message Layout" />
-                            <option value="SocialPost-Social Post Layout" />
-                            <option value="ProductConsumptionSchedule-Product Consumption Schedule Layout" />
-                            <option value="CampaignMember-Campaign Member Page Layout" />
-                            <option value="Account-Account %28Support%29 Layout" />
-                            <option value="QuickText-Quick Text Layout" />
-                            <option value="Workshop__c-Workshop Layout" />
-                            <option value="User-User Layout" />
-                            <option value="Contact-Contact %28Sales%29 Layout" />
-                            <option value="Lead-Lead %28Marketing%29 Layout" />
-                            <option value="Opportunity-Opportunity %28Marketing%29 Layout" />
-                          </set>
-                        </option>
-                        <option name="name" value="Layout" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="ChangePassword" />
-                            <option value="CsWorkshopEdit" />
-                            <option value="SiteTemplate" />
-                            <option value="CsMechanicSearch" />
-                            <option value="InMaintenance" />
-                            <option value="CsTomeksWorkshopsSearch" />
-                            <option value="CsTomeksMechanicsSearch" />
-                            <option value="StdExceptionTemplate" />
-                            <option value="SiteRegister" />
-                            <option value="CsMechanicDetail" />
-                            <option value="AnswersHome" />
-                            <option value="SiteLogin" />
-                            <option value="CsRandomMechanics" />
-                            <option value="Unauthorized" />
-                            <option value="CsMechanicEdit" />
-                            <option value="SiteRegisterConfirm" />
-                            <option value="UnderConstruction" />
-                            <option value="CsImageCropper" />
-                            <option value="CsMechanicImport" />
-                            <option value="testPage" />
-                            <option value="CsMechanicImportTemplate" />
-                            <option value="FileNotFound" />
-                            <option value="CsPrepareRecordToSaveToPdf" />
-                            <option value="CsCopyResultMechanicListToXml" />
-                            <option value="ForgotPassword" />
-                            <option value="Exception" />
-                            <option value="IdeasHome" />
-                            <option value="ForgotPasswordConfirm" />
-                            <option value="BandwidthExceeded" />
-                            <option value="MyProfilePage" />
-                            <option value="CsSaveMechanicRecordToPdf" />
-                            <option value="CsCopyResultMechanicListToCsv" />
-                            <option value="CsCopyMechanicListToJson" />
-                            <option value="CsWorkshopDetail" />
-                          </set>
-                        </option>
-                        <option name="name" value="ApexPage" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Metric.Progress" />
-                            <option value="Metric.Completion" />
-                          </set>
-                        </option>
-                        <option name="name" value="RecordType" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Campaign.ViewCampaignInfluenceReport" />
-                            <option value="Opportunity.DeliveryStatus" />
-                            <option value="Case.UpsellCrosssellOpportunity" />
-                            <option value="Account.Billing" />
-                          </set>
-                        </option>
-                        <option name="name" value="WebLink" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Contract__c.End_Day_After_Start_Day" />
-                            <option value="Workshop__c.Required_Name" />
-                            <option value="Mechanic__c.Required_Name" />
-                            <option value="Contract__c.Required_Start_Date" />
-                            <option value="Workshop__c.Phone_Pattern" />
-                            <option value="Contract__c.End_Day_After_Today" />
-                          </set>
-                        </option>
-                        <option name="name" value="ValidationRule" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Order.AllActivatedOrders" />
-                            <option value="Opportunity.NewThisWeek" />
-                            <option value="Case.AllOpenCases" />
-                            <option value="Contract__c.All" />
-                            <option value="Order.AllDraftOrders" />
-                            <option value="Case.MyCases" />
-                            <option value="User.ActiveUsers" />
-                            <option value="Order.AllOrders" />
-                            <option value="Scorecard.MyScorecards" />
-                            <option value="Opportunity.ClosingNextMonth" />
-                            <option value="Contact.AllContacts" />
-                            <option value="Opportunity.Default_Opportunity_Pipeline" />
-                            <option value="Case.MyOpenCases" />
-                            <option value="Opportunity.Private" />
-                            <option value="Contract.AllContracts" />
-                            <option value="Contract.MyActivatedContracts" />
-                            <option value="Workshop__c.All" />
-                            <option value="Recommendation.All_Recommendations" />
-                            <option value="Contract.AllDraftContracts" />
-                            <option value="WorkFeedbackRequest.AboutTopics" />
-                            <option value="ConsumptionSchedule.My_ConsumptionSchedules" />
-                            <option value="Contact.NewLastWeek" />
-                            <option value="Task.DelegatedTasks" />
-                            <option value="SocialPersona.AllSocialPersonas" />
-                            <option value="User.AllUsers" />
-                            <option value="Task.UnscheduledTasks" />
-                            <option value="Contract.MyDraftContracts" />
-                            <option value="Lead.TodaysLeads" />
-                            <option value="Mechanic__c.All" />
-                            <option value="Task.CompletedTasks" />
-                            <option value="Callout_Log__c.All" />
-                            <option value="Solution.AllUnreviewedSolutions" />
-                            <option value="Account.NewLastWeek" />
-                            <option value="Activity.UpcomingEvents" />
-                            <option value="Account.MyAccounts" />
-                            <option value="Opportunity.AllOpportunities" />
-                            <option value="Task.OpenTasks" />
-                            <option value="Task.OverdueTasks" />
-                            <option value="Contact.BirthdaysThisMonth" />
-                            <option value="Opportunity.ClosingThisMonth" />
-                            <option value="Account.AllAccounts" />
-                            <option value="ContactRequest.My_ContactRequests" />
-                            <option value="CollaborationGroup.All_ChatterGroups" />
-                            <option value="Contact.NewThisWeek" />
-                            <option value="Activity.AllActivities" />
-                            <option value="Opportunity.NewLastWeek" />
-                            <option value="Asset.AllAssets" />
-                            <option value="User.AdminUsers" />
-                            <option value="Scorecard.AllScorecards" />
-                            <option value="Opportunity.MyOpportunities" />
-                            <option value="Campaign.MyActiveCampaigns" />
-                            <option value="Lead.MyUnreadLeads" />
-                            <option value="Campaign.AllActiveCampaigns" />
-                            <option value="Product2.AllProducts" />
-                            <option value="Contact.MyContacts" />
-                            <option value="Activity.TodaysTasks" />
-                            <option value="ConsumptionSchedule.All_ConsumptionSchedules" />
-                            <option value="Task.RecurringTasks" />
-                            <option value="Opportunity.Won" />
-                            <option value="Case.AllClosedCases" />
-                            <option value="Solution.AllReviewedSolutions" />
-                            <option value="Account.PlatinumandGoldSLACustomers" />
-                            <option value="Activity.MyActivities" />
-                            <option value="Task.TodaysTasks" />
-                            <option value="Contract.MyInApprovalContracts" />
-                            <option value="Contract.AllInApprovalContracts" />
-                            <option value="WorkFeedbackTemplate.All" />
-                            <option value="Lead.AllOpenLeads" />
-                            <option value="Account.NewThisWeek" />
-                            <option value="WorkFeedbackRequest.All" />
-                            <option value="Lead.ViewCustom1" />
-                            <option value="Idea.Ideas_Last_7_Days" />
-                            <option value="Contract.AllActivatedContracts" />
-                            <option value="Lead.ViewCustom2" />
-                          </set>
-                        </option>
-                        <option name="name" value="ListView" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Mechanic__c.USA_Sharing" />
-                            <option value="Mechanic__c.PL_Sharing" />
-                          </set>
-                        </option>
-                        <option name="name" value="SharingCriteriaRule" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="DirectorDirectSales" />
-                            <option value="SVPSalesMarketing" />
-                            <option value="MarketingTeam" />
-                            <option value="COO" />
-                            <option value="DirectorChannelSales" />
-                            <option value="InstallationRepairServices" />
-                            <option value="SVPHumanResources" />
-                            <option value="SVPCustomerServiceSupport" />
-                            <option value="VPInternationalSales" />
-                            <option value="EasternSalesTeam" />
-                            <option value="CEO" />
-                            <option value="ChannelSalesTeam" />
-                            <option value="CustomerSupportInternational" />
-                            <option value="CFO" />
-                            <option value="CustomerSupportNorthAmerica" />
-                            <option value="WesternSalesTeam" />
-                            <option value="VPMarketing" />
-                            <option value="VPNorthAmericanSales" />
-                          </set>
-                        </option>
-                        <option name="name" value="Role" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="carrentallogo" />
-                            <option value="lg1" />
-                          </set>
-                        </option>
-                        <option name="name" value="ContentAsset" />
-                      </MetadataType>
                       <MetadataType>
                         <option name="members">
                           <set>
@@ -668,6 +254,7 @@
                             <option value="standard-Account" />
                             <option value="standard-home" />
                             <option value="standard-WaveHome" />
+                            <option value="Divisions" />
                             <option value="standard-OtherUserProfile" />
                             <option value="Workshop__c" />
                             <option value="standard-AppLauncher" />
@@ -686,8 +273,8 @@
                             <option value="standard-Idea" />
                             <option value="standard-Image" />
                             <option value="standard-StreamingChannel" />
-                            <option value="Mechanic__c" />
                             <option value="Search_Mechanic" />
+                            <option value="Mechanic__c" />
                             <option value="Contract__c" />
                             <option value="standard-Dashboard" />
                             <option value="standard-File" />
@@ -728,20 +315,503 @@
                       <MetadataType>
                         <option name="members">
                           <set>
+                            <option value="Custom%3A Support Profile" />
+                            <option value="Customer Community Plus Login User" />
+                            <option value="High Volume Customer Portal User" />
+                            <option value="Analytics Cloud Integration User" />
+                            <option value="Force%2Ecom - Free User" />
+                            <option value="Cross Org Data Proxy User" />
+                            <option value="PlatformPortal" />
+                            <option value="External Identity User" />
+                            <option value="Force%2Ecom - App Subscription User" />
+                            <option value="Chatter External User" />
+                            <option value="Standard" />
+                            <option value="Identity User" />
+                            <option value="Custom%3A Sales Profile" />
+                            <option value="Partner Community Login User" />
+                            <option value="ContractManager" />
+                            <option value="Customer Community Plus User" />
+                            <option value="Partner Community User" />
+                            <option value="Random Mechanics Profile" />
+                            <option value="StandardAul" />
+                            <option value="Gold Partner User" />
+                            <option value="Chatter Moderator User" />
+                            <option value="SolutionManager" />
+                            <option value="ReadOnly" />
+                            <option value="Chatter Free User" />
+                            <option value="BRC_SalesRep" />
+                            <option value="Guest" />
+                            <option value="HighVolumePortal" />
+                            <option value="Customer Portal Manager Standard" />
+                            <option value="MarketingProfile" />
+                            <option value="Customer Community Login User" />
+                            <option value="Analytics Cloud Security User" />
+                            <option value="Admin" />
+                            <option value="Work%2Ecom Only User" />
+                            <option value="Silver Partner User" />
+                            <option value="Partner App Subscription User" />
+                            <option value="Authenticated Website" />
+                            <option value="Customer Community User" />
+                            <option value="Custom%3A Marketing Profile" />
+                            <option value="Standard_User%5F%5Fc" />
+                            <option value="Customer Portal Manager Custom" />
+                            <option value="BRC_Service" />
+                          </set>
+                        </option>
+                        <option name="name" value="Profile" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="ApexDevNet" />
+                            <option value="TomeksMechanic" />
+                            <option value="Google_Maps_API" />
+                            <option value="SalesforceLogin" />
+                          </set>
+                        </option>
+                        <option name="name" value="RemoteSiteSetting" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Workshop__c.Assign_External_Id" />
+                            <option value="Mechanic__c.Next_Birthday_Evaluate" />
+                            <option value="Workshop__c.Copy_value_From_Custom_Name_To_Name" />
+                          </set>
+                        </option>
+                        <option name="name" value="WorkflowFieldUpdate" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Workshop__c" />
+                            <option value="Mechanic__c" />
+                          </set>
+                        </option>
+                        <option name="name" value="Workflow" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Mechanic__c.Birthday_Reminder_Email" />
+                          </set>
+                        </option>
+                        <option name="name" value="WorkflowAlert" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Workshop__c.Copy Custom Name to Name" />
+                            <option value="Mechanic__c.Birthday Change" />
+                            <option value="Mechanic__c.Send Birthday Reminder" />
+                            <option value="Workshop__c.Create External Id" />
+                          </set>
+                        </option>
+                        <option name="name" value="WorkflowRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Lead.Standard_Lead_Duplicate_Rule" />
+                            <option value="Account.Standard_Account_Duplicate_Rule" />
+                            <option value="Contact.Standard_Contact_Duplicate_Rule" />
+                            <option value="Mechanic__c.Duplicate_Mechanic" />
+                          </set>
+                        </option>
+                        <option name="name" value="DuplicateRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="System_Administrators" />
+                            <option value="PL_Users" />
+                            <option value="USA_Users" />
+                          </set>
+                        </option>
+                        <option name="name" value="Group" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="Company" />
+                            <option value="Address" />
+                            <option value="Org" />
+                            <option value="Macro" />
+                            <option value="Product" />
+                            <option value="Security" />
+                            <option value="Knowledge" />
+                            <option value="Case" />
+                            <option value="Ideas" />
+                            <option value="Name" />
+                            <option value="FieldService" />
+                            <option value="OmniChannel" />
+                            <option value="Opportunity" />
+                            <option value="Search" />
+                            <option value="FileUploadAndDownloadSecurity" />
+                            <option value="Order" />
+                            <option value="Activities" />
+                            <option value="OrgPreference" />
+                            <option value="GoogleApps" />
+                            <option value="Bot" />
+                            <option value="BusinessHours" />
+                            <option value="UserInterface" />
+                            <option value="Forecasting" />
+                            <option value="Mobile" />
+                            <option value="Analytics" />
+                            <option value="Quote" />
+                            <option value="ExperienceBundle" />
+                            <option value="LiveAgent" />
+                            <option value="UserManagement" />
+                            <option value="Entitlement" />
+                            <option value="PathAssistant" />
+                            <option value="Notifications" />
+                            <option value="Contract" />
+                          </set>
+                        </option>
+                        <option name="name" value="Settings" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="DataCloudGeoLocation" />
+                          </set>
+                        </option>
+                        <option name="name" value="CleanDataService" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case.Standard" />
+                          </set>
+                        </option>
+                        <option name="name" value="EscalationRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case" />
+                          </set>
+                        </option>
+                        <option name="name" value="EscalationRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="ChangePassword" />
+                            <option value="CsWorkshopEdit" />
+                            <option value="CsMechanicSearch" />
+                            <option value="SiteTemplate" />
+                            <option value="CsTomeksWorkshopsSearch" />
+                            <option value="InMaintenance" />
+                            <option value="CsTomeksMechanicsSearch" />
+                            <option value="StdExceptionTemplate" />
+                            <option value="SiteRegister" />
+                            <option value="CsMechanicDetail" />
+                            <option value="AnswersHome" />
+                            <option value="SiteLogin" />
+                            <option value="CsRandomMechanics" />
+                            <option value="Unauthorized" />
+                            <option value="CsMechanicEdit" />
+                            <option value="SiteRegisterConfirm" />
+                            <option value="CsImageCropper" />
+                            <option value="CsMechanicImport" />
+                            <option value="UnderConstruction" />
+                            <option value="testPage" />
+                            <option value="CsMechanicImportTemplate" />
+                            <option value="FileNotFound" />
+                            <option value="CsPrepareRecordToSaveToPdf" />
+                            <option value="CsCopyResultMechanicListToXml" />
+                            <option value="ForgotPassword" />
+                            <option value="Exception" />
+                            <option value="IdeasHome" />
+                            <option value="BandwidthExceeded" />
+                            <option value="ForgotPasswordConfirm" />
+                            <option value="MyProfilePage" />
+                            <option value="CsSaveMechanicRecordToPdf" />
+                            <option value="CsCopyResultMechanicListToCsv" />
+                            <option value="CsCopyMechanicListToJson" />
+                            <option value="CsWorkshopDetail" />
+                          </set>
+                        </option>
+                        <option name="name" value="ApexPage" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account-Account %28Sales%29 Layout" />
+                            <option value="Contact-Contact %28Support%29 Layout" />
+                            <option value="Product2-Product Layout" />
+                            <option value="Lead-Lead Layout" />
+                            <option value="ConsumptionRate-Consumption Rate Layout" />
+                            <option value="Case-Case %28Sales%29 Layout" />
+                            <option value="Contact-Contact Layout" />
+                            <option value="Lead-Lead %28Support%29 Layout" />
+                            <option value="Callout_Log__c-Callout Log Layout" />
+                            <option value="DandBCompany-D%26B Company Layout" />
+                            <option value="AssetRelationship-Asset Relationship Layout" />
+                            <option value="Case-Case %28Support%29 Layout" />
+                            <option value="Macro-Macro Layout" />
+                            <option value="Order-Order Layout" />
+                            <option value="ScorecardMetric-Scorecard Metric Layout" />
+                            <option value="UserProvisioningRequest-User Provisioning Request Layout" />
+                            <option value="Solution-Solution Layout" />
+                            <option value="Pricebook2-Price Book Layout" />
+                            <option value="Event-Event Layout" />
+                            <option value="UserProvisioningLog-User Provisioning Log Layout" />
+                            <option value="UserProvAccount-User Provisioning Account Layout" />
+                            <option value="Contact-Contact %28Marketing%29 Layout" />
+                            <option value="Task-Task Layout" />
+                            <option value="ConsumptionSchedule-Consumption Schedule Layout" />
+                            <option value="Mechanic__c-Workshop Layout" />
+                            <option value="Asset-Asset Layout" />
+                            <option value="Opportunity-Opportunity Layout" />
+                            <option value="DuplicateRecordSet-Duplicate Record Set Layout" />
+                            <option value="OrderItem-Order Product Layout" />
+                            <option value="OpportunityLineItem-Opportunity Product Layout" />
+                            <option value="Case-Case Layout" />
+                            <option value="Contract-Contract Layout" />
+                            <option value="Account-Account Layout" />
+                            <option value="Campaign-Campaign Layout" />
+                            <option value="CommunityMemberLayout-Community Member Layout" />
+                            <option value="ScorecardAssociation-Scorecard Association Layout" />
+                            <option value="Opportunity-Opportunity %28Sales%29 Layout" />
+                            <option value="SocialPersona-Social Persona Layout" />
+                            <option value="Scorecard-Scorecard Layout" />
+                            <option value="Case-Case %28Marketing%29 Layout" />
+                            <option value="Mechanic__c-Mechanic Layout With Address Section" />
+                            <option value="PricebookEntry-Price Book Entry Layout" />
+                            <option value="Contract__c-Contract Layout" />
+                            <option value="CaseClose-Close Case Layout" />
+                            <option value="FeedItem-Feed Item Layout" />
+                            <option value="Idea-Idea Layout" />
+                            <option value="ContentVersion-Content Version Layout" />
+                            <option value="Opportunity-Opportunity %28Support%29 Layout" />
+                            <option value="Workshop__c-Workshop Layout With Address Section" />
+                            <option value="Global-Global Layout" />
+                            <option value="Lead-Lead %28Sales%29 Layout" />
+                            <option value="Account-Account %28Marketing%29 Layout" />
+                            <option value="EmailMessage-Email Message Layout" />
+                            <option value="SocialPost-Social Post Layout" />
+                            <option value="ProductConsumptionSchedule-Product Consumption Schedule Layout" />
+                            <option value="Account-Account %28Support%29 Layout" />
+                            <option value="CampaignMember-Campaign Member Page Layout" />
+                            <option value="QuickText-Quick Text Layout" />
+                            <option value="Workshop__c-Workshop Layout" />
+                            <option value="User-User Layout" />
+                            <option value="Contact-Contact %28Sales%29 Layout" />
+                            <option value="Lead-Lead %28Marketing%29 Layout" />
+                            <option value="Opportunity-Opportunity %28Marketing%29 Layout" />
+                          </set>
+                        </option>
+                        <option name="name" value="Layout" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Metric.Progress" />
+                            <option value="Metric.Completion" />
+                          </set>
+                        </option>
+                        <option name="name" value="RecordType" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Contract__c.End_Day_After_Start_Day" />
+                            <option value="Workshop__c.Required_Name" />
+                            <option value="Mechanic__c.Required_Name" />
+                            <option value="Contract__c.Required_Start_Date" />
+                            <option value="Workshop__c.Phone_Pattern" />
+                            <option value="Contract__c.End_Day_After_Today" />
+                          </set>
+                        </option>
+                        <option name="name" value="ValidationRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Opportunity.DeliveryStatus" />
+                            <option value="Campaign.ViewCampaignInfluenceReport" />
+                            <option value="Case.UpsellCrosssellOpportunity" />
+                            <option value="Account.Billing" />
+                          </set>
+                        </option>
+                        <option name="name" value="WebLink" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Order.AllActivatedOrders" />
+                            <option value="Opportunity.NewThisWeek" />
+                            <option value="Case.AllOpenCases" />
+                            <option value="Contract__c.All" />
+                            <option value="Order.AllDraftOrders" />
+                            <option value="Case.MyCases" />
+                            <option value="User.ActiveUsers" />
+                            <option value="Order.AllOrders" />
+                            <option value="Scorecard.MyScorecards" />
+                            <option value="Opportunity.ClosingNextMonth" />
+                            <option value="Contact.AllContacts" />
+                            <option value="Case.MyOpenCases" />
+                            <option value="Opportunity.Default_Opportunity_Pipeline" />
+                            <option value="Opportunity.Private" />
+                            <option value="Contract.AllContracts" />
+                            <option value="Contract.MyActivatedContracts" />
+                            <option value="Recommendation.All_Recommendations" />
+                            <option value="Workshop__c.All" />
+                            <option value="Contract.AllDraftContracts" />
+                            <option value="WorkFeedbackRequest.AboutTopics" />
+                            <option value="ConsumptionSchedule.My_ConsumptionSchedules" />
+                            <option value="Contact.NewLastWeek" />
+                            <option value="Task.DelegatedTasks" />
+                            <option value="SocialPersona.AllSocialPersonas" />
+                            <option value="User.AllUsers" />
+                            <option value="Contract.MyDraftContracts" />
+                            <option value="Task.UnscheduledTasks" />
+                            <option value="Lead.TodaysLeads" />
+                            <option value="Mechanic__c.All" />
+                            <option value="Callout_Log__c.All" />
+                            <option value="Task.CompletedTasks" />
+                            <option value="Solution.AllUnreviewedSolutions" />
+                            <option value="Activity.UpcomingEvents" />
+                            <option value="Account.NewLastWeek" />
+                            <option value="Account.MyAccounts" />
+                            <option value="Opportunity.AllOpportunities" />
+                            <option value="Task.OpenTasks" />
+                            <option value="Task.OverdueTasks" />
+                            <option value="Contact.BirthdaysThisMonth" />
+                            <option value="Opportunity.ClosingThisMonth" />
+                            <option value="Account.AllAccounts" />
+                            <option value="ContactRequest.My_ContactRequests" />
+                            <option value="Contact.NewThisWeek" />
+                            <option value="CollaborationGroup.All_ChatterGroups" />
+                            <option value="Activity.AllActivities" />
+                            <option value="Opportunity.NewLastWeek" />
+                            <option value="Asset.AllAssets" />
+                            <option value="User.AdminUsers" />
+                            <option value="Scorecard.AllScorecards" />
+                            <option value="Opportunity.MyOpportunities" />
+                            <option value="Campaign.MyActiveCampaigns" />
+                            <option value="Lead.MyUnreadLeads" />
+                            <option value="Product2.AllProducts" />
+                            <option value="Campaign.AllActiveCampaigns" />
+                            <option value="Activity.TodaysTasks" />
+                            <option value="Contact.MyContacts" />
+                            <option value="ConsumptionSchedule.All_ConsumptionSchedules" />
+                            <option value="Task.RecurringTasks" />
+                            <option value="Opportunity.Won" />
+                            <option value="Case.AllClosedCases" />
+                            <option value="Solution.AllReviewedSolutions" />
+                            <option value="Account.PlatinumandGoldSLACustomers" />
+                            <option value="Activity.MyActivities" />
+                            <option value="Contract.MyInApprovalContracts" />
+                            <option value="Task.TodaysTasks" />
+                            <option value="Contract.AllInApprovalContracts" />
+                            <option value="WorkFeedbackTemplate.All" />
+                            <option value="Lead.AllOpenLeads" />
+                            <option value="Account.NewThisWeek" />
+                            <option value="WorkFeedbackRequest.All" />
+                            <option value="Lead.ViewCustom1" />
+                            <option value="Idea.Ideas_Last_7_Days" />
+                            <option value="Contract.AllActivatedContracts" />
+                            <option value="Lead.ViewCustom2" />
+                          </set>
+                        </option>
+                        <option name="name" value="ListView" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Trigger_Exception__c" />
                             <option value="Order" />
                             <option value="Account" />
                             <option value="Workshop__c" />
+                            <option value="User" />
+                            <option value="Mechanic__c" />
+                            <option value="Contract__c" />
+                            <option value="Contact" />
+                            <option value="Case" />
+                            <option value="FlowInterview" />
+                            <option value="Campaign" />
+                            <option value="Cs_Settings__c" />
+                            <option value="ListEmail" />
+                            <option value="Opportunity" />
+                            <option value="Lead" />
+                            <option value="Asset" />
+                            <option value="Callout_Log__c" />
+                          </set>
+                        </option>
+                        <option name="name" value="SharingRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="DE Default" />
+                          </set>
+                        </option>
+                        <option name="name" value="HomePageLayout" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Mechanic__c.USA_Sharing" />
+                            <option value="Mechanic__c.PL_Sharing" />
+                          </set>
+                        </option>
+                        <option name="name" value="SharingCriteriaRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="DirectorDirectSales" />
+                            <option value="SVPSalesMarketing" />
+                            <option value="MarketingTeam" />
+                            <option value="COO" />
+                            <option value="DirectorChannelSales" />
+                            <option value="InstallationRepairServices" />
+                            <option value="SVPHumanResources" />
+                            <option value="SVPCustomerServiceSupport" />
+                            <option value="VPInternationalSales" />
+                            <option value="ChannelSalesTeam" />
+                            <option value="CEO" />
+                            <option value="EasternSalesTeam" />
+                            <option value="CustomerSupportInternational" />
+                            <option value="CFO" />
+                            <option value="WesternSalesTeam" />
+                            <option value="CustomerSupportNorthAmerica" />
+                            <option value="VPMarketing" />
+                            <option value="VPNorthAmericanSales" />
+                          </set>
+                        </option>
+                        <option name="name" value="Role" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="carrentallogo" />
+                            <option value="lg1" />
+                          </set>
+                        </option>
+                        <option name="name" value="ContentAsset" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Order" />
+                            <option value="Workshop__c" />
+                            <option value="Account" />
                             <option value="Task" />
                             <option value="Mechanic__c" />
                             <option value="Contract__c" />
-                            <option value="Case" />
                             <option value="Contact" />
+                            <option value="Case" />
                             <option value="ContentDocument" />
                             <option value="Campaign" />
                             <option value="Opportunity" />
                             <option value="Lead" />
-                            <option value="Asset" />
                             <option value="Event" />
+                            <option value="Asset" />
                             <option value="Callout_Log__c" />
                             <option value="Contract" />
                             <option value="Solution" />
@@ -769,20 +839,21 @@
                       <MetadataType>
                         <option name="members">
                           <set>
-                            <option value="Postman_REST_Workshops" />
-                          </set>
-                        </option>
-                        <option name="name" value="ConnectedApp" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
                             <option value="LightningSalesConsole_UtilityBar" />
                             <option value="LightningService_UtilityBar" />
+                            <option value="Divisions" />
                             <option value="Rent_Car_UtilityBar" />
                           </set>
                         </option>
                         <option name="name" value="FlexiPage" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Postman_REST_Workshops" />
+                          </set>
+                        </option>
+                        <option name="name" value="ConnectedApp" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -796,6 +867,23 @@
                       <MetadataType>
                         <option name="members">
                           <set>
+                            <option value="BRCDivisionsSearch" />
+                            <option value="BRCSetMapMarkerEvent" />
+                            <option value="BRCDivisionsListItem" />
+                            <option value="BRCGetDivisionsListEvent" />
+                            <option value="testApp" />
+                            <option value="DivisionsTest" />
+                            <option value="BRCGetDivisionDetailEvent" />
+                            <option value="BRCDivisionsMap" />
+                            <option value="BRCDivisionDetails" />
+                            <option value="BRCDivisionsList" />
+                          </set>
+                        </option>
+                        <option name="name" value="AuraDefinitionBundle" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
                             <option value="null_profileSessionSetting1565183542954" />
                             <option value="null_profileSessionSetting1565183012459" />
                             <option value="Random_Mechanics_Profile_profileSessionSetting1563057247115" />
@@ -804,16 +892,6 @@
                           </set>
                         </option>
                         <option name="name" value="ProfileSessionSetting" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="BRCDivisionsSearch" />
-                            <option value="testApp" />
-                            <option value="BRCDivisionsList" />
-                          </set>
-                        </option>
-                        <option name="name" value="AuraDefinitionBundle" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -857,9 +935,9 @@
                         <option name="members">
                           <set>
                             <option value="ActionStatusIcon" />
+                            <option value="iEditJS" />
                             <option value="jQuery" />
                             <option value="jQueryUI" />
-                            <option value="iEditJS" />
                             <option value="DefaultPicture" />
                             <option value="iEditCSS" />
                             <option value="SiteSamples" />
@@ -870,22 +948,160 @@
                       <MetadataType>
                         <option name="members">
                           <set>
+                            <option value="Tomeks_Workshop_Website" />
+                            <option value="Import_Mechanic_Table" />
+                            <option value="Hire_Workshop_Popup_Label" />
+                            <option value="Phone_Pattern" />
+                            <option value="Picture_Default" />
+                            <option value="Button_Send" />
+                            <option value="Edit" />
+                            <option value="Edit_Workshop_Header" />
+                            <option value="Delete_Picture" />
+                            <option value="Tomeks_Oath2" />
+                            <option value="Import_Status_Success" />
+                            <option value="Export_To_XML" />
+                            <option value="Error_No_On_Country_List" />
+                            <option value="Delete_Confirm_Popup" />
+                            <option value="Button_Save" />
+                            <option value="Button_Template" />
+                            <option value="Error_No_Object_Type" />
+                            <option value="Table_Pagination_Next" />
+                            <option value="Button_Add" />
+                            <option value="Tomeks_Workshop_Country" />
+                            <option value="Group_Usa_Users" />
+                            <option value="Error_Phone_Pattern" />
+                            <option value="Button_Clear" />
+                            <option value="Error_To_Big_File" />
+                            <option value="Import_Status_Error" />
+                            <option value="Button_Save_To_Pdf" />
+                            <option value="Tomek_Workshop_Name" />
+                            <option value="Tomeks_Workshop_Zip_Code" />
+                            <option value="Import_File" />
+                            <option value="Upload_Picture" />
+                            <option value="Table_All_Records" />
+                            <option value="Error_Wrong_Type" />
+                            <option value="Status_Abandoned" />
+                            <option value="Error_Delete_With_Contracts" />
+                            <option value="Email_Subject" />
+                            <option value="Export_to_CSV" />
+                            <option value="Button_Search" />
+                            <option value="Error_Field_Required" />
+                            <option value="Edit_Mechanic_Header" />
+                            <option value="Table_Page_Of" />
+                            <option value="Employees_To_Hire" />
+                            <option value="Workshop_Hire_Template_Message" />
+                            <option value="Button_Remove" />
+                            <option value="Button_Reverse_Selection" />
+                            <option value="Section_Address" />
+                            <option value="Table_Pagination_Previous" />
+                            <option value="Group_PL_Users" />
+                            <option value="Add_New_Workshop" />
+                            <option value="Select_Option_None" />
+                            <option value="Email_Message" />
+                            <option value="Search_Results_Label" />
+                            <option value="Picture_Profile" />
+                            <option value="Input_No_File" />
+                            <option value="Button_Select_All" />
+                            <option value="Export_To_Json" />
+                            <option value="Tomeks_Workshop_City" />
+                            <option value="Section_Agreements" />
+                            <option value="Agreement" />
+                            <option value="Workshop_Hire_Block_Button_Message" />
+                            <option value="Contract_Start_Date" />
+                            <option value="Delete_Confirm_Message" />
+                            <option value="Edit_Picture" />
+                            <option value="Select" />
+                            <option value="Tomeks_Workshop_Phone" />
+                            <option value="Error_No_SOAP_SessionId" />
+                            <option value="Button_Edit" />
+                            <option value="Search_for_Tomeks_Mechanics" />
+                            <option value="Batch_Mail_Subject" />
+                            <option value="Error_Overlapping_From" />
+                            <option value="Table_Records_Per_Page" />
+                            <option value="Batch_Mail_Group" />
+                            <option value="Batch_Mail_Body" />
+                            <option value="Error_Overlapping_From_To" />
+                            <option value="Button_Hire" />
+                            <option value="Button_Deselect_All" />
+                            <option value="Error_WebService" />
+                            <option value="To_Import" />
+                            <option value="Button_Process" />
+                            <option value="Mechanic_Hire_Label" />
+                            <option value="Required_Input_Field_Error" />
+                            <option value="Delete_Message" />
+                            <option value="Status_Success" />
+                            <option value="Button_Cancel" />
+                            <option value="Mechanic_Search_Page_Label" />
+                            <option value="Send_Email" />
+                            <option value="Bad_File_Extension" />
+                            <option value="Add_New_Mechanic" />
+                            <option value="Search_For" />
+                            <option value="Button_Delete" />
+                            <option value="Send_Email_To" />
+                            <option value="Section_Details" />
+                            <option value="Copy_To_Clipboard" />
+                            <option value="Button_Import" />
+                            <option value="Error_Overlapping" />
+                            <option value="Sign_Down" />
+                            <option value="Section_History_Tracking" />
+                            <option value="Map_Unactive" />
+                            <option value="Action_Dissmiss" />
+                            <option value="Search_for_Tomeks_Workshops" />
+                            <option value="Button_Save_To_Json" />
+                            <option value="Contract_End_Date" />
+                            <option value="Button_Download_Template" />
+                            <option value="Search_Empty_Record_List" />
+                            <option value="Info" />
+                            <option value="Sign_Up" />
+                            <option value="Button_View" />
+                            <option value="Export_To_Pdf" />
+                            <option value="Actions_Label" />
+                            <option value="Status_Error" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomLabel" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Callout_Log__c-en_US" />
+                            <option value="Mechanic__c-en_US" />
+                            <option value="Cs_Settings__c-en_US" />
+                            <option value="Trigger_Exception__c-en_US" />
+                            <option value="Workshop__c-en_US" />
+                            <option value="Contract__c-en_US" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomObjectTranslation" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="CustomLabels" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomLabels" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
                             <option value="CsRepeatDeleteCallout" />
                             <option value="CsCountryResourceHandler" />
                             <option value="CsMechanicJsonWrapper" />
                             <option value="CsMechanicDetailController" />
                             <option value="CsQueueableCallouts" />
+                            <option value="BRCDivisionController" />
                             <option value="CsException" />
                             <option value="CsITrigger" />
                             <option value="CsMechanicSearchController" />
                             <option value="CsSoapMwMechanicMock" />
-                            <option value="SiteRegisterControllerTest" />
                             <option value="ForgotPasswordControllerTest" />
+                            <option value="SiteRegisterControllerTest" />
                             <option value="CsWrapperMechanic" />
-                            <option value="CsMultiRequestMock" />
                             <option value="CsWorkshopEditController" />
-                            <option value="MyProfilePageController" />
+                            <option value="CsMultiRequestMock" />
                             <option value="CsWorkshopDetailController" />
+                            <option value="MyProfilePageController" />
                             <option value="CsMechanicImportController" />
                             <option value="testClass" />
                             <option value="ChangePasswordControllerTest" />
@@ -899,29 +1115,31 @@
                             <option value="CsTomeksWorkshopsRestHandler" />
                             <option value="SiteRegisterController" />
                             <option value="CsTomeksWorkshopsRestController" />
-                            <option value="CsRecurePostCallouts" />
                             <option value="CsQueueableCalloutLogs" />
+                            <option value="CsRecurePostCallouts" />
+                            <option value="BRCQueryBuilder" />
                             <option value="CsTomeksWorkshopsRestControllerTest" />
                             <option value="CsScheduleBatch" />
                             <option value="CsTomeksMechanicsSearchController" />
                             <option value="CsWorkshopResourceHandler" />
                             <option value="CsLocationCallouts" />
-                            <option value="SiteLoginControllerTest" />
                             <option value="CsSoqlQueryBuilder" />
+                            <option value="SiteLoginControllerTest" />
                             <option value="CsTriggerFactory" />
                             <option value="CsWorkshopTriggerHandler" />
                             <option value="CsWorkshopResource" />
                             <option value="CsMechanicsWebService" />
-                            <option value="CsMechanicEditController" />
                             <option value="CsImageCropper" />
+                            <option value="CsMechanicEditController" />
                             <option value="MyProfilePageControllerTest" />
                             <option value="CsUtils" />
                             <option value="CsSobjectPartnerSoapSforceCom" />
                             <option value="CsCountryResource" />
                             <option value="CsContractTriggerHandler" />
                             <option value="SiteLoginController" />
-                            <option value="CsSoapSforceComSchemasClassMwMechanic" />
+                            <option value="CsRepeatCallouts" />
                             <option value="CsUserTriggerHandler" />
+                            <option value="CsSoapSforceComSchemasClassMwMechanic" />
                             <option value="ChangePasswordController" />
                             <option value="CsSingleRequestMock" />
                             <option value="CsPartnerSoapSforceCom" />
@@ -952,6 +1170,17 @@
                       <MetadataType>
                         <option name="members">
                           <set>
+                            <option value="Contact.Standard_Contact_Match_Rule_v1_1" />
+                            <option value="Mechanic__c.Duplicate_Mechanic_matching_rule" />
+                            <option value="Lead.Standard_Lead_Match_Rule_v1_0" />
+                            <option value="Account.Standard_Account_Match_Rule_v1_0" />
+                          </set>
+                        </option>
+                        <option name="name" value="MatchingRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
                             <option value="Lead" />
                             <option value="Case" />
                           </set>
@@ -961,22 +1190,44 @@
                       <MetadataType>
                         <option name="members">
                           <set>
-                            <option value="Contact.Standard_Contact_Match_Rule_v1_1" />
-                            <option value="Mechanic__c.Duplicate_Mechanic_matching_rule" />
-                            <option value="Account.Standard_Account_Match_Rule_v1_0" />
-                            <option value="Lead.Standard_Lead_Match_Rule_v1_0" />
+                            <option value="Lead.Standard" />
+                            <option value="Case.Standard" />
                           </set>
                         </option>
-                        <option name="name" value="MatchingRule" />
+                        <option name="name" value="AssignmentRule" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
                           <set>
-                            <option value="Case.Standard" />
-                            <option value="Lead.Standard" />
+                            <option value="standard__Sales" />
+                            <option value="standard__LightningService" />
+                            <option value="Best_Rent_Car" />
+                            <option value="standard__ServiceConsole" />
+                            <option value="standard__Community" />
+                            <option value="standard__AppLauncher" />
+                            <option value="standard__LightningInstrumentation" />
+                            <option value="standard__Chatter" />
+                            <option value="standard__Platform" />
+                            <option value="standard__Service" />
+                            <option value="standard__LightningSales" />
+                            <option value="standard__Marketing" />
+                            <option value="standard__Content" />
+                            <option value="standard__Sites" />
+                            <option value="standard__LightningSalesConsole" />
+                            <option value="standard__Insights" />
+                            <option value="standard__LightningBolt" />
+                            <option value="Car_Service" />
                           </set>
                         </option>
-                        <option name="name" value="AssignmentRule" />
+                        <option name="name" value="CustomApplication" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="SalesforceToSalesforce" />
+                          </set>
+                        </option>
+                        <option name="name" value="PermissionSet" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -1003,8 +1254,8 @@
                             <option value="Task.UpdateStatus_0" />
                             <option value="Task.Defer_1" />
                             <option value="Task.UpdateStatus_1" />
-                            <option value="Case.NewChildCase" />
                             <option value="Case.LogACall" />
+                            <option value="Case.NewChildCase" />
                             <option value="NewContact" />
                             <option value="NewCase" />
                             <option value="NewEvent" />
@@ -1012,81 +1263,6 @@
                           </set>
                         </option>
                         <option name="name" value="QuickAction" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Case.SLAViolation__c" />
-                            <option value="Contract__c.Mechani_Name__c" />
-                            <option value="Lead.Primary__c" />
-                            <option value="Mechanic__c.Country__c" />
-                            <option value="Lead.CurrentGenerators__c" />
-                            <option value="Mechanic__c.Email__c" />
-                            <option value="Contract__c.End_Date__c" />
-                            <option value="Account.NumberofLocations__c" />
-                            <option value="Contract__c.Status__c" />
-                            <option value="Opportunity.MainCompetitors__c" />
-                            <option value="Account.UpsellOpportunity__c" />
-                            <option value="Mechanic__c.Zip_Code__c" />
-                            <option value="Account.SLASerialNumber__c" />
-                            <option value="Workshop__c.Custom_Name__c" />
-                            <option value="Account.CustomerPriority__c" />
-                            <option value="Mechanic__c.License_Number__c" />
-                            <option value="Contract__c.Start_Date_Plus_One_Year__c" />
-                            <option value="Opportunity.OrderNumber__c" />
-                            <option value="Metric.OrigMetricId__c" />
-                            <option value="Case.EngineeringReqNumber__c" />
-                            <option value="Mechanic__c.Phone__c" />
-                            <option value="Workshop__c.City__c" />
-                            <option value="Callout_Log__c.Operation_Type__c" />
-                            <option value="Workshop__c.Address__c" />
-                            <option value="Workshop__c.Phone__c" />
-                            <option value="Account.SLAExpirationDate__c" />
-                            <option value="Workshop__c.Zip_Code__c" />
-                            <option value="Workshop__c.External_Id__c" />
-                            <option value="Callout_Log__c.Callout_Status__c" />
-                            <option value="Mechanic__c.Full_Name__c" />
-                            <option value="Case.PotentialLiability__c" />
-                            <option value="Workshop__c.Website__c" />
-                            <option value="Contract__c.Workshop__c" />
-                            <option value="Mechanic__c.Birthday__c" />
-                            <option value="Cs_Settings__c.Value__c" />
-                            <option value="User.Country__c" />
-                            <option value="Mechanic__c.First_Name__c" />
-                            <option value="Mechanic__c.City__c" />
-                            <option value="Callout_Log__c.Number_Of_Repeats__c" />
-                            <option value="Opportunity.TrackingNumber__c" />
-                            <option value="Workshop__c.Country__c" />
-                            <option value="Account.Active__c" />
-                            <option value="Callout_Log__c.Endpoint__c" />
-                            <option value="CaseComment.ParentOrigin" />
-                            <option value="Opportunity.DeliveryInstallationStatus__c" />
-                            <option value="Contract__c.Display_Date__c" />
-                            <option value="Contact.Level__c" />
-                            <option value="Goal.OrigGoalId__c" />
-                            <option value="Mechanic__c.Address__c" />
-                            <option value="Callout_Log__c.Parent_External_Id__c" />
-                            <option value="Account.SLA__c" />
-                            <option value="Callout_Log__c.Callout_Response__c" />
-                            <option value="Lead.SICCode__c" />
-                            <option value="Contract__c.Mechanic__c" />
-                            <option value="Contact.Languages__c" />
-                            <option value="Workshop__c.Is_Synchronized__c" />
-                            <option value="CaseComment.CommentBody" />
-                            <option value="Mechanic__c.Skill__c" />
-                            <option value="Trigger_Exception__c.CsContractOverlapping__c" />
-                            <option value="Mechanic__c.Speciality__c" />
-                            <option value="Opportunity.CurrentGenerators__c" />
-                            <option value="Callout_Log__c.Request_Body__c" />
-                            <option value="Mechanic__c.Next_Birthday__c" />
-                            <option value="Contract__c.Start_Date__c" />
-                            <option value="Contract__c.Compare_Cities__c" />
-                            <option value="Lead.ProductInterest__c" />
-                            <option value="Lead.NumberofLocations__c" />
-                            <option value="Case.Product__c" />
-                          </set>
-                        </option>
-                        <option name="name" value="CustomField" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -1104,74 +1280,150 @@
                             <option value="ContactCleanInfo" />
                             <option value="ScorecardMetric" />
                             <option value="PushTopic" />
-                            <option value="FeedItem" />
                             <option value="ContractContactRole" />
+                            <option value="FeedItem" />
                             <option value="ExchangeUserMapping" />
                             <option value="SocialPersona" />
                             <option value="Asset" />
                             <option value="PromptAction" />
                             <option value="CampaignMember" />
-                            <option value="Order" />
                             <option value="Trigger_Exception__c" />
+                            <option value="Order" />
                             <option value="CollaborationGroupMember" />
-                            <option value="Workshop__c" />
                             <option value="StreamingChannel" />
                             <option value="AccountContactRole" />
+                            <option value="Workshop__c" />
                             <option value="EmailMessage" />
                             <option value="Pricebook2" />
                             <option value="AccountCleanInfo" />
                             <option value="UserProvisioningRequest" />
-                            <option value="OrgDeleteRequest" />
                             <option value="Recommendation" />
                             <option value="PricebookEntry" />
-                            <option value="LeadCleanInfo" />
+                            <option value="OrgDeleteRequest" />
                             <option value="Cs_Settings__c" />
                             <option value="Campaign" />
+                            <option value="LeadCleanInfo" />
                             <option value="Idea" />
                             <option value="ExpressionFilter" />
-                            <option value="ChatterActivity" />
                             <option value="Contract" />
                             <option value="ScorecardAssociation" />
+                            <option value="ChatterActivity" />
                             <option value="OpportunityCompetitor" />
                             <option value="PartnerRole" />
-                            <option value="MacroAction" />
                             <option value="Site" />
-                            <option value="User" />
+                            <option value="MacroAction" />
                             <option value="Mechanic__c" />
+                            <option value="User" />
                             <option value="ContactRequest" />
-                            <option value="ProductConsumptionSchedule" />
                             <option value="Product2" />
+                            <option value="ProductConsumptionSchedule" />
                             <option value="Macro" />
                             <option value="MacroInstruction" />
                             <option value="ExpressionFilterCriteria" />
-                            <option value="DuplicateRecordItem" />
                             <option value="Contract__c" />
+                            <option value="DuplicateRecordItem" />
                             <option value="CaseComment" />
                             <option value="Case" />
                             <option value="ContentVersion" />
                             <option value="Opportunity" />
                             <option value="Lead" />
                             <option value="DuplicateRecordSet" />
-                            <option value="Topic" />
-                            <option value="Callout_Log__c" />
                             <option value="Scorecard" />
+                            <option value="Callout_Log__c" />
+                            <option value="Topic" />
                             <option value="Solution" />
                             <option value="AssetRelationship" />
-                            <option value="StreamActivityAccess" />
                             <option value="QuickText" />
+                            <option value="StreamActivityAccess" />
                             <option value="DandBCompany" />
                             <option value="OpportunityContactRole" />
                             <option value="Contact" />
                             <option value="RequestsForAccessSIQ" />
                             <option value="OrderItem" />
                             <option value="AssistantProgress" />
-                            <option value="Event" />
                             <option value="ConsumptionRate" />
+                            <option value="Event" />
                             <option value="RecordAction" />
                             <option value="TopicAssignment" />
                           </set>
                         </option>
                         <option name="name" value="CustomObject" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Contract__c.Mechani_Name__c" />
+                            <option value="Case.SLAViolation__c" />
+                            <option value="Lead.Primary__c" />
+                            <option value="Mechanic__c.Country__c" />
+                            <option value="Lead.CurrentGenerators__c" />
+                            <option value="Mechanic__c.Email__c" />
+                            <option value="Account.NumberofLocations__c" />
+                            <option value="Contract__c.Status__c" />
+                            <option value="Contract__c.End_Date__c" />
+                            <option value="Opportunity.MainCompetitors__c" />
+                            <option value="Account.SLASerialNumber__c" />
+                            <option value="Mechanic__c.Zip_Code__c" />
+                            <option value="Account.UpsellOpportunity__c" />
+                            <option value="Workshop__c.Custom_Name__c" />
+                            <option value="Account.CustomerPriority__c" />
+                            <option value="Mechanic__c.License_Number__c" />
+                            <option value="Contract__c.Start_Date_Plus_One_Year__c" />
+                            <option value="Opportunity.OrderNumber__c" />
+                            <option value="Metric.OrigMetricId__c" />
+                            <option value="Case.EngineeringReqNumber__c" />
+                            <option value="Mechanic__c.Phone__c" />
+                            <option value="Callout_Log__c.Operation_Type__c" />
+                            <option value="Workshop__c.City__c" />
+                            <option value="Workshop__c.Phone__c" />
+                            <option value="Workshop__c.Address__c" />
+                            <option value="Account.SLAExpirationDate__c" />
+                            <option value="Cs_Settings__c.Number__c" />
+                            <option value="Workshop__c.Zip_Code__c" />
+                            <option value="Workshop__c.External_Id__c" />
+                            <option value="Callout_Log__c.Callout_Status__c" />
+                            <option value="Mechanic__c.Full_Name__c" />
+                            <option value="Case.PotentialLiability__c" />
+                            <option value="Workshop__c.Website__c" />
+                            <option value="Cs_Settings__c.Value__c" />
+                            <option value="Contract__c.Workshop__c" />
+                            <option value="Mechanic__c.Birthday__c" />
+                            <option value="User.Country__c" />
+                            <option value="Mechanic__c.First_Name__c" />
+                            <option value="Mechanic__c.City__c" />
+                            <option value="Callout_Log__c.Number_Of_Repeats__c" />
+                            <option value="Opportunity.TrackingNumber__c" />
+                            <option value="Workshop__c.Country__c" />
+                            <option value="Account.Active__c" />
+                            <option value="Callout_Log__c.Endpoint__c" />
+                            <option value="CaseComment.ParentOrigin" />
+                            <option value="Opportunity.DeliveryInstallationStatus__c" />
+                            <option value="Contract__c.Display_Date__c" />
+                            <option value="Contact.Level__c" />
+                            <option value="Goal.OrigGoalId__c" />
+                            <option value="Mechanic__c.Address__c" />
+                            <option value="Callout_Log__c.Parent_External_Id__c" />
+                            <option value="Account.SLA__c" />
+                            <option value="Lead.SICCode__c" />
+                            <option value="Callout_Log__c.Callout_Response__c" />
+                            <option value="Contract__c.Mechanic__c" />
+                            <option value="Contact.Languages__c" />
+                            <option value="Workshop__c.Is_Synchronized__c" />
+                            <option value="CaseComment.CommentBody" />
+                            <option value="Mechanic__c.Skill__c" />
+                            <option value="Mechanic__c.Speciality__c" />
+                            <option value="Trigger_Exception__c.CsContractOverlapping__c" />
+                            <option value="Opportunity.CurrentGenerators__c" />
+                            <option value="Callout_Log__c.Request_Body__c" />
+                            <option value="Mechanic__c.Next_Birthday__c" />
+                            <option value="Contract__c.Start_Date__c" />
+                            <option value="Contract__c.Compare_Cities__c" />
+                            <option value="Lead.ProductInterest__c" />
+                            <option value="Lead.NumberofLocations__c" />
+                            <option value="Case.Product__c" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomField" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -1184,205 +1436,6 @@
                           </set>
                         </option>
                         <option name="name" value="ApexComponent" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="DE Default" />
-                          </set>
-                        </option>
-                        <option name="name" value="HomePageLayout" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Trigger_Exception__c" />
-                            <option value="Order" />
-                            <option value="Account" />
-                            <option value="Workshop__c" />
-                            <option value="User" />
-                            <option value="Mechanic__c" />
-                            <option value="Contract__c" />
-                            <option value="Contact" />
-                            <option value="Case" />
-                            <option value="FlowInterview" />
-                            <option value="Campaign" />
-                            <option value="Cs_Settings__c" />
-                            <option value="ListEmail" />
-                            <option value="Opportunity" />
-                            <option value="Lead" />
-                            <option value="Asset" />
-                            <option value="Callout_Log__c" />
-                          </set>
-                        </option>
-                        <option name="name" value="SharingRules" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Tomeks_Workshop_Website" />
-                            <option value="Import_Mechanic_Table" />
-                            <option value="Hire_Workshop_Popup_Label" />
-                            <option value="Picture_Default" />
-                            <option value="Phone_Pattern" />
-                            <option value="Button_Send" />
-                            <option value="Edit" />
-                            <option value="Edit_Workshop_Header" />
-                            <option value="Delete_Picture" />
-                            <option value="Tomeks_Oath2" />
-                            <option value="Import_Status_Success" />
-                            <option value="Export_To_XML" />
-                            <option value="Error_No_On_Country_List" />
-                            <option value="Delete_Confirm_Popup" />
-                            <option value="Button_Save" />
-                            <option value="Button_Template" />
-                            <option value="Error_No_Object_Type" />
-                            <option value="Table_Pagination_Next" />
-                            <option value="Button_Add" />
-                            <option value="Tomeks_Workshop_Country" />
-                            <option value="Group_Usa_Users" />
-                            <option value="Error_Phone_Pattern" />
-                            <option value="Button_Clear" />
-                            <option value="Error_To_Big_File" />
-                            <option value="Import_Status_Error" />
-                            <option value="Button_Save_To_Pdf" />
-                            <option value="Tomek_Workshop_Name" />
-                            <option value="Import_File" />
-                            <option value="Tomeks_Workshop_Zip_Code" />
-                            <option value="Upload_Picture" />
-                            <option value="Table_All_Records" />
-                            <option value="Error_Wrong_Type" />
-                            <option value="Status_Abandoned" />
-                            <option value="Error_Delete_With_Contracts" />
-                            <option value="Email_Subject" />
-                            <option value="Export_to_CSV" />
-                            <option value="Button_Search" />
-                            <option value="Error_Field_Required" />
-                            <option value="Edit_Mechanic_Header" />
-                            <option value="Table_Page_Of" />
-                            <option value="Employees_To_Hire" />
-                            <option value="Button_Remove" />
-                            <option value="Workshop_Hire_Template_Message" />
-                            <option value="Section_Address" />
-                            <option value="Button_Reverse_Selection" />
-                            <option value="Table_Pagination_Previous" />
-                            <option value="Group_PL_Users" />
-                            <option value="Add_New_Workshop" />
-                            <option value="Select_Option_None" />
-                            <option value="Email_Message" />
-                            <option value="Search_Results_Label" />
-                            <option value="Picture_Profile" />
-                            <option value="Input_No_File" />
-                            <option value="Button_Select_All" />
-                            <option value="Tomeks_Workshop_City" />
-                            <option value="Export_To_Json" />
-                            <option value="Section_Agreements" />
-                            <option value="Agreement" />
-                            <option value="Workshop_Hire_Block_Button_Message" />
-                            <option value="Contract_Start_Date" />
-                            <option value="Delete_Confirm_Message" />
-                            <option value="Edit_Picture" />
-                            <option value="Select" />
-                            <option value="Tomeks_Workshop_Phone" />
-                            <option value="Error_No_SOAP_SessionId" />
-                            <option value="Button_Edit" />
-                            <option value="Search_for_Tomeks_Mechanics" />
-                            <option value="Error_Overlapping_From" />
-                            <option value="Table_Records_Per_Page" />
-                            <option value="Error_Overlapping_From_To" />
-                            <option value="Button_Hire" />
-                            <option value="Button_Deselect_All" />
-                            <option value="Error_WebService" />
-                            <option value="To_Import" />
-                            <option value="Button_Process" />
-                            <option value="Mechanic_Hire_Label" />
-                            <option value="Required_Input_Field_Error" />
-                            <option value="Status_Success" />
-                            <option value="Delete_Message" />
-                            <option value="Button_Cancel" />
-                            <option value="Send_Email" />
-                            <option value="Mechanic_Search_Page_Label" />
-                            <option value="Bad_File_Extension" />
-                            <option value="Add_New_Mechanic" />
-                            <option value="Search_For" />
-                            <option value="Send_Email_To" />
-                            <option value="Button_Delete" />
-                            <option value="Section_Details" />
-                            <option value="Copy_To_Clipboard" />
-                            <option value="Button_Import" />
-                            <option value="Sign_Down" />
-                            <option value="Error_Overlapping" />
-                            <option value="Section_History_Tracking" />
-                            <option value="Map_Unactive" />
-                            <option value="Action_Dissmiss" />
-                            <option value="Search_for_Tomeks_Workshops" />
-                            <option value="Contract_End_Date" />
-                            <option value="Button_Save_To_Json" />
-                            <option value="Button_Download_Template" />
-                            <option value="Search_Empty_Record_List" />
-                            <option value="Info" />
-                            <option value="Sign_Up" />
-                            <option value="Button_View" />
-                            <option value="Export_To_Pdf" />
-                            <option value="Actions_Label" />
-                            <option value="Status_Error" />
-                          </set>
-                        </option>
-                        <option name="name" value="CustomLabel" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="Mechanic__c-en_US" />
-                            <option value="Callout_Log__c-en_US" />
-                            <option value="Cs_Settings__c-en_US" />
-                            <option value="Trigger_Exception__c-en_US" />
-                            <option value="Workshop__c-en_US" />
-                            <option value="Contract__c-en_US" />
-                          </set>
-                        </option>
-                        <option name="name" value="CustomObjectTranslation" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="CustomLabels" />
-                          </set>
-                        </option>
-                        <option name="name" value="CustomLabels" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="standard__Sales" />
-                            <option value="standard__LightningService" />
-                            <option value="Best_Rent_Car" />
-                            <option value="standard__ServiceConsole" />
-                            <option value="standard__Community" />
-                            <option value="standard__AppLauncher" />
-                            <option value="standard__Chatter" />
-                            <option value="standard__LightningInstrumentation" />
-                            <option value="standard__Platform" />
-                            <option value="standard__LightningSales" />
-                            <option value="standard__Service" />
-                            <option value="standard__Content" />
-                            <option value="standard__Sites" />
-                            <option value="standard__Marketing" />
-                            <option value="standard__LightningBolt" />
-                            <option value="standard__Insights" />
-                            <option value="Car_Service" />
-                            <option value="standard__LightningSalesConsole" />
-                          </set>
-                        </option>
-                        <option name="name" value="CustomApplication" />
-                      </MetadataType>
-                      <MetadataType>
-                        <option name="members">
-                          <set>
-                            <option value="SalesforceToSalesforce" />
-                          </set>
-                        </option>
-                        <option name="name" value="PermissionSet" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -1474,24 +1527,24 @@
                       <MetadataType>
                         <option name="members">
                           <set>
-                            <option value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
                             <option value="unfiled$public/RejectionEmail" />
+                            <option value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
                             <option value="unfiled$public/SupportSelfServiceResetPassword" />
                             <option value="unfiled$public/DeactivationEmail" />
-                            <option value="unfiled$public/Birthday_Reminder" />
-                            <option value="unfiled$public/SupportSelfServiceNewLoginandPassword" />
                             <option value="unfiled$public/SupportCaseCreatedPhoneInquiries" />
+                            <option value="unfiled$public/SupportSelfServiceNewLoginandPassword" />
                             <option value="unfiled$public/UpdateConnEmail" />
+                            <option value="unfiled$public/Birthday_Reminder" />
                             <option value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
                             <option value="unfiled$public/SupportCaseAssignmentNotification" />
                             <option value="unfiled$public/SupportCaseResponse" />
                             <option value="unfiled$public/SalesNewCustomerEmail" />
                             <option value="unfiled$public/InvitationEmail" />
                             <option value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
-                            <option value="unfiled$public/SupportEscalatedCaseNotification" />
                             <option value="unfiled$public/SupportCaseCreatedWebInquiries" />
-                            <option value="unfiled$public/SupportEscalatedCaseReassignment" />
+                            <option value="unfiled$public/SupportEscalatedCaseNotification" />
                             <option value="unfiled$public/MarketingProductInquiryResponse" />
+                            <option value="unfiled$public/SupportEscalatedCaseReassignment" />
                             <option value="unfiled$public/AcceptanceEmail" />
                           </set>
                         </option>
@@ -1560,6 +1613,13 @@
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="BRCClearDivisionDetails" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
               <item name="BRCDivisionDetails" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
             </path>
             <path>
@@ -1609,6 +1669,13 @@
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="BRCSetMapMarkerEvent" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
               <item name="DivisionsTest" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
             </path>
             <path>
@@ -1616,6 +1683,12 @@
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="flexipages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
@@ -1681,10 +1754,10 @@
       <window_info anchor="bottom" id="Log Viewer" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.6929638" weight="0.3347779" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.30703625" side_tool="true" weight="0.68255687" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38219616" side_tool="true" visible="true" weight="0.25135428" />
       <window_info anchor="bottom" id="Anonymous Apex" order="11" sideWeight="0.586887" weight="0.3445287" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49733475" weight="0.25135428" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6178038" visible="true" weight="0.25135428" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1804,16 +1877,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/BRCQueryBuilder.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="564">
           <caret line="164" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="e#557#565#0" expanded="true" />
@@ -1825,82 +1891,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCDivisionController.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="75" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="75" />
+        <state relative-caret-position="646">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#form#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
+            <element signature="e#1181#1191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCDivisionController.cls">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state>
+          <caret column="64" selection-start-column="44" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp">
+    <entry file="file://$PROJECT_DIR$/src/flexipages/Divisions.flexipage">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="493">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCClearDivisionDetails/BRCClearDivisionDetails.evt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="595">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="47" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        <state relative-caret-position="17">
+          <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="75" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="87" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#lightning:card#0;n#aura:component#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

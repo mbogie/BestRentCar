@@ -1,5 +1,7 @@
 <aura:component description="BRCDivisionsSearch" controller="BRCDivisionController" implements="forceCommunity:searchInterface,flexipage:availableForAllPageTypes">
     <aura:registerEvent name="getDivisions" type="c:BRCGetDivisionsListEvent"/>
+    <aura:registerEvent name="setMapMarker" type="c:BRCSetMapMarkerEvent"/>
+    <aura:registerEvent name="clearDetails" type="c:BRCClearDivisionDetails"/>
     <aura:attribute name="searchedDivision"
                     type="Account"
                     default="{'sobjectType':'Account',
@@ -8,7 +10,7 @@
                               'ShippingCity':'',
                               }"/>
     <lightning:card title="Divisions Search" class="slds-container--small">
-            <form class="slds-form-element" style="padding:20px">
+            <form class="slds-form-element" style="padding:0px 20px 0px 20px">
                 <lightning:input aura:id="searchForm"
                                  label="Country"
                                  name="divisionShippingCountry"
