@@ -3,7 +3,7 @@
     <aura:attribute name="mapMarkers" type="Object" />
     <aura:attribute name="center" type="Object" />
     <aura:attribute name="zoomLevel" type="Integer" default="7" />
-    <lightning:card title="Divisions Map">
+    <lightning:card title="{!$Label.c.BRC_Division_Map_Label}">
         <div style="padding:0px 20px 10px 20px">
     <aura:if isTrue="{!v.mapMarkers.length > 0}" >
             <lightning:map
@@ -13,7 +13,7 @@
                 class="slds-map_container">
             </lightning:map>
         <aura:set attribute="else">
-                    <h3 class="slds-text-small slds-text-color_error">Search for Divisions to see map.</h3>
+            <h3 class="slds-text-small slds-text-color_error">{!$Label.c.BRC_Division_Close_Map_Message}</h3>
         </aura:set>
     </aura:if>
         </div>

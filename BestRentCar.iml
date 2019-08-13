@@ -415,6 +415,10 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="BRCClearDivisionDetails" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCDivisionDetails" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -452,10 +456,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="testApp" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BRCClearDivisionDetails" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -886,6 +886,9 @@
                             <option name="name" value="Agreement" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Empty_Division_List_Message" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Bad_File_Extension" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1207,11 +1210,11 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="CustomLabels" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="CustomLabels" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="CustomMetadata" />

@@ -53,7 +53,6 @@
                 detailEvent.setParams({
                      "division" : {}
                 });
-                detailEvent.fire();
-
+        detailEvent.fire();
     }
 })

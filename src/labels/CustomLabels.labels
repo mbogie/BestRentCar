@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Action_Dissmiss</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Action Dismiss</shortDescription>
+        <value>Dismiss</value>
+    </labels>
+    <labels>
+        <fullName>Actions_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Actions Label</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>Add_New_Mechanic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add New Mechanic</shortDescription>
+        <value>Add New Mechanic</value>
+    </labels>
+    <labels>
+        <fullName>Add_New_Workshop</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add New Workshop</shortDescription>
+        <value>Add New Workshop</value>
+    </labels>
+    <labels>
+        <fullName>Agreement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Agreement</shortDescription>
+        <value>Agreement</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Close_Detail_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Close Detail Message</shortDescription>
+        <value>Click on Division Name on Division List to see details.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Close_Map_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Close Map Message</shortDescription>
+        <value>Search for Divisions to see map.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Details_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Details Label</shortDescription>
+        <value>Division Details</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Empty_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Empty List Message</shortDescription>
+        <value>No Divisions to show.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_List_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division List Label</shortDescription>
+        <value>Division Result List</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Map_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Map Label</shortDescription>
+        <value>Divisions Map</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Search_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Search Label</shortDescription>
+        <value>Divisions Search</value>
+    </labels>
+    <labels>
+        <fullName>Bad_File_Extension</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bad File Extension</shortDescription>
+        <value>Bad file extension. Only {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Body</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Body</shortDescription>
+        <value>The batch Apex job completed on {0},
+Number Of Processed Logs : {1}
+Number Of Success : {2},
+Number Of Fails : {3}.</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Group</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Group</shortDescription>
+        <value>System_Administrators</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Subject</shortDescription>
+        <value>Repeats Callouts</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>Button_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Button_Clear</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Button_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Button_Deselect_All</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Deselect All</shortDescription>
+        <value>Deselect All</value>
+    </labels>
+    <labels>
+        <fullName>Button_Download_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Download Template</shortDescription>
+        <value>Download Template .csv</value>
+    </labels>
+    <labels>
+        <fullName>Button_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Button_Hire</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Hire</shortDescription>
+        <value>Hire</value>
+    </labels>
+    <labels>
+        <fullName>Button_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Import</shortDescription>
+        <value>Import</value>
+    </labels>
+    <labels>
+        <fullName>Button_Process</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Process</shortDescription>
+        <value>Process</value>
+    </labels>
+    <labels>
+        <fullName>Button_Remove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Button_Reverse_Selection</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Reverse Selection</shortDescription>
+        <value>Reverse Selection</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_To_Json</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save To Json</shortDescription>
+        <value>Export to .json</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_To_Pdf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save To Pdf</shortDescription>
+        <value>Save To .pdf</value>
+    </labels>
+    <labels>
+        <fullName>Button_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Button_Select_All</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Select All</shortDescription>
+        <value>Select All</value>
+    </labels>
+    <labels>
+        <fullName>Button_Send</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Send</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>Button_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Template</shortDescription>
+        <value>Template</value>
+    </labels>
+    <labels>
+        <fullName>Button_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>Contract_End_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract End Date</shortDescription>
+        <value>End Date</value>
+    </labels>
+    <labels>
+        <fullName>Contract_Start_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract Start Date</shortDescription>
+        <value>Start Date</value>
+    </labels>
+    <labels>
+        <fullName>Copy_To_Clipboard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copy To Clipboard</shortDescription>
+        <value>Copy To Clipboard</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirm_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirm Message</shortDescription>
+        <value>Confirm?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirm_Popup</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirm Popup</shortDescription>
+        <value>Delete?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Message</shortDescription>
+        <value>Are you sure you want to remove profile picture?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Picture</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Mechanic_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Mechanic Header</shortDescription>
+        <value>Edit {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Picture</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Workshop_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Workshop Header</shortDescription>
+        <value>Edit {0}</value>
+    </labels>
+    <labels>
+        <fullName>Email_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Message</shortDescription>
+        <value>Message:</value>
+    </labels>
+    <labels>
+        <fullName>Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Subject</shortDescription>
+        <value>Subject:</value>
+    </labels>
+    <labels>
+        <fullName>Employees_To_Hire</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Employees To Hire</shortDescription>
+        <value>Employees To Hire</value>
+    </labels>
+    <labels>
+        <fullName>Error_Delete_With_Contracts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Delete With Contracts</shortDescription>
+        <value>Your attempt to delete {0} could not be completed because it is associated with contracts.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Field_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Field Required</shortDescription>
+        <value>This field is required</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_Object_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No Object Type</shortDescription>
+        <value>No Trigger Handler registered for Object Type:</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_On_Country_List</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No On Country List</shortDescription>
+        <value>Country not allowed. Only: {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_SOAP_SessionId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No SOAP SessionId</shortDescription>
+        <value>No SessionId</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping</shortDescription>
+        <value>Overlapping Dates:</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping_From</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping From</shortDescription>
+        <value>{0}: {1} - without notice.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping_From_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping From To</shortDescription>
+        <value>{0}: {1} - {2}.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Phone_Pattern</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Phone Pattern</shortDescription>
+        <value>Invalid phone. Only numbers space and &apos;-&apos;. Starts with or without &apos;+&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Error_To_Big_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error To Big File</shortDescription>
+        <value>The file is to big. Max size 1MB.</value>
+    </labels>
+    <labels>
+        <fullName>Error_WebService</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error WebService</shortDescription>
+        <value>Fail: Error In WebService</value>
+    </labels>
+    <labels>
+        <fullName>Error_Wrong_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Wrong Type</shortDescription>
+        <value>Wrong type. Only .jpg and .png.</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_Json</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To Json</shortDescription>
+        <value>Export to .json</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_Pdf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To Pdf</shortDescription>
+        <value>Export to .pdf</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_XML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To XML</shortDescription>
+        <value>Export to .xml</value>
+    </labels>
+    <labels>
+        <fullName>Export_to_CSV</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export to CSV</shortDescription>
+        <value>Export to .csv</value>
+    </labels>
+    <labels>
+        <fullName>Group_PL_Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group PL Users</shortDescription>
+        <value>PL_Users</value>
+    </labels>
+    <labels>
+        <fullName>Group_Usa_Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Usa Users</shortDescription>
+        <value>USA_Users</value>
+    </labels>
+    <labels>
+        <fullName>Hire_Workshop_Popup_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hire Workshop Popup Label</shortDescription>
+        <value>Hire Employees To {0}</value>
+    </labels>
+    <labels>
+        <fullName>Import_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import File</shortDescription>
+        <value>Choose .csv file:</value>
+    </labels>
+    <labels>
+        <fullName>Import_Mechanic_Table</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Mechanic Table</shortDescription>
+        <value>Mechanics to import:</value>
+    </labels>
+    <labels>
+        <fullName>Import_Status_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Status Failed</shortDescription>
+        <value>Failed</value>
+    </labels>
+    <labels>
+        <fullName>Import_Status_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Status Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>Info</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Info</shortDescription>
+        <value>Info</value>
+    </labels>
+    <labels>
+        <fullName>Input_No_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Input No File</shortDescription>
+        <value>No file. Choose one.</value>
+    </labels>
+    <labels>
+        <fullName>Map_Unactive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Map Unactive</shortDescription>
+        <value>Map not active without Address and City.</value>
+    </labels>
+    <labels>
+        <fullName>Mechanic_Hire_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mechanic Hire Label</shortDescription>
+        <value>Hire {0} to...</value>
+    </labels>
+    <labels>
+        <fullName>Mechanic_Search_Page_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mechanic Search Page Label</shortDescription>
+        <value>Search Mechanic</value>
+    </labels>
+    <labels>
+        <fullName>Phone_Pattern</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Phone Pattern</shortDescription>
+        <value>[+]{0,1}+[1-9-\ ]{0,15}</value>
+    </labels>
+    <labels>
+        <fullName>Picture_Default</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Picture Default</shortDescription>
+        <value>Default Picture</value>
+    </labels>
+    <labels>
+        <fullName>Picture_Profile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Picture Profile</shortDescription>
+        <value>Profile Picture</value>
+    </labels>
+    <labels>
+        <fullName>Required_Input_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Input Field Error</shortDescription>
+        <value>{0} is required.</value>
+    </labels>
+    <labels>
+        <fullName>Search_Empty_Record_List</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Empty Result List</shortDescription>
+        <value>Result list is empty.</value>
+    </labels>
+    <labels>
+        <fullName>Search_For</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search For</shortDescription>
+        <value>Search For:</value>
+    </labels>
+    <labels>
+        <fullName>Search_Results_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Results Label</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>Search_for_Tomeks_Mechanics</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search for Tomeks Mechanics</shortDescription>
+        <value>Search for Tomek&apos;s Mechanics</value>
+    </labels>
+    <labels>
+        <fullName>Search_for_Tomeks_Workshops</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search for Tomeks Workshops</shortDescription>
+        <value>Search for Tomek&apos;s Workshops</value>
+    </labels>
+    <labels>
+        <fullName>Section_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Address</shortDescription>
+        <value>Address</value>
+    </labels>
+    <labels>
+        <fullName>Section_Agreements</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Agreements</shortDescription>
+        <value>Agreements</value>
+    </labels>
+    <labels>
+        <fullName>Section_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Section_History_Tracking</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section History Tracking</shortDescription>
+        <value>History Tracking</value>
+    </labels>
+    <labels>
+        <fullName>Select</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>Select_Option_None</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Option None</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>Send_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Email</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>Send_Email_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Email To</shortDescription>
+        <value>To {0}:</value>
+    </labels>
+    <labels>
+        <fullName>Sign_Down</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sign Down</shortDescription>
+        <value>▼</value>
+    </labels>
+    <labels>
+        <fullName>Sign_Up</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sign Up</shortDescription>
+        <value>▲</value>
+    </labels>
+    <labels>
+        <fullName>Status_Abandoned</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Abandoned</shortDescription>
+        <value>Abandoned</value>
+    </labels>
+    <labels>
+        <fullName>Status_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Status_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>Table_All_Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table All Records</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>Table_Page_Of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Page Of</shortDescription>
+        <value>Page: {0} of {1}</value>
+    </labels>
+    <labels>
+        <fullName>Table_Pagination_Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Pagination Next</shortDescription>
+        <value>Next »</value>
+    </labels>
+    <labels>
+        <fullName>Table_Pagination_Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Pagination Previous</shortDescription>
+        <value>« Previous</value>
+    </labels>
+    <labels>
+        <fullName>Table_Records_Per_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Records Per Page</shortDescription>
+        <value>Records per page:</value>
+    </labels>
+    <labels>
+        <fullName>To_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To Import</shortDescription>
+        <value>To Import</value>
+    </labels>
+    <labels>
+        <fullName>Tomek_Workshop_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Name</shortDescription>
+        <value>Workshop Name</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Oath2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Oath2</shortDescription>
+        <value>https://login.salesforce.com/services/oauth2/token?grant_type=password&amp;client_id={0}&amp;client_secret={1}&amp;username={2}&amp;password={3}</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_City</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Country</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Phone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Website</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Website</shortDescription>
+        <value>Website</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Zip_Code</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Zip Code</shortDescription>
+        <value>Zip Code</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Upload Picture</shortDescription>
+        <value>Upload</value>
+    </labels>
+    <labels>
+        <fullName>Workshop_Hire_Block_Button_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Workshop Hire Block Button Message</shortDescription>
+        <value>Must save first.</value>
+    </labels>
+    <labels>
+        <fullName>Workshop_Hire_Template_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Workshop Hire Template Message</shortDescription>
+        <value>Empty Date can&apos;t be copied.</value>
+    </labels>
+</CustomLabels>

@@ -1,7 +1,7 @@
 <aura:component description="BRCDivisionsList" controller="BRCDivisionController" implements="flexipage:availableForAllPageTypes" access="global">
     <aura:handler event="c:BRCGetDivisionsListEvent" action="{!c.handleBRCGetDivisionsListEvent}"/>
     <aura:attribute name="divisions" type="Account[]"/>
-        <lightning:card title="Divisions List" class="slds-container--small">
+        <lightning:card title="{!$Label.c.BRC_Division_List_Label}" class="slds-container--small">
         <div class="slds-p-left_medium slds-p-right_medium">
             <ul class="slds-list_vertical slds-has-dividers_top-space">
                 <aura:if isTrue="{!not(empty(v.divisions))}">
@@ -12,7 +12,7 @@
                     </aura:iteration>
                     <aura:set attribute="else">
                         <li class="slds-list__item">
-                            <h3 class="slds-text-small slds-text-color_error">No Divisions to show.</h3>
+                            <h3 class="slds-text-small slds-text-color_error">{!$Label.c.BRC_Division_Empty_List_Message}</h3>
                         </li>
                     </aura:set>
                 </aura:if>
