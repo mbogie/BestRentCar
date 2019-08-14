@@ -6,7 +6,7 @@
     <lightning:card title="{!$Label.c.BRC_Division_Details_Label}">
         <div style="padding:0px 20px 0px 20px">
         <aura:if isTrue="{!v.isSelected}">
-            <lightning:recordForm aura:id="brokerForm"
+            <lightning:recordForm aura:id="editForm"
                               recordId="{!v.division.Id}"
                               objectApiName="Account"
                               columns="3"

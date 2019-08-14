@@ -11,61 +11,24 @@ public with sharing class BRCDivisionController {
                 addResultField('BillingState').
                 addResultField('BillingPostalCode').
                 addResultField('BillingStreet').
-                addResultField('Website').
-                addResultField('Fax').
                 addTableName('Account').
                 addSearchFieldStartsWithValue('BillingCountry', country).
                 addSearchFieldStartsWithValue('BillingState', state).
                 addSearchFieldStartsWithValue('BillingCity', city).
                 build();
-        System.debug('aaa -- > ' + queryBuilder.getQueryString());
         return Database.query(queryBuilder.getQueryString());
     }
 
     @AuraEnabled
-    public static List<Location> getAccount() {
-        List< Account> accs =  [Select Id, Name,Type, Industry, BillingAddress,BillingStreet,
-                BillingCity, BillingCountry, BillingPostalCode,
-                BillingState,Phone from Account] ;
-
-        List<Location> loc = new List<Location>();
-        for(Account acc :accs){
-            GeoLocation geoInfo = new GeoLocation();
-            geoInfo.Street = acc.BillingStreet;
-            geoInfo.PostalCode = acc.BillingPostalCode;
-            geoInfo.City = acc.BillingCity;
-            geoInfo.State = acc.BillingState;
-            geoInfo.Country = acc.BillingCountry;
-            Location locDetail = new Location();
-            locDetail.icon = 'action:map';
-            locDetail.title = acc.Name;
-            locDetail.description = acc.Name;
-            locDetail.location = geoInfo;
-
-            loc.add(locDetail);
+    public static Map<String,String> getAccountFieldsLabels(String obj) {
+        Map<String, String> accountFieldsLabels = new Map<String, String>();
+        String type = obj;
+        Map<String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
+        Schema.SObjectType leadSchema = schemaMap.get(type);
+        Map<String, Schema.SObjectField> fieldMap = leadSchema.getDescribe().fields.getMap();
+        for (String fieldName: fieldMap.keySet()) {
+            accountFieldsLabels.put(fieldName,fieldMap.get(fieldName).getDescribe().getLabel());
         }
-        return loc ;
-    }
-    public class Location{
-        @AuraEnabled
-        public String icon{get;set;}
-        @AuraEnabled
-        public String title{get;set;}
-        @AuraEnabled
-        public String description{get;set;}
-        @AuraEnabled
-        public GeoLocation location{get;set;}
-    }
-    public class GeoLocation{
-        @AuraEnabled
-        public String Street{get;set;}
-        @AuraEnabled
-        public String PostalCode{get;set;}
-        @AuraEnabled
-        public String City{get;set;}
-        @AuraEnabled
-        public String State{get;set;}
-        @AuraEnabled
-        public String Country{get;set;}
+        return accountFieldsLabels;
     }
 }

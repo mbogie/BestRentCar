@@ -68,7 +68,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Division List Label</shortDescription>
-        <value>Division Result List</value>
+        <value>Divisions Result List</value>
     </labels>
     <labels>
         <fullName>BRC_Division_Map_Label</fullName>
@@ -76,6 +76,13 @@
         <protected>true</protected>
         <shortDescription>BRC Division Map Label</shortDescription>
         <value>Divisions Map</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Search_Field_Labels</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Search Field Labels</shortDescription>
+        <value>Country, State, City</value>
     </labels>
     <labels>
         <fullName>BRC_Division_Search_Label</fullName>

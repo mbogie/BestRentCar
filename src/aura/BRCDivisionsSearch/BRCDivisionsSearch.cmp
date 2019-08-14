@@ -2,21 +2,23 @@
     <aura:registerEvent name="getDivisions" type="c:BRCGetDivisionsListEvent"/>
     <aura:registerEvent name="setMapMarker" type="c:BRCSetMapMarkerEvent"/>
     <aura:registerEvent name="clearDetails" type="c:BRCClearDivisionDetails"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:attribute name="searchedDivision" type="Account" default="{}"/>
+    <aura:attribute name="searchFieldLabels" type="Map" default="{'billingcountry': 'Country', 'billingstate': 'State', 'billingcity': 'City'}"/>
     <lightning:card title="{!$Label.c.BRC_Division_Search_Label}" class="slds-container--small">
             <form class="slds-form-element" style="padding:0px 20px 0px 20px">
                 <lightning:input aura:id="searchForm"
-                                 label="Country"
+                                 label="{!v.searchFieldLabels.billingcountry}"
                                  name="divisionShippingCountry"
-                                 value="{!v.searchedDivision.ShippingCountry}"/>
+                                 value="{!v.searchedDivision.BillingCountry}"/>
                 <lightning:input aura:id="searchForm"
-                                 label="State"
+                                 label="{!v.searchFieldLabels.billingstate}"
                                  name="divisionShippingState"
-                                 value="{!v.searchedDivision.ShippingState}"/>
+                                 value="{!v.searchedDivision.BillingState}"/>
                 <lightning:input aura:id="searchForm"
-                                 label="City"
+                                 label="{!v.searchFieldLabels.billingcity}"
                                  name="divisionShippingCity"
-                                 value="{!v.searchedDivision.ShippingCity}"/>
+                                 value="{!v.searchedDivision.BillingCity}"/>
                 <div align="center" draggable="false">
                 <lightning:button label="{!$Label.c.Button_Search}"
                                   class="slds-m-top--medium"
