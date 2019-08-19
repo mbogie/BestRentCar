@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="BRCPassDivisionDetail">
+    <aura:attribute name="division" type="Account"/>
+</aura:event>

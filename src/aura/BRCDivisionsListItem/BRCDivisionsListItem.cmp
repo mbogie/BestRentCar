@@ -1,7 +1,10 @@
 <aura:component description="BRCDivisionsListItem">
-    <aura:registerEvent name="getDivisionDetail" type="c:BRCGetDivisionDetailEvent"/>
-    <aura:registerEvent name="setMapMarker" type="c:BRCSetMapMarkerEvent"/>
+
     <aura:attribute name="division" type="Account"/>
+
+    <aura:registerEvent name="getDivisionDetail" type="c:BRCPassDivisionDetail"/>
+    <aura:registerEvent name="setMapMarker" type="c:BRCPassMapMarkers"/>
+
     <lightning:recordViewForm aura:id="viewForm" recordId="{!v.division.Id}" objectApiName="Account">
         <div class="slds-media">
             <div class="slds-media__body">

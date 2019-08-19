@@ -1,3 +1,0 @@
-<aura:event type="APPLICATION" description="BRCGetDivisionDetailEvent">
-    <aura:attribute name="division" type="Account"/>
-</aura:event>

@@ -1,3 +1,3 @@
-<aura:event type="APPLICATION" description="BRCSetMapMarkerEvent">
+<aura:event type="APPLICATION" description="BRCPassMapMarkers">
     <aura:attribute name="markers" type="Object[]"/>
 </aura:event>

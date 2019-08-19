@@ -1,8 +1,11 @@
 <aura:component description="BRCDivisionDetails" implements="flexipage:availableForAllPageTypes" access="global">
-    <aura:handler event="c:BRCGetDivisionDetailEvent" action="{!c.BRCGetDivisionDetailEvent}"/>
-    <aura:handler event="c:BRCClearDivisionDetails" action="{!c.BRCClearDivisionDetails}"/>
+
     <aura:attribute name="division" type="Account"/>
     <aura:attribute name="isSelected" type="Boolean" default="false"/>
+
+    <aura:handler event="c:BRCPassDivisionDetail" action="{!c.BRCPassDivisionDetail}"/>
+    <aura:handler event="c:BRCClearDivisionDetails" action="{!c.BRCClearDivisionDetails}"/>
+
     <lightning:card title="{!$Label.c.BRC_Division_Details_Label}">
         <div style="padding:0px 20px 0px 20px">
         <aura:if isTrue="{!v.isSelected}">

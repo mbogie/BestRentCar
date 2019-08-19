@@ -1,8 +1,11 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" description="BRCDivisionsMap" controller="BRCDivisionController">
-    <aura:handler event="c:BRCSetMapMarkerEvent" action="{!c.BRCSetMapMarkerEvent}"/>
+
     <aura:attribute name="mapMarkers" type="Object" />
     <aura:attribute name="center" type="Object" />
     <aura:attribute name="zoomLevel" type="Integer" default="7" />
+
+    <aura:handler event="c:BRCPassMapMarkers" action="{!c.BRCPassMapMarkers}"/>
+
     <lightning:card title="{!$Label.c.BRC_Division_Map_Label}">
         <div style="padding:0px 20px 10px 20px">
     <aura:if isTrue="{!v.mapMarkers.length > 0}" >
