@@ -415,10 +415,6 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="BRCClearDivisionDetails" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="BRCDivisionDetails" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -446,15 +442,19 @@
                             <option name="name" value="testApp" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCPassDivisionDetail" />
+                            <option name="name" value="BRCPassMapMarkersEvent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCPassDivisionsList" />
+                            <option name="name" value="BRCPassDivisionsListEvent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCPassMapMarkers" />
+                            <option name="name" value="BRCPassDivisionDetailEvent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCClearDivisionDetailsEvent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>

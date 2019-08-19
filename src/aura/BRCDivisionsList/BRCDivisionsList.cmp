@@ -2,7 +2,7 @@
 
     <aura:attribute name="divisions" type="Account[]"/>
 
-    <aura:handler event="c:BRCPassDivisionsList" action="{!c.BRCPassDivisionsList}"/>
+    <aura:handler event="c:BRCPassDivisionsListEvent" action="{!c.BRCPassDivisionsListEvent}"/>
 
     <lightning:card title="{!$Label.c.BRC_Division_List_Label}" class="slds-container--small">
         <div class="slds-p-left_medium slds-p-right_medium">

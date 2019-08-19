@@ -1,5 +1,5 @@
 ({
-    BRCPassMapMarkers: function(component, event, helper) {
+    BRCPassMapMarkersEvent: function(component, event, helper) {
         component.set('v.mapMarkers',[]);
         let markers = event.getParam("markers");
         component.set('v.mapMarkers',markers);

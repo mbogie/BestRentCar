@@ -3,8 +3,8 @@
     <aura:attribute name="division" type="Account"/>
     <aura:attribute name="isSelected" type="Boolean" default="false"/>
 
-    <aura:handler event="c:BRCPassDivisionDetail" action="{!c.BRCPassDivisionDetail}"/>
-    <aura:handler event="c:BRCClearDivisionDetails" action="{!c.BRCClearDivisionDetails}"/>
+    <aura:handler event="c:BRCPassDivisionDetailEvent" action="{!c.BRCPassDivisionDetailEvent}"/>
+    <aura:handler event="c:BRCClearDivisionDetailsEvent" action="{!c.BRCClearDivisionDetailsEvent}"/>
 
     <lightning:card title="{!$Label.c.BRC_Division_Details_Label}">
         <div style="padding:0px 20px 0px 20px">

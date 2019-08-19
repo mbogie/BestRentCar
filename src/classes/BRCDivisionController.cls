@@ -4,7 +4,7 @@ public with sharing class BRCDivisionController {
     public static List <Account> getAccounts(String country, String city, String state) {
         List<Account> resultList = new List<Account>();
         try {
-          //  Integer inte = 1/0;
+          //  Integer num = 1/0;
             BRCQueryBuilder queryBuilder = new BRCQueryBuilder();
             queryBuilder.addResultField('Id').
                     addResultField('Name').

@@ -3,9 +3,10 @@
     <aura:attribute name="searchedDivision" type="Account" default="{}"/>
     <aura:attribute name="searchFieldLabels" type="Map" default="{'billingcountry': 'Country', 'billingstate': 'State', 'billingcity': 'City'}"/>
 
-    <aura:registerEvent name="getDivisions" type="c:BRCPassDivisionsList"/>
-    <aura:registerEvent name="setMapMarker" type="c:BRCPassMapMarkers"/>
-    <aura:registerEvent name="clearDetails" type="c:BRCClearDivisionDetails"/>
+    <aura:registerEvent name="getDivisions" type="c:BRCPassDivisionsListEvent"/>
+    <aura:registerEvent name="setMapMarker" type="c:BRCPassMapMarkersEvent"/>
+    <aura:registerEvent name="clearDetails" type="c:BRCClearDivisionDetailsEvent"/>
+
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
     <lightning:card title="{!$Label.c.BRC_Division_Search_Label}" class="slds-container--small">

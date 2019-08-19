@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="BRCPassMapMarkersEvent">
+    <aura:attribute name="markers" type="Object[]"/>
+</aura:event>

@@ -40,13 +40,13 @@
                     return marker;
                });
                helper.handleSuccess(divisions.length);
-               let mapEvent = $A.get("e.c:BRCPassMapMarkers");
+               let mapEvent = $A.get("e.c:BRCPassMapMarkersEvent");
                mapEvent.setParams({
                    "markers" : markers
                    });
                mapEvent.fire();
                console.log(markers);
-               let listEvent = $A.get("e.c:BRCPassDivisionsList");
+               let listEvent = $A.get("e.c:BRCPassDivisionsListEvent");
                listEvent.setParams({
                            "divisions" : divisions
                            });
@@ -61,17 +61,17 @@
 
     clearDivision : function(component, event, helper) {
        component.set('v.searchedDivision', {});
-       let listEvent = $A.get("e.c:BRCPassDivisionsList");
+       let listEvent = $A.get("e.c:BRCPassDivisionsListEvent");
        listEvent.setParams({
             "divisions" : []
              });
         listEvent.fire();
-        let mapEvent = $A.get("e.c:BRCPassMapMarkers");
+        let mapEvent = $A.get("e.c:BRCPassMapMarkersEvent");
         mapEvent.setParams({
              "markers" : []
         });
         mapEvent.fire();
-        let detailEvent = $A.get("e.c:BRCClearDivisionDetails");
+        let detailEvent = $A.get("e.c:BRCClearDivisionDetailsEvent");
                 detailEvent.setParams({
                      "division" : {}
                 });

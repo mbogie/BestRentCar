@@ -2,12 +2,12 @@
     selectRecord : function(component, event, helper) {
            let division = component.get("v.division");
            console.log(division);
-           let detailEvent = $A.get("e.c:BRCPassDivisionDetail");
+           let detailEvent = $A.get("e.c:BRCPassDivisionDetailEvent");
            detailEvent.setParams({
                 "division" : division
                 });
            detailEvent.fire();
-           let mapEvent = $A.get("e.c:BRCPassMapMarkers");
+           let mapEvent = $A.get("e.c:BRCPassMapMarkersEvent");
                 mapEvent.setParams({
                      "markers" : [
                           {

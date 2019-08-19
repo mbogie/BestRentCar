@@ -1,3 +1,0 @@
-<aura:event type="APPLICATION" description="BRCPassDivisionsList">
-    <aura:attribute name="divisions" type="Account[]"/>
-</aura:event>
