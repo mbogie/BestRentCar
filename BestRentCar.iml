@@ -435,10 +435,6 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="DivisionsTest" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="testApp" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -455,6 +451,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCClearDivisionDetailsEvent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCCustomToast" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>

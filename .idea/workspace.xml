@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToast.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToast.cmp-meta.xml" afterDir="false" />
     </list>
     <list id="0fcd7a4a-a4eb-484a-972b-9fc84d9b8112" name="renaeEvents" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,10 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -30,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -39,8 +46,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToast.cmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-column="45" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -52,12 +77,12 @@
       <list>
         <option value="Apex Class" />
         <option value="Lightning Application" />
-        <option value="Lightning Component" />
-        <option value="Lightning Controller" />
         <option value="Lightning Documentation" />
-        <option value="Lightning Helper" />
         <option value="Lightning Application Event" />
+        <option value="Lightning Component" />
         <option value="Apex Metadata" />
+        <option value="Lightning Controller" />
+        <option value="Lightning Helper" />
       </list>
     </option>
   </component>
@@ -70,6 +95,7 @@
       <find>BRCPassDivisionsList</find>
       <find>BRCPassDivisionDetail</find>
       <find>BRCClearDivisionDetails</find>
+      <find>var</find>
     </findStrings>
     <replaceStrings>
       <replace>BRCQueryBuider</replace>
@@ -80,6 +106,7 @@
       <replace>BRCPassDivisionsListEvent</replace>
       <replace>BRCPassDivisionDetailEvent</replace>
       <replace>BRCClearDivisionDetailsEvent</replace>
+      <replace>let</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,14 +126,12 @@
         <option value="$PROJECT_DIR$/src/aura/BRCSetMapMarkerEvent/BRCSetMapMarkerEvent.evt" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.auradoc" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsHelper.js" />
-        <option value="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetails.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionDetails/BRCDivisionDetailsController.js" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsListController.js" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItemController.js" />
-        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCPassMapMarkers/BRCPassMapMarkers.evt" />
         <option value="$PROJECT_DIR$/src/aura/BRCPassMapMarkersEvent/BRCPassMapMarkersEvent.evt" />
         <option value="$PROJECT_DIR$/src/aura/BRCPassDivisionsList/BRCPassDivisionsList.evt" />
@@ -118,7 +143,13 @@
         <option value="$PROJECT_DIR$/src/classes/BRCDivisionController.cls" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMap.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js" />
+        <option value="$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app" />
+        <option value="$PROJECT_DIR$/src/aura/BRCErrorHandler/BRCErrorHandler.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCErrorHandler/BRCErrorHandlerController.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchHelper.js" />
+        <option value="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToast.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js" />
       </list>
     </option>
@@ -129,7 +160,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1566218390317" />
+              <option name="moduleContentsLastModified" value="1566298060602" />
               <option name="serverMetadataLastPopulated" value="1565731988851" />
             </ModuleWorkspaceSettings>
           </value>
@@ -160,15 +191,15 @@
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
                       <entry key="AURA/BRCCLEARDIVISIONDETAILSEVENT" value="1566218478000" />
+                      <entry key="AURA/BRCCUSTOMTOAST" value="1566301277355" />
                       <entry key="AURA/BRCDIVISIONDETAILS" value="1566218478000" />
                       <entry key="AURA/BRCDIVISIONSLIST" value="1566218320000" />
                       <entry key="AURA/BRCDIVISIONSLISTITEM" value="1566218379000" />
                       <entry key="AURA/BRCDIVISIONSMAP" value="1566283756000" />
-                      <entry key="AURA/BRCDIVISIONSSEARCH" value="1566289249788" />
+                      <entry key="AURA/BRCDIVISIONSSEARCH" value="1566301320231" />
                       <entry key="AURA/BRCPASSDIVISIONDETAILEVENT" value="1566218379000" />
                       <entry key="AURA/BRCPASSDIVISIONSLISTEVENT" value="1566218320000" />
                       <entry key="AURA/BRCPASSMAPMARKERSEVENT" value="1566218250000" />
-                      <entry key="AURA/DIVISIONSTEST" value="1566218478000" />
                       <entry key="CLASSES/BRCDIVISIONCONTROLLER.CLS" value="1566282638000" />
                       <entry key="CLASSES/BRCQUERYBUILDER.CLS" value="1565678944979" />
                     </map>
@@ -1584,6 +1615,20 @@
             </path>
             <path>
               <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="BRCCustomToast" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="BRCDivisionsSearch" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -1628,7 +1673,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Log Viewer" order="7" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49733475" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.6929638" weight="0.3347779" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="11" sideWeight="0.586887" weight="0.48862407" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.61460555" weight="0.32936078" />
+      <window_info anchor="bottom" id="Problems" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -1649,39 +1727,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Anonymous Apex" order="11" sideWeight="0.586887" weight="0.48862407" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.61460555" visible="true" weight="0.20585048" />
-      <window_info anchor="bottom" id="Problems" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Log Viewer" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49733475" weight="0.32936078" />
-      <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.6929638" weight="0.3347779" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Anonymous Apex" order="11" sideWeight="0.586887" weight="0.48862407" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.61460555" weight="0.20585048" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.61460555" weight="0.32936078" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1829,13 +1875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsListItem/BRCDivisionsListItem.cmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1875,34 +1914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCDivisionController.cls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#201#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsMap/BRCDivisionsMapController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1913,17 +1928,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/DivisionsTest/DivisionsTest.app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCDivisionController.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#201#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsList/BRCDivisionsList.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCErrorHandler/BRCErrorHandlerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCErrorHandler/BRCErrorHandler.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToast.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-column="45" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearch.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCDivisionsSearch/BRCDivisionsSearchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -9,8 +9,7 @@
                     component.set("v.searchFieldLabels", response.getReturnValue());
                     console.log(response.getReturnValue());
                 } else {
-                    let errors = response.getError();
-                    helper.handleErrors(errors);
+                    helper.handleErrors(component, response.getError()[0]);
                 }
             });
             $A.enqueueAction(action);
@@ -39,7 +38,7 @@
                           }
                     return marker;
                });
-               helper.handleSuccess(divisions.length);
+               helper.handleSuccess(component, divisions.length);
                let mapEvent = $A.get("e.c:BRCPassMapMarkersEvent");
                mapEvent.setParams({
                    "markers" : markers
@@ -52,9 +51,8 @@
                            });
                        listEvent.fire();
         } else {
-             let errors = response.getError();
-             helper.handleErrors(errors);
-        }
+               helper.handleErrors(component, response.getError()[0]);
+       }
        });
        $A.enqueueAction(action);
     },
