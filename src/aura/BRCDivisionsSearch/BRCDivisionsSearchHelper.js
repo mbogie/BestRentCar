@@ -1,7 +1,6 @@
 ({
     handleErrors : function(errors) {
         let toastParams = {
-            title: "Error",
             message: "Unknown error",
             type: "error"
         };
@@ -15,12 +14,10 @@
 
     handleSuccess : function(resultSize) {
         let toastParams = {
-            title: "Information",
             message: $A.get("$Label.c.BRC_Division_Empty_List_Message"),
             type: "info"
         };
         if (resultSize > 0) {
-            toastParams.title = "Success";
             toastParams.type = "success";
             toastParams.message = "Found " + resultSize + " divisions.";
         }
