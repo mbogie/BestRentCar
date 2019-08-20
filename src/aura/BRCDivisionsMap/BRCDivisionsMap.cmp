@@ -1,24 +1,27 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" description="BRCDivisionsMap" controller="BRCDivisionController">
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global"
+                description="BRCDivisionsMap" controller="BRCDivisionController">
 
-    <aura:attribute name="mapMarkers" type="Object" />
-    <aura:attribute name="center" type="Object" />
-    <aura:attribute name="zoomLevel" type="Integer" default="7" />
+    <aura:attribute name="mapMarkers" type="Object"/>
+    <aura:attribute name="center" type="Object"/>
+    <aura:attribute name="zoomLevel" type="Integer" default="7"/>
+    <aura:attribute name="listView" type="String"/>
 
     <aura:handler event="c:BRCPassMapMarkersEvent" action="{!c.BRCPassMapMarkersEvent}"/>
 
     <lightning:card title="{!$Label.c.BRC_Division_Map_Label}">
         <div style="padding:0px 20px 10px 20px">
-    <aura:if isTrue="{!v.mapMarkers.length > 0}" >
-            <lightning:map
-                mapMarkers="{!v.mapMarkers}"
-                center="{! v.center }"
-                zoomLevel="{! v.zoomLevel }"
-                class="slds-map_container">
-            </lightning:map>
-        <aura:set attribute="else">
-            <h3 class="slds-text-small slds-text-color_error">{!$Label.c.BRC_Division_Close_Map_Message}</h3>
-        </aura:set>
-    </aura:if>
+            <aura:if isTrue="{!v.mapMarkers.length > 0}">
+                <lightning:map
+                        mapMarkers="{!v.mapMarkers}"
+                        center="{! v.center }"
+                        zoomLevel="{! v.zoomLevel }"
+                        listView="hidden"
+                        class="slds-map_container"
+                        showFooter="false"/>
+                <aura:set attribute="else">
+                    <h3 class="slds-text-small slds-text-color_error">{!$Label.c.BRC_Division_Close_Map_Message}</h3>
+                </aura:set>
+            </aura:if>
         </div>
     </lightning:card>
 </aura:component>
