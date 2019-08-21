@@ -1,0 +1,317 @@
+<apex:page id="BRCContact" standardController="Lead" showHeader="false" lightningStylesheets="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+        <title>Contact With Us</title>
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+          -moz-font-smoothing: antialiased;
+          -o-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        body {
+          font-family: "Roboto", Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 12px;
+          line-height: 30px;
+          color: #777;
+          background: #641E16;
+        }
+
+        .container {
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea,
+        #contact button[type="submit"] {
+          font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+        }
+
+        #contact {
+          background: #F9F9F9;
+          padding: 25px;
+          margin: 150px 0;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        #contact h3 {
+          display: block;
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+
+        #contact h4 {
+          margin: 5px 0 15px;
+          display: block;
+          font-size: 13px;
+          font-weight: 400;
+        }
+
+        fieldset {
+          border: medium none !important;
+          margin: 0 0 10px;
+          min-width: 100%;
+          padding: 0;
+          width: 100%;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea {
+          width: 100%;
+          border: 1px solid #ccc;
+          background: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+        }
+
+        #contact input[type="text"]:hover,
+        #contact input[type="email"]:hover,
+        #contact input[type="tel"]:hover,
+        #contact input[type="url"]:hover,
+        #contact textarea:hover {
+          -webkit-transition: border-color 0.3s ease-in-out;
+          -moz-transition: border-color 0.3s ease-in-out;
+          transition: border-color 0.3s ease-in-out;
+          border: 1px solid #aaa;
+        }
+
+        #contact textarea {
+          height: 100px;
+          max-width: 100%;
+          resize: none;
+        }
+
+        #contact button[type="submit"] {
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          background: #641E16;
+          color: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+          font-size: 15px;
+        }
+
+        #contact button[type="submit"]:hover {
+          background: #C0392B;
+          -webkit-transition: background 0.3s ease-in-out;
+          -moz-transition: background 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        #contact button[type="submit"]:active {
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .copyright {
+          text-align: center;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+          outline: 0;
+          border: 1px solid #aaa;
+        }
+
+        ::-webkit-input-placeholder {
+          color: #888;
+        }
+
+        :-moz-placeholder {
+          color: #888;
+        }
+
+        ::-moz-placeholder {
+          color: #888;
+        }
+
+        :-ms-input-placeholder {
+          color: #888;
+        }
+        </style>
+    </head>
+    <body>
+    <apex:outputPanel rendered="false">
+    <div class="container">
+        <form id="contact" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="alert('Thanks for contact us')">
+            <input type="hidden" name="oid" value="00D2p00000131rC"/>
+            <input type="hidden" name="retURL" value="http://carservice-developer-edition.eu26.force.com/contactbrc"/>
+            <input type="hidden" id="lead_source" name="lead_source" value="Web"/>
+            <h3>BRC Contact Form</h3>
+            <h4>Leave contact for custom quote</h4>
+            <fieldset>
+                <input id="first_name" name="first_name" placeholder="Your First Name (optional)" type="text" tabindex="1" />
+            </fieldset>
+            <fieldset>
+                <input id="last_name" maxlength="80" name="last_name" placeholder="Your Last Name" type="text" tabindex="2" required="true"/>
+            </fieldset>
+            <fieldset>
+                <input id="company" maxlength="40" name="company" placeholder="Your Company" type="text" tabindex="3" required="true"/>
+            </fieldset>
+            <fieldset>
+                <input id="phone" maxlength="40" name="phone" placeholder="Your Phone Number" type="text" tabindex="4" required="true"/>
+            </fieldset>
+            <fieldset>
+                <input id="email" maxlength="80" name="email" placeholder="Your Email" type="email" tabindex="5" required="true"/>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="true">
+
+
+<!--        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+        <html><head><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1566242277000" type="text/javascript"></script><script src="/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/resource/1566369482000/SurveyForce_jquery" type="text/javascript"></script><script src="/resource/1566369481000/SurveyForce/surveyforce.js" type="text/javascript"></script><script src="/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script><script src="/jslibrary/1563548460220/sfdc/main.js" type="text/javascript"></script><script src="/jslibrary/jslabels/1566243598000/en_US.js" type="text/javascript"></script><link class="user" href="/sCSS/46.0/sprites/1562794536000/Theme3/default/gc/zen-componentsCompatible.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1562794536000/Theme3/default/gc/elements.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1562794536000/Theme3/default/gc/common.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1563511304000/Theme3/gc/dStandard.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1566369489000/Theme3/00D2p00000131rC/0052p0000091imX/gc/dCustom0.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1562794536000/Theme3/default/gc/extended.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/46.0/sprites/1562794536000/Theme3/default/gc/setup.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1566369481000/SurveyForce/surveyforce.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1566369481000/SurveyForce/surveyforce_pagemessage_override.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1566369482000/SurveyForce_SLDS/assets/styles/salesforce-lightning-design-system-vf.min.css" rel="stylesheet" type="text/css" /><script>(function(UITheme) {
+    UITheme.getUITheme = function() {
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script></head><body>
+
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+
+        <script>
+        $(document).ready(function(){
+            //Convert any elements with "convertToLDS" style to SLDS styles
+            //Used in certain places where it's not easy to use SLDS for those elements like "apex:selectCheckboxes"
+            convertCheckBoxToLDS();
+        });
+    </script>
+
+        <style>#survey_container{margin: 10px}
+    </style>
+
+
+        <div class="surveyforce" id="survey_container">
+            <form id="j_id0:theForm" name="j_id0:theForm" method="post" action="https://bestrentcar-dev-ed--c.visualforce.com/apex/takesurvey?id=a092p00003HSmUHAA1" enctype="application/x-www-form-urlencoded">
+                <input type="hidden" name="j_id0:theForm" value="j_id0:theForm" />
+                <input type="hidden" id="lead" name="lead" value="00Q2p000014Z16WEAS"/>
+                <span id="j_id0:theForm:seeSurvey">
+                <div class="slds-box slds-theme--shade">
+                    <div class="slds-text-heading--large">Please answer questions. </div>
+                </div></span>
+
+
+                <script>
+                $(document).ready(function(){
+                    overridePageMessages();
+                });
+            </script><span id="j_id0:theForm:j_id16"></span><span id="j_id0:theForm:j_id42">
+    <style>
+        .surveyforce .uiMessage .slds-theme--success{
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #04844b;
+        }
+        .surveyforce .uiMessage .slds-theme--error{
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #ff0000;
+        }
+    </style></span><span id="j_id0:theForm:j_id48">
+                <div class="slds-form--stacked">
+                        <div class="slds-box slds-theme--default">
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">
+                                        1: Are you interesting with cooperating with us?(required)
+                                </label>
+                            </div><span id="j_id0:theForm:aQPreview:0:j_id63"><fieldset style="border: none;"><table role="presentation" class="convertToLDS">
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:0:j_id64" id="j_id0:theForm:aQPreview:0:j_id64:0" value="0" /><label for="j_id0:theForm:aQPreview:0:j_id64:0"> Yes
+</label></td>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:0:j_id64" id="j_id0:theForm:aQPreview:0:j_id64:1" value="1" /><label for="j_id0:theForm:aQPreview:0:j_id64:1"> No</label></td>
+	</tr>
+</table></fieldset></span>
+                        </div>
+                        <div class="slds-box slds-theme--default">
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">
+                                        2: Evaluate the our assistance:(required)
+                                </label>
+                            </div><span id="j_id0:theForm:aQPreview:1:j_id53"><fieldset style="border: none;"><table role="presentation" class="convertToLDS">
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:1:j_id54" id="j_id0:theForm:aQPreview:1:j_id54:0" value="0" /><label for="j_id0:theForm:aQPreview:1:j_id54:0"> Poor
+</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:1:j_id54" id="j_id0:theForm:aQPreview:1:j_id54:1" value="1" /><label for="j_id0:theForm:aQPreview:1:j_id54:1"> Sufficient
+</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:1:j_id54" id="j_id0:theForm:aQPreview:1:j_id54:2" value="2" /><label for="j_id0:theForm:aQPreview:1:j_id54:2"> Average
+</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:1:j_id54" id="j_id0:theForm:aQPreview:1:j_id54:3" value="3" /><label for="j_id0:theForm:aQPreview:1:j_id54:3"> High
+</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:theForm:aQPreview:1:j_id54" id="j_id0:theForm:aQPreview:1:j_id54:4" value="4" /><label for="j_id0:theForm:aQPreview:1:j_id54:4"> Very High</label></td>
+	</tr>
+</table></fieldset></span>
+                        </div>
+                        <div class="slds-box slds-theme--default">
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">
+                                        3: Have any insights?
+                                </label>
+                            </div><span id="j_id0:theForm:aQPreview:2:j_id59">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control"><textarea name="j_id0:theForm:aQPreview:2:j_id61" class="slds-textarea" cols="0" rows="5"></textarea>
+                                    </div>
+                                </div></span>
+                        </div>
+                </div></span><span id="j_id0:theForm:j_id68">
+                <div class="slds-box slds-theme--default"><span id="j_id0:theForm:j_id70">
+                            <span class="slds-text-body--regular">Answer as:</span><fieldset style="border: none;"><table role="presentation" class="convertToLDS">
+	<tr>
+<td>
+<input type="radio" checked="checked" name="j_id0:theForm:j_id72" id="j_id0:theForm:j_id72:0" value="Anonymous" onchange="A4J.AJAX.Submit('j_id0:theForm',event,{'similarityGroupingId':'j_id0:theForm:j_id74','parameters':{'j_id0:theForm:j_id74':'j_id0:theForm:j_id74'} } )" /><label for="j_id0:theForm:j_id72:0"> Anonymous</label></td>
+<td>
+<input type="radio" name="j_id0:theForm:j_id72" id="j_id0:theForm:j_id72:1" value="User" onchange="A4J.AJAX.Submit('j_id0:theForm',event,{'similarityGroupingId':'j_id0:theForm:j_id74','parameters':{'j_id0:theForm:j_id74':'j_id0:theForm:j_id74'} } )" /><label for="j_id0:theForm:j_id72:1"> User Micha&#322; Bogusz</label></td>
+	</tr>
+</table></fieldset><input id="j_id0:theForm:hiddenAnonymousAnswer" type="hidden" name="j_id0:theForm:hiddenAnonymousAnswer" value="Anonymous" />
+                            <br /></span><script> if(!window.sfdcPage) { window.sfdcPage = new ApexPage(); }UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"salesforceURL":"https://bestrentcar-dev-ed.my.salesforce.com","dateFormat":"dd.MM.yyyy","language":"en_US","locale":"pl_PL","dateTimeFormat":"dd.MM.yyyy HH:mm","isGlobalEventBusPilotEnabled":false,"labelLastModified":"1566243598000","today":"21.08.2019 14:37","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":true},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":true},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":true},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":true},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEditTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","value":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"index":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"name":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSetupV2GuidedTour","value":true},{"index":317,"name":"HideFileSyncMobileDownloadDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubble","value":true},{"index":328,"name":"ForecastingHideZeroRows","value":false},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":true},{"index":341,"name":"HideDedupeMatchResultCallout","value":true},{"index":340,"name":"HideS1BrowserUI","value":false},{"index":346,"name":"HideS1Banner","value":true},{"index":358,"name":"HideEmailVerificationAlert","value":false},{"index":354,"name":"HideLearningPathModal","value":false},{"index":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name":"LightningExperiencePreferred","value":true},{"index":373,"name":"PreviewLightning","value":false}],"networkId":"","uiTheme":"Theme3","uiSkin":"Theme3","userName":"michal.bogusz@britenet.com.pl","userId":"0052p0000091imX","isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"2","vfDomainPattern":"bestrentcar-dev-ed--(?:[^.]+).visualforce.com","auraDomain":"bestrentcar-dev-ed.lightning.force.com","orgPreferences":[{"index":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupTasks","value":true}],"siteUrlPrefix":"","isDefaultNetwork":true,"timeFormat":"HH:mm"});
+</script><input class="btn slds-button slds-button--brand" id="j_id0:theForm:j_id76" name="j_id0:theForm:j_id76" onclick="A4J.AJAX.Submit('j_id0:theForm',event,{'similarityGroupingId':'j_id0:theForm:j_id76','parameters':{'j_id0:theForm:j_id76':'j_id0:theForm:j_id76'} } );return false;" value="Submit Survey" type="button" />
+                </div></span><div id="j_id0:theForm:j_id80"></div>
+            </form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201908191917570191" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklsZFlZbk5uYTJGRU9FcERZbVpYWnpWM01sRXdNWGhJVWtGUU1rTk1jMnhVU1ZNNGRYSnFheTFHYUUxY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRKd01EQXdNREF4TXpGeVExd2lMRndpZGx3aU9sd2lNREpITW5Bd01EQXdNREEzU1Vwb1hDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05USndNREF3TURBNU1XbHRXRndpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTmpNNU1UQTBOamMwTlN3aVpYaHdJam93ZlE9PS4uaEd3N1BGZ1JVMDBVN2t4YmRhRHowenZrcFZ6TjlDZllKSHIyTVNnOEhBUT0=" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="VmpFPSxNakF4T1Mwd09DMHlORlF4TWpvek56b3lOaTQzTkRWYSwtUTB3OWoxai12N2JlSXhZbE5aNF9yLFlUUmpNakpq" /></span></span>
+        </div><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:theForm"]);
+
+});</script><script>if (this.SfdcApp && this.SfdcApp.projectOneNavigator) { SfdcApp.projectOneNavigator.sendTitleToParent('Survey__c'); } </script></body></html>
+
+    </apex:outputPanel>
+    </body>
+    </html>
+</apex:page>

@@ -18,6 +18,7 @@
     <tabs>standard-Order</tabs>
     <tabs>standard-Pricebook2</tabs>
     <tabs>standard-Product2</tabs>
+    <tabs>Divisions</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Rent_Car_UtilityBar</utilityBar>
 </CustomApplication>
