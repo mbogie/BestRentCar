@@ -9,7 +9,7 @@
                     component.set("v.searchFieldLabels", response.getReturnValue());
                     console.log(response.getReturnValue());
                 } else {
-                    helper.handleErrors(component, response.getError()[0]);
+                     component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
                 }
             });
             $A.enqueueAction(action);
@@ -38,7 +38,9 @@
                           }
                     return marker;
                });
-               helper.handleSuccess(component, divisions.length);
+               if (divisions.length == 0) {
+                    component.find("toastCmp").showToastModel($A.get("$Label.c.BRC_Division_Empty_List_Message"),"info");
+               }
                let mapEvent = $A.get("e.c:BRCPassMapMarkersEvent");
                mapEvent.setParams({
                    "markers" : markers
@@ -51,7 +53,7 @@
                            });
                        listEvent.fire();
         } else {
-               helper.handleErrors(component, response.getError()[0]);
+              component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
        }
        });
        $A.enqueueAction(action);

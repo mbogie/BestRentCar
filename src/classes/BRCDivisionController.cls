@@ -17,6 +17,7 @@ public with sharing class BRCDivisionController {
                     addSearchFieldStartsWithValue('BillingCountry', country).
                     addSearchFieldStartsWithValue('BillingState', state).
                     addSearchFieldStartsWithValue('BillingCity', city).
+                    addSearchFieldEqualsWithValue('RecordType.Name',BRCUtils.getCredentialsValues('DivisionsSearchRecordType')).
                     build();
             resultList = Database.query(queryBuilder.getQueryString());
         } catch (Exception e){

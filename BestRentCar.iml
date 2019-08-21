@@ -206,6 +206,10 @@
                           <MetadataEntry>
                             <option name="name" value="testClass" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCUtils" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApexClass" />
