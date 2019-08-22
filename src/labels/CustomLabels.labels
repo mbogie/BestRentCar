@@ -85,6 +85,13 @@
         <value>Divisions Search</value>
     </labels>
     <labels>
+        <fullName>BRC_Survey_Required_Field</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Survey Required Field</shortDescription>
+        <value>Please fill out all required fields</value>
+    </labels>
+    <labels>
         <fullName>Bad_File_Extension</fullName>
         <language>en_US</language>
         <protected>true</protected>
