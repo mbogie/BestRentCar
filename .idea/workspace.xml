@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" afterDir="false" />
-    </list>
+    <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="" />
     <list id="0fcd7a4a-a4eb-484a-972b-9fc84d9b8112" name="renaeEvents" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/classes/BRCContactPageController.cls">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="268" column="106" selection-start-line="268" selection-start-column="106" selection-end-line="268" selection-end-column="106" />
+            <state relative-caret-position="-4131">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -125,7 +123,7 @@
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
                       <entry key="CLASSES/BRCCONNECTAPIHELPER.CLS" value="1566405329294" />
-                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1566552750495" />
+                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1566552895607" />
                       <entry key="CLASSES/BRCPOSTTOCHATTERACTION.CLS" value="1566405329294" />
                       <entry key="CLASSES/BRCUTILS.CLS" value="1566481140478" />
                       <entry key="COMPONENTS/BRCUIMESSAGE.COMPONENT" value="1566405271190" />
@@ -1823,7 +1821,7 @@
       <window_info anchor="bottom" id="Log Viewer" order="7" sideWeight="0.586887" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.39653304" />
       <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.49946696" weight="0.48320693" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" visible="true" weight="0.08215298" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" visible="true" weight="0.1898017" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Anonymous Apex" order="12" weight="0.468039" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -1979,13 +1977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="268" column="106" selection-start-line="268" selection-start-column="106" selection-end-line="268" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BRCUiMessage.component">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1993,10 +1984,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4131">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/BRCContactPageController.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
