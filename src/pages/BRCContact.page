@@ -8,7 +8,7 @@
 
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
     <head>
-        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
         <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
@@ -159,44 +159,41 @@
 
     </head>
     <body>
-    <apex:outputPanel rendered="{!!survey}">
+    <apex:outputPanel id="formPanel" rendered="{!!survey}">
         <div class="container">
-            <form id="contact" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="alert('Thanks for contact us')">
-                <input type="hidden" name="oid" value="00D2p00000131rC"/>
-                <input type="hidden" name="retURL" value="http://carservice-developer-edition.eu26.force.com/contactbrc"/>
-                <input type="hidden" id="lead_source" name="lead_source" value="Web"/>
-                <h3>BRC Contact Form</h3>
-                <h4>Leave contact for custom quote</h4>
+            <form id="contact" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="alert('{!$Label.BRC_Thank_You_Message}')">
+                <input type="hidden" name="oid" value="{!webToLeadOid}"/>
+                <input type="hidden" name="retURL" value="{!retURL}"/>
+                <input type="hidden" name="lead_source" value="{!leadSource}"/>
+                <h3>{!$Label.BRC_Contact_Form_Label}</h3>
+                <h4>{!$Label.BRC_Contact_Form_Header}</h4>
                 <fieldset>
-                    <input id="first_name" name="first_name" placeholder="Your First Name (optional)" type="text" tabindex="1"/>
+                    <input name="first_name" placeholder="{!$ObjectType.Lead.fields.FirstName.Label}" type="text" tabindex="1"/>
                 </fieldset>
                 <fieldset>
-                    <input id="last_name" maxlength="80" name="last_name" placeholder="Your Last Name" type="text" tabindex="2" required="true"/>
+                    <input maxlength="80" name="last_name" placeholder="{!$ObjectType.Lead.fields.LastName.Label}" type="text" tabindex="2" required="true"/>
                 </fieldset>
                 <fieldset>
-                    <input id="company" maxlength="40" name="company" placeholder="Your Company" type="text" tabindex="3" required="true"/>
+                    <input maxlength="40" name="company" placeholder="{!$ObjectType.Lead.fields.Company.Label}" type="text" tabindex="3" required="true"/>
                 </fieldset>
                 <fieldset>
-                    <input id="phone" maxlength="40" name="phone" placeholder="Your Phone Number" type="text" tabindex="4" required="true"/>
+                    <input maxlength="40" name="phone" placeholder="{!$ObjectType.Lead.fields.Phone.Label}" type="text" tabindex="4" required="true"/>
                 </fieldset>
                 <fieldset>
-                    <input id="email" maxlength="80" name="email" placeholder="Your Email" type="email" tabindex="5" required="true"/>
+                    <input maxlength="80" name="email" placeholder="{!$ObjectType.Lead.fields.Email.Label}" type="email" tabindex="5" required="true"/>
                 </fieldset>
                 <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    <button type="submit" id="contact-submit">{!$Label.Button_Send}</button>
                 </fieldset>
             </form>
         </div>
     </apex:outputPanel>
 
-    <apex:outputPanel rendered="{!survey}">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <apex:outputPanel id="surveyPanel" rendered="{!survey}">
         <script>
         $(document).ready(function(){
             convertCheckBoxToLDS();
         });
-
         </script>
         <style>
         <apex:outputText value="{!HTMLENCODE(surveyContainerCss)}" escape="false"/>

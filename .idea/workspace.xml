@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BRCUiMessage.component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BRCUiMessage.component-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/labels/CustomLabels.labels" beforeDir="false" afterPath="$PROJECT_DIR$/src/labels/CustomLabels.labels" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BRCContact.page" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BRCContact.page" afterDir="false" />
     </list>
@@ -29,26 +22,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classes/BRCContactPageController.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="191" column="34" selection-start-line="191" selection-start-column="34" selection-end-line="191" selection-end-column="34" />
+            <state relative-caret-position="756">
+              <caret line="268" column="106" selection-start-line="268" selection-start-column="106" selection-end-line="268" selection-end-column="106" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/BRCUiMessage.component">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/labels/CustomLabels.labels">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -112,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/components/BRCUiMessage.component" />
         <option value="$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls" />
         <option value="$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls" />
+        <option value="$PROJECT_DIR$/src/classes/BRCUtils.cls" />
         <option value="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" />
         <option value="$PROJECT_DIR$/src/pages/BRCContact.page" />
       </list>
@@ -140,10 +129,11 @@
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
                       <entry key="CLASSES/BRCCONNECTAPIHELPER.CLS" value="1566405329294" />
-                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1566459606576" />
+                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1566481626502" />
                       <entry key="CLASSES/BRCPOSTTOCHATTERACTION.CLS" value="1566405329294" />
+                      <entry key="CLASSES/BRCUTILS.CLS" value="1566481140478" />
                       <entry key="COMPONENTS/BRCUIMESSAGE.COMPONENT" value="1566405271190" />
-                      <entry key="PAGES/BRCCONTACT.PAGE" value="1566462573024" />
+                      <entry key="PAGES/BRCCONTACT.PAGE" value="1566483916143" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CUSTOM" />
@@ -1721,10 +1711,11 @@
       </ProjectWorkspaceSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="378" />
-    <option name="width" value="1552" />
-    <option name="height" value="839" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2290" />
+    <option name="y" value="170" />
+    <option name="width" value="1035" />
+    <option name="height" value="605" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -1763,6 +1754,12 @@
               <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="labels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1773,8 +1770,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1813,7 +1810,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21162046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1828,13 +1825,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Log Viewer" order="7" sideWeight="0.586887" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.15384616" />
       <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.49946696" weight="0.48320693" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" weight="0.30769232" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Anonymous Apex" order="12" weight="0.26760563" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="12" weight="0.468039" />
       <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="bottom" id="Problems" order="14" />
+      <window_info anchor="bottom" id="Problems" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1931,9 +1928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCUtils.cls">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sites/BRC_Contact.site">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1947,6 +1941,16 @@
     <entry file="file://$PROJECT_DIR$/src/pages/TakeSurvey.page" />
     <entry file="file://$PROJECT_DIR$/src/classes/ViewSurveyController.cls" />
     <entry file="file://$PROJECT_DIR$/src/classes/viewShareSurveyComponentController.cls" />
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labels/CustomLabels.labels">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/BRCPostToChatterAction.cls">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1958,34 +1962,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCConnectApiHelper.cls">
+    <entry file="jar://$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip!/System/SelectOption.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCContactPageController.cls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BRCUiMessage.component">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labels/CustomLabels.labels">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCUtils.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="191" column="34" selection-start-line="191" selection-start-column="34" selection-end-line="191" selection-end-column="34" />
+        <state relative-caret-position="756">
+          <caret line="268" column="106" selection-start-line="268" selection-start-column="106" selection-end-line="268" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCContactPageController.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
         </state>
       </provider>
     </entry>

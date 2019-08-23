@@ -19,8 +19,15 @@ public with sharing class BRCContactPageController {
     public String baseURL { get; set; }
     public String surveyTakerId { get; set; }
     public Boolean thankYouRendered { get; set; }
+    private String acceptJoin;
+    public String retURL {get; set;}
+    public String leadSource {get; set;}
+    public String webToLeadOid {get; set;}
 
     public BRCContactPageController(ApexPages.StandardController stdController) {
+        retURL = BRCUtils.getCredentialsValues('BRCContactFormRetUrl');
+        leadSource = BRCUtils.getCredentialsValues('BRCWebFormLeadSource');
+        webToLeadOid = BRCUtils.getCredentialsValues('BRCContactFormWebToLeadOid');
         surveyId = ApexPages.currentPage().getParameters().get('id');
         leadId = ApexPages.currentPage().getParameters().get('lId');
         init();
@@ -88,7 +95,7 @@ public with sharing class BRCContactPageController {
                 SurveyQuestionResponse__c sqr = new SurveyQuestionResponse__c();
                 if (q.renderSelectRadio == 'true') {
                     if (q.required && (q.selectedOption == null || q.selectedOption == '')) {
-                        Apexpages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, System.Label.BRC_Survey_Required_Field));
+                        ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, System.Label.BRC_Survey_Required_Field));
                         return;
                     }
                     if (q.selectedOption == null || q.selectedOption == '') {
@@ -135,6 +142,8 @@ public with sharing class BRCContactPageController {
                     sqrList.add(sqr);
                 }
             }
+            acceptJoin = sqrList.get(0).Response__c;
+
             if (AddSurveyTaker()) {
                 for (SurveyQuestionResponse__c sqr : sqrList) {
                     sqr.SurveyTaker__c = surveyTakerId;
@@ -143,7 +152,7 @@ public with sharing class BRCContactPageController {
                 thankYouRendered = true;
             }
         } catch (Exception e) {
-                Apexpages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, e.getMessage()));
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, e.getMessage()));
         }
     }
 
@@ -152,9 +161,10 @@ public with sharing class BRCContactPageController {
             return false;
         }
         SurveyTaker__c st = new SurveyTaker__c();
+        st.Name = System.Label.BRC_Survey_Name;
         st.Lead__c = leadId;
         st.Survey__c = surveyId;
-        st.Taken__c = 'false';
+        st.Taken__c = acceptJoin;
         insert st;
         surveyTakerId = st.Id;
         return true;
