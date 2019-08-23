@@ -161,7 +161,7 @@ public with sharing class BRCContactPageController {
             return false;
         }
         SurveyTaker__c st = new SurveyTaker__c();
-        st.Name = System.Label.BRC_Survey_Name;
+        st.Name = surveyName;
         st.Lead__c = leadId;
         st.Survey__c = surveyId;
         st.Taken__c = acceptJoin;
