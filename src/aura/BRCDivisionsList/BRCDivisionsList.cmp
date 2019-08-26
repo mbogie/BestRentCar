@@ -1,0 +1,25 @@
+<aura:component description="BRCDivisionsList" controller="BRCDivisionController" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="divisions" type="Account[]"/>
+
+    <aura:handler event="c:BRCPassDivisionsListEvent" action="{!c.BRCPassDivisionsListEvent}"/>
+
+    <lightning:card title="{!$Label.c.BRC_Division_List_Label}" class="slds-container--small">
+        <div class="slds-p-left_medium slds-p-right_medium">
+            <ul class="slds-list_vertical slds-has-dividers_top-space">
+                <aura:if isTrue="{!not(empty(v.divisions))}">
+                    <aura:iteration items="{!v.divisions}" var="item">
+                        <li class="slds-list__item">
+                            <c:BRCDivisionsListItem division="{!item}"/>
+                        </li>
+                    </aura:iteration>
+                    <aura:set attribute="else">
+                        <li class="slds-list__item">
+                            <h3 class="slds-text-small slds-text-color_error">{!$Label.c.BRC_Division_Empty_List_Message}</h3>
+                        </li>
+                    </aura:set>
+                </aura:if>
+            </ul>
+        </div>
+    </lightning:card>
+</aura:component>

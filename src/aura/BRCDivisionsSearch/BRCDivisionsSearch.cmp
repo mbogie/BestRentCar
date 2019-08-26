@@ -1,0 +1,40 @@
+<aura:component description="BRCDivisionsSearch" controller="BRCDivisionController" implements="forceCommunity:searchInterface,flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="searchedDivision" type="Account" default="{}"/>
+    <aura:attribute name="searchFieldLabels" type="Map" default="{'billingcountry': 'Country', 'billingstate': 'State', 'billingcity': 'City'}"/>
+
+    <aura:registerEvent name="getDivisions" type="c:BRCPassDivisionsListEvent"/>
+    <aura:registerEvent name="setMapMarker" type="c:BRCPassMapMarkersEvent"/>
+    <aura:registerEvent name="clearDetails" type="c:BRCClearDivisionDetailsEvent"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:card title="{!$Label.c.BRC_Division_Search_Label}" class="slds-container--small">
+            <form class="slds-form-element" style="padding:0px 20px 0px 20px">
+                <lightning:input aura:id="searchForm"
+                                 label="{!v.searchFieldLabels.billingcountry}"
+                                 name="divisionShippingCountry"
+                                 value="{!v.searchedDivision.BillingCountry}"/>
+                <lightning:input aura:id="searchForm"
+                                 label="{!v.searchFieldLabels.billingstate}"
+                                 name="divisionShippingState"
+                                 value="{!v.searchedDivision.BillingState}"/>
+                <lightning:input aura:id="searchForm"
+                                 label="{!v.searchFieldLabels.billingcity}"
+                                 name="divisionShippingCity"
+                                 value="{!v.searchedDivision.BillingCity}"/>
+                <div align="center" draggable="false">
+                <lightning:button label="{!$Label.c.Button_Search}"
+                                  class="slds-m-top--medium"
+                                  variant="brand"
+                                  onclick="{!c.searchDivision}"/>
+                <lightning:button label="{!$Label.c.Button_Clear}"
+                                  class="slds-m-top--medium"
+                                  variant="neutral"
+                                  onclick="{!c.clearDivision}"/>
+                </div>
+            </form>
+    </lightning:card>
+</aura:component>
