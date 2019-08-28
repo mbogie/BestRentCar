@@ -1,0 +1,6 @@
+To finalize visit :
+
+https://carservice-developer-edition.eu26.force.com/contactbrc?id=a092p00003HSmUHAA1&lId={!Lead.Id}
+
+
+{!Lead.CreatedBy}

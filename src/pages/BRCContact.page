@@ -1,0 +1,341 @@
+<apex:page id="BRCContact" standardcontroller="Survey__c" extensions="BRCContactPageController" cache="false" sidebar="false" showheader="false">
+
+    <apex:includeScript value="{! $Resource.SurveyForce_jquery}"/>
+    <apex:includeScript value="{! $Resource.SurveyForce + '/surveyforce.js'}"/>
+    <apex:stylesheet value="{! $Resource.SurveyForce + '/surveyforce.css'}"/>
+    <apex:stylesheet value="{! $Resource.SurveyForce + '/surveyforce_pagemessage_override.css'}"/>
+    <apex:stylesheet value="{! $Resource.SurveyForce_SLDS + '/assets/styles/salesforce-lightning-design-system-vf.min.css'}"/>
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+          -moz-font-smoothing: antialiased;
+          -o-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        body {
+          font-family: "Roboto", Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 12px;
+          line-height: 30px;
+          color: #777;
+          background: #641E16;
+        }
+
+        .container {
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea,
+        #contact button[type="submit"] {
+          font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+        }
+
+        #contact {
+          background: #F9F9F9;
+          padding: 25px;
+          margin: 150px 0;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        #contact h3 {
+          display: block;
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+
+        #contact h4 {
+          margin: 5px 0 15px;
+          display: block;
+          font-size: 13px;
+          font-weight: 400;
+        }
+
+        fieldset {
+          border: medium none !important;
+          margin: 0 0 10px;
+          min-width: 100%;
+          padding: 0;
+          width: 100%;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea {
+          width: 100%;
+          border: 1px solid #ccc;
+          background: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+        }
+
+        #contact input[type="text"]:hover,
+        #contact input[type="email"]:hover,
+        #contact input[type="tel"]:hover,
+        #contact input[type="url"]:hover,
+        #contact textarea:hover {
+          -webkit-transition: border-color 0.3s ease-in-out;
+          -moz-transition: border-color 0.3s ease-in-out;
+          transition: border-color 0.3s ease-in-out;
+          border: 1px solid #aaa;
+        }
+
+        #contact textarea {
+          height: 100px;
+          max-width: 100%;
+          resize: none;
+        }
+
+        #contact button[type="submit"] {
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          background: #641E16;
+          color: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+          font-size: 15px;
+        }
+
+        #contact button[type="submit"]:hover {
+          background: #C0392B;
+          -webkit-transition: background 0.3s ease-in-out;
+          -moz-transition: background 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        #contact button[type="submit"]:active {
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .copyright {
+          text-align: center;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+          outline: 0;
+          border: 1px solid #aaa;
+        }
+
+        ::-webkit-input-placeholder {
+          color: #888;
+        }
+
+        :-moz-placeholder {
+          color: #888;
+        }
+
+        ::-moz-placeholder {
+          color: #888;
+        }
+
+        :-ms-input-placeholder {
+          color: #888;
+        }
+        </style>
+
+    </head>
+    <body>
+    <apex:outputPanel id="formPanel" rendered="{!!survey}">
+        <div class="container">
+            <form id="contact" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="alert('{!$Label.BRC_Thank_You_Message}')">
+                <input type="hidden" name="oid" value="{!webToLeadOid}"/>
+                <input type="hidden" name="retURL" value="{!retURL}"/>
+                <input type="hidden" name="lead_source" value="{!leadSource}"/>
+                <h3>{!$Label.BRC_Contact_Form_Label}</h3>
+                <h4>{!$Label.BRC_Contact_Form_Header}</h4>
+                <fieldset>
+                    <input name="first_name" placeholder="{!$ObjectType.Lead.fields.FirstName.Label}" type="text" tabindex="1"/>
+                </fieldset>
+                <fieldset>
+                    <input maxlength="80" name="last_name" placeholder="{!$ObjectType.Lead.fields.LastName.Label}" type="text" tabindex="2" required="true"/>
+                </fieldset>
+                <fieldset>
+                    <input maxlength="40" name="company" placeholder="{!$ObjectType.Lead.fields.Company.Label}" type="text" tabindex="3" required="true"/>
+                </fieldset>
+                <fieldset>
+                    <input maxlength="40" name="phone" placeholder="{!$ObjectType.Lead.fields.Phone.Label}" type="text" tabindex="4" required="true"/>
+                </fieldset>
+                <fieldset>
+                    <input maxlength="80" name="email" placeholder="{!$ObjectType.Lead.fields.Email.Label}" type="email" tabindex="5" required="true"/>
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id="contact-submit">{!$Label.Button_Send}</button>
+                </fieldset>
+            </form>
+        </div>
+        <style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+        <script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://bestrentcar-dev-ed.my.salesforce.com',
+			'https://carservice-developer-edition.eu26.force.com/contactbrc',
+			gslbBaseURL,
+			'00D2p00000131rC',
+			'Chat_Agents',
+			{
+				baseLiveAgentContentURL: 'https://c.la1-c2-fra.salesforceliveagent.com/content',
+				deploymentId: '5722p0000000Fwu',
+				buttonId: '5732p0000000Ge7',
+				baseLiveAgentURL: 'https://d.la1-c2-fra.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Chat_Agents',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://bestrentcar-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+    </apex:outputPanel>
+
+    <apex:outputPanel id="surveyPanel" rendered="{!survey}">
+        <script>
+        $(document).ready(function(){
+            convertCheckBoxToLDS();
+        });
+        </script>
+        <style>
+        <apex:outputText value="{!HTMLENCODE(surveyContainerCss)}" escape="false"/>
+        </style>
+        <div align="center">
+            <div id="survey_container" class="surveyforce" style="width:50%;text-align:left" >
+                <apex:form id="theForm">
+                    <apex:outputPanel id="seeSurvey"
+                                      rendered="{! If((Survey__c.Hide_Survey_Name__c == false || Survey__c.Survey_Header__c != ''), True, False )}">
+                        <div class="slds-box slds-theme--shade">
+                            <div class="slds-text-heading--large">
+                                <apex:outputText value="{!Survey__c.Survey_Header__c}" escape="false"/>
+                            </div>
+                            <apex:outputPanel rendered="{!Survey__c.Hide_Survey_Name__c == false}">
+                                <div class="slds-text-heading--medium">{!Survey__c.Name}</div>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:outputPanel>
+                    <script>
+                    $(document).ready(function(){
+                        overridePageMessages();
+                    });
+                    </script>
+                    <apex:pageMessages />
+                    <c:BRCUiMessage severity="success" message="{!surveyThankYouText}" renderMe="{!thankYouRendered == true}"/>
+                    <apex:outputPanel rendered="{!thankYouRendered == false}">
+                        <div class="slds-form--stacked">
+                            <apex:repeat value="{!allQuestions}" var="qPreview" id="aQPreview">
+                                <div class="slds-box slds-theme--default">
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label">
+                                        {!qPreview.orderNumber + ': ' + qPreview.question}
+                                            <apex:outputText rendered="{! qPreview.required}"
+                                                             value="({!$Label.LABS_SF_Required})"/>
+                                        </label>
+                                    </div>
+                                    <apex:outputPanel rendered="{!qPreview.renderSelectRadio}">
+                                        <apex:selectRadio styleClass="convertToLDS" layout="pageDirection"
+                                                          rendered="{!qPreview.renderSelectRadio}"
+                                                          value="{!qPreview.selectedOption}">
+                                            <apex:selectOptions value="{!qPreview.singleOptions}"/>
+                                        </apex:selectRadio>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!qPreview.renderSelectCheckboxes}">
+                                        <apex:selectCheckboxes styleClass="convertToLDS" layout="pageDirection"
+                                                               rendered="{!qPreview.renderSelectCheckboxes}"
+                                                               value="{!qPreview.selectedOptions}">
+                                            <apex:selectOptions value="{!qPreview.multiOptions}"/>
+                                        </apex:selectCheckboxes>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!qPreview.renderFreeText}">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <apex:inputTextArea styleClass="slds-textarea" cols=""
+                                                                    rows="{!qPreview.noOfRowsForTextArea}"
+                                                                    rendered="{!qPreview.renderFreeText}"
+                                                                    value="{!qPreview.choices}"/>
+                                            </div>
+                                        </div>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!qPreview.renderSelectRow}">
+                                        <apex:selectRadio styleClass="convertToLDS" rendered="{!qPreview.renderSelectRow}"
+                                                          value="{!qPreview.selectedOption}">
+                                            <apex:selectOptions value="{!qPreview.rowOptions}"/>
+                                        </apex:selectRadio>
+                                    </apex:outputPanel>
+                                </div>
+                            </apex:repeat>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!thankYouRendered == false}">
+                        <div class="slds-box slds-theme--default">
+                            <apex:commandButton styleClass="slds-button slds-button--brand" action="{!submitResults}"
+                                                value="{!$Label.LABS_SF_SubmitSurvey}" rerender="theForm,seeSurvey"/>
+                        </div>
+                    </apex:outputPanel>
+                </apex:form>
+            </div>
+        </div>
+    </apex:outputPanel>
+    </body>
+    </html>
+</apex:page>

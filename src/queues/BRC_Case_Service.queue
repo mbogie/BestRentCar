@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>BRC Case Service</name>
+    <queueMembers>
+        <users>
+            <user>michal.bogusz@britenet.com.pl</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>BRC_Case_Service</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

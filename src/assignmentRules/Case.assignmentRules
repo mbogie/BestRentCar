@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>BRC Case Service Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Technical_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(LEN(Subject  ) &gt; 0, CONTAINS(Subject  , &quot;?&quot;) )</formula>
+            <team>BRC Technical Team</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Call_Center</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Chat</value>
+            </criteriaItems>
+            <team>BRC Call Center</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Complaint_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <team>BRC Complaint Team</team>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>
