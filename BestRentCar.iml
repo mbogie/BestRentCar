@@ -330,6 +330,10 @@
                           <MetadataEntry>
                             <option name="name" value="viewSurveyResultsComponentController" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductDetailController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApexClass" />
@@ -645,6 +649,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="setStartUrl" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCCarouselGallery" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>

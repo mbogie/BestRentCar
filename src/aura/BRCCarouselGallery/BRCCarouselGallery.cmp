@@ -1,0 +1,15 @@
+<aura:component description="BRCCarouselGallery" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="BRCProductDetailController">
+
+    <aura:attribute name="item" type="Product2"/>
+    <aura:attribute name="listOfUrls" type="String[]"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false">
+        <aura:iteration items="{!v.listOfUrls}" var="url">
+            <lightning:carouselImage src="{!url}"
+                                     alternativeText="This is a card">
+            </lightning:carouselImage>
+        </aura:iteration>
+    </lightning:carousel>
+</aura:component>
