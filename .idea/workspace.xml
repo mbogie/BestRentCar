@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BRCContact.page" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BRCContact.page" afterDir="false" />
     </list>
     <list id="0fcd7a4a-a4eb-484a-972b-9fc84d9b8112" name="renaeEvents" comment="" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="250" column="9" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
+            <state relative-caret-position="-610">
+              <caret line="203" column="44" lean-forward="true" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -1700,10 +1699,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1099" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -1714,6 +1713,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1745,7 +1745,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1783,8 +1782,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1409396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21610738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1801,7 +1801,7 @@
       <window_info anchor="bottom" id="Log Viewer" order="7" sideWeight="0.586887" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.20260021" />
       <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.49946696" weight="0.48320693" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5479744" visible="true" weight="0.21529745" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Anonymous Apex" order="12" weight="0.468039" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -1935,8 +1935,8 @@
     <entry file="file://$PROJECT_DIR$/src/sites/BRC_Contact.site" />
     <entry file="file://$PROJECT_DIR$/src/pages/BRCContact.page">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="250" column="9" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
+        <state relative-caret-position="-610">
+          <caret line="203" column="44" lean-forward="true" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
         </state>
       </provider>
     </entry>
