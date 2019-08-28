@@ -1,0 +1,11 @@
+<aura:component description="BRCErrorHandler">
+
+    <aura:attribute name="toastMsg" type="String"/>
+    <aura:attribute name="toastType" type="String"/>
+
+    <aura:method name="showToastModel" action="{!c.showToast}" access="public">
+        <aura:attribute name="toastMsg" type="String" access="public"/>
+        <aura:attribute name="toastType" type="String" access="public"/>
+    </aura:method>
+
+</aura:component>
