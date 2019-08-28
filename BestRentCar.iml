@@ -582,6 +582,7 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Case" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead" />
