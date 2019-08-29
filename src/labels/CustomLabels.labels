@@ -117,7 +117,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Thank You Message</shortDescription>
-        <value>Thank You For Your Time</value>
+        <value>Thank you for your time.</value>
     </labels>
     <labels>
         <fullName>BRC_Web_Form_Lead_Source</fullName>

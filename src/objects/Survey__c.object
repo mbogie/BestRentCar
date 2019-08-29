@@ -159,6 +159,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Hide_Survey_Name__c</fullName>
         <defaultValue>true</defaultValue>
@@ -166,18 +167,6 @@
         <label>Hide Survey Name</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Lead__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Lead</label>
-        <referenceTo>Lead</referenceTo>
-        <relationshipLabel>Surveys</relationshipLabel>
-        <relationshipName>Surveys</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Submit_Response__c</fullName>

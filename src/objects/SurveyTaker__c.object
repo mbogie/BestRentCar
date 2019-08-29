@@ -141,7 +141,13 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>BRC</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>BRC</fullName>
+        <fields>Name</fields>
+        <fields>LastModifiedById</fields>
+        <label>BRC</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -153,6 +159,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -177,6 +184,18 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Surveys Taken</relationshipLabel>
+        <relationshipName>Surveys_Taken</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Survey__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -191,7 +210,7 @@
         <fullName>Taken__c</fullName>
         <description>Whether the survey was taken or not</description>
         <externalId>false</externalId>
-        <label>Taken</label>
+        <label>Accept Join</label>
         <length>10</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -218,9 +237,8 @@
         <language>en_US</language>
     </listViews>
     <nameField>
-        <displayFormat>{0000000}</displayFormat>
-        <label>ID</label>
-        <type>AutoNumber</type>
+        <label>Name</label>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Surveys Taken</pluralLabel>
     <searchLayouts/>
