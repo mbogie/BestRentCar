@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="" />
+    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCITrigger.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCITrigger.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCTriggerFactory.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCTriggerFactory.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,33 +27,70 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/BRCProductDetailController.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+              <folding>
+                <element signature="e#1565#1573#0" expanded="true" />
+                <element signature="e#1621#1625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+            <state relative-caret-position="221">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/BRCITrigger.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/BRCTriggerFactory.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp">
+        <entry file="file://$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="153" selection-start-column="153" selection-end-column="153" />
+            <state relative-caret-position="238">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/BRCProductDetailController.cls">
+        <entry file="file://$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding>
-                <element signature="e#222#230#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -47,19 +100,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Lightning Component" />
         <option value="Lightning Controller" />
+        <option value="Lightning Component" />
+        <option value="Lightning Style" />
+        <option value="Apex Trigger" />
+        <option value="Apex Interface" />
         <option value="Apex Class" />
         <option value="Apex Metadata" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" />
+        <option value="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" />
         <option value="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" />
         <option value="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" />
         <option value="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" />
+        <option value="$PROJECT_DIR$/src/classes/BRCITrigger.cls" />
+        <option value="$PROJECT_DIR$/src/classes/BRCTriggerFactory.cls" />
+        <option value="$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger" />
+        <option value="$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls" />
       </list>
     </option>
   </component>
@@ -69,7 +134,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1566984872223" />
+              <option name="moduleContentsLastModified" value="1567065000862" />
               <option name="serverMetadataLastPopulated" value="1566981592121" />
             </ModuleWorkspaceSettings>
           </value>
@@ -78,6 +143,20 @@
     </option>
     <option name="projectWorkspaceSettings">
       <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="apexLogLevel" value="FINER" />
+            <option name="calloutsLogLevel" value="ERROR" />
+            <option name="databaseLogLevel" value="DEBUG" />
+            <option name="documentText" value="List&lt;ContentDocumentLink&gt; documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId in ('01t2p0000082mQXAAY')];&#10;Set&lt;Id&gt; contentIds = new Set&lt;Id&gt;();&#10;&#10;for (ContentDocumentLink link : documentLinks) {&#10;    contentIds.add(link.ContentDocumentId);&#10;}&#10;&#10;List&lt;ContentVersion&gt; contentVersions = [SELECT Id FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG','JPEG','PNG') ORDER BY SystemModstamp DESC];&#10;List&lt;String&gt; pictures = new List&lt;String&gt;();&#10;&#10;Set&lt;Id&gt; contentVersionIds = new Set&lt;Id&gt;();&#10;for (ContentVersion version : contentVersions) {&#10;    contentVersionIds.add(version.Id);&#10;}&#10;&#10;List&lt;ContentDistribution&gt; distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId IN :contentVersionIds];&#10;&#10;for(ContentDistribution distribution : distributions) {&#10;    pictures.add(distribution.ContentDownloadUrl);&#10;}&#10;System.debug(pictures);&#10;&#10;/*&#10;Map&lt;Id, Product2&gt; products = new Map&lt;Id, Product2&gt;([SELECT Id FROM Product2]);&#10;&#10;List&lt;ContentDocumentLink&gt; links = [SELECT Id FROM ContentDocumentLink WHERE LinkedEntityId IN :products.keySet()];&#10;&#10;for (ContentDocumentLink link : links) {&#10;    link.Visibility = 'AllUsers';&#10;}&#10;&#10;update links;*/&#10;" />
+            <option name="profilingLogLevel" value="ERROR" />
+            <option name="splitterProportion" value="0.29704797" />
+            <option name="systemLogLevel" value="ERROR" />
+            <option name="validationLogLevel" value="ERROR" />
+            <option name="visualforceLogLevel" value="ERROR" />
+            <option name="workflowLogLevel" value="ERROR" />
+          </AnonymousApexSettings>
+        </option>
         <option name="connectionWorkspaceSettings">
           <map>
             <entry key="BestRentCar">
@@ -85,8 +164,13 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCCAROUSELGALLERY" value="1566986487719" />
-                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1566985892000" />
+                      <entry key="AURA/BRCCAROUSELGALLERY" value="1567064859000" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1567022587000" />
+                      <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1567066125379" />
+                      <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
+                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1567064678000" />
+                      <entry key="CLASSES/BRCTRIGGERFACTORY.CLS" value="1567065252714" />
+                      <entry key="TRIGGERS/BRCCHANGEVISIBILITY.TRIGGER" value="1567066125597" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -108,6 +192,11 @@
               </value>
             </entry>
           </map>
+        </option>
+        <option name="logViewerSettings">
+          <LogViewerSettings>
+            <option name="logViewerSplitVertical" value="false" />
+          </LogViewerSettings>
         </option>
         <option name="metadataContents">
           <map>
@@ -2080,17 +2169,18 @@
         <option name="retrieveAndMergeDefault" value="false" />
         <option name="soqlQuerySettings">
           <SoqlQuerySettings>
-            <option name="documentText" value="SELECT Id, Image_Url__c&#10;FROM Product_Image__c&#10;WHERE Product__c IN ('01t2p0000082mQXAAY')" />
+            <option name="documentText" value="SELECT&#10;        Id,Visibility&#10;FROM ContentDocumentLink Where LinkedEntityId = '01t2p0000082mQXAAY'" />
+            <option name="resultsSplitterProportion" value="0.66230935" />
           </SoqlQuerySettings>
         </option>
       </ProjectWorkspaceSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="2420" />
+    <option name="height" value="1370" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2098,7 +2188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2134,13 +2223,19 @@
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aura" type="462c0819:PsiDirectoryNode" />
-              <item name="BRCErrorHandler" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+              <item name="BRCProductDetails" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
             </path>
             <path>
               <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
               <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestRentCar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="triggers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BestRentCar" type="b2602c69:ProjectViewProjectNode" />
@@ -2151,9 +2246,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarServiceOrg" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -2174,13 +2272,20 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="" />
+      <created>1567059010682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567059010682</updated>
+    </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1442953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2033557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -2194,12 +2299,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Log Viewer" order="7" sideWeight="0.586887" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.20260021" />
-      <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.4989339" weight="0.52979416" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.521855" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.52979416" />
-      <window_info anchor="bottom" id="Anonymous Apex" order="12" weight="0.468039" />
+      <window_info anchor="bottom" id="Log Viewer" order="7" sideWeight="0.586887" weight="0.30985916" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.44312027" />
+      <window_info anchor="bottom" id="SOQL Query" order="9" sideWeight="0.4989339" weight="0.55146265" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.521855" weight="0.16468039" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.26107383" side_tool="true" weight="0.24362606" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="12" sideWeight="0.7389262" weight="0.18696883" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Problems" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -2264,27 +2369,80 @@
     <entry file="file://$PROJECT_DIR$/src/aura/BRCErrorHandler/BRCErrorHandler.cmp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/BRCProductDetailController.cls">
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/IlluminatedCloud/lib/IlluminatedCloud.jar!/xsd/lightning/lightning.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="e#222#230#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="1142" column="4" selection-start-line="1142" selection-start-column="4" selection-end-line="1142" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js">
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Aura Components Specialist/src/aura/BoatReviews/BoatReviewsController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCITrigger.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="153" selection-start-column="153" selection-end-column="153" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCProductDetailController.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding>
+            <element signature="e#1565#1573#0" expanded="true" />
+            <element signature="e#1621#1625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCTriggerFactory.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>

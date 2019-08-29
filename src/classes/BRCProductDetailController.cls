@@ -1,22 +1,31 @@
-public with sharing class BRCProductDetailController {
+global without sharing class BRCProductDetailController {
+
     @AuraEnabled
-    public static List<String> getProductImages(Id recordId) {
-        List<String> listOfUrls = new List<String>();
-        List<Product_Image__c> listOfProductImages = [
-                SELECT Id, Image_Url__c, Image__c
-                FROM Product_Image__c
-                WHERE Product__c = :recordId
-        ];
+    global static List<String> getProductImages(String recordId) {
+        List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId IN (:recordId)];
+        System.debug(documentLinks);
+        Set<Id> contentIds = new Set<Id>();
 
-        if (!listOfProductImages.isEmpty()) {
-            for (Product_Image__c image : listOfProductImages) {
-                System.debug(image);
-
-                String imgUrl = image.Image__c.substringBetween(' src="', '"').unescapeHtml4();
-                listOfUrls.add(imgUrl);
-            }
+        for (ContentDocumentLink link : documentLinks) {
+            contentIds.add(link.ContentDocumentId);
         }
-        System.debug(listOfUrls);
-        return listOfUrls;
+
+        List<ContentVersion> contentVersions = [SELECT Id FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG','JPEG','PNG') ORDER BY SystemModstamp DESC];
+        System.debug(contentVersions);
+        List<String> pictures = new List<String>();
+
+        Set<Id> contentVersionIds = new Set<Id>();
+        for (ContentVersion version : contentVersions) {
+            contentVersionIds.add(version.Id);
+        }
+
+        List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId IN :contentVersionIds];
+        System.debug(distributions);
+
+        for(ContentDistribution distribution : distributions) {
+            pictures.add(distribution.ContentDownloadUrl);
+        }
+        return pictures;
     }
+
 }

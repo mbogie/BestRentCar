@@ -334,6 +334,18 @@
                             <option name="name" value="BRCProductDetailController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCITrigger" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCTriggerFactory" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCContentDocumentLinkHandler" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApexClass" />
@@ -540,6 +552,10 @@
                           <MetadataEntry>
                             <option name="name" value="CsWorkshopsCopyToTomek" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCChangeVisibility" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApexTrigger" />
@@ -652,6 +668,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCCarouselGallery" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductDetails" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>

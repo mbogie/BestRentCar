@@ -1,0 +1,25 @@
+<aura:component description="BRCProductDetails" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="product" type="Product2"/>
+    <aura:attribute name="recordId" type="Id"/>
+
+   <!-- <lightning:card>
+        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2">
+                    <lightning:layout>
+                        <lightning:layoutItem flexibility="auto">
+                        <lightning:outputField fieldName="Description"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                    <lightning:layout>
+                        <lightning:layoutItem flexibility="auto">
+                            <lightning:outputField fieldName="ProductCode"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem>
+                            <lightning:outputField fieldName="Brand__c"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem>
+                            <lightning:outputField fieldName="Model__c"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+        </lightning:recordViewForm>
+    </lightning:card>-->
+</aura:component>
