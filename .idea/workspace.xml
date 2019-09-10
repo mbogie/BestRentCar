@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
-    </list>
+    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +67,7 @@
                     <map>
                       <entry key="AURA/BRCCAROUSELGALLERY" value="1568059376447" />
                       <entry key="AURA/BRCIMAGELISTITEM" value="1568122417789" />
-                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568122751211" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568122753304" />
                       <entry key="AURA/BRCPRODUCTPRICE" value="1568098286550" />
                       <entry key="AURA/BRCRELOADIMAGESAFTERDELETE" value="1568120094000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
