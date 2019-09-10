@@ -1,0 +1,39 @@
+<aura:component description="BRCImageListItem">
+
+    <aura:attribute name="imageUrl" type="String"/>
+    <aura:attribute name="openModal" type="Boolean" default="false"/>
+
+    <lightning:button class="image" onclick="{!c.onSelect}">
+        <div style="{!'background-image:url(' + v.imageUrl + ')'}" class="innertile">
+        </div>
+    </lightning:button>
+
+    <aura:if isTrue="{!v.openModal}">
+        <!--###### MODAL BOX Start######-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="max-width: 150%">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModel }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <div>
+                        <div>
+                            <img src="{!v.imageUrl}" width="1000"/>
+                        </div>
+                        <div class="deleteButton">
+                            <lightning:button variant="base" label="Base" title="Delete Image"
+                                              onclick="{!c.deleteImage}">
+                                <lightning:icon class="red" iconName="utility:ban" size="medium"/>
+                            </lightning:button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+</aura:component>

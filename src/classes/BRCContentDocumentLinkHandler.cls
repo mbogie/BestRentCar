@@ -22,12 +22,13 @@ public with sharing class BRCContentDocumentLinkHandler implements BRCITrigger{
     }
 
     public void afterInsert(List<SObject> newlstObj,Map<Id,SObject> newMapObj){
+
     }
 
     public void afterUpdate(List<SObject> newlstObj,List<SObject> oldlstObj,Map<Id,SObject> newMapObj, Map<Id,SObject> oldMapObj) {
     }
 
-    public void afterDelete(List<SObject> oldlstObj,Map<Id,SObject> oldMapObj){
+    public void afterdelete(List<SObject> oldlstObj,Map<Id,SObject> oldMapObj){
     }
 
     public void andFinally(){

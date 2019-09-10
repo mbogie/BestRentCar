@@ -1,0 +1,10 @@
+.THIS.card {
+    height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: lightgray;
+}
+
+.THIS .detailHeader {
+    font-size: 20px;
+}

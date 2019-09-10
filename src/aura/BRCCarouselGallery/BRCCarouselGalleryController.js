@@ -6,7 +6,7 @@
             'recordId' : component.get("v.recordId")
         });
         action.setCallback(this, function(response){
-                    console.log(response.getState());
+            console.log(response.getState());
             if (response.getState() === "SUCCESS") {
                 component.set("v.listOfUrls", response.getReturnValue());
                 console.log(response.getReturnValue());

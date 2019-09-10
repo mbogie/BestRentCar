@@ -1,25 +1,113 @@
-<aura:component description="BRCProductDetails" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+<aura:component description="BRCProductDetails" controller="BRCProductDetailController"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+
     <aura:attribute name="product" type="Product2"/>
     <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="posterPath" type="String"/>
+    <aura:attribute name="listOfUrls" type="String[]"/>
+    <aura:attribute name="userProfile" type="String" default=""/>
+    <aura:attribute name="addImage" type="Boolean" default="false"/>
+    <aura:attribute name="imageType" type="String" default="image"/>
 
-   <!-- <lightning:card>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+    <lightning:card class="card" title="">
         <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2">
-                    <lightning:layout>
-                        <lightning:layoutItem flexibility="auto">
-                        <lightning:outputField fieldName="Description"/>
-                        </lightning:layoutItem>
-                    </lightning:layout>
-                    <lightning:layout>
-                        <lightning:layoutItem flexibility="auto">
-                            <lightning:outputField fieldName="ProductCode"/>
-                        </lightning:layoutItem>
-                        <lightning:layoutItem>
-                            <lightning:outputField fieldName="Brand__c"/>
-                        </lightning:layoutItem>
-                        <lightning:layoutItem>
-                            <lightning:outputField fieldName="Model__c"/>
-                        </lightning:layoutItem>
-                    </lightning:layout>
+            <lightning:layout multipleRows="false">
+                <lightning:layoutItem class="title">
+                    <lightning:outputField fieldName="Name" class="headerName" variant="label-hidden"/>
+                </lightning:layoutItem>
+                <aura:if isTrue="{!notequals(v.userProfile,'BRC Customer Community User')}">
+                <lightning:layoutItem alignmentBump="left">
+                    <lightning:button class="customButton" variant="neutral" label="Add Poster"
+                                      onclick="{!c.addPoster}"/>
+                    <lightning:button class="customButton" variant="neutral" label="Add Image"
+                                      onclick="{!c.addImage}"/>
+                </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+            <div class="sectionDetails">
+                <lightning:layout multipleRows="false">
+                    <lightning:layoutItem class="poster">
+                        <img src="{!empty(v.posterPath) ? $Resource.BRCDefault : v.posterPath}" width="600"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem class="details">
+                        <div class="">
+                            <p class="detailHeader"> Details:</p>
+                            <div class="detailItem"> Production Year:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Production_Year__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Product Code:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="ProductCode"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Brand:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Brand__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Model:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Model__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Engine:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Engine__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Number of Doors:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Number_of_Doors__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem"> Description:</div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Description"/>
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
         </lightning:recordViewForm>
-    </lightning:card>-->
+        <div class="sectionImages">
+        <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center">
+            <aura:iteration items="{!v.listOfUrls}" var="url">
+                <lightning:layoutItem>
+                <div class="images">
+                    <c:BRCImageListItem imageUrl="{!url}"/>
+                </div>
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+        </div>
+    </lightning:card>
+    <aura:if isTrue="{!v.addImage}">
+        <!--###### MODAL BOX Start######-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="width: 270px">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header" style="width: 270px">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModel }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <lightning:fileUpload name="fileUploader"
+                                          multiple="false"
+                                          accept=".jpg, .jpeg, .png"
+                                          disabled="{!v.disabled}"
+                                          recordId="{!v.recordId}"
+                                          onuploadfinished="{! c.handleUploadFinished }"/>
+                </header>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <!--###### MODAL BOX Part END Here ######-->
+    </aura:if>
 </aura:component>
