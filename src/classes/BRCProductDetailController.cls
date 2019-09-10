@@ -2,7 +2,7 @@ global without sharing class BRCProductDetailController {
 
     global class ProductImages{
         @AuraEnabled global String poster;
-        @AuraEnabled global List<String> images;
+        @AuraEnabled global List<ContentDistribution> images;
     }
 
     @AuraEnabled
@@ -32,10 +32,7 @@ global without sharing class BRCProductDetailController {
         List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionIds];
         System.debug(distributions);
 
-        for(ContentDistribution distribution : distributions) {
-            images.add(distribution.ContentDownloadUrl);
-        }
-        pictures.images = images;
+        pictures.images = distributions;
         return pictures;
     }
 
@@ -78,5 +75,13 @@ global without sharing class BRCProductDetailController {
         List<Profile> profiles = [SELECT Name FROM profile WHERE id = :UserInfo.getProfileId()];
         userProfile = profiles.get(0).Name;
         return userProfile;
+    }
+
+    @AuraEnabled
+    global static Boolean deleteDocument(String documentId){
+        ContentDocument doc = new ContentDocument(Id = documentId);
+        Database.DeleteResult deleteResult = Database.delete(doc);
+        if(deleteResult.isSuccess()) return true;
+        else return false;
     }
 }

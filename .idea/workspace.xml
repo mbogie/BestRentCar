@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCContentDocumentLinkHandler.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/BRCChangeVisibility.trigger" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +46,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568115840208" />
+              <option name="moduleContentsLastModified" value="1568119902805" />
               <option name="serverMetadataLastPopulated" value="1568063396286" />
             </ModuleWorkspaceSettings>
           </value>
@@ -84,12 +77,13 @@
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
                       <entry key="AURA/BRCCAROUSELGALLERY" value="1568059376447" />
-                      <entry key="AURA/BRCIMAGELISTITEM" value="1568118045269" />
-                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568114851133" />
+                      <entry key="AURA/BRCIMAGELISTITEM" value="1568122417789" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568122751211" />
                       <entry key="AURA/BRCPRODUCTPRICE" value="1568098286550" />
+                      <entry key="AURA/BRCRELOADIMAGESAFTERDELETE" value="1568120094000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
                       <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
-                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1568118111260" />
+                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1568119288000" />
                       <entry key="CLASSES/BRCTRIGGERFACTORY.CLS" value="1567065252714" />
                       <entry key="TRIGGERS/BRCCHANGEVISIBILITY.TRIGGER" value="1568104036745" />
                     </map>
@@ -2247,12 +2241,6 @@
         </option>
       </ProjectWorkspaceSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1QL4clfZ4obOHPt7J3nX7gu0eqV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

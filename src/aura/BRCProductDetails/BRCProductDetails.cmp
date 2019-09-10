@@ -5,12 +5,15 @@
     <aura:attribute name="product" type="Product2"/>
     <aura:attribute name="recordId" type="Id"/>
     <aura:attribute name="posterPath" type="String"/>
+    <aura:attribute name="buttonLabel" type="String" default=""/>
     <aura:attribute name="listOfUrls" type="String[]"/>
     <aura:attribute name="userProfile" type="String" default=""/>
     <aura:attribute name="addImage" type="Boolean" default="false"/>
     <aura:attribute name="imageType" type="String" default="image"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:BRCReloadImagesAfterDelete" action="{!c.BRCReloadImagesAfterDelete}"/>
+
 
     <lightning:card class="card" title="">
         <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2">
@@ -77,10 +80,10 @@
         </lightning:recordViewForm>
         <div class="sectionImages">
         <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center">
-            <aura:iteration items="{!v.listOfUrls}" var="url">
+            <aura:iteration items="{!v.listOfUrls}" var="distribution">
                 <lightning:layoutItem>
                 <div class="images">
-                    <c:BRCImageListItem imageUrl="{!url}"/>
+                    <c:BRCImageListItem distribution="{!distribution}" userProfile="{!v.userProfile}"/>
                 </div>
                 </lightning:layoutItem>
             </aura:iteration>
@@ -88,18 +91,17 @@
         </div>
     </lightning:card>
     <aura:if isTrue="{!v.addImage}">
-        <!--###### MODAL BOX Start######-->
         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container" style="width: 270px">
-                <!-- ###### MODAL BOX HEADER Start ######-->
                 <header class="slds-modal__header" style="width: 270px">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{! c.closeModel }"
-                                          alternativeText="close"
+                                          alternativeText="Close"
                                           variant="bare-inverse"
                                           class="slds-modal__close"/>
                     <lightning:fileUpload name="fileUploader"
                                           multiple="false"
+                                          label="{!v.buttonLabel}"
                                           accept=".jpg, .jpeg, .png"
                                           disabled="{!v.disabled}"
                                           recordId="{!v.recordId}"
@@ -108,6 +110,5 @@
             </div>
         </section>
         <div class="slds-backdrop slds-backdrop_open"></div>
-        <!--###### MODAL BOX Part END Here ######-->
     </aura:if>
 </aura:component>

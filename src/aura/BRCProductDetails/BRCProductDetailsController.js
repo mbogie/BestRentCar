@@ -7,15 +7,21 @@
     addImage : function(component, event, helper) {
        component.set("v.imageType", 'image');
        component.set("v.addImage", true);
+       component.set("v.buttonLabel", " Add Image");
     },
 
     addPoster : function(component, event, helper) {
        component.set("v.imageType", 'poster');
        component.set("v.addImage", true);
+       component.set("v.buttonLabel", "Add Poster");
     },
 
     closeModel : function(component, event, helper) {
        component.set("v.addImage", false);
+    },
+
+    BRCReloadImagesAfterDelete : function(component, event, helper) {
+       helper.initImages(component, event,helper);
     },
 
     handleUploadFinished : function(component, event, helper) {
