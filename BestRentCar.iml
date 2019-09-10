@@ -34,11 +34,17 @@
                             <option name="name" value="BRCContactPageController" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCContentDocumentLinkHandler" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCDivisionController" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCGoogleRegistrationHandler" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCITrigger" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCPostToChatterAction" />
@@ -48,6 +54,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCQueryBuilder" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCTriggerFactory" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCUtils" />
@@ -260,6 +269,57 @@
                             <option name="name" value="LightningSelfRegisterControllerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MPActorFilmographyWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorImagesWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorSearchWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPCastAndCrewWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPException" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPGenreWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieImagesWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieSearchWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieVideosWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPopularMoviesWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPRestController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSiteActorWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSiteController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSiteMovieWrapper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPUtils" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Message" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -344,6 +404,7 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="BRCUiMessage" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CsActionStatus" />
@@ -532,6 +593,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="BRCChangeVisibility" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="CsContractOverlapping" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -560,6 +624,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Movie_Visible" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="ApprovalProcess" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -604,6 +675,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="AddMovieReview" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCCarouselGallery" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -628,7 +702,13 @@
                             <option name="name" value="BRCDivisionsSearch" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCDragDrop" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCErrorHandler" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCImageListItem" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCPassDivisionDetailEvent" />
@@ -638,6 +718,105 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCPassMapMarkersEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductDetails" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductPrice" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCReloadImagesAfterDelete" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="FiveStarRating" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorListItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorListItemSmall" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPActorReview" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPDragDrop" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPGetReviewsEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPHideActorDetailEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPHideMovieDetailEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPHideReview" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPHideSearchComponentEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPHomePageEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieListItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieListItemSmall" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieReview" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPMovieSelected" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPassActorsEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPassAverageReviews" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPassMoviesEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPassSearchValues" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPPopularMoviesList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPReviewAdded" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPReviewList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSearchForm" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSelectedActor" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSelectedActorEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSelectedMovieEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPSetHomePage" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPShowActorDetailComponent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPShowReviews" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MPShowSearchComponentEvent" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="forgotPassword" />
@@ -779,6 +958,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Product2.BRC_Compact_Cummunity_Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="SurveyTaker__c.BRC" />
                           </MetadataEntry>
                         </list>
@@ -809,6 +991,12 @@
                           <MetadataEntry>
                             <option name="name" value="lg1" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="logo_landing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="movieplanet" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ContentAsset" />
@@ -837,6 +1025,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Car_Service" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie_Planet" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Survey_Force" />
@@ -930,6 +1121,24 @@
                             <option name="name" value="Account.UpsellOpportunity__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c.Biography__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c.Birthday__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c.Deathday__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c.Known_as__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c.Place_of_birth__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c.Profile_path__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c.Callout_Response__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -975,6 +1184,9 @@
                             <option name="name" value="Contact.Level__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="ContentVersion.Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Contract__c.Compare_Cities__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1008,6 +1220,15 @@
                             <option name="name" value="Cs_Settings__c.Value__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c.MovieId__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c.Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c.User__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Goal.OrigGoalId__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1033,6 +1254,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.SICCode__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MP_Settings__c.Value__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c.Address__c" />
@@ -1077,6 +1301,33 @@
                             <option name="name" value="Metric.OrigMetricId__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Movie__c.Budget__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Genres__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Homepage__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.IsVisible__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Overview__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Poster_path__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Production_companies__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Release_date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Runtime__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity.CurrentGenerators__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1114,6 +1365,21 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product_Image__c.Product__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Comment__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Id__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Rating__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Title__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SurveyQuestionResponse__c.Response__c" />
@@ -1798,6 +2064,9 @@
                             <option name="name" value="Activity" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="AgentWork" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1916,6 +2185,9 @@
                             <option name="name" value="ExpressionFilterCriteria" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="FeedItem" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1968,6 +2240,9 @@
                             <option name="name" value="LiveChatVisitor" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MP_Settings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Macro" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1978,6 +2253,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="NetworkMember" />
@@ -2061,6 +2339,9 @@
                             <option name="name" value="RequestsForAccessSIQ" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Review__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Scorecard" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2133,6 +2414,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2142,13 +2426,25 @@
                             <option name="name" value="Cs_Settings__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Knowledge__kav-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MP_Settings__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Movie__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product_Image__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SurveyQuestionResponse__c-en_US" />
@@ -2200,6 +2496,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2207,6 +2506,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Divisions" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Getting_Started_With_Survey_Force" />
@@ -2221,7 +2523,16 @@
                             <option name="name" value="Mechanics_Import" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MoviePlanet" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product_Image__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Search_Mechanic" />
@@ -2581,6 +2892,10 @@
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/Movie_Approval" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/RejectionEmail" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
@@ -2760,6 +3075,12 @@
                             <option name="name" value="LightningService_UtilityBar" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MoviePlanet" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie_Planet_UtilityBar" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product_Record_Page" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2776,6 +3097,9 @@
                           <MetadataEntry>
                             <option name="name" value="BRC_Lead_Status_change" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie_Approval" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="Flow" />
@@ -2790,6 +3114,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="BRC_Lead_Status_change" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie_Approval" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -2891,6 +3218,9 @@
                             <option name="name" value="AccountBrand-Account Brand Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c-Actor Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Asset-Asset Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2975,6 +3305,9 @@
                             <option name="name" value="Event-Event Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c-Favorited And Blacklisted Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="FeedItem-Feed Item Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3032,6 +3365,9 @@
                             <option name="name" value="Mechanic__c-Workshop Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Movie__c-Movie Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Opportunity-Opportunity %28Marketing%29 Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3059,6 +3395,9 @@
                             <option name="name" value="PricebookEntry-Price Book Entry Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Product2-BRC Product Community Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product2-Product Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3075,6 +3414,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="QuoteLineItem-Quote Line Item Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c-Review Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Scorecard-Scorecard Layout" />
@@ -3195,6 +3537,9 @@
                             <option name="name" value="Activity.UpcomingEvents" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Asset.AllAssets" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3297,6 +3642,12 @@
                             <option name="name" value="Entitlement.All_Entitlements" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c.all_all" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Idea.Ideas_Last_7_Days" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3331,6 +3682,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.AllOpportunities" />
@@ -3403,6 +3757,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Recommendation.All_Recommendations" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Scorecard.AllScorecards" />
@@ -3673,6 +4030,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="FilesAccess" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Knowledge_LSF_Permission_Set" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -3761,6 +4121,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC Contact Profile" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC Customer Community User" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC Service Profile" />
@@ -3883,6 +4246,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Customer_Community_User_profilePasswordPolicy1567016186006" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="PT2_profilePasswordPolicy1563523636542" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3897,6 +4263,9 @@
                           <MetadataEntry>
                             <option name="name" value="Standard_User_c_profilePasswordPolicy1563523872927" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Standard_User_c_profilePasswordPolicy1568024817953" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ProfilePasswordPolicy" />
@@ -3905,6 +4274,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Customer_Community_User_profileSessionSetting1567016186068" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="PT2_profileSessionSetting1563523636644" />
                           </MetadataEntry>
@@ -3919,6 +4291,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="null_profileSessionSetting1565183542954" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="null_profileSessionSetting1568024817979" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -4146,6 +4521,9 @@
                           <MetadataEntry>
                             <option name="name" value="TomeksMechanic" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="themoviedb" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="RemoteSiteSetting" />
@@ -4194,7 +4572,7 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="BRCCommunityUsersPartnerUser" />
+                            <option name="name" value="BRCCommunityUsersCustomerUser" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_External_USer" />
@@ -4210,6 +4588,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ChannelSalesTeam" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Community_Users_Customer" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Community_Users_Manager" />
@@ -4449,6 +4830,9 @@
                             <option name="name" value="Account" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Actor__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Asset" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -4473,6 +4857,9 @@
                             <option name="name" value="Cs_Settings__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="FlowInterview" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -4485,7 +4872,13 @@
                             <option name="name" value="LiveChatTranscript" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MP_Settings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Mechanic__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity" />
@@ -4507,6 +4900,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product_Image__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SurveyTaker__c" />
@@ -4741,7 +5137,13 @@
                             <option name="name" value="ActionStatusIcon" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCDefault" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="DefaultPicture" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MP_Default" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SiteSamples" />
@@ -4763,6 +5165,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SurveyForce_svg4everybody" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="fivestar" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="iEditCSS" />
@@ -4790,6 +5195,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Account" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Actor__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Asset" />
@@ -4825,6 +5233,9 @@
                             <option name="name" value="Event" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Favorited_And_Blacklisted__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Knowledge__kav" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -4836,6 +5247,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity" />
@@ -4857,6 +5271,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product_Image__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Solution" />
@@ -4896,7 +5313,7 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="BRC Service.Customer_Members" />
+                            <option name="name" value="BRC Service.Partner_and_Customer_members" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -4959,6 +5376,9 @@
                             <option name="name" value="Mechanic__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Movie__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Workshop__c" />
                           </MetadataEntry>
                         </list>
@@ -4985,6 +5405,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Mechanic__c.Next_Birthday_Evaluate" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Movie__c.Set_Approve" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Workshop__c.Assign_External_Id" />
