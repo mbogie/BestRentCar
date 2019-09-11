@@ -1,18 +1,42 @@
 <aura:component description="BRCCarouselGallery" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="BRCProductDetailController">
 
-    <aura:attribute name="item" type="Product2"/>
-    <aura:attribute name="listOfUrls" type="String[]"/>
-    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="position" type="Integer" default="1"/>
+    <aura:attribute name="maxPosition" type="Integer" default="2"/>
+    <aura:attribute name="totalWidth" type="Integer" default="1000"/>
+    <aura:attribute name="listOfUrls" type="String[]" default=""/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="aura:doneRendering" action="{!c.handleResize}"/>
 
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-
-    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="true">
-        <aura:iteration items="{!v.listOfUrls}" var="url">
-            <lightning:carouselImage src="{!url}"
-                                     description =""
-                                     alternativeText ="Car Picture.">
-            </lightning:carouselImage>
-        </aura:iteration>
-    </lightning:carousel>
-
+    <lightning:card title="">
+        <p style="display:none;">{!v.position}</p>
+        <p style="display:none;">{!v.maxPosition}</p>
+        <lightning:layout class="outer_container" horizontalAlign="center" verticalAlign="center">
+            <lightning:layoutItem size="1" padding="around-small" flexibility="auto">
+                <lightning:buttonIcon  alternativeText="left" iconName="utility:chevronleft"
+                                       onclick="{!c.goLeft}"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="10" padding="around-small" flexibility="auto">
+                <ui:scrollerWrapper class="scroll_wrapper" aura:id="scroll_wrapper">
+                    <div id='myId' aura:id="inner">
+                        <!--                <div class="scroll_wrapper" aura:id="scroll_wrapper">-->
+                        <lightning:layout horizontalAlign="center" multipleRows="false">
+                            <aura:iteration items="{!v.listOfUrls}" var="distribution">
+                                <lightning:layoutItem>
+                                    <div class="images">
+                                        <c:BRCImageListItem distribution="{!distribution}" userProfile="{!v.userProfile}"/>
+                                    </div>
+                                </lightning:layoutItem>
+                            </aura:iteration>
+                        </lightning:layout>
+                        <!--                </div>-->
+                        <!--                        <div id='myId' style="width:auto" aura:id="inner">-->
+                    </div>
+                </ui:scrollerWrapper>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="1" flexibility="auto">
+                <lightning:buttonIcon  alternativeText="right"
+                                       iconName="utility:chevronright" onclick="{!c.goRight}"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
 </aura:component>

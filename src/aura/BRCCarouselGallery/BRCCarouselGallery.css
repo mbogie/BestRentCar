@@ -1,0 +1,47 @@
+.THIS.slds-card {
+    background-color : lightgray;
+    padding : -10px;
+    margin : 0px;
+}
+
+.THIS .scroll_wrapper {
+    /*width: 500px;*/
+    /*height: 280px;*/
+    overflow: hidden;
+}
+
+.THIS .inner_container {
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*background: yellow;*/
+    /*width:auto;*/
+    width: 1300px;
+    /*width: auto;*/
+    /*height: 200px;*/
+    overflow: hidden;
+}
+
+.THIS .scroll_wrapper::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.THIS .outer_container {
+    width: 600px;
+    /*max-height: 200px;*/
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    /*padding: 5px;*/
+}
+
+.THIS .img_element {
+    height: 150px;
+    cursor:pointer;
+    /*max-height: 300px;*/
+}
+.THIS .img_element:hover {
+
+    border: 2px solid black;
+    /*max-height: 300px;*/
+}

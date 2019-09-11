@@ -18,6 +18,7 @@
 
     closeModel : function(component, event, helper) {
        component.set("v.addImage", false);
+       component.set("v.edit", false);
     },
 
     BRCReloadImagesAfterDelete : function(component, event, helper) {
@@ -46,4 +47,13 @@
                 });
           $A.enqueueAction(setType);
     },
+
+    editRecord : function(component, event, helper) {
+       component.set("v.edit", true);
+    },
+
+    saveRecord : function(component, event, helper) {
+        component.find("productForm").submit();
+    },
+
 })

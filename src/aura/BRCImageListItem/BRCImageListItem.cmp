@@ -15,7 +15,7 @@
         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
                  aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container" style="max-width: 150%">
-                <header class="slds-modal__header" style="border-radius: 50px; padding: 0px; padding: 0px">
+                <header class="slds-modal__header" style="border-radius: 25px; margin: 0px; padding: 10px">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{! c.closeModel }"
                                           alternativeText="Close"
@@ -23,7 +23,7 @@
                                           class="slds-modal__close"/>
                     <div>
                         <div>
-                            <img src="{!v.distribution.ContentDownloadUrl}" width="1000" style="border-radius: 35px"/>
+                            <img src="{!v.distribution.ContentDownloadUrl}" width="1000" style="border-radius: 25px"/>
                         </div>
                         <aura:if isTrue="{!notequals(v.userProfile,'BRC Customer Community User')}">
                         <div class="deleteButton">
