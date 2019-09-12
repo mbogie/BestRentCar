@@ -23,6 +23,8 @@
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card class="card" title="">
+        <lightning:layout multipleRows="false">
+            <lightning:layoutItem size="8" class="leftPanel">
         <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2">
             <lightning:layout multipleRows="false" verticalAlign="center">
                 <aura:if isTrue="{!notequals(v.userProfile, $Label.c.BRCCustomerCommunityProfile)}">
@@ -105,6 +107,11 @@
                 </div>
             </lightning:layout>
         </lightning:recordViewForm>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4">
+                <c:BRCProductPrice recordId="{!v.recordId}"/>
+            </lightning:layoutItem>
+        </lightning:layout>
     </lightning:card>
     <aura:if isTrue="{!v.addImage}">
         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
