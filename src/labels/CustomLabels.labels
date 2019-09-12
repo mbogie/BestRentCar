@@ -36,6 +36,13 @@
         <value>Agreement</value>
     </labels>
     <labels>
+        <fullName>BRCCustomerCommunityProfile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRCCustomerCommunityProfile</shortDescription>
+        <value>BRC Customer Community User</value>
+    </labels>
+    <labels>
         <fullName>BRC_Contact_Form_Header</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -97,6 +104,27 @@
         <protected>true</protected>
         <shortDescription>BRC Division Search Label</shortDescription>
         <value>Divisions Search</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Description</shortDescription>
+        <value>Description:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Details</shortDescription>
+        <value>Details:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Server_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Server Error</shortDescription>
+        <value>Server Error. Sorry For Inconvenience.</value>
     </labels>
     <labels>
         <fullName>BRC_Survey_Name</fullName>
@@ -163,6 +191,20 @@ Number Of Fails : {3}.</value>
         <protected>true</protected>
         <shortDescription>Button Add</shortDescription>
         <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add_Image</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add Image</shortDescription>
+        <value>Add Image</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add_Poster</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add Poster</shortDescription>
+        <value>Select As Poster?</value>
     </labels>
     <labels>
         <fullName>Button_Cancel</fullName>

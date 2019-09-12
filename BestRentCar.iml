@@ -408,7 +408,6 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="BRCUiMessage" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CsActionStatus" />
@@ -688,6 +687,7 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCCustomToast" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCDivisionDetails" />
@@ -705,8 +705,7 @@
                             <option name="name" value="BRCDivisionsSearch" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCErrorHandler" />
-                            <option name="selected" value="true" />
+                            <option name="name" value="BRCDragDrop" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCImageListItem" />
@@ -724,6 +723,9 @@
                           <MetadataEntry>
                             <option name="name" value="BRCProductDetails" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductEditPage" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductPrice" />
@@ -1145,6 +1147,9 @@
                             <option name="name" value="Actor__c.Profile_path__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Settings__c.Value__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c.Callout_Response__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1188,6 +1193,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Contact.Level__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ContentVersion.Type__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Contract__c.Compare_Cities__c" />
@@ -1571,7 +1579,16 @@
                             <option name="name" value="BRC_Web_Form_Lead_Source" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCCustomerCommunityProfile" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Button_Add" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Button_Add_Image" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Button_Add_Poster" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Button_Cancel" />
@@ -2081,6 +2098,9 @@
                             <option name="name" value="AssistantProgress" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Settings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2417,6 +2437,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Actor__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Settings__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Callout_Log__c-en_US" />
@@ -4811,6 +4834,9 @@
                             <option name="name" value="Asset" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Settings__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Callout_Log__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -5113,6 +5139,12 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCDefault" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCEngineIcon" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCHatchback" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="DefaultPicture" />

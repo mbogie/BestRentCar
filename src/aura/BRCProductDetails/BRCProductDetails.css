@@ -118,5 +118,15 @@
     color: white;
 }
 
+.THIS .checkbox {
+    text-align: left;
+}
+
+.THIS .checkbox .uiLabel {
+    color: white;
+}
+
+
+
 
 

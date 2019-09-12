@@ -5,6 +5,7 @@
     <aura:attribute name="openModal" type="Boolean" default="false"/>
 
     <aura:registerEvent name="reloadImages" type="c:BRCReloadImagesAfterDelete"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:button class="image" onclick="{!c.onSelect}">
         <div style="{!'background-image:url(' + v.distribution.ContentDownloadUrl + ')'}" class="innertile">
