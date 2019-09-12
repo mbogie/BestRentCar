@@ -10,18 +10,52 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Apex Class" />
+        <option value="Lightning Component" />
+        <option value="Apex Metadata" />
+        <option value="Lightning Design" />
+        <option value="Lightning Controller" />
+        <option value="Lightning Style" />
+      </list>
+    </option>
+  </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
       <map>
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568289740522" />
+              <option name="moduleContentsLastModified" value="1568292559452" />
               <option name="serverMetadataLastPopulated" value="1568289591093" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="BestRentCar">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568292783563" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568301419358" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568296037063" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568297918174" />
+                    </map>
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+      </ProjectWorkspaceSettings>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

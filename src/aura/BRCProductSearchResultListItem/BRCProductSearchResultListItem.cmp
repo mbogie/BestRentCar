@@ -1,0 +1,40 @@
+<aura:component description="BRCProductSearchResultListItem" controller="BRCSearchProductsController"
+                implements="force:hasRecordId" access="global">
+
+    <aura:attribute name="record" type="Product2"/>
+    <aura:attribute name="simpleRecord" type="Product2"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="posterPath" type="String"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      targetError="{!v.recordError}"/>
+    <lightning:button onclick="{!c.navigateToRecord}" variant="base" class="buttonItem">
+    <lightning:layout multipleRows="false" class="mainPanel">
+        <lightning:layoutItem size="3" class="leftPanel">
+            <img src="{!empty(v.posterPath) ? $Resource.BRCDefault : v.posterPath}" style="border-radius: 15px"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="9" class="rightPanel">
+            <h1>{!v.simpleRecord.Name}</h1>
+            <div class="detailItem">Production Year: {!v.simpleRecord.Production_Year__c}</div>
+            <div class="detailItem">Engine: {!v.simpleRecord.Engine__c}</div>
+            <div class="detailItem">Number of Doors: {!v.simpleRecord.Number_of_Doors__c}</div>
+            <h1>Price : </h1>
+            <div style="padding-left : 20px; color : red; font-size: 20px">12932194324</div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    </lightning:button>
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            <ui:message title="Error" severity="error" closable="true">
+                    {!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+</aura:component>
