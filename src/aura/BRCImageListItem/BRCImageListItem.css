@@ -19,11 +19,6 @@
     height: 100%;
 }
 
-.THIS .red svg {
-    fill: #ff0000;
-    filter: brightness(100%);
-}
-
 .THIS .deleteButton {
     filter: brightness(100%);
     position: absolute;

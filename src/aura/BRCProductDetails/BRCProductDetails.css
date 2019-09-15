@@ -1,17 +1,12 @@
-.THIS .customButton {
-    background-color: darkgray;
-    color: white;
-}
-
-.THIS .leftPanel {
-    border-right: 2px solid gray;
-    padding-right: 20px;
+.THIS .mainPanel {
+    border-right: 1px solid gray;
+    padding-right: 30px;
 }
 
 .THIS.card {
      padding-left: 30px;
      padding-right: 30px;
-     background-color: #f2f2f2;
+     border: 0 !important;
      padding-bottom: 20px;
 }
 
@@ -21,29 +16,24 @@
     font-family: "Times New Roman", Times, serif;
 }
 
-.THIS .poster {
-    width : 400px;
-}
-
 .THIS .details {
     padding-left: 20px;
 }
 
 .THIS .detailHeader {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .THIS .sectionDetails {
-    border-top : 2px solid gray;
-    border-bottom : 2px solid gray;
+    border-top : 1px solid gray;
+    border-bottom : 1px solid gray;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .THIS .sectionImages {
-    border-bottom : 2px solid gray;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border-bottom : 1px solid gray;
 }
 
 .THIS .detailItem {
@@ -58,11 +48,6 @@
     font-weight: bold;
 }
 
-.THIS .images {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .THIS .textWrap {
     margin-top: 15px;
     margin-left: 5px;
@@ -70,65 +55,11 @@
     float: right;
 }
 
-.THIS .textWrapLeft {
-    clear: right;
-    width: 100px;
-    float: left;
-    display: inline;
-}
-
 .THIS .innerText .slds-form-element__static {
     padding-top: 10px;
     display: inline;
     font-size: 15px;
     font-weight: bold;
-}
-
-.THIS .leftButton{
-    padding-right: 25px;
-}
-
-.THIS .slds-modal__header {
-    background-color: gray;
-    color: white;
-    border: 3px solid gray;
-}
-
-.THIS .slds-modal__footer {
-    background-color: gray;
-    border: 3px solid gray;
-
-}
-
-.THIS .slds-modal__content {
-    background-color: #f2f2f2;
-    border: 3px solid gray;
-}
-
-.THIS .slds-modal__content .slds-input {
-    border: 3px solid gray;
-}
-
-.THIS .slds-modal__footer .customButton {
-    background-color: #f2f2f2;
-    color: gray;
-}
-
-.THIS .productDescription .slds-textarea {
-    height: 400px;
-    border: 3px solid gray;
-}
-
-.THIS .uploadImage .slds-form-element__label {
-    color: white;
-}
-
-.THIS .checkbox {
-    text-align: left;
-}
-
-.THIS .checkbox .uiLabel {
-    color: white;
 }
 
 

@@ -2,14 +2,8 @@
                 implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
                 access="global">
 
-    <aura:attribute name="product" type="Product2"/>
     <aura:attribute name="recordId" type="Id"/>
-    <aura:attribute name="posterPath" type="String"/>
-    <aura:attribute name="listOfUrls" type="String[]"/>
-    <aura:attribute name="userProfile" type="String" default=""/>
-    <aura:attribute name="addImage" type="Boolean" default="false"/>
-    <aura:attribute name="edit" type="Boolean" default="false"/>
-    <aura:attribute name="imageType" type="String" default="image"/>
+    <aura:attribute name="listOfImageUrls" type="String[]"/>
     <aura:attribute name="fieldLabels" type="Map" default="{'name': 'Product Name',
                                                             'production_year__c': 'Production Year2',
                                                             'brand__c': 'Brand2',
@@ -19,59 +13,45 @@
                                                             'number_of_doors__c': 'Number of Doors2',
                                                             'description': 'Product Description2'}"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
-    <aura:handler event="c:BRCReloadImagesAfterDelete" action="{!c.BRCReloadImagesAfterDelete}"/>
+
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card class="card" title="">
-        <lightning:layout multipleRows="false">
-            <lightning:layoutItem size="8" class="leftPanel">
-        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2">
+        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2" class="mainPanel">
             <lightning:layout multipleRows="false" verticalAlign="center">
-                <aura:if isTrue="{!notequals(v.userProfile, $Label.c.BRCCustomerCommunityProfile)}">
-                    <lightning:layoutItem class="leftButton">
-                        <lightning:button class="customButton" variant="neutral" label="{!$Label.c.Button_Edit}"
-                        onclick="{!c.editRecord}"/>
-                    </lightning:layoutItem>
-                </aura:if>
                 <lightning:layoutItem class="title">
                     <lightning:outputField fieldName="Name" class="headerName" variant="label-hidden"/>
                 </lightning:layoutItem>
-                <aura:if isTrue="{!notequals(v.userProfile, $Label.c.BRCCustomerCommunityProfile)}">
-                    <lightning:layoutItem alignmentBump="left">
-                        <lightning:button class="customButton" variant="neutral" label="{!$Label.c.Button_Add_Image}"
-                                          onclick="{!c.addImage}"/>
-                    </lightning:layoutItem>
-                </aura:if>
             </lightning:layout>
             <div class="sectionDetails">
                 <lightning:layout multipleRows="false">
-                    <lightning:layoutItem class="poster">
-                        <img src="{!empty(v.posterPath) ? $Resource.BRCDefault : v.posterPath}" width="600"/>
+                    <lightning:layoutItem size="7">
+                        <img src="{!empty(v.listOfImageUrls) ? $Resource.BRCDefault : v.listOfImageUrls[0]}" width="600"/>
                     </lightning:layoutItem>
-                    <lightning:layoutItem class="details">
-                        <div class="">
+                    <lightning:layoutItem class="details" size="5">
+                        <div>
                             <p class="detailHeader">{!$Label.c.BRC_Product_Details}</p>
-                            <div class="detailItem">{!v.fieldLabels.production_year__c}</div>
+                            <div class="detailItem">{!v.fieldLabels.production_year__c}:</div>
                             <div class="detailItem">
                                 <lightning:outputField variant="label-hidden" fieldName="Production_Year__c"/>
                             </div>
                             <div style="clear:both"></div>
-                            <div class="detailItem">{!v.fieldLabels.productcode}</div>
+                            <div class="detailItem">{!v.fieldLabels.productcode}:</div>
                             <div class="detailItem">
                                 <lightning:outputField variant="label-hidden" fieldName="ProductCode"/>
                             </div>
                             <div style="clear:both"></div>
-                            <div class="detailItem">{!v.fieldLabels.brand__c}</div>
+                            <div class="detailItem">{!v.fieldLabels.brand__c}:</div>
                             <div class="detailItem">
                                 <lightning:outputField variant="label-hidden" fieldName="Brand__c"/>
                             </div>
                             <div style="clear:both"></div>
-                            <div class="detailItem">{!v.fieldLabels.model__c}</div>
+                            <div class="detailItem">{!v.fieldLabels.model__c}:</div>
                             <div class="detailItem">
                                 <lightning:outputField variant="label-hidden" fieldName="Model__c"/>
                             </div>
                             <div style="clear:both"></div>
-                            <div class="detailItem">{!v.fieldLabels.engine__c}</div>
+                            <div class="detailItem">{!v.fieldLabels.engine__c}:</div>
                             <div class="detailItem">
                                 <lightning:outputField variant="label-hidden" fieldName="Engine__c"/>
                             </div>
@@ -86,19 +66,10 @@
                 </lightning:layout>
             </div>
             <div class="sectionImages">
-                <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center">
-                    <aura:iteration items="{!v.listOfUrls}" var="distribution">
-                        <lightning:layoutItem>
-                            <div class="images">
-                                <c:BRCImageListItem distribution="{!distribution}" userProfile="{!v.userProfile}"/>
-                            </div>
-                        </lightning:layoutItem>
-                    </aura:iteration>
-                </lightning:layout>
-                <!--            <c:BRCCarouselGallery listOfUrls="{!v.listOfUrls}"/>-->
+                    <c:BRCCarouselGallery images="{!v.listOfImageUrls}"/>
             </div>
             <lightning:layout multipleRows="true">
-                <div class="detailHeader" style="margin-top: 10px">{!v.fieldLabels.description}</div>
+                <div class="detailHeader">{!v.fieldLabels.description}:</div>
                 <div style="text-align: justify">
                     <img src="{!$Resource.BRCEngineIcon}" class="textWrap"/>
                     <p style="margin-top: 10px;">
@@ -107,95 +78,5 @@
                 </div>
             </lightning:layout>
         </lightning:recordViewForm>
-            </lightning:layoutItem>
-            <lightning:layoutItem size="4">
-                <c:BRCProductPrice recordId="{!v.recordId}"/>
-            </lightning:layoutItem>
-        </lightning:layout>
     </lightning:card>
-    <aura:if isTrue="{!v.addImage}">
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
-                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container" style="width: 270px">
-                <header class="slds-modal__header" style="width: 270px">
-                    <lightning:buttonIcon iconName="utility:close"
-                                          onclick="{! c.closeModel }"
-                                          alternativeText="{!$Label.c.Button_Cancel}"
-                                          variant="bare-inverse"
-                                          class="slds-modal__close"/>
-                    <div class="checkbox">
-                        <ui:inputCheckbox aura:id="checkbox" label="{!$Label.c.Button_Add_Poster}" change="{!c.handleChange}"/>
-                    </div>
-                    <lightning:fileUpload name="fileUploader"
-                                          multiple="false"
-                                          accept=".jpg, .jpeg, .png"
-                                          class="uploadImage"
-                                          recordId="{!v.recordId}"
-                                          onuploadfinished="{! c.handleUploadFinished }"/>
-                </header>
-            </div>
-        </section>
-        <div class="slds-backdrop slds-backdrop_open"></div>
-    </aura:if>
-    <aura:if isTrue="{!v.edit}">
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
-                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container">
-                <header class="slds-modal__header">
-                    <lightning:buttonIcon iconName="utility:close"
-                                          onclick="{! c.closeModel }"
-                                          alternativeText="{!$Label.c.Button_Cancel}"
-                                          variant="bare-inverse"
-                                          class="slds-modal__close"/>
-                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Edit</h2>
-                </header>
-                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
-                    <lightning:recordEditForm aura:id="productForm"
-                            onsuccess="{!c.closeModel}"
-                            recordId="{!v.recordId}"
-                            objectApiName="Product2">
-                        <lightning:messages/>
-                        <lightning:layout multipleRows="true">
-                            <lightning:layoutItem size="8">
-                                <lightning:inputField fieldName="Name"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="4">
-                                <lightning:inputField fieldName="Production_Year__c"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="5">
-                                <lightning:inputField fieldName="Brand__c"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="5">
-                                <lightning:inputField fieldName="Model__c"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="2">
-                                <lightning:inputField fieldName="Engine__c"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="8">
-                                <lightning:inputField fieldName="ProductCode"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="4">
-                                <lightning:inputField fieldName="Number_of_Doors__c"/>
-                            </lightning:layoutItem>
-                            <lightning:layoutItem size="12">
-                                <lightning:inputField fieldName="Description" class="productDescription"/>
-                            </lightning:layoutItem>
-                        </lightning:layout>
-                    </lightning:recordEditForm>
-                </div>
-                <footer class="slds-modal__footer">
-                    <lightning:button variant="neutral"
-                                      label="{!$Label.c.Button_Cancel}"
-                                      class="customButton"
-                                      onclick="{! c.closeModel }"/>
-                    <lightning:button variant="neutral"
-                                      label="{!$Label.c.Button_Save}"
-                                      class="customButton"
-                                      onclick="{! c.saveRecord }"/>
-                </footer>
-            </div>
-        </section>
-        <div class="slds-backdrop slds-backdrop_open"></div>
-    </aura:if>
-
 </aura:component>

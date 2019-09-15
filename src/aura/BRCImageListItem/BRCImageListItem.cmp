@@ -1,24 +1,23 @@
-<aura:component description="BRCImageListItem" controller="BRCProductDetailController">
+<aura:component description="BRCImageListItem" controller="BRCProductImagesController">
 
     <aura:attribute name="distribution" type="Object"/>
-    <aura:attribute name="userProfile" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
     <aura:attribute name="openModal" type="Boolean" default="false"/>
 
-    <aura:registerEvent name="reloadImages" type="c:BRCReloadImagesAfterDelete"/>
+    <aura:registerEvent name="reloadImages" type="c:BRCReloadRecordPageEvent"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:button class="image" onclick="{!c.onSelect}">
         <div style="{!'background-image:url(' + v.distribution.ContentDownloadUrl + ')'}" class="innertile">
         </div>
     </lightning:button>
-
     <aura:if isTrue="{!v.openModal}">
         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
                  aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container" style="max-width: 150%">
                 <header class="slds-modal__header" style="border-radius: 25px; margin: 0px; padding: 10px">
                     <lightning:buttonIcon iconName="utility:close"
-                                          onclick="{! c.closeModel }"
+                                          onclick="{!c.closeModel}"
                                           alternativeText="Close"
                                           variant="bare-inverse"
                                           class="slds-modal__close"/>
@@ -26,14 +25,10 @@
                         <div>
                             <img src="{!v.distribution.ContentDownloadUrl}" width="1000" style="border-radius: 25px"/>
                         </div>
-                        <aura:if isTrue="{!notequals(v.userProfile,'BRC Customer Community User')}">
                         <div class="deleteButton">
-                            <lightning:button variant="neutral" label="Delete" title="Delete Image"
-                                              onclick="{!c.deleteImage}">
-<!--                                <lightning:icon class="red" iconName="utility:ban" size="medium"/>-->
-                            </lightning:button>
+                            <lightning:button variant="neutral" label="Select As Poster" title="Select As Poster" onclick="{!c.selectPoster}"/>
+                            <lightning:button variant="neutral" label="Delete" title="Delete Image" onclick="{!c.deleteImage}"/>
                         </div>
-                        </aura:if>
                     </div>
                 </header>
             </div>

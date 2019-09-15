@@ -1,7 +1,41 @@
-<aura:component description="BRCProductPrice" implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+<aura:component description="BRCProductPrice" controller="BRCProductDetailController"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
                 access="global">
+
     <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="priceList" type="PricebookEntry[]"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
     <lightning:card class="card" title="">
-        <p class="detailHeader"> Price:</p>
+        <lightning:layout multipleRows="true" class="mainPanel">
+            <aura:if isTrue="{!not(empty(v.priceList))}">
+                <lightning:layoutItem size="12" class="image">
+                    <img src="{!$Resource.BRCOrder}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="priceLabel">
+                    Best Price:
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="price">
+                    <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="orderButton">
+                    <lightning:button variant="base" label="Base" title="Add to Basket"
+                                      onclick="{! c.addToBasket }" class="customButton">
+                        <lightning:icon iconName="utility:fulfillment_order" size="small" class="red"/>
+                        Order Now
+                    </lightning:button>
+                </lightning:layoutItem>
+                <aura:set attribute="else">
+                    <lightning:layoutItem size="12" class="image">
+                        <img src="{!$Resource.BRCNoAvailable}" class="noImage"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" class="noAvailable">
+                        Product Not Available. Sorry.
+                    </lightning:layoutItem>
+                </aura:set>
+            </aura:if>
+        </lightning:layout>
     </lightning:card>
 </aura:component>
