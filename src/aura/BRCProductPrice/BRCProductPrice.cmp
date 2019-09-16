@@ -23,7 +23,7 @@
                 <lightning:layoutItem size="12" class="orderButton">
                     <lightning:button variant="base" label="{!$Label.c.BRC_Order_Product}"
                                       onclick="{! c.addToBasket }" class="customButton">
-                        <lightning:icon iconName="utility:fulfillment_order" size="small" class="red"/>
+                        <lightning:icon iconName="utility:fulfillment_order" size="small" class="red" alternativeText=""/>
                         {!$Label.c.BRC_Order_Product}
                     </lightning:button>
                 </lightning:layoutItem>

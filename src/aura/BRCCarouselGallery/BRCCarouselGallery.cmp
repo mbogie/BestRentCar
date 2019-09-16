@@ -2,7 +2,7 @@
 * <lukasz.szczygielski@britenet.com.pl> wrote this file.  As long as you retain this notice you
 * can do whatever you want with this stuff. If we meet some day, and you think
 * this stuff is worth it, you can buy me a beer in return.-->
-<aura:component description="BRCCarouselGallery" >
+<aura:component description="BRCCarouselGallery">
 
     <aura:attribute name="position" type="Integer" default="1"/>
     <aura:attribute name="maxPosition" type="Integer" default="1"/>
@@ -18,26 +18,28 @@
     <div aura:id="card-x">
         <p style="display:none;">{!v.position}</p>
         <p style="display:none;">{!v.maxPosition}</p>
-        <lightning:layout multipleRows="true" verticalAlign="center" horizontalAlign="center" >
+        <lightning:layout multipleRows="true" verticalAlign="center" horizontalAlign="center">
             <lightning:layoutItem size="12" padding="around-medium">
-                <lightning:layout  horizontalAlign="center" verticalAlign="center" class="outer_container">
-                    <lightning:layoutItem  size="1">
+                <lightning:layout horizontalAlign="center" verticalAlign="center" class="outer_container">
+                    <lightning:layoutItem size="1">
                         <div style="text-align:center">
-                        <lightning:buttonIcon iconName="utility:chevronleft"
-                                              onclick="{!c.goLeft}"/>
+                            <lightning:buttonIcon iconName="utility:chevronleft" onclick="{!c.goLeft}"
+                                                  alternativeText=""/>
                         </div>
                     </lightning:layoutItem>
-                    <lightning:layoutItem size="10" padding="around-small" flexibility="auto" >
+                    <lightning:layoutItem size="10" padding="around-small" flexibility="auto">
                         <div aura:id="wrapper">
                             <ui:scrollerWrapper class="scroll_wrapper" aura:id="scroll_wrapper">
-                                <div class="inner_container" aura:id="inner" style="{! 'width:'+v.images.length * 150 +'px;'}">
-                                    <lightning:layout class="inner_container" horizontalAlign="center" verticalAlign="center">
+                                <div class="inner_container" aura:id="inner"
+                                     style="{! 'width:'+v.images.length * 150 +'px;'}">
+                                    <lightning:layout class="inner_container" horizontalAlign="center"
+                                                      verticalAlign="center">
                                         <aura:iteration var="image" items="{!v.images}" indexVar="index">
-                                        <lightning:layoutItem>
-                                            <img class='img_element' alt='' data-index="{!index}"
-                                                 src="{!image}" onclick="{!c.openImage}"/>
-                                        </lightning:layoutItem>
-                                    </aura:iteration>
+                                            <lightning:layoutItem>
+                                                <img class='img_element' alt='' data-index="{!index}"
+                                                     src="{!image}" onclick="{!c.openImage}"/>
+                                            </lightning:layoutItem>
+                                        </aura:iteration>
                                     </lightning:layout>
                                 </div>
                             </ui:scrollerWrapper>
@@ -45,7 +47,8 @@
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
                         <div style="text-align:center">
-                        <lightning:buttonIcon iconName="utility:chevronright" onclick="{!c.goRight}"/>
+                            <lightning:buttonIcon iconName="utility:chevronright" onclick="{!c.goRight}"
+                                                  alternativeText=""/>
                         </div>
                     </lightning:layoutItem>
                 </lightning:layout>

@@ -17,7 +17,8 @@
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card class="card" title="">
-        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2" class="mainPanel">
+        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2"
+                                  class="mainPanel">
             <lightning:layout multipleRows="false" verticalAlign="center">
                 <lightning:layoutItem class="title">
                     <lightning:outputField fieldName="Name" class="headerName" variant="label-hidden"/>
@@ -26,7 +27,8 @@
             <div class="sectionDetails">
                 <lightning:layout multipleRows="false">
                     <lightning:layoutItem size="7">
-                        <img src="{!empty(v.listOfImageUrls) ? $Resource.BRCDefault : v.listOfImageUrls[0]}" width="600"/>
+                        <img src="{!empty(v.listOfImageUrls) ? $Resource.BRCDefault : v.listOfImageUrls[0]}"
+                             width="600"/>
                     </lightning:layoutItem>
                     <lightning:layoutItem class="details" size="5">
                         <div>
@@ -66,12 +68,12 @@
                 </lightning:layout>
             </div>
             <div class="sectionImages">
-                    <c:BRCCarouselGallery images="{!v.listOfImageUrls}"/>
+                <c:BRCCarouselGallery images="{!v.listOfImageUrls}"/>
             </div>
             <lightning:layout multipleRows="true">
                 <div class="detailHeader">{!v.fieldLabels.description}:</div>
                 <div style="text-align: justify">
-                    <img src="{!$Resource.BRCEngineIcon}" class="textWrap"/>
+                    <img src="{!$Resource.BRCEngineIcon}" class="textWrap" alt=""/>
                     <p style="margin-top: 10px;">
                         <lightning:outputField variant="label-hidden" fieldName="Description" class="innerText"/>
                     </p>
