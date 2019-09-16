@@ -5,7 +5,7 @@
 
     navigateToRecord: function(component, event, helper) {
         let prefixSite = $A.get("$Site.siteUrlPrefix");
-        let recordId = component.get("v.simpleRecord").Id;
+        let recordId = component.get("v.resultItem").product.Id;
         let urlEvent = $A.get("e.force:navigateToURL");
         urlEvent.setParams({
         "url": prefixSite + "/detail/" + recordId

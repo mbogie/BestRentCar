@@ -11,6 +11,9 @@
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" afterDir="false" />
@@ -63,9 +66,9 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568625684941" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568624995877" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568625023426" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568641569619" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568635127000" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568641703158" />
                       <entry key="AURA/BRCSEARCHPRODUCTS" value="1568594062113" />
                       <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568620795321" />
                     </map>

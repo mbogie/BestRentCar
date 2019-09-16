@@ -1,69 +1,5 @@
-.THIS.mainPanel {
-    padding: 10px 5px 10px 5px;
-    border: 2px solid #ebedf0;
-    border-radius: 15px;
-    margin: 0 5px 10px 5px;
-    width: 240px;
-    height: 330px;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px;
-}
-
-.THIS.mainPanel:hover {
-    background-color: #ebedf0;
-}
-
-.THIS .imagePanel {
-    vertical-align: middle;
-    height: 160px;
-    text-align: center;
-    position: relative;
-}
-
-.THIS .poster {
-    height: auto;
-    width : 200px;
-    border-radius: 15px;
-}
-
-.THIS .rightPanel {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 0;
-    border-left : 0;
-}
-
-.THIS .productLabel {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.THIS .detailPanel {
-    height: 60px;
-    padding-left : 10px;
-    color: black;
-}
-
-.THIS .price {
-    text-align: center;
-    color : red;
-    font-size: 20px;
-}
-
-.THIS .noPrice {
-    text-align: center;
-    color : black;
-    font-size: 20px;
-}
-
-.THIS .buttonOrder {
-    text-align: center;
-}
-
 .THIS .slds-button {
     width: 150px;
-    border: 2px solid red;
     background-color: orange;
     color: red;
     box-shadow: 2px 2px 5px;
@@ -72,4 +8,84 @@
 .THIS .slds-button:hover {
     background-color: darkorange;
     box-shadow: 5px 5px 10px;
+}
+
+.THIS.container {
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  background-color: #ebedf0;
+  border-radius: 5px;
+  margin: 0 5px 10px 5px;
+  width: 180px;
+  height: 225px;
+  cursor: pointer;
+}
+
+.THIS .image {
+  align: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 5px;
+  position:absolute;
+}
+
+.THIS .poster {
+  position: relative;
+  background-color: white;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.THIS .overlay {
+  padding: 0px 5px 0px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ebedf0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.THIS.container:hover .overlay {
+  height: 80%;
+}
+
+.THIS .productLabel {
+    height: 35px;
+    overflow: hidden;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.THIS .overlayLabel {
+    height: 70px;
+    padding: 5px 5px 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.THIS .price {
+    text-align: center;
+    color : red;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.THIS .buttonOrder {
+    text-align: center;
+}
+
+.THIS .detailItem {
+    padding: 5px 0px 0px 5px;
+    font-weight: bold;
 }

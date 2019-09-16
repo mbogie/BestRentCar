@@ -11,7 +11,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.init}"/>
 
     <lightning:layout horizontalAlign="center" multipleRows="false" class="mainPanel">
-        <lightning:layoutItem size="3" class="leftPanel">
+       <lightning:layoutItem size="3" class="leftPanel">
             <div class="panelLabel">
                 Filters:
             </div>
@@ -25,7 +25,7 @@
             <lightning:input type="date" label="Production Year After" value="{!v.productionYear}"/>
             </div>
             <div>
-<!--            <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>-->
+<!--                <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>-->
             </div>
             <div class="filterButton">
                 <lightning:button variant="neutral" label="Filter" title="Filter"
@@ -40,10 +40,10 @@
                 <lightning:layoutItem size="1" alignmentBump="left">
                     <aura:if isTrue="{!v.listView}">
                         <lightning:buttonIcon iconName="utility:justify_text" size="large" variant="bare"
-                                              onclick="{!c.changeView}"/>
+                                              onclick="{!c.changeView}" alternativeText=""/>
                         <aura:set attribute="else">
                             <lightning:buttonIcon iconName="utility:apps" size="large" variant="bare"
-                                                  onclick="{!c.changeView}"/>
+                                                  onclick="{!c.changeView}" alternativeText=""/>
                         </aura:set>
                     </aura:if>
                 </lightning:layoutItem>
