@@ -1,18 +1,12 @@
 ({
     handleClick : function(component, event, helper) {
-      var searchText = component.get('v.searchText');
-      var action = component.get('c.searchForIds');
-      action.setParams({searchText: searchText});
-      action.setCallback(this, function(response) {
-        var state = response.getState();
-        if (state === 'SUCCESS') {
-          var ids = response.getReturnValue();
-          sessionStorage.setItem('productSearch--recordIds', JSON.stringify(ids));
-          var navEvt = $A.get('e.force:navigateToURL');
-          navEvt.setParams({url: '/product-search-result'});
-          navEvt.fire();
+        helper.handleSearch(component, event, helper);
+    },
+
+    handleKeyUp : function(component, event, helper) {
+        if(event.getParams().keyCode == 13){
+            console.log('aaa');
+            helper.handleSearch(component, event, helper);
         }
-      });
-      $A.enqueueAction(action);
-    }
+    },
 })

@@ -3,8 +3,9 @@
     <div class="slds-form-element slds-lookup" data-select="single">
         <div class="slds-form-element__control">
             <div class="slds-input-has-icon slds-input-has-icon--right">
-                <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.handleClick }" alternativeText="Search" class="slds-input__icon" />
-                <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" />
+                <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="aa slds-input__icon"/>
+                <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="slds-input__icon"/>
+                <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" keyup="{!c.handleKeyUp}"/>
             </div>
         </div>
     </div>

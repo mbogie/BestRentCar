@@ -1,8 +1,69 @@
-<aura:component description="BRCProductSearchResultList" implements="forceCommunity:availableForAllPageTypes" access="global">
-    <aura:attribute type="list" name="recordIds" />
+<aura:component description="BRCProductSearchResultList" implements="forceCommunity:availableForAllPageTypes"
+                access="global">
+
+    <aura:attribute name="results" type="Object[]"/>
+    <aura:attribute name="shownResults" type="Object[]"/>
+    <aura:attribute name="listView" type="Boolean" default="false"/>
+    <aura:attribute name="minPrice" type="Currency" default=""/>
+    <aura:attribute name="maxPrice" type="Currency" default=""/>
+    <aura:attribute name="productionYear" type="Date" default=""/>
+
     <aura:handler name="init" value="{!this}" action="{!c.init}"/>
-    <h1>Search Results</h1>
-    <aura:iteration items="{!v.recordIds}" var="id">
-        <c:BRCProductSearchResultListItem recordId="{!id}"/>
-    </aura:iteration>
+
+    <lightning:layout horizontalAlign="center" multipleRows="false" class="mainPanel">
+        <lightning:layoutItem size="3" class="leftPanel">
+            <div class="panelLabel">
+                Filters:
+            </div>
+            <div>
+            <ui:inputCurrency label="Min Price" value="{!v.minPrice}"/>
+            </div>
+            <div>
+            <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>
+            </div>
+            <div>
+            <lightning:input type="date" label="Production Year After" value="{!v.productionYear}"/>
+            </div>
+            <div>
+<!--            <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>-->
+            </div>
+            <div class="filterButton">
+                <lightning:button variant="neutral" label="Filter" title="Filter"
+                                  onclick="{!c.filterResult}"/>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="9" class="rightPanel">
+            <lightning:layout horizontalAlign="center" multipleRows="false">
+                <lightning:layoutItem size="11" class="panelLabel">
+                    Results:
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1" alignmentBump="left">
+                    <aura:if isTrue="{!v.listView}">
+                        <lightning:buttonIcon iconName="utility:justify_text" size="large" variant="bare"
+                                              onclick="{!c.changeView}"/>
+                        <aura:set attribute="else">
+                            <lightning:buttonIcon iconName="utility:apps" size="large" variant="bare"
+                                                  onclick="{!c.changeView}"/>
+                        </aura:set>
+                    </aura:if>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout multipleRows="true" class="resultList" verticalAlign="center" horizontalAlign="center">
+                <aura:if isTrue="{!not(v.listView)}">
+                    <aura:iteration items="{!v.shownResults}" var="result">
+                        <lightning:layoutItem size="12">
+                            <c:BRCProductSearchResultListItem resultItem="{!result}"/>
+                        </lightning:layoutItem>
+                    </aura:iteration>
+                    <aura:set attribute="else">
+                        <aura:iteration items="{!v.shownResults}" var="result">
+                            <lightning:layoutItem>
+                                <c:BRCProductSearchResultTile resultItem="{!result}"/>
+                            </lightning:layoutItem>
+                        </aura:iteration>
+                    </aura:set>
+                </aura:if>
+            </lightning:layout>
+        </lightning:layoutItem>
+    </lightning:layout>
 </aura:component>

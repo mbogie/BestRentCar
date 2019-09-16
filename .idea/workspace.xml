@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="" />
+    <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +29,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Apex Class" />
+        <option value="Lightning Design" />
         <option value="Lightning Component" />
         <option value="Apex Metadata" />
-        <option value="Lightning Design" />
         <option value="Lightning Controller" />
+        <option value="Lightning Helper" />
         <option value="Lightning Style" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -28,7 +47,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568292559452" />
+              <option name="moduleContentsLastModified" value="1568589356548" />
               <option name="serverMetadataLastPopulated" value="1568289591093" />
             </ModuleWorkspaceSettings>
           </value>
@@ -44,10 +63,11 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568292783563" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568301419358" />
-                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568296037063" />
-                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568297918174" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568625684941" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568624995877" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568625023426" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568594062113" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568620795321" />
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>
@@ -55,11 +75,23 @@
             </entry>
           </map>
         </option>
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="documentText" value="SELECT&#10;        Brand__c,&#10;        ConnectionReceivedId,&#10;        ConnectionSentId,&#10;        CreatedById,&#10;        CreatedDate,&#10;        Description,&#10;        DisplayUrl,&#10;        Engine__c,&#10;        ExternalDataSourceId,&#10;        ExternalId,&#10;        Family,&#10;        Id,&#10;        IsActive,&#10;        IsArchived,&#10;        IsDeleted,&#10;        LastModifiedById,&#10;        LastModifiedDate,&#10;        LastReferencedDate,&#10;        LastViewedDate,&#10;        Model__c,&#10;        Name,&#10;        Number_of_Doors__c,&#10;        ProductCode,&#10;        Production_Year__c,&#10;        QuantityUnitOfMeasure,&#10;        StockKeepingUnit,&#10;        SystemModstamp&#10;FROM Product2" />
+            <option name="resultsSplitterProportion" value="0.69381106" />
+          </SoqlQuerySettings>
+        </option>
       </ProjectWorkspaceSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1QuMzY22xFPVGrvkNNxqJya8vnJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MoviePlanet" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,13 +108,34 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="" />
+      <created>1568616291817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568616291817</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">

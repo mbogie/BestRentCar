@@ -1,0 +1,27 @@
+.THIS.mainPanel {
+   /* border: 1px solid black;*/
+}
+
+.THIS .leftPanel {
+    padding : 10px 20px 10px 10px;
+}
+
+.THIS .rightPanel {
+    padding: 10px;
+    border-left: 1px solid gray;
+}
+
+.THIS .panelLabel {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.THIS .resultList {
+    border-top: 1px solid gray;
+    padding: 15px;
+}
+
+.THIS .filterButton {
+    text-align: center;
+    padding-top: 15px;
+}

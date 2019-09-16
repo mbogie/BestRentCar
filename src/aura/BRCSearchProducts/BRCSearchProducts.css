@@ -1,5 +1,11 @@
 .THIS .slds-input__icon{
    margin-top: -.8rem;
+   padding-right: 1rem;
+}
+
+.THIS .aa .slds-input__icon{
+   margin-top: -.8rem;
+   padding-right: 10rem;
 }
 
 .THIS {
