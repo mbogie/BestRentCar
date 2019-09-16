@@ -26,8 +26,8 @@
                             <img src="{!v.distribution.ContentDownloadUrl}" width="1000" style="border-radius: 25px"/>
                         </div>
                         <div class="deleteButton">
-                            <lightning:button variant="neutral" label="Select As Poster" title="Select As Poster" onclick="{!c.selectPoster}"/>
-                            <lightning:button variant="neutral" label="Delete" title="Delete Image" onclick="{!c.deleteImage}"/>
+                            <lightning:button variant="neutral" label="{!$Label.c.Button_Add_Poster}" title="Select As Poster" onclick="{!c.selectPoster}"/>
+                            <lightning:button variant="neutral" label="{!$Label.c.Button_Delete}" title="Delete Image" onclick="{!c.deleteImage}"/>
                         </div>
                     </div>
                 </header>

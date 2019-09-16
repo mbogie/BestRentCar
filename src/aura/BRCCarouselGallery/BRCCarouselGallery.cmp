@@ -23,7 +23,7 @@
                 <lightning:layout  horizontalAlign="center" verticalAlign="center" class="outer_container">
                     <lightning:layoutItem  size="1">
                         <div style="text-align:center">
-                        <lightning:buttonIcon alternativeText="left" iconName="utility:chevronleft"
+                        <lightning:buttonIcon iconName="utility:chevronleft"
                                               onclick="{!c.goLeft}"/>
                         </div>
                     </lightning:layoutItem>
@@ -34,7 +34,7 @@
                                     <lightning:layout class="inner_container" horizontalAlign="center" verticalAlign="center">
                                         <aura:iteration var="image" items="{!v.images}" indexVar="index">
                                         <lightning:layoutItem>
-                                            <img class='img_element' alt='missing pic' data-index="{!index}"
+                                            <img class='img_element' alt='' data-index="{!index}"
                                                  src="{!image}" onclick="{!c.openImage}"/>
                                         </lightning:layoutItem>
                                     </aura:iteration>
@@ -45,8 +45,7 @@
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
                         <div style="text-align:center">
-                        <lightning:buttonIcon alternativeText="right"
-                                              iconName="utility:chevronright" onclick="{!c.goRight}"/>
+                        <lightning:buttonIcon iconName="utility:chevronright" onclick="{!c.goRight}"/>
                         </div>
                     </lightning:layoutItem>
                 </lightning:layout>

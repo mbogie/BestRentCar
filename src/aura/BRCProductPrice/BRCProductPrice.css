@@ -47,9 +47,14 @@
 
 .THIS .slds-button {
     width: 300px;
-    border: 2px solid red;
     background-color: orange;
     color: red;
+    box-shadow: 2px 2px 5px;
+}
+
+.THIS .slds-button:hover {
+    background-color: darkorange;
+    box-shadow: 5px 5px 10px;
 }
 
 .THIS .red svg {

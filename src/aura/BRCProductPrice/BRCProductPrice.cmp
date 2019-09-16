@@ -15,16 +15,16 @@
                     <img src="{!$Resource.BRCOrder}"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="priceLabel">
-                    Best Price:
+                        {!$Label.c.BRC_Price}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="price">
                     <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="orderButton">
-                    <lightning:button variant="base" label="Base" title="Add to Basket"
+                    <lightning:button variant="base" label="{!$Label.c.BRC_Order_Product}"
                                       onclick="{! c.addToBasket }" class="customButton">
                         <lightning:icon iconName="utility:fulfillment_order" size="small" class="red"/>
-                        Order Now
+                        {!$Label.c.BRC_Order_Product}
                     </lightning:button>
                 </lightning:layoutItem>
                 <aura:set attribute="else">
@@ -32,7 +32,7 @@
                         <img src="{!$Resource.BRCNoAvailable}" class="noImage"/>
                     </lightning:layoutItem>
                     <lightning:layoutItem size="12" class="noAvailable">
-                        Product Not Available. Sorry.
+                            {!$Label.c.BRC_No_Available}
                     </lightning:layoutItem>
                 </aura:set>
             </aura:if>
