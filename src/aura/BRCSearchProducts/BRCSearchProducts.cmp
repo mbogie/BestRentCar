@@ -1,12 +1,20 @@
 <aura:component description="BRCSearchProducts" controller="BRCSearchProductsController" implements="forceCommunity:searchInterface">
     <aura:attribute name="searchText" type="String" default=""/>
-    <div class="slds-form-element slds-lookup" data-select="single">
-        <div class="slds-form-element__control">
-            <div class="slds-input-has-icon slds-input-has-icon--right">
-                <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="aa slds-input__icon"/>
-                <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="slds-input__icon"/>
-                <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" keyup="{!c.handleKeyUp}"/>
+    <lightning:layout horizontalAlign="center" multipleRows="false">
+     <lightning:layoutItem size="1">
+         <div onclick="{!c.showBasket}" class="iconContainer">
+             <lightning:icon class="basket" iconName="utility:cart" size="large" alternativeText=""/>
+         </div>
+     </lightning:layoutItem>
+        <lightning:layoutItem size="11">
+            <div class="slds-form-element slds-lookup" data-select="single">
+                <div class="slds-form-element__control">
+                    <div class="slds-input-has-icon slds-input-has-icon&#45;&#45;right">
+                        <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="slds-input__icon"/>
+                        <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" keyup="{!c.handleKeyUp}"/>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </lightning:layoutItem>
+    </lightning:layout>
 </aura:component>

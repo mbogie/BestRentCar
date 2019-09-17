@@ -1,6 +1,6 @@
 public with sharing class BRCSearchProductsController {
 
-    public class SearchResultItem{
+    public class SearchResultItem {
         @AuraEnabled public Product2 product = new Product2();
         @AuraEnabled public List<PricebookEntry> price = new List<PricebookEntry>();
 
@@ -23,9 +23,9 @@ public with sharing class BRCSearchProductsController {
             List<PricebookEntry> priceList = new List<PricebookEntry>();
             priceList = [SELECT Id, Product2Id, Pricebook2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id IN :ids];
 
-            for (PricebookEntry entry : priceList){
-                for(SearchResultItem item : searchResults){
-                    if(entry.Product2Id == item.product.Id){
+            for (PricebookEntry entry : priceList) {
+                for (SearchResultItem item : searchResults) {
+                    if (entry.Product2Id == item.product.Id) {
                         System.debug(entry);
                         item.price.add(entry);
                     }
@@ -43,14 +43,14 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static String getProductPoster(String recordId) {
         try {
-            String posterUrl ='';
+            String posterUrl = '';
             List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :recordId];
             Set<Id> contentIds = new Set<Id>();
             for (ContentDocumentLink link : documentLinks) {
                 contentIds.add(link.ContentDocumentId);
             }
             List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') AND Type__c = 'poster'];
-            if(!contentVersions.isEmpty()) {
+            if (!contentVersions.isEmpty()) {
                 List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId = :contentVersions.get(0).Id];
                 posterUrl = distributions.get(0).ContentDownloadUrl;
             }
@@ -61,12 +61,28 @@ public with sharing class BRCSearchProductsController {
         }
     }
 
-    @AuraEnabled
+/*    @AuraEnabled
     public static List<PricebookEntry> getPrice(String recordId) {
         try {
             List<PricebookEntry> priceList = new List<PricebookEntry>();
             priceList = [SELECT Id, Product2Id, Pricebook2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id = :recordId];
             return priceList;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }*/
+
+    @AuraEnabled
+    public static List<String> getBrands() {
+        try {
+            List<String> pickListValuesList = new List<String>();
+            Schema.DescribeFieldResult fieldResult = Product2.Brand__c.getDescribe();
+            List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
+            for (Schema.PicklistEntry pickListVal : ple) {
+                pickListValuesList.add(pickListVal.getLabel());
+            }
+            return pickListValuesList;
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);

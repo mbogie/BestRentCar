@@ -1,6 +1,6 @@
 .THIS.mainPanel {
     padding: 10px 5px 10px 5px;
-    background-color: #ebedff;
+    background-color: #ebedf0;
     border-radius: 5px;
     margin-bottom: 10px;
     width: 100%;
@@ -24,7 +24,7 @@
 .THIS .poster {
     height: auto;
     width : 200px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .THIS .rightPanel {

@@ -12,4 +12,22 @@
         });
         urlEvent.fire();
     },
+
+    addToBasket: function(component, event, helper) {
+        let objectItem = component.get("v.resultItem");
+        let userId = $A.get("$SObjectType.CurrentUser.Id");
+        let cartJson = sessionStorage.getItem('cart'+userId);
+        if (!$A.util.isUndefinedOrNull(cartJson)) {
+            console.log('add to list');
+            let basketList = JSON.parse(cartJson);
+            basketList.push(objectItem);
+            console.log(basketList);
+            sessionStorage.setItem('cart'+userId, JSON.stringify(basketList));
+        } else {
+            console.log('new list');
+            let basketList = [objectItem];
+            console.log(basketList);
+            sessionStorage.setItem('cart'+userId, JSON.stringify(basketList));
+        }
+    }
 })

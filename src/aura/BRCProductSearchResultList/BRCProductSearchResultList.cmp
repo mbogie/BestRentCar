@@ -1,4 +1,5 @@
-<aura:component description="BRCProductSearchResultList" implements="forceCommunity:availableForAllPageTypes"
+<aura:component description="BRCProductSearchResultList" controller="BRCSearchProductsController"
+                implements="forceCommunity:availableForAllPageTypes"
                 access="global">
 
     <aura:attribute name="results" type="Object[]"/>
@@ -6,28 +7,44 @@
     <aura:attribute name="listView" type="Boolean" default="false"/>
     <aura:attribute name="minPrice" type="Currency" default=""/>
     <aura:attribute name="maxPrice" type="Currency" default=""/>
+    <aura:attribute name="searchText" type="String" default=""/>
     <aura:attribute name="productionYear" type="Date" default=""/>
+    <aura:attribute name="brands" type="String[]" default=""/>
 
     <aura:handler name="init" value="{!this}" action="{!c.init}"/>
 
     <lightning:layout horizontalAlign="center" multipleRows="false" class="mainPanel">
-       <lightning:layoutItem size="3" class="leftPanel">
+        <lightning:layoutItem size="3" class="leftPanel">
             <div class="panelLabel">
                 Filters:
             </div>
-            <div>
-            <ui:inputCurrency label="Min Price" value="{!v.minPrice}"/>
+            <div class="filterItem">
+                <lightning:select aura:id="brandSelect" name="select" label="Brand">
+                    <option value="">--none--</option>
+                    <aura:iteration items="{!v.brands}" var="brand">
+                        <option value="{!brand}">{!brand}</option>
+                    </aura:iteration>
+                </lightning:select>
             </div>
-            <div>
-            <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>
+            <div class="filterItem">
+                <lightning:input type="date" label="Production Year After" value="{!v.productionYear}"/>
             </div>
-            <div>
-            <lightning:input type="date" label="Production Year After" value="{!v.productionYear}"/>
+            <div class="filterItem">
+                <lightning:select aura:id="select" name="select" label="Number of Doors">
+                    <option value="">-</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </lightning:select>
             </div>
-            <div>
-<!--                <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>-->
+            <div class="filterItem">
+                <div style="width:49%; float:left">
+                    <ui:inputCurrency label="Min Price" value="{!v.minPrice}"/>
+                </div>
+                <div style="width:49%; float:right">
+                    <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>
+                </div>
             </div>
-            <div class="filterButton">
+            <div class="filterButton" style="clear:both">
                 <lightning:button variant="neutral" label="Filter" title="Filter"
                                   onclick="{!c.filterResult}"/>
             </div>
@@ -35,7 +52,7 @@
         <lightning:layoutItem size="9" class="rightPanel">
             <lightning:layout horizontalAlign="center" multipleRows="false">
                 <lightning:layoutItem size="11" class="panelLabel">
-                    Results:
+                    Results for: {!v.searchText}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="1" alignmentBump="left">
                     <aura:if isTrue="{!v.listView}">

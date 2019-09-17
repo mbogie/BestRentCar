@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/6.ProductPage" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
@@ -66,11 +69,11 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568641569619" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568635127000" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568641703158" />
-                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568594062113" />
-                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568620795321" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568666759876" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568671165604" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568670433947" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568701725109" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568667139922" />
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>
@@ -80,8 +83,9 @@
         </option>
         <option name="soqlQuerySettings">
           <SoqlQuerySettings>
-            <option name="documentText" value="SELECT&#10;        Brand__c,&#10;        ConnectionReceivedId,&#10;        ConnectionSentId,&#10;        CreatedById,&#10;        CreatedDate,&#10;        Description,&#10;        DisplayUrl,&#10;        Engine__c,&#10;        ExternalDataSourceId,&#10;        ExternalId,&#10;        Family,&#10;        Id,&#10;        IsActive,&#10;        IsArchived,&#10;        IsDeleted,&#10;        LastModifiedById,&#10;        LastModifiedDate,&#10;        LastReferencedDate,&#10;        LastViewedDate,&#10;        Model__c,&#10;        Name,&#10;        Number_of_Doors__c,&#10;        ProductCode,&#10;        Production_Year__c,&#10;        QuantityUnitOfMeasure,&#10;        StockKeepingUnit,&#10;        SystemModstamp&#10;FROM Product2" />
+            <option name="documentText" value="SELECT&#10;        AboutMe,&#10;AccountId,&#10;Address,&#10;Alias,&#10;BadgeText,&#10;BannerPhotoUrl,&#10;CallCenterId,&#10;City,&#10;CommunityNickname,&#10;CompanyName,&#10;ContactId,&#10;Country,&#10;Country__c,&#10;CreatedById,&#10;CreatedDate,&#10;DefaultGroupNotificationFrequency,&#10;DelegatedApproverId,&#10;Department,&#10;DigestFrequency,&#10;Division,&#10;Email,&#10;EmailEncodingKey,&#10;EmailPreferencesAutoBcc,&#10;EmailPreferencesAutoBccStayInTouch,&#10;EmailPreferencesStayInTouchReminder,&#10;EmployeeNumber,&#10;Extension,&#10;Fax,&#10;FederationIdentifier,&#10;FirstName,&#10;ForecastEnabled,&#10;FullPhotoUrl,&#10;GeocodeAccuracy,&#10;Id,&#10;IsActive,&#10;IsExtIndicatorVisible,&#10;IsPortalEnabled,&#10;IsProfilePhotoActive,&#10;JigsawImportLimitOverride,&#10;LanguageLocaleKey,&#10;LastLoginDate,&#10;LastModifiedById,&#10;LastModifiedDate,&#10;LastName,&#10;LastPasswordChangeDate,&#10;LastReferencedDate,&#10;LastViewedDate,&#10;Latitude,&#10;LocaleSidKey,&#10;Longitude,&#10;ManagerId,&#10;MediumBannerPhotoUrl,&#10;MediumPhotoUrl,&#10;MobilePhone,&#10;Name,&#10;NumberOfFailedLogins,&#10;OfflinePdaTrialExpirationDate,&#10;OfflineTrialExpirationDate,&#10;OutOfOfficeMessage,&#10;Phone,&#10;PortalRole,&#10;PostalCode,&#10;ProfileId,&#10;ReceivesAdminInfoEmails,&#10;ReceivesInfoEmails,&#10;SenderEmail,&#10;SenderName,&#10;Signature,&#10;SmallBannerPhotoUrl,&#10;SmallPhotoUrl,&#10;State,&#10;StayInTouchNote,&#10;StayInTouchSignature,&#10;StayInTouchSubject,&#10;Street,&#10;SystemModstamp,&#10;TimeZoneSidKey,&#10;Title,&#10;Username,&#10;UserPermissionsCallCenterAutoLogin,&#10;UserPermissionsInteractionUser,&#10;UserPermissionsJigsawProspectingUser,&#10;UserPermissionsKnowledgeUser,&#10;UserPermissionsLiveAgentUser,&#10;UserPermissionsMarketingUser,&#10;UserPermissionsMobileUser,&#10;UserPermissionsOfflineUser,&#10;UserPermissionsSFContentUser,&#10;UserPermissionsSiteforceContributorUser,&#10;UserPermissionsSiteforcePublisherUser,&#10;UserPermissionsSupportUser,&#10;UserPermissionsWorkDotComUserFeature,&#10;UserPreferencesActivityRemindersPopup,&#10;UserPreferencesApexPagesDeveloperMode,&#10;UserPreferencesCacheDiagnostics,&#10;UserPreferencesContentEmailAsAndWhen,&#10;UserPreferencesContentNoEmail,&#10;UserPreferencesCreateLEXAppsWTShown,&#10;UserPreferencesDisableAllFeedsEmail,&#10;UserPreferencesDisableBookmarkEmail,&#10;UserPreferencesDisableChangeCommentEmail,&#10;UserPreferencesDisableEndorsementEmail,&#10;UserPreferencesDisableFeedbackEmail,&#10;UserPreferencesDisableFileShareNotificationsForApi,&#10;UserPreferencesDisableFollowersEmail,&#10;UserPreferencesDisableLaterCommentEmail,&#10;UserPreferencesDisableLikeEmail,&#10;UserPreferencesDisableMentionsPostEmail,&#10;UserPreferencesDisableMessageEmail,&#10;UserPreferencesDisableProfilePostEmail,&#10;UserPreferencesDisableSharePostEmail,&#10;UserPreferencesDisableWorkEmail,&#10;UserPreferencesDisCommentAfterLikeEmail,&#10;UserPreferencesDisMentionsCommentEmail,&#10;UserPreferencesDisProfPostCommentEmail,&#10;UserPreferencesEnableAutoSubForFeeds,&#10;UserPreferencesEventRemindersCheckboxDefault,&#10;UserPreferencesExcludeMailAppAttachments,&#10;UserPreferencesFavoritesShowTopFavorites,&#10;UserPreferencesFavoritesWTShown,&#10;UserPreferencesGlobalNavBarWTShown,&#10;UserPreferencesGlobalNavGridMenuWTShown,&#10;UserPreferencesHasCelebrationBadge,&#10;UserPreferencesHideBiggerPhotoCallout,&#10;UserPreferencesHideChatterOnboardingSplash,&#10;UserPreferencesHideCSNDesktopTask,&#10;UserPreferencesHideCSNGetChatterMobileTask,&#10;UserPreferencesHideEndUserOnboardingAssistantModal,&#10;UserPreferencesHideLightningMigrationModal,&#10;UserPreferencesHideS1BrowserUI,&#10;UserPreferencesHideSecondChatterOnboardingSplash,&#10;UserPreferencesHideSfxWelcomeMat,&#10;UserPreferencesJigsawListUser,&#10;UserPreferencesLightningExperiencePreferred,&#10;UserPreferencesNewLightningReportRunPageEnabled,&#10;UserPreferencesPathAssistantCollapsed,&#10;UserPreferencesPipelineViewHideHelpPopover,&#10;UserPreferencesPreviewCustomTheme,&#10;UserPreferencesPreviewLightning,&#10;UserPreferencesReceiveNoNotificationsAsApprover,&#10;UserPreferencesReceiveNotificationsAsDelegatedApprover,&#10;UserPreferencesRecordHomeReservedWTShown,&#10;UserPreferencesRecordHomeSectionCollapseWTShown,&#10;UserPreferencesReminderSoundOff,&#10;UserPreferencesShowCityToExternalUsers,&#10;UserPreferencesShowCityToGuestUsers,&#10;UserPreferencesShowCountryToExternalUsers,&#10;UserPreferencesShowCountryToGuestUsers,&#10;UserPreferencesShowEmailToExternalUsers,&#10;UserPreferencesShowEmailToGuestUsers,&#10;UserPreferencesShowFaxToExternalUsers,&#10;UserPreferencesShowFaxToGuestUsers,&#10;UserPreferencesShowManagerToExternalUsers,&#10;UserPreferencesShowManagerToGuestUsers,&#10;UserPreferencesShowMobilePhoneToExternalUsers,&#10;UserPreferencesShowMobilePhoneToGuestUsers,&#10;UserPreferencesShowPostalCodeToExternalUsers,&#10;UserPreferencesShowPostalCodeToGuestUsers,&#10;UserPreferencesShowProfilePicToGuestUsers,&#10;UserPreferencesShowStateToExternalUsers,&#10;UserPreferencesShowStateToGuestUsers,&#10;UserPreferencesShowStreetAddressToExternalUsers,&#10;UserPreferencesShowStreetAddressToGuestUsers,&#10;UserPreferencesShowTitleToExternalUsers,&#10;UserPreferencesShowTitleToGuestUsers,&#10;UserPreferencesShowWorkPhoneToExternalUsers,&#10;UserPreferencesShowWorkPhoneToGuestUsers,&#10;UserPreferencesSortFeedByComment,&#10;UserPreferencesSRHOverrideActivities,&#10;UserPreferencesSuppressEventSFXReminders,&#10;UserPreferencesSuppressTaskSFXReminders,&#10;UserPreferencesTaskRemindersCheckboxDefault,&#10;UserPreferencesUserDebugModePref,&#10;UserRoleId,&#10;UserType&#10;FROM User" />
             <option name="resultsSplitterProportion" value="0.69381106" />
+            <option name="splitterProportion" value="0.44396082" />
           </SoqlQuerySettings>
         </option>
       </ProjectWorkspaceSettings>

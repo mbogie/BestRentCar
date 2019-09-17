@@ -34,7 +34,7 @@
                 </div>
                 <div class="buttonOrder">
                     <lightning:button variant="base" label="Order" title="Add to Basket"
-                                      onclick="{! c.addToBasket }" class="customButton"/>
+                                      onclick="{!c.addToBasket}" class="customButton"/>
                 </div>
             </aura:if>
         </div>

@@ -1,5 +1,4 @@
 .THIS.mainPanel {
-   /* border: 1px solid black;*/
 }
 
 .THIS .leftPanel {
@@ -12,16 +11,19 @@
 }
 
 .THIS .panelLabel {
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 
 .THIS .resultList {
-    border-top: 1px solid gray;
     padding: 15px;
 }
 
 .THIS .filterButton {
     text-align: center;
     padding-top: 15px;
+}
+
+.THIS .filterItem {
+   margin-bottom: 10px;
 }

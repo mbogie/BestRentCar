@@ -12,4 +12,9 @@
         });
         urlEvent.fire();
     },
+
+    addToBasket: function(component, event, helper) {
+        let objectItem = component.get("v.resultItem");
+        let userId = $A.get("$SObjectType.CurrentUser.Id");
+    }
 })
