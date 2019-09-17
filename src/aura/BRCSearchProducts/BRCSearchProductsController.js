@@ -10,20 +10,15 @@
     },
 
     showBasket: function(component, event, helper) {
-        let userId = $A.get("$SObjectType.CurrentUser.Id");
+        component.set("v.openCart", true);
+        /*let userId = $A.get("$SObjectType.CurrentUser.Id");
         console.log(userId);
         let cartJson = sessionStorage.getItem('cart'+userId);
-        console.log(JSON.parse(cartJson));
+        console.log(JSON.parse(cartJson));*/
 
     },
 
-    onButtonClick: function(component, event, helper) {
-        component.find("showme").slideDown();
-    },
-
-    showCard: function(component, event, helper) {
-        window.isoverdiv = true;
-    },
-
-
+    closeModel: function(component, event, helper) {
+        component.set("v.openCart", false);
+   },
 })

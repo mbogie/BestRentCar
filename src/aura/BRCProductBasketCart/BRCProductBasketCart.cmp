@@ -1,0 +1,53 @@
+<aura:component description="BRCProductBasketCart">
+    <aura:attribute name="productList" type="Object[]"/>
+    <aura:attribute name="emptyCard" type="Boolean" default="true"/>
+    <aura:attribute name="totalPrice" type="Currency" default="0"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+        <lightning:layout multipleRows="false" horizontalAlign="center" class="header">
+            <lightning:layoutItem size="7">
+                Your Cart:
+            </lightning:layoutItem>
+            <lightning:layoutItem size="5">
+                <div style="float:left; padding-right:10px">
+                    Total Price:
+                </div>
+                <div style="float:left; color: red">
+                    <lightning:formattedNumber value="{!v.totalPrice}" style="currency" currencyCode="EUR"/>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    <lightning:layout multipleRows="false" class="tableHeader">
+        <lightning:layoutItem size="7">
+            Product Name:
+        </lightning:layoutItem>
+        <lightning:layoutItem size="5">
+            Price:
+        </lightning:layoutItem>
+    </lightning:layout>
+    <aura:iteration var="product" items="{!v.productList}" indexVar="index">
+        <lightning:layout multipleRows="true" class="tableRow">
+            <lightning:layoutItem size="7">
+                {!product.product.Name}
+            </lightning:layoutItem>
+            <lightning:layoutItem size="5">
+                <lightning:formattedNumber value="{!product.price[0].UnitPrice}" style="currency" currencyCode="EUR"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </aura:iteration>
+
+    <lightning:layout multipleRows="true" class="buttons" horizontalAlign="end">
+<!--            <aura:if isTrue="{!not(v.emptyCard)}">-->
+        <lightning:button variant="base"
+                      label="Clear Cart"
+                      title="Clear Cart"
+                      onclick="{!c.clearCart}"/>
+    <lightning:button variant="base"
+                      label="Order"
+                      title="Order"
+                      onclick="{!c.orderProducts}"/>
+<!--    </aura:if>-->
+    </lightning:layout>
+
+</aura:component>

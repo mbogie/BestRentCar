@@ -33,7 +33,7 @@
                                                currencyCode="EUR"/>
                 </div>
                 <div class="buttonOrder">
-                    <lightning:button variant="base" label="Order" title="Add to Basket"
+                    <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}" title="{!$Label.c.BRC_Add_To_Cart}"
                                       onclick="{!c.addToBasket}" class="customButton"/>
                 </div>
             </aura:if>

@@ -63,6 +63,7 @@
     background-color: orange;
     color: red;
     box-shadow: 2px 2px 5px;
+    font-size: 12px;
 }
 
 .THIS .slds-button:hover {

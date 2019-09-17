@@ -1,8 +1,11 @@
 <aura:component description="BRCSearchProducts" controller="BRCSearchProductsController" implements="forceCommunity:searchInterface">
+
     <aura:attribute name="searchText" type="String" default=""/>
+    <aura:attribute name="openCart" type="Boolean" default="false"/>
+
     <lightning:layout horizontalAlign="center" multipleRows="false">
      <lightning:layoutItem size="1">
-         <div onclick="{!c.showBasket}" class="iconContainer">
+         <div onmouseenter="{!c.showBasket}" class="iconContainer">
              <lightning:icon class="basket" iconName="utility:cart" size="large" alternativeText=""/>
          </div>
      </lightning:layoutItem>
@@ -17,4 +20,13 @@
             </div>
         </lightning:layoutItem>
     </lightning:layout>
+    <aura:if isTrue="{!v.openCart}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" onmouseleave="{!c.closeModel}">
+                    <c:BRCProductBasketCart/>
+                </div>
+            </div>
+        </section>
+    </aura:if>
 </aura:component>

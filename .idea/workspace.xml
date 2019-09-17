@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
@@ -14,8 +17,6 @@
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568589356548" />
+              <option name="moduleContentsLastModified" value="1568705472747" />
               <option name="serverMetadataLastPopulated" value="1568289591093" />
             </ModuleWorkspaceSettings>
           </value>
@@ -69,10 +70,11 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
+                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568714895789" />
                       <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568666759876" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568671165604" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568670433947" />
-                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568701725109" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568705621572" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568706454423" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568713251791" />
                       <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568667139922" />
                     </map>
                   </option>

@@ -23,11 +23,13 @@
             basketList.push(objectItem);
             console.log(basketList);
             sessionStorage.setItem('cart'+userId, JSON.stringify(basketList));
+            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Product_Added_to_Cart}"), "info");
         } else {
             console.log('new list');
             let basketList = [objectItem];
             console.log(basketList);
             sessionStorage.setItem('cart'+userId, JSON.stringify(basketList));
+            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Product_Added_to_Cart}"), "info");
         }
-    }
+    },
 })

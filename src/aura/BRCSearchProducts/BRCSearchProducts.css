@@ -12,47 +12,20 @@
 }
 
 .THIS .basket svg {
-    fill: red;
+    fill: #ebedf0;
     height: 40px;
 }
 
-.THIS .container {
-  position: relative;
-  width: 50%;
+.THIS .slds-modal__container {
+    position: absolute;
+    left: 100px;
 }
 
-.THIS .image {
-  display: block;
-  width: 100%;
-  height: auto;
+.THIS .slds-modal__content {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background-color: #ebedf0;
+    border-radius: 10px;
+    border: 1px solid lightgray;
 }
-
-.THIS .overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 500px;
-  height:500px;
-  transition: .5s ease;
-}
-
-.THIS .container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.THIS .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
