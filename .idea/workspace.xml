@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
                       <entry key="AURA/BRCIMAGELISTITEM" value="1568626679254" />
                       <entry key="AURA/BRCPRODUCTDETAILS" value="1568702913768" />
                       <entry key="AURA/BRCPRODUCTIMAGES" value="1568384336338" />
-                      <entry key="AURA/BRCPRODUCTPRICE" value="1568704586114" />
+                      <entry key="AURA/BRCPRODUCTPRICE" value="1568727181557" />
                       <entry key="AURA/BRCRELOADRECORDPAGEEVENT" value="1568559395000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
                       <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
