@@ -54,7 +54,7 @@ global without sharing class BRCProductDetailController {
     global static List<PricebookEntry> getPrice(String recordId) {
         try {
             List<PricebookEntry> priceList = new List<PricebookEntry>();
-            priceList = [SELECT Id, Pricebook2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id = :recordId];
+            priceList = [SELECT Id, Pricebook2Id, Product2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id = :recordId];
             return priceList;
         } catch (Exception e) {
             System.debug(e.getMessage());

@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImages.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadRecordPageEvent/BRCReloadRecordPageEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadRecordPageEvent/BRCReloadRecordPageEvent.evt-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCProductImagesController.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/BRCProductImagesController.cls-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryRenderer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryRenderer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCReloadImagesAfterDelete/BRCReloadImagesAfterDelete.evt-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImages.cmp-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Product2.object" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Product2.object" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,13 +81,13 @@
                       <entry key="AURA/BRCCAROUSELGALLERY" value="1568642242369" />
                       <entry key="AURA/BRCCUSTOMTOAST" value="1568626768860" />
                       <entry key="AURA/BRCIMAGELISTITEM" value="1568626679254" />
-                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568642191655" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568702913768" />
                       <entry key="AURA/BRCPRODUCTIMAGES" value="1568384336338" />
-                      <entry key="AURA/BRCPRODUCTPRICE" value="1568641915617" />
+                      <entry key="AURA/BRCPRODUCTPRICE" value="1568704586114" />
                       <entry key="AURA/BRCRELOADRECORDPAGEEVENT" value="1568559395000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
                       <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
-                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1568562185514" />
+                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1568704264160" />
                       <entry key="CLASSES/BRCPRODUCTIMAGESCONTROLLER.CLS" value="1568562163454" />
                       <entry key="CLASSES/BRCTRIGGERFACTORY.CLS" value="1567065252714" />
                       <entry key="CLASSES/BRCUTILS.CLS" value="1568187674055" />

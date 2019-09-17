@@ -4,14 +4,23 @@
 
     <aura:attribute name="recordId" type="Id"/>
     <aura:attribute name="priceList" type="PricebookEntry[]"/>
+    <aura:attribute name="productItem" type="Product2"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.productItem}"
+                      targetError="{!v.recordError}"
+                      layoutType="FULL"
+    />
 
     <lightning:card class="card" title="">
         <lightning:layout multipleRows="true" class="mainPanel">
             <aura:if isTrue="{!not(empty(v.priceList))}">
                 <lightning:layoutItem size="12" class="image">
+                    {!v.productItem.Brand__c}
                     <img src="{!$Resource.BRCOrder}"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="priceLabel">
@@ -21,10 +30,10 @@
                     <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="orderButton">
-                    <lightning:button variant="base" label="{!$Label.c.BRC_Order_Product}"
-                                      onclick="{! c.addToBasket }" class="customButton">
+                    <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}"
+                                      onclick="{!c.addToBasket}" class="customButton">
                         <lightning:icon iconName="utility:fulfillment_order" size="small" class="red" alternativeText=""/>
-                        {!$Label.c.BRC_Order_Product}
+                        {!$Label.c.BRC_Add_To_Cart}
                     </lightning:button>
                 </lightning:layoutItem>
                 <aura:set attribute="else">
@@ -38,4 +47,8 @@
             </aura:if>
         </lightning:layout>
     </lightning:card>
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+                {!v.recordError}</div>
+    </aura:if>
 </aura:component>
