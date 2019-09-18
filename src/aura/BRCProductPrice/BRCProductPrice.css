@@ -1,8 +1,9 @@
 .THIS.card {
-    /*padding-top: 50px;*/
-    padding-right: 30px;
+    position: fixed;
+    padding: 0 20px 0 20px;
     text-align:center;
-    border: 0 !important;
+    /*border: 0 !important;*/
+    width: 350px;
 }
 
 .THIS .mainPanel {
@@ -55,13 +56,12 @@
 .THIS .customButton {
     padding: 0 0 3px 0;
     width: 300px;
-    background-color: orange;
-    color: red;
-    border: 1px solid darkorange;
+    background-color: #75a8e6;
+    color: #ebedf0;;
 }
 
 .THIS .customButton:hover {
-    background-color: darkorange;
+    background-color: #3580db;
 }
 
 .THIS .totalPrice {
