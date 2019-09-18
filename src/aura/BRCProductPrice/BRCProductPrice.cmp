@@ -25,7 +25,8 @@
                         {!$Label.c.BRC_Price}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="price">
-                    <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/> <span class="perDay">/day</span>
+                   <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
+                    <span class="perDay">/day</span>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="image">
 <!--                    <img src="{!$Resource.BRCOrder}"/>-->
@@ -46,7 +47,7 @@
                             </div>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="4" class="priceLabel">
-                            <lightning:input type="number"  label="" value="{!v.daysNumber}" variant="label-hidden" min="1"/>
+                            <lightning:input type="number"  label="" value="{!v.daysNumber}" variant="label-hidden"/>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="4" class="priceLabel">
                             <div style="float:left">
