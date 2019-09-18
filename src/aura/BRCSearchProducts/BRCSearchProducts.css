@@ -1,14 +1,10 @@
-.THIS .slds-input__icon{
+.THIS .slds-input__icon {
    margin-top: -.8rem;
    padding-right: 1rem;
 }
 
-.THIS {
-   padding: 0 10px;
-}
-
 .THIS .iconContainer {
-    padding: 0 !important;
+    float:right;
 }
 
 .THIS .basket svg {
@@ -18,7 +14,7 @@
 
 .THIS .slds-modal__container {
     position: absolute;
-    left: 100px;
+    right: 100px;
 }
 
 .THIS .slds-modal__content {

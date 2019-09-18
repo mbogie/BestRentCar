@@ -1,13 +1,11 @@
 .THIS .slds-button {
     width: 150px;
-    background-color: orange;
-    color: red;
-    box-shadow: 2px 2px 5px;
+    background-color: #75a8e6;
+    color: #ebedf0;
 }
 
 .THIS .slds-button:hover {
-    background-color: darkorange;
-    box-shadow: 5px 5px 10px;
+    background-color: #3580db;
 }
 
 .THIS.container {
@@ -57,17 +55,17 @@
 }
 
 .THIS .productLabel {
-    height: 35px;
+   white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     padding: 5px 0px 5px 0px;
-    text-align: center;
     font-size: 17px;
     font-weight: bold;
 }
 
 .THIS .overlayLabel {
-    height: 70px;
-    padding: 5px 5px 5px 10px;
+    height: 55px;
+    padding: 5px 5px 0px 10px;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -81,11 +79,46 @@
     padding-bottom: 10px;
 }
 
+.THIS .overlayPrice {
+    text-align: center;
+    color : red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .THIS .buttonOrder {
+    padding-top: 10px;
     text-align: center;
 }
 
 .THIS .detailItem {
     padding: 5px 0px 0px 5px;
     font-weight: bold;
+}
+
+.THIS .daysInput {
+    width: 50px;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 5px;
+    border: 0;
+}
+
+.THIS .daysButton {
+    border: 0;
+    background-color: #ebedf0;
+}
+
+.THIS input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.THIS input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }

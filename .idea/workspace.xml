@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItem.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItem.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultList/BRCProductSearchResultListController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
@@ -32,11 +37,11 @@
       <list>
         <option value="Apex Class" />
         <option value="Lightning Design" />
+        <option value="Lightning Helper" />
         <option value="Lightning Component" />
         <option value="Apex Metadata" />
-        <option value="Lightning Controller" />
-        <option value="Lightning Helper" />
         <option value="Lightning Style" />
+        <option value="Lightning Controller" />
       </list>
     </option>
   </component>
@@ -54,7 +59,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568705472747" />
+              <option name="moduleContentsLastModified" value="1568729203066" />
               <option name="serverMetadataLastPopulated" value="1568289591093" />
             </ModuleWorkspaceSettings>
           </value>
@@ -70,11 +75,12 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568714895789" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568666759876" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568705621572" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568706454423" />
-                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568713251791" />
+                      <entry key="AURA/BRCCARTITEM" value="1568732221365" />
+                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568789853173" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568753276372" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568765858314" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568789409566" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568734096000" />
                       <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568667139922" />
                     </map>
                   </option>

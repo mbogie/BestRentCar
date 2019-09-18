@@ -2,52 +2,82 @@
     <aura:attribute name="productList" type="Object[]"/>
     <aura:attribute name="emptyCard" type="Boolean" default="true"/>
     <aura:attribute name="totalPrice" type="Currency" default="0"/>
+    <aura:attribute name="userId" type="String" default=""/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
 
-        <lightning:layout multipleRows="false" horizontalAlign="center" class="header">
-            <lightning:layoutItem size="7">
-                Your Cart:
-            </lightning:layoutItem>
-            <lightning:layoutItem size="5">
-                <div style="float:left; padding-right:10px">
-                    Total Price:
-                </div>
-                <div style="float:left; color: red">
-                    <lightning:formattedNumber value="{!v.totalPrice}" style="currency" currencyCode="EUR"/>
-                </div>
-            </lightning:layoutItem>
-        </lightning:layout>
-    <lightning:layout multipleRows="false" class="tableHeader">
+    <lightning:layout multipleRows="false" horizontalAlign="center" class="header">
         <lightning:layoutItem size="7">
-            Product Name:
+            Your Cart:
         </lightning:layoutItem>
         <lightning:layoutItem size="5">
+            <div style="float:left; padding-right:10px">
+                Total Price:
+            </div>
+            <div style="float:left; color: red">
+                <lightning:formattedNumber value="{!v.totalPrice}" style="currency" currencyCode="EUR"/>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout multipleRows="false" class="tableHeader">
+        <lightning:layoutItem size="6">
+            Product Name:
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3">
+            Days:
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3">
             Price:
         </lightning:layoutItem>
     </lightning:layout>
     <aura:iteration var="product" items="{!v.productList}" indexVar="index">
-        <lightning:layout multipleRows="true" class="tableRow">
-            <lightning:layoutItem size="7">
-                {!product.product.Name}
+<!--        <c:BRCCartItem item="{!product}" listIndex="{!index}"/>-->
+        <lightning:layout multipleRows="true" class="tableRow" verticalAlign="center">
+            <lightning:layoutItem size="6">
+            <div class="productNameLink" data-index="{!index}" onclick="{!c.navigateToProduct}">
+                    {!product.product.Name}
+            </div>
             </lightning:layoutItem>
-            <lightning:layoutItem size="5">
-                <lightning:formattedNumber value="{!product.price[0].UnitPrice}" style="currency" currencyCode="EUR"/>
+            <lightning:layoutItem size="3">
+                <lightning:layout multipleRows="false" verticalAlign="center">
+<!--                        <div style="float:left">-->
+                                <button title="- day" onclick="{!c.minusDay}" data-index="{!index}" class="daysButton" disabled="{!lessthan(product.days, 2)}">
+                                    <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""/>
+                                </button>
+<!--                        </div>-->
+                        <lightning:input type="number" label="" value="{!product.days}" variant="label-hidden" min="1" class="daysInput" onchange="{!c.changeDays}" disabled="true"/>
+<!--                        <div style="left">-->
+                            <button label="" title="day +" onclick="{!c.plusDay}" data-index="{!index}" class="daysButton">
+                                <lightning:icon iconName="utility:add" size="xx-small" alternativeText=""/>
+                            </button>
+<!--                        </div>-->
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="2">
+                <div style="font-weight:bold;font-size:17px"> <lightning:formattedNumber value="{!product.price.UnitPrice*product.days}" style="currency" currencyCode="EUR"/></div>
+                <div style="font-size:12px">(<lightning:formattedNumber value="{!product.price.UnitPrice}" style="currency" currencyCode="EUR"/>/day)</div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="1">
+                <button label="" title="Delete" onclick="{!c.deleteItem}" data-index="{!index}" class="daysButton">
+                    <lightning:icon iconName="utility:clear" size="small" class="red" alternativeText=""/>
+                </button>
             </lightning:layoutItem>
         </lightning:layout>
     </aura:iteration>
 
     <lightning:layout multipleRows="true" class="buttons" horizontalAlign="end">
-<!--            <aura:if isTrue="{!not(v.emptyCard)}">-->
         <lightning:button variant="base"
-                      label="Clear Cart"
-                      title="Clear Cart"
-                      onclick="{!c.clearCart}"/>
-    <lightning:button variant="base"
-                      label="Order"
-                      title="Order"
-                      onclick="{!c.orderProducts}"/>
-<!--    </aura:if>-->
+                          class="customButton"
+                          disabled="{!v.emptyCard}"
+                          label="Clear Cart"
+                          title="Clear Cart"
+                          onclick="{!c.clearCart}"/>
+        <lightning:button variant="base"
+                          class="customButton"
+                          label="Order"
+                          title="Order"
+                          disabled="{!v.emptyCard}"
+                          onclick="{!c.orderProducts}"/>
     </lightning:layout>
 
 </aura:component>

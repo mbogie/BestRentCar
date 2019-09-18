@@ -14,7 +14,7 @@
 }
 
 .THIS.tableRow {
-    font-size : 13px;
+    font-size : 15px;
     margin-top: 5px;
     padding: 5px;
     border-bottom: 1px solid lightgray;
@@ -27,8 +27,57 @@
     padding: 5px;
 }
 
-.THIS .slds-button {
+.THIS .customButton {
     width: 100px;
-    background-color: gray;
+    background-color: darkgray;
     color: white;
 }
+
+.THIS .customButton:hover {
+    background-color: gray;
+}
+
+.THIS .productNameLink {
+    cursor: pointer;
+}
+
+.THIS .productNameLink:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.THIS .daysInput .slds-form-element__control {
+    width: 50px;
+    text-align: center;
+}
+
+.THIS .daysInput .slds-input {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: white;
+}
+
+.THIS .daysButton {
+    border: 0;
+    background-color: #ebedf0;
+}
+
+.THIS .red svg:hover {
+    fill: darkred;
+}
+
+.THIS .daysInput input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.THIS .daysInput input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+

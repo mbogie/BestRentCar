@@ -4,6 +4,7 @@
     <aura:attribute name="resultItem" type="Object"/>
     <aura:attribute name="posterPath" type="String"/>
     <aura:attribute name="onMouseOver" type="Boolean" default="false"/>
+    <aura:attribute name="daysNumber" type="Integer" default="1"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
@@ -18,7 +19,7 @@
         <h1>Price: </h1>
         <div class="price" onclick="{!c.navigateToRecord}">
             <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
-                                       currencyCode="EUR"/>
+                                       currencyCode="EUR"/><span style="font-size:12px; color:black;font-weight:normal">/day</span>
         </div>
         <div class="overlay">
             <div class="detailItem" onclick="{!c.navigateToRecord}">
@@ -27,16 +28,27 @@
             <div class="overlayLabel" onclick="{!c.navigateToRecord}">
                 {!v.resultItem.product.Name}
             </div>
-            <aura:if isTrue="{!not(empty(v.resultItem.price))}">
-                <div class="price" onclick="{!c.navigateToRecord}">
-                    <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
-                                               currencyCode="EUR"/>
-                </div>
+            <div class="overlayPrice" onclick="{!c.navigateToRecord}">
+                <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
+                                           currencyCode="EUR"/>
+            </div>
+                <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center">
+                    <!--                        <div style="float:left">-->
+                    <button title="- day" onclick="{!c.minusDay}" data-index="{!index}" class="daysButton" disabled="{!lessthan(v.daysNumber, 2)}">
+                        <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""/>
+                    </button>
+                    <!--                        </div>-->
+                    <input type="number" label="" value="{!v.daysNumber}" class="daysInput"/>
+                    <!--                        <div style="left">-->
+                    <button label="" title="day +" onclick="{!c.plusDay}" data-index="{!index}" class="daysButton">
+                        <lightning:icon iconName="utility:add" size="xx-small" alternativeText=""/>
+                    </button>
+                    <!--                        </div>-->
+                </lightning:layout>
                 <div class="buttonOrder">
                     <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}" title="{!$Label.c.BRC_Add_To_Cart}"
                                       onclick="{!c.addToBasket}" class="customButton"/>
                 </div>
-            </aura:if>
         </div>
     </div>
 </aura:component>

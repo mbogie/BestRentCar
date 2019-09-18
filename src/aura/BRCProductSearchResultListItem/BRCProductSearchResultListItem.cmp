@@ -4,6 +4,7 @@
     <aura:attribute name="resultItem" type="Object"/>
     <aura:attribute name="posterPath" type="String"/>
     <aura:attribute name="onMouseOver" type="Boolean" default="false"/>
+    <aura:attribute name="daysNumber" type="Integer" default="1"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
@@ -11,11 +12,11 @@
     <div class="mainPanel">
         <lightning:layout multipleRows="false" horizontalAlign="center">
             <div onclick="{!c.navigateToRecord}" class="leftPanel">
-                <lightning:layoutItem class="">
+                <lightning:layoutItem>
                     <img src="{!empty(v.posterPath) ? $Resource.BRCDefault : v.posterPath}" class="poster"/>
                 </lightning:layoutItem>
             </div>
-            <lightning:layoutItem size="9" class="rightPanel">
+            <lightning:layoutItem size="5" class="rightPanel">
                 <div onclick="{!c.navigateToRecord}">
                     <div class="productLabel">{!v.resultItem.product.Name}</div>
                     <div class="detailItem">Production Year:</div>
@@ -28,22 +29,33 @@
                     <div class="detailItem"> {!v.resultItem.product.Number_of_Doors__c}</div>
                     <div style="clear:both"/>
                 </div>
-                <aura:if isTrue="{!not(empty(v.resultItem.price))}">
-                    <h1>Price : </h1>
-                    <div class="price">
-                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
+                <h1>Price : </h1>
+                <div class="price">
+                    <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
+                                               currencyCode="EUR"/>
+                    <span style="font-size:12px; color:black">/day</span>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="3" class="orderPanel">
+                <div class="orderSection">
+                    <div class="overlayPrice" onclick="{!c.navigateToRecord}">
+                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
                                                    currencyCode="EUR"/>
-                        <div style="float:right">
-                            <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}" title="{!$Label.c.BRC_Add_To_Cart}"
-                                              onclick="{!c.addToBasket}" class="customButton"/>
-                        </div>
                     </div>
-                    <aura:set attribute="else">
-                        <div class="noPrice">
-                        Not Available
-                        </div>
-                    </aura:set>
-                </aura:if>
+                    <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center">
+                        <lightning:button label="" variant="base" title="- day" onclick="{!c.minusDay}" class="daysButton"
+                                disabled="{!lessthan(v.daysNumber, 2)}">
+                            <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""/>
+                        </lightning:button>
+                        <input type="number" label="" value="{!v.daysNumber}" class="daysInput" onkeyup="{!c.changeDays}" aura:id="inputDays"/>
+                        <lightning:button label="" variant="base" title="day +" onclick="{!c.plusDay}" class="daysButton">
+                            <lightning:icon iconName="utility:add" size="xx-small" alternativeText="" class="icon"/>
+                        </lightning:button>
+                    </lightning:layout>
+                    <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}"
+                                      title="{!$Label.c.BRC_Add_To_Cart}"
+                                      onclick="{!c.addToBasket}" class="customButton"/>
+                </div>
             </lightning:layoutItem>
         </lightning:layout>
     </div>

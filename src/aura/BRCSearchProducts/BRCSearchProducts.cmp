@@ -4,11 +4,6 @@
     <aura:attribute name="openCart" type="Boolean" default="false"/>
 
     <lightning:layout horizontalAlign="center" multipleRows="false">
-     <lightning:layoutItem size="1">
-         <div onmouseenter="{!c.showBasket}" class="iconContainer">
-             <lightning:icon class="basket" iconName="utility:cart" size="large" alternativeText=""/>
-         </div>
-     </lightning:layoutItem>
         <lightning:layoutItem size="11">
             <div class="slds-form-element slds-lookup" data-select="single">
                 <div class="slds-form-element__control">
@@ -17,6 +12,11 @@
                         <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" keyup="{!c.handleKeyUp}"/>
                     </div>
                 </div>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="1">
+            <div onmouseenter="{!c.showBasket}" class="iconContainer">
+                <lightning:icon class="basket" iconName="utility:cart" size="large" alternativeText=""/>
             </div>
         </lightning:layoutItem>
     </lightning:layout>

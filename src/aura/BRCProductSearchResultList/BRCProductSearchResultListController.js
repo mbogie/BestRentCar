@@ -6,12 +6,12 @@
             let results = JSON.parse(idsJson);
             component.set('v.results', results);
             component.set('v.shownResults', results);
-            sessionStorage.removeItem('productSearch--recordIds');
+           // sessionStorage.removeItem('productSearch--recordIds');
         }
         if (!$A.util.isUndefinedOrNull(searchText)) {
             let results = JSON.parse(idsJson);
             component.set('v.searchText', searchText);
-            sessionStorage.removeItem('productSearch--searchText');
+           // sessionStorage.removeItem('productSearch--searchText');
         }
         let action = component.get('c.getBrands');
         action.setCallback(this, function(response) {

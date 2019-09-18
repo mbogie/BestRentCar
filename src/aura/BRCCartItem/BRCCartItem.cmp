@@ -1,0 +1,40 @@
+<aura:component description="BRCCartItem" controller="BRCSearchProductsController"
+                implements="force:hasRecordId" access="global">
+
+    <aura:attribute name="item" type="Object"/>
+    <aura:attribute name="listIndex" type="Object"/>
+
+    <lightning:layout multipleRows="true" class="tableRow">
+        <lightning:layoutItem size="7">
+                {!v.item.product.Name}
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3">
+            <lightning:layout horizontalAlign="center" multipleRows="false" verticalAlign="center">
+                <lightning:layoutItem size="4">
+                    <div style="float:right">
+                        <aura:if isTrue="{!!lessthan(v.item.days, 2)}">
+                            <lightning:button variant="base" title="- day"
+                                              onclick="{!c.minusDay}">
+                                <lightning:icon iconName="utility:dash" size="xx-small" class="red" alternativeText=""/>
+                            </lightning:button>
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="4">
+                    <lightning:input type="number" label="" value="{!v.item.days}" variant="label-hidden" min="1" class="daysInput"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="4">
+                    <div style="float:left">
+                        <lightning:button variant="base" label="" title="day +"
+                                          onclick="{!c.plusDay}">
+                            <lightning:icon iconName="utility:add" size="xx-small" class="red" alternativeText=""/>
+                        </lightning:button>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="2">
+            <lightning:formattedNumber value="{!v.item.price.UnitPrice*v.item.days}" style="currency" currencyCode="EUR"/>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
