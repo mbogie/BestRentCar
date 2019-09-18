@@ -38,20 +38,20 @@
             </lightning:layoutItem>
             <lightning:layoutItem size="3" class="orderPanel">
                 <div class="orderSection">
-                    <div class="overlayPrice" onclick="{!c.navigateToRecord}">
-                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
-                                                   currencyCode="EUR"/>
-                    </div>
-                    <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center">
+                    <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center" class="buttonsSection">
                         <lightning:button label="" variant="base" title="- day" onclick="{!c.minusDay}" class="daysButton"
                                 disabled="{!lessthan(v.daysNumber, 2)}">
-                            <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""/>
+                            <lightning:icon iconName="utility:dash" size="xx-small" alternativeText="" class="daysButtonIcon"/>
                         </lightning:button>
-                        <input type="number" label="" value="{!v.daysNumber}" class="daysInput" onkeyup="{!c.changeDays}" aura:id="inputDays"/>
+                        <lightning:input type="number" label="" value="{!v.daysNumber}" class="daysInput"/>
                         <lightning:button label="" variant="base" title="day +" onclick="{!c.plusDay}" class="daysButton">
                             <lightning:icon iconName="utility:add" size="xx-small" alternativeText="" class="icon"/>
                         </lightning:button>
                     </lightning:layout>
+                    <div class="overlayPrice" onclick="{!c.navigateToRecord}">
+                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
+                                                   currencyCode="EUR"/>
+                    </div>
                     <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}"
                                       title="{!$Label.c.BRC_Add_To_Cart}"
                                       onclick="{!c.addToBasket}" class="customButton"/>

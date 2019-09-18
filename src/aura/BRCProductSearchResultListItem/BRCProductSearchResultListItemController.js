@@ -14,12 +14,14 @@
     },
 
     addToBasket: function(component, event, helper) {
+        let days = component.get("v.daysNumber");
+        if(days > 0) {
         let resultItem = component.get("v.resultItem");
       //  console.log(JSON.stringify(resultItem));
         let objectItem = {
             price: resultItem.price[0],
             product: resultItem.product,
-            days: component.get("v.daysNumber")
+            days: days
         }
         let userId = $A.get("$SObjectType.CurrentUser.Id");
         let cartJson = sessionStorage.getItem('cart'+userId);
@@ -45,6 +47,10 @@
             sessionStorage.setItem('cart'+userId, JSON.stringify(basketList));
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Product_Added_to_Cart}"), "info");
         }
+        } else {
+            component.find("toastCmp").showToastModel("Input Proper Days Number", "error");
+            component.set("v.daysNumber", 1);
+        }
     },
 
     plusDay : function(component, event,helper) {
@@ -58,7 +64,7 @@
     },
 
 /*    changeDays : function(component, event, helper) {
-        let days = component.find("inputDays").get("v.daysNumber");
+        let days = component.find("inputDays").getV;
         console.log(days);
     },*/
 })

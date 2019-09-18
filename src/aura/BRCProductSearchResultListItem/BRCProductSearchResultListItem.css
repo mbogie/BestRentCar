@@ -61,17 +61,31 @@
     color: #ebedf0;
 }
 
-.THIS .daysInput {
-    width: 50px;
+.THIS .daysInput .slds-input {
+    min-height: 1rem;
+    height:1rem;
     text-align: center;
-    padding: 0 !important;
-    margin: 0 !important;
-    border-radius: 5px;
-    border: 0;
+    width: 50px;
+    padding: 0;
 }
 
 .THIS .orderPanel {
     position: relative;
+}
+
+.THIS .daysButton {
+     height : 1rem;
+     border: 0;
+}
+
+.THIS .slds-button:focus {
+     outline-color: transparent;
+     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.7), 0 0px 0 rgba(0, 0, 0, 0.3);
+}
+
+.THIS .slds-button:hover {
+     outline-color: transparent;
+     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.7), 0 0px 0 rgba(0, 0, 0, 0.3);
 }
 
 .THIS .orderSection {

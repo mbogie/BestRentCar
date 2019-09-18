@@ -96,18 +96,38 @@
     font-weight: bold;
 }
 
-.THIS .daysInput {
-    width: 50px;
+.THIS .daysInput .slds-input {
+    min-height: 1rem;
+    height:1rem;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 0 !important;
-    margin: 0 !important;
-    border-radius: 5px;
-    border: 0;
+    width: 50px;
+    padding: 0;
+}
+
+.THIS .daysInput {
+    height:40px;
 }
 
 .THIS .daysButton {
+    height : 1rem;
     border: 0;
     background-color: #ebedf0;
+}
+
+.THIS .daysButton:focus {
+     outline-color: transparent;
+     border: 0 !important;
+}
+
+.THIS .daysButton:hover {
+     outline-color: transparent;
+     border: 0 !important;
+}
+
+.THIS .buttonsSection {
+    padding: 0 !important;
+    height: 20px;
 }
 
 .THIS input[type=number]::-webkit-outer-spin-button {

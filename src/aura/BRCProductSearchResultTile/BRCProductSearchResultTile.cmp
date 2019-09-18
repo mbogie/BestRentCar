@@ -32,18 +32,14 @@
                 <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
                                            currencyCode="EUR"/>
             </div>
-                <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center">
-                    <!--                        <div style="float:left">-->
+                <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center" class="buttonsSection">
                     <button title="- day" onclick="{!c.minusDay}" data-index="{!index}" class="daysButton" disabled="{!lessthan(v.daysNumber, 2)}">
-                        <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""/>
+                        <lightning:icon iconName="utility:dash" size="xx-small" alternativeText="" class="daysButtonIcon"/>
                     </button>
-                    <!--                        </div>-->
-                    <input type="number" label="" value="{!v.daysNumber}" class="daysInput"/>
-                    <!--                        <div style="left">-->
+                    <lightning:input type="number" label="" value="{!v.daysNumber}" class="daysInput"/>
                     <button label="" title="day +" onclick="{!c.plusDay}" data-index="{!index}" class="daysButton">
-                        <lightning:icon iconName="utility:add" size="xx-small" alternativeText=""/>
+                        <lightning:icon iconName="utility:add" size="xx-small" alternativeText="" class="daysButtonIcon"/>
                     </button>
-                    <!--                        </div>-->
                 </lightning:layout>
                 <div class="buttonOrder">
                     <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}" title="{!$Label.c.BRC_Add_To_Cart}"
