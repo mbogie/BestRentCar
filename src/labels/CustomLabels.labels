@@ -36,11 +36,18 @@
         <value>Agreement</value>
     </labels>
     <labels>
-        <fullName>BRCCustomerCommunityProfile</fullName>
+        <fullName>BRC_Add_To_Cart</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>BRCCustomerCommunityProfile</shortDescription>
-        <value>BRC Customer Community User</value>
+        <shortDescription>BRC Add To Cart</shortDescription>
+        <value>Add To Cart</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Cart_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Cart Label</shortDescription>
+        <value>Your Cart:</value>
     </labels>
     <labels>
         <fullName>BRC_Contact_Form_Header</fullName>
@@ -55,6 +62,20 @@
         <protected>true</protected>
         <shortDescription>BRC Contact Form Label</shortDescription>
         <value>BRC Contact Form</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Dash_Day</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Dash Day</shortDescription>
+        <value>/day</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Days_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Days Label</shortDescription>
+        <value>Days:</value>
     </labels>
     <labels>
         <fullName>BRC_Division_Close_Detail_Message</fullName>
@@ -106,6 +127,55 @@
         <value>Divisions Search</value>
     </labels>
     <labels>
+        <fullName>BRC_Error_Product_In_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Error Product In Cart</shortDescription>
+        <value>Product Already in Cart</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Error_Wrong_Days_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Error Wrong Days Number</shortDescription>
+        <value>Input Proper Days Number</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Filters_Panel_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Filters Panel Label</shortDescription>
+        <value>Filters:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_No_Available</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC No Available</shortDescription>
+        <value>Product Not Available. Sorry.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Order_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Order on Product Page</shortDescription>
+        <value>Order Now</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Price</shortDescription>
+        <value>Price:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Added_to_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Added to Cart</shortDescription>
+        <value>Product Added to Cart</value>
+    </labels>
+    <labels>
         <fullName>BRC_Product_Description</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -120,11 +190,25 @@
         <value>Details:</value>
     </labels>
     <labels>
+        <fullName>BRC_Product_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Name</shortDescription>
+        <value>Product Name:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Search_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Search Label</shortDescription>
+        <value>Results for:</value>
+    </labels>
+    <labels>
         <fullName>BRC_Server_Error</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Server Error</shortDescription>
-        <value>Server Error. Sorry For Inconvenience.</value>
+        <value>Server error. Sorry for inconvenience.</value>
     </labels>
     <labels>
         <fullName>BRC_Survey_Name</fullName>
@@ -146,6 +230,13 @@
         <protected>true</protected>
         <shortDescription>BRC Thank You Message</shortDescription>
         <value>Thank you for your time.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Total_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Total Price</shortDescription>
+        <value>Total Cost:</value>
     </labels>
     <labels>
         <fullName>BRC_Web_Form_Lead_Source</fullName>
@@ -261,6 +352,13 @@ Number Of Fails : {3}.</value>
         <protected>true</protected>
         <shortDescription>Button Import</shortDescription>
         <value>Import</value>
+    </labels>
+    <labels>
+        <fullName>Button_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Order</shortDescription>
+        <value>Order</value>
     </labels>
     <labels>
         <fullName>Button_Process</fullName>

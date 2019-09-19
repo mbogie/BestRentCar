@@ -11,25 +11,28 @@ global with sharing class BRCProductImagesController {
     @AuraEnabled
     global static ProductImages getProductImages(String recordId) {
         try {
-            List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId =:recordId];
+            List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :recordId];
             Set<Id> contentIds = new Set<Id>();
             for (ContentDocumentLink link : documentLinks) {
                 contentIds.add(link.ContentDocumentId);
             }
             List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') ORDER BY SystemModstamp DESC];
             ProductImages pictures = new ProductImages();
-            List<String> images = new List<String>();
-            Set<Id> contentVersionIds = new Set<Id>();
+            Set<Id> contentVersionImagesIds = new Set<Id>();
+            Set<Id> contentVersionPosterIds = new Set<Id>();
             for (ContentVersion version : contentVersions) {
                 if (version.Type__c == POSTER_TYPE) {
-                    List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId = :version.Id];
-                    pictures.poster = distributions[0];
+                    contentVersionPosterIds.add(version.Id);
                 } else {
-                    contentVersionIds.add(version.Id);
+                    contentVersionImagesIds.add(version.Id);
                 }
             }
-            List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionIds];
-            pictures.images = distributions;
+            List<ContentDistribution> posterDistributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionPosterIds];
+            List<ContentDistribution> imageDistributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionImagesIds];
+            for (ContentDistribution cd : posterDistributions) {
+                pictures.poster = cd;
+            }
+            pictures.images = imageDistributions;
             return pictures;
         } catch (Exception e) {
             System.debug(e.getMessage());
@@ -47,15 +50,13 @@ global with sharing class BRCProductImagesController {
                     contentIds.add(link.ContentDocumentId);
                 }
                 List<ContentVersion> contentVersions = [SELECT Id, Type__c, ContentDocumentId FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND Type__c LIKE :POSTER_TYPE];
-                if (!contentVersions.isEmpty()) {
-                    for(ContentVersion content : contentVersions){
-                        content.Type__c = IMAGE_TYPE;
-                    }
-                    upsert contentVersions;
+                for (ContentVersion content : contentVersions) {
+                    content.Type__c = IMAGE_TYPE;
                 }
+                upsert contentVersions;
             }
             List<ContentVersion> contentVersions = [SELECT Id, Type__c FROM ContentVersion WHERE ContentDocumentId = :documentId];
-            if(imageType == IMAGE_TYPE) {
+            if (imageType == IMAGE_TYPE) {
                 ContentDistribution cd = new ContentDistribution();
                 cd.Name = IMAGE_TYPE;
                 cd.ContentVersionId = contentVersions[0].Id;

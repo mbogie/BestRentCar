@@ -12,17 +12,21 @@ global without sharing class BRCProductDetailController {
                 contentIds.add(link.ContentDocumentId);
             }
             List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') ORDER BY SystemModstamp DESC];
-            Set<Id> contentVersionIds = new Set<Id>();
+            Set<Id> contentVersionImagesIds = new Set<Id>();
+            Set<Id> contentVersionPosterIds = new Set<Id>();
             for (ContentVersion version : contentVersions) {
                 if (version.Type__c == IMAGE_TYPE) {
-                    List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId = :version.Id];
-                    if(!distributions.isEmpty()) pictures.add(distributions[0].ContentDownloadUrl);
+                    contentVersionPosterIds.add(version.Id);
                 } else {
-                    contentVersionIds.add(version.Id);
+                    contentVersionImagesIds.add(version.Id);
                 }
             }
-            List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionIds];
-            for(ContentDistribution cd : distributions){
+            List<ContentDistribution> posterDistributions = [SELECT ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId IN :contentVersionPosterIds];
+            List<ContentDistribution> imageDistributions = [SELECT ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId IN :contentVersionImagesIds];
+            for (ContentDistribution cd : posterDistributions) {
+                pictures.add(cd.ContentDownloadUrl);
+            }
+            for (ContentDistribution cd : imageDistributions) {
                 pictures.add(cd.ContentDownloadUrl);
             }
             return pictures;
@@ -33,17 +37,16 @@ global without sharing class BRCProductDetailController {
     }
 
     @AuraEnabled
-    global static Map<String,String> getObjectFieldsLabels(String objectName) {
+    global static Map<String, String> getObjectFieldsLabels(String objectName) {
         Map<String, String> fieldsLabels = new Map<String, String>();
         try {
-            String type = objectName;
             Map<String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
-            Schema.SObjectType leadSchema = schemaMap.get(type);
+            Schema.SObjectType leadSchema = schemaMap.get(objectName);
             Map<String, Schema.SObjectField> fieldMap = leadSchema.getDescribe().fields.getMap();
             for (String fieldName : fieldMap.keySet()) {
                 fieldsLabels.put(fieldName, fieldMap.get(fieldName).getDescribe().getLabel());
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
         }

@@ -20,57 +20,56 @@
     <lightning:card class="card" title="">
         <lightning:layout multipleRows="true" class="mainPanel">
             <aura:if isTrue="{!not(empty(v.priceList))}">
-
                 <lightning:layoutItem size="12" class="priceLabel">
                         {!$Label.c.BRC_Price}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="price">
-                   <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
-                    <span class="perDay">/day</span>
-                </lightning:layoutItem>
-                <lightning:layoutItem size="12" class="image">
-<!--                    <img src="{!$Resource.BRCOrder}"/>-->
+                    <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency" currencyCode="EUR"/>
+                    <span class="perDay"> {!$Label.c.BRC_Dash_Day}</span>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="priceLabel">
-                    Number of Days:
+                        {!$Label.c.BRC_Days_Label}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="daysSelect">
                     <lightning:layout horizontalAlign="center" multipleRows="false" verticalAlign="center">
                         <lightning:layoutItem size="4" class="priceLabel">
                             <div style="float:right">
                                 <aura:if isTrue="{!!lessthan(v.daysNumber, 2)}">
-                            <lightning:button variant="base" title="- day"
-                                              onclick="{!c.minusDay}">
-                                <lightning:icon iconName="utility:dash" size="small" class="red" alternativeText=""/>
-                            </lightning:button>
+                                    <lightning:button variant="base" title="- day"
+                                                      onclick="{!c.minusDay}">
+                                        <lightning:icon iconName="utility:dash" size="small" class="red"
+                                                        alternativeText=""/>
+                                    </lightning:button>
                                 </aura:if>
                             </div>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="4" class="priceLabel">
-                            <lightning:input type="number"  label="" value="{!v.daysNumber}" variant="label-hidden"/>
+                            <lightning:input type="number" label="" value="{!v.daysNumber}" variant="label-hidden"/>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="4" class="priceLabel">
                             <div style="float:left">
-                            <lightning:button variant="base" label="" title="day +"
-                                              onclick="{!c.plusDay}">
-                                <lightning:icon iconName="utility:add" size="small" class="red" alternativeText=""/>
-                            </lightning:button>
+                                <lightning:button variant="base" label="" title="day +"
+                                                  onclick="{!c.plusDay}">
+                                    <lightning:icon iconName="utility:add" size="small" class="red" alternativeText=""/>
+                                </lightning:button>
                             </div>
                         </lightning:layoutItem>
                     </lightning:layout>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="priceLabel">
-                    Total:
+                        {!$Label.c.BRC_Total_Price}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="totalPrice">
-                    <lightning:formattedNumber value="{!if(lessthan(v.daysNumber, 1), 0, v.priceList[0].UnitPrice * v.daysNumber)}" style="currency" currencyCode="EUR"/>
-                    <span class="perDay">{!if(equals(v.daysNumber, 1),'/day','/' + v.daysNumber+ 'days')}</span>
+                    <lightning:formattedNumber
+                            value="{!if(lessthan(v.daysNumber, 1), 0, v.priceList[0].UnitPrice * v.daysNumber)}"
+                            style="currency" currencyCode="EUR"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="orderButton">
                     <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}"
                                       onclick="{!c.addToBasket}" class="customButton">
-                        <lightning:icon iconName="utility:fulfillment_order" size="small" class="red" alternativeText=""/>
-                        {!$Label.c.BRC_Add_To_Cart}
+                        <lightning:icon iconName="utility:fulfillment_order" size="small" class="red"
+                                        alternativeText=""/>
+                            {!$Label.c.BRC_Add_To_Cart}
                     </lightning:button>
                 </lightning:layoutItem>
                 <aura:set attribute="else">

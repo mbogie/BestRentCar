@@ -1,12 +1,11 @@
 ({
-    initImages : function(component, event,helper) {
-                console.log('init');
+    initImages: function(component, event, helper) {
 
         let action = component.get("c.getProductImages");
         action.setParams({
-            'recordId' : component.get("v.recordId")
+            "recordId": component.get("v.recordId")
         });
-        action.setCallback(this, function(response){
+        action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
                 console.log(response.getReturnValue());
                 let listPath = response.getReturnValue();

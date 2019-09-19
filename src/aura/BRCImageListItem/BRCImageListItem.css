@@ -29,3 +29,18 @@
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 10px;
 }
+
+.THIS .slds-modal__header {
+    border-radius: 25px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.THIS .slds-modal__container {
+    max-width: 150%;
+}
+
+.THIS .modalImage {
+    border-radius: 25px;
+}
+

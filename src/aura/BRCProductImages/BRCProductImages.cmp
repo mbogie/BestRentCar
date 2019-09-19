@@ -20,7 +20,7 @@
                                           accept=".jpg, .jpeg, .png"
                                           recordId="{!v.recordId}"
                                           label=""
-                                          onuploadfinished="{! c.handleUploadFinished }"/>
+                                          onuploadfinished="{!c.handleUploadFinished}"/>
                 </lightning:layoutItem>
             </lightning:layout>
         </lightning:layoutItem>

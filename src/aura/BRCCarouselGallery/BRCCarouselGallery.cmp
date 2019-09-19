@@ -22,7 +22,7 @@
             <lightning:layoutItem size="12" padding="around-medium">
                 <lightning:layout horizontalAlign="center" verticalAlign="center" class="outer_container">
                     <lightning:layoutItem size="1">
-                        <div style="text-align:center">
+                        <div class="sideButtons">
                             <lightning:buttonIcon iconName="utility:chevronleft" onclick="{!c.goLeft}"
                                                   alternativeText=""/>
                         </div>
@@ -36,7 +36,7 @@
                                                       verticalAlign="center">
                                         <aura:iteration var="image" items="{!v.images}" indexVar="index">
                                             <lightning:layoutItem>
-                                                <img class='img_element' alt='' data-index="{!index}"
+                                                <img class="img_element" alt="" data-index="{!index}"
                                                      src="{!image}" onclick="{!c.openImage}"/>
                                             </lightning:layoutItem>
                                         </aura:iteration>
@@ -46,7 +46,7 @@
                         </div>
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
-                        <div style="text-align:center">
+                        <div class="sideButtons">
                             <lightning:buttonIcon iconName="utility:chevronright" onclick="{!c.goRight}"
                                                   alternativeText=""/>
                         </div>
@@ -62,7 +62,7 @@
                 <header class="slds-modal__header">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{!c.closeModel}"
-                                          alternativeText="Close"
+                                          alternativeText=""
                                           variant="bare-inverse"
                                           class="slds-modal__close"/>
                     <div>
