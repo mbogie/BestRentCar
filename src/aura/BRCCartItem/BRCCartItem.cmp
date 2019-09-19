@@ -1,0 +1,12 @@
+<aura:component description="BRCCartItem" controller="BRCSearchProductsController"
+                implements="force:hasRecordId" access="global">
+
+    <aura:attribute name="item" type="Object" default="{}"/>
+    <aura:attribute name="posterPath" type="String"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+    <lightning:layout multipleRows="false" class="image">
+        <img src="{!v.posterPath}" class="poster"/>
+    </lightning:layout>
+</aura:component>
