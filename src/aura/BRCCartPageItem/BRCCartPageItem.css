@@ -1,0 +1,62 @@
+.THIS.itemPanel {
+    padding: 10px 10px 10px 10px;
+    background-color: #ebedf0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.THIS .center {
+    text-align: center;
+}
+
+.THIS .productNameLink {
+    font-size: 17px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.THIS .productNameLink:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.THIS .daysInput .slds-input {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 50px;
+}
+
+.THIS .daysInput input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.THIS .daysInput input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.THIS .daysButton {
+    border: 0;
+    background-color: #ebedf0;
+}
+
+.THIS .itemPrice {
+   margin-top:5px;
+   font-weight:bold;
+   font-size:20px;
+   color: red;
+}
+
+.THIS .itemPriceDay {
+   font-size:12px;
+}
+
+.THIS .red svg:hover {
+    fill: darkred;
+}

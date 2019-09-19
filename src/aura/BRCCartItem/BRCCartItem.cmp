@@ -7,6 +7,6 @@
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
 
     <lightning:layout multipleRows="false" class="image">
-        <img src="{!v.posterPath}" class="poster"/>
+        <img src="{!v.posterPath}" class="poster" style="border-radius: 5px;"/>
     </lightning:layout>
 </aura:component>

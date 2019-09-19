@@ -15,5 +15,5 @@
 
     closeBasket: function(component, event, helper) {
         component.set("v.openCart", false);
-   },
+    },
 })

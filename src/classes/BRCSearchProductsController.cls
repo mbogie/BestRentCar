@@ -10,7 +10,7 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static List<SearchResultItem> searchForIds(String searchText) {
         try {
-            List<List<SObject>> results = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c)];
+            List<List<SObject>> results = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
             List<BRCSearchProductsController.SearchResultItem> searchResults = new List<BRCSearchProductsController.SearchResultItem>();
             List<String> ids = new List<String>();
             for (List<SObject> sobjs : results) {
@@ -48,7 +48,7 @@ public with sharing class BRCSearchProductsController {
             }
             List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') AND Type__c = :TYPE_POSTER];
             if (!contentVersions.isEmpty()) {
-                List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId = :contentVersions.get(0).Id];
+                List<ContentDistribution> distributions = [SELECT ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId = :contentVersions.get(0).Id];
                 posterUrl = distributions.get(0).ContentDownloadUrl;
             }
             return posterUrl;

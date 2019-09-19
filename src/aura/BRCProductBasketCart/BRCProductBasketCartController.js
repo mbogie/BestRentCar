@@ -9,18 +9,11 @@
         sessionStorage.removeItem('cart'+userId);
         component.set("v.productList", null);
         component.set("v.totalPrice", 0);
-    },
-
-    plusDay : function(component, event,helper) {
-        let userId = component.get("v.userId");
-        let selectedItem = event.currentTarget;
-        let index = selectedItem.dataset.index;
-        let productList = component.get("v.productList");
-        let days = productList[index].days;
-        productList[index].days = Number(days) + 1;
-        sessionStorage.setItem("cart"+userId, JSON.stringify(productList));
-        component.set("v.productList", productList);
-        helper.initTotalPrice(component, event,helper);
+        let action = $A.get("e.c:BRCRefreshCartList");
+        action.setParams({
+            "onlyTotalCost" : false
+            });
+        action.fire();
     },
 
     deleteItem : function(component, event,helper) {
@@ -30,20 +23,13 @@
         let productList = component.get("v.productList");
         productList.splice(index, 1);
         sessionStorage.setItem("cart"+userId, JSON.stringify(productList));
-        component.set("v.productList", productList);
+        helper.initList(component, event,helper);
         helper.initTotalPrice(component, event,helper);
-    },
-
-    minusDay : function(component, event,helper) {
-        let userId = component.get("v.userId");
-        let selectedItem = event.currentTarget;
-        let index = selectedItem.dataset.index;
-        let productList = component.get("v.productList");
-        let days = productList[index].days;
-        productList[index].days = Number(days) - 1;
-        sessionStorage.setItem("cart"+userId, JSON.stringify(productList));
-        component.set("v.productList", productList);
-        helper.initTotalPrice(component, event,helper);
+        let action = $A.get("e.c:BRCRefreshCartList");
+        action.setParams({
+            "onlyTotalCost" : false
+            });
+        action.fire();
     },
 
     navigateToProduct : function(component, event,helper) {
@@ -58,5 +44,11 @@
             "url": prefixSite + "/detail/" + recordId
             });
         urlEvent.fire();
+    },
+
+    goToCartPage: function(component, event, helper) {
+        let navEvt = $A.get("e.force:navigateToURL");
+        navEvt.setParams({url: "/cart-page"});
+        navEvt.fire();
     },
 })
