@@ -3,7 +3,7 @@
         let recordId = component.get("v.resultItem").product.Id;
         let action = component.get("c.getProductPoster");
         action.setParams({
-            'recordId' : recordId
+            "recordId" : recordId
         });
         action.setCallback(this, function(response){
             if (response.getState() === "SUCCESS") {

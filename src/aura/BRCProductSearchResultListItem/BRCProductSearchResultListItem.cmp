@@ -5,7 +5,11 @@
     <aura:attribute name="posterPath" type="String"/>
     <aura:attribute name="onMouseOver" type="Boolean" default="false"/>
     <aura:attribute name="daysNumber" type="Integer" default="1"/>
-
+    <aura:attribute name="detailsLabels" type="Map" default="{year: 'Production Year:',
+                                                             engine: 'Engine:',
+                                                             brand: 'Brand',
+                                                             doors: 'Number of Doors:',
+                                                             }"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
 
@@ -19,37 +23,40 @@
             <lightning:layoutItem size="5" class="rightPanel">
                 <div onclick="{!c.navigateToRecord}">
                     <div class="productLabel">{!v.resultItem.product.Name}</div>
-                    <div class="detailItem">Production Year:</div>
+                    <div class="detailItem">{!v.detailsLabels.year}</div>
                     <div class="detailItem"> {!v.resultItem.product.Production_Year__c}</div>
                     <div style="clear:both"/>
-                    <div class="detailItem">Engine:</div>
+                    <div class="detailItem">{!v.detailsLabels.engine}</div>
                     <div class="detailItem"> {!v.resultItem.product.Engine__c}</div>
                     <div style="clear:both"/>
-                    <div class="detailItem">Number of Doors:</div>
+                    <div class="detailItem">{!v.detailsLabels.doors}</div>
                     <div class="detailItem"> {!v.resultItem.product.Number_of_Doors__c}</div>
                     <div style="clear:both"/>
                 </div>
-                <h1>Price : </h1>
+                <h1>{!$Label.c.BRC_Price}</h1>
                 <div class="price">
                     <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
                                                currencyCode="EUR"/>
-                    <span style="font-size:12px; color:black">/day</span>
+                    <span style="font-size:12px; color:black">{!$Label.c.BRC_Dash_Day}</span>
                 </div>
             </lightning:layoutItem>
             <lightning:layoutItem size="3" class="orderPanel">
                 <div class="orderSection">
-                    <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center" class="buttonsSection">
-                        <lightning:button label="" variant="base" title="- day" onclick="{!c.minusDay}" class="daysButton"
-                                disabled="{!lessthan(v.daysNumber, 2)}">
-                            <lightning:icon iconName="utility:dash" size="xx-small" alternativeText="" class="daysButtonIcon"/>
+                    <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center"
+                                      class="buttonsSection">
+                        <lightning:button label="" variant="base" title="-" onclick="{!c.minusDay}" class="daysButton"
+                                          disabled="{!lessthan(v.daysNumber, 2)}">
+                            <lightning:icon iconName="utility:dash" size="xx-small" alternativeText=""
+                                            class="daysButtonIcon"/>
                         </lightning:button>
                         <lightning:input type="number" label="" value="{!v.daysNumber}" class="daysInput"/>
-                        <lightning:button label="" variant="base" title="day +" onclick="{!c.plusDay}" class="daysButton">
+                        <lightning:button label="" variant="base" title="+" onclick="{!c.plusDay}" class="daysButton">
                             <lightning:icon iconName="utility:add" size="xx-small" alternativeText="" class="icon"/>
                         </lightning:button>
                     </lightning:layout>
                     <div class="overlayPrice" onclick="{!c.navigateToRecord}">
-                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
+                        <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}"
+                                                   style="currency"
                                                    currencyCode="EUR"/>
                     </div>
                     <lightning:button variant="base" label="{!$Label.c.BRC_Add_To_Cart}"

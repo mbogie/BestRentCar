@@ -4,7 +4,7 @@
     },
 
     handleKeyUp: function(component, event, helper) {
-        if(event.getParams().keyCode == 13){
+        if(event.getParams().keyCode == 13) {
             helper.handleSearch(component, event, helper);
         }
     },
@@ -13,7 +13,7 @@
         component.set("v.openCart", true);
     },
 
-    closeModel: function(component, event, helper) {
+    closeBasket: function(component, event, helper) {
         component.set("v.openCart", false);
    },
 })

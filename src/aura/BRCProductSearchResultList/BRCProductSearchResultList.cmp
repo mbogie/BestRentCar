@@ -10,38 +10,41 @@
     <aura:attribute name="searchText" type="String" default=""/>
     <aura:attribute name="productionYear" type="Date" default=""/>
     <aura:attribute name="brands" type="String[]" default=""/>
+    <aura:attribute name="numberOfDoors" type="Integer" default=""/>
+    <aura:attribute name="filterLabels" type="Map" default="{year: 'Production Year After',
+                                                             doors: 'Number of Doors',
+                                                             brand: 'Brand',
+                                                             minPrice: 'Min Price',
+                                                             maxPrice: 'Max Price'
+                                                             }"/>
 
     <aura:handler name="init" value="{!this}" action="{!c.init}"/>
 
     <lightning:layout horizontalAlign="center" multipleRows="false" class="mainPanel">
         <lightning:layoutItem size="3" class="leftPanel">
             <div class="panelLabel">
-                Filters:
+                    {!$Label.c.BRC_Filters_Panel_Label}
             </div>
             <div class="filterItem">
-                <lightning:select aura:id="brandSelect" name="select" label="Brand">
-                    <option value="">--none--</option>
+                <lightning:select aura:id="brandSelect" name="select" label="{!v.filterLabels.brand}">
+                    <option value="">-</option>
                     <aura:iteration items="{!v.brands}" var="brand">
                         <option value="{!brand}">{!brand}</option>
                     </aura:iteration>
                 </lightning:select>
             </div>
             <div class="filterItem">
-                <lightning:input type="date" label="Production Year After" value="{!v.productionYear}"/>
+                <lightning:input type="date" label="{!v.filterLabels.year}" value="{!v.productionYear}"/>
             </div>
             <div class="filterItem">
-                <lightning:select aura:id="select" name="select" label="Number of Doors">
-                    <option value="">-</option>
-                    <option value="3">3</option>
-                    <option value="5">5</option>
-                </lightning:select>
+                <lightning:input type="number" label="{!v.filterLabels.doors}" value="{!v.numberOfDoors}"/>
             </div>
             <div class="filterItem">
-                <div style="width:49%; float:left">
-                    <ui:inputCurrency label="Min Price" value="{!v.minPrice}"/>
+                <div class="filterPrice">
+                    <ui:inputCurrency label="{!v.filterLabels.minPrice}" value="{!v.minPrice}"/>
                 </div>
-                <div style="width:49%; float:right">
-                    <ui:inputCurrency label="Max Price" value="{!v.maxPrice}"/>
+                <div class="filterPrice">
+                    <ui:inputCurrency label="{!v.filterLabels.maxPrice}" value="{!v.maxPrice}"/>
                 </div>
             </div>
             <div class="filterButton" style="clear:both">
@@ -52,7 +55,10 @@
         <lightning:layoutItem size="9" class="rightPanel">
             <lightning:layout horizontalAlign="center" multipleRows="false">
                 <lightning:layoutItem size="11" class="panelLabel">
-                    Results for: {!v.searchText}
+                {!$Label.c.BRC_Product_Search_Label}
+                    <span class="searchQuery">
+                            {!v.searchText}
+                    </span>
                 </lightning:layoutItem>
                 <lightning:layoutItem size="1" alignmentBump="left">
                     <aura:if isTrue="{!v.listView}">

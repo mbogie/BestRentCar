@@ -27,3 +27,27 @@
 .THIS .filterItem {
    margin-bottom: 10px;
 }
+
+.THIS .filterPrice {
+   width:50%;
+   float:left;
+}
+
+.THIS .searchQuery {
+   font-weight: bold;
+   padding-left: 10px;
+}
+
+.THIS input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.THIS input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+

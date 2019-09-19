@@ -1,9 +1,10 @@
 public with sharing class BRCSearchProductsController {
 
+    public static final String TYPE_POSTER = BRCUtils.getValues('GalleryPoster');
+
     public class SearchResultItem {
         @AuraEnabled public Product2 product = new Product2();
         @AuraEnabled public List<PricebookEntry> price = new List<PricebookEntry>();
-
     }
 
     @AuraEnabled
@@ -22,17 +23,13 @@ public with sharing class BRCSearchProductsController {
             }
             List<PricebookEntry> priceList = new List<PricebookEntry>();
             priceList = [SELECT Id, Product2Id, Pricebook2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id IN :ids];
-
             for (PricebookEntry entry : priceList) {
                 for (SearchResultItem item : searchResults) {
                     if (entry.Product2Id == item.product.Id) {
-                        System.debug(entry);
                         item.price.add(entry);
                     }
                 }
             }
-
-            System.debug(searchResults);
             return searchResults;
         } catch (Exception e) {
             System.debug(e.getMessage());
@@ -49,7 +46,7 @@ public with sharing class BRCSearchProductsController {
             for (ContentDocumentLink link : documentLinks) {
                 contentIds.add(link.ContentDocumentId);
             }
-            List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') AND Type__c = 'poster'];
+            List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') AND Type__c = :TYPE_POSTER];
             if (!contentVersions.isEmpty()) {
                 List<ContentDistribution> distributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId = :contentVersions.get(0).Id];
                 posterUrl = distributions.get(0).ContentDownloadUrl;
@@ -60,18 +57,6 @@ public with sharing class BRCSearchProductsController {
             throw new AuraHandledException(System.Label.BRC_Server_Error);
         }
     }
-
-/*    @AuraEnabled
-    public static List<PricebookEntry> getPrice(String recordId) {
-        try {
-            List<PricebookEntry> priceList = new List<PricebookEntry>();
-            priceList = [SELECT Id, Product2Id, Pricebook2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Product2Id = :recordId];
-            return priceList;
-        } catch (Exception e) {
-            System.debug(e.getMessage());
-            throw new AuraHandledException(System.Label.BRC_Server_Error);
-        }
-    }*/
 
     @AuraEnabled
     public static List<String> getBrands() {

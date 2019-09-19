@@ -1,4 +1,5 @@
-<aura:component description="BRCSearchProducts" controller="BRCSearchProductsController" implements="forceCommunity:searchInterface">
+<aura:component description="BRCSearchProducts" controller="BRCSearchProductsController"
+                implements="forceCommunity:searchInterface">
 
     <aura:attribute name="searchText" type="String" default=""/>
     <aura:attribute name="openCart" type="Boolean" default="false"/>
@@ -8,8 +9,11 @@
             <div class="slds-form-element slds-lookup" data-select="single">
                 <div class="slds-form-element__control">
                     <div class="slds-input-has-icon slds-input-has-icon&#45;&#45;right">
-                        <lightning:buttonIcon iconName="utility:search" size="large" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="slds-input__icon"/>
-                        <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" keyup="{!c.handleKeyUp}"/>
+                        <lightning:buttonIcon iconName="utility:search" size="large" variant="bare"
+                                              onclick="{!c.handleClick}" alternativeText="{!$Label.c.Button_Search}"
+                                              class="slds-input__icon"/>
+                        <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input"
+                                      placeholder="{!$Label.c.Button_Search}" keyup="{!c.handleKeyUp}"/>
                     </div>
                 </div>
             </div>
@@ -21,9 +25,11 @@
         </lightning:layoutItem>
     </lightning:layout>
     <aura:if isTrue="{!v.openCart}">
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container">
-                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" onmouseleave="{!c.closeModel}">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1"
+                     onmouseleave="{!c.closeBasket}">
                     <c:BRCProductBasketCart/>
                 </div>
             </div>
