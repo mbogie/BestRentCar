@@ -18,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItemHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTileHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
@@ -81,10 +82,10 @@
                       <entry key="AURA/BRCCARTITEM" value="1568876345277" />
                       <entry key="AURA/BRCPRODUCTBASKETCART" value="1568879266699" />
                       <entry key="AURA/BRCPRODUCTSEARCHRESULTLIST" value="1568879799875" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568880884436" />
-                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568880997718" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1568894165134" />
+                      <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1568893960798" />
                       <entry key="AURA/BRCSEARCHPRODUCTS" value="1568881294461" />
-                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568881568768" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568893766843" />
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>

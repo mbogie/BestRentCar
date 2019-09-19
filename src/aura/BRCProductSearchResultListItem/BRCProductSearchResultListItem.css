@@ -53,6 +53,11 @@
     font-weight: bold;
 }
 
+.THIS .dashDay {
+    font-size: 12px;
+    color: black;
+}
+
 .THIS .customButton {
     width: 150px;
     background-color: #75a8e6;
