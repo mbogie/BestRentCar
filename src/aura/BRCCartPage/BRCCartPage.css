@@ -51,3 +51,7 @@
 .THIS .icon {
     height: 200px;
 }
+
+.THIS .red svg:hover {
+    fill: darkred;
+}
