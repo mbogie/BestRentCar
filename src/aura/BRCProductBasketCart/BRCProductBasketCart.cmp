@@ -6,7 +6,7 @@
     <aura:attribute name="totalPrice" type="Currency" default="0"/>
     <aura:attribute name="userId" type="String" default=""/>
 
-    <aura:registerEvent name="refreshCart" type="c:BRCRefreshCartList"/>
+    <aura:registerEvent name="refreshCart" type="c:BRCRefreshCartListEvent"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
 
     <lightning:layout multipleRows="false" horizontalAlign="center" class="header">
@@ -18,7 +18,7 @@
                     {!$Label.c.BRC_Total_Price}
             </div>
             <div class="price">
-                <lightning:formattedNumber value="{!v.totalPrice}" style="currency" currencyCode="EUR"/>
+                <lightning:formattedNumber value="{!v.totalPrice}" style="currency"/>
             </div>
         </lightning:layoutItem>
     </lightning:layout>
@@ -46,12 +46,17 @@
             </lightning:layoutItem>
             <lightning:layoutItem size="2">
                 <lightning:layout multipleRows="false" verticalAlign="center">
-                    {!product.days}
+                        {!product.days}
                 </lightning:layout>
             </lightning:layoutItem>
             <lightning:layoutItem size="2">
-                <div class="itemPrice"><lightning:formattedNumber value="{!product.price.UnitPrice*product.days}" style="currency" currencyCode="EUR"/></div>
-                <div class="itemPriceDay">(<lightning:formattedNumber value="{!product.price.UnitPrice}" style="currency" currencyCode="EUR"/>{!$Label.c.BRC_Dash_Day})</div>
+                <div class="itemPrice">
+                    <lightning:formattedNumber value="{!product.price.UnitPrice*product.days}" style="currency"/>
+                </div>
+                <div class="itemPriceDay">(
+                    <lightning:formattedNumber value="{!product.price.UnitPrice}"
+                                               style="currency"/>{!$Label.c.BRC_Dash_Day})
+                </div>
             </lightning:layoutItem>
             <lightning:layoutItem size="1">
                 <button label="" title="Delete" onclick="{!c.deleteItem}" data-index="{!index}" class="daysButton">

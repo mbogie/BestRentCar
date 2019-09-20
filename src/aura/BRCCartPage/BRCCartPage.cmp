@@ -9,7 +9,7 @@
     <aura:attribute name="order" type="Order" default="{}"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
-    <aura:handler event="c:BRCRefreshCartList" action="{!c.BRCRefreshCartList}"/>
+    <aura:handler event="c:BRCRefreshCartListEvent" action="{!c.BRCRefreshCartListEvent}"/>
 
     <lightning:layout multipleRows="false">
         <aura:if isTrue="{!not(v.emptyCard)}">
@@ -23,7 +23,7 @@
                                 {!$Label.c.BRC_Total_Price}
                         </div>
                         <div class="price">
-                            <lightning:formattedNumber value="{!v.totalPrice}" style="currency" currencyCode="EUR"/>
+                            <lightning:formattedNumber value="{!v.totalPrice}" style="currency"/>
                         </div>
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">

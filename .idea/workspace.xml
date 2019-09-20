@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItemHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItemHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartItem/BRCCartItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPage.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPage.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPageController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPageHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPage/BRCCartPageHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCartHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCRefreshCartList/BRCRefreshCartList.evt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCRefreshCartListEvent/BRCRefreshCartList.evt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCRefreshCartList/BRCRefreshCartList.evt-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCRefreshCartListEvent/BRCRefreshCartList.evt-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProductsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +33,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Lightning Component" />
-        <option value="Lightning Helper" />
         <option value="Lightning Controller" />
         <option value="Lightning Style" />
         <option value="Apex Class" />
         <option value="Lightning Application Event" />
         <option value="Apex Metadata" />
+        <option value="Lightning Helper" />
       </list>
     </option>
   </component>
@@ -57,14 +72,16 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCCARTITEM" value="1568923548768" />
-                      <entry key="AURA/BRCCARTPAGE" value="1568961732972" />
-                      <entry key="AURA/BRCCARTPAGEITEM" value="1568933278839" />
-                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568933681235" />
+                      <entry key="AURA/BRCCARTITEM" value="1568978409644" />
+                      <entry key="AURA/BRCCARTPAGE" value="1568981114538" />
+                      <entry key="AURA/BRCCARTPAGEITEM" value="1568980941000" />
+                      <entry key="AURA/BRCCUSTOMTOAST" value="1568980651442" />
+                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568980941000" />
                       <entry key="AURA/BRCREFRESHCARTLIST" value="1568932228628" />
-                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568895335998" />
+                      <entry key="AURA/BRCREFRESHCARTLISTEVENT" value="1568980941000" />
+                      <entry key="AURA/BRCSEARCHPRODUCTS" value="1568981428334" />
                       <entry key="CLASSES/BRCCARTPAGECONTROLLER.CLS" value="1568929154125" />
-                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568894397844" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568981243352" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />

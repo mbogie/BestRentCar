@@ -8,7 +8,7 @@ public with sharing class BRCSearchProductsController {
     }
 
     @AuraEnabled
-    public static List<SearchResultItem> searchForIds(String searchText) {
+    public static List<SearchResultItem> searchForProducts(String searchText) {
         try {
             List<List<SObject>> results = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
             List<BRCSearchProductsController.SearchResultItem> searchResults = new List<BRCSearchProductsController.SearchResultItem>();
