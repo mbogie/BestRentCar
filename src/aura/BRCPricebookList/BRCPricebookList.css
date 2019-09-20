@@ -1,0 +1,14 @@
+.THIS.card {
+    padding: 0 20px 20px 20px;
+}
+
+.THIS .pricebookList {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.THIS .listItem {
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}

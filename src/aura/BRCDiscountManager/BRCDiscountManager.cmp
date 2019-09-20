@@ -1,0 +1,30 @@
+<aura:component description="BRCDiscountManager" controller="BRCDiscountController" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="pricebook" type="Pricebook2" default="{}"/>
+    <aura:registerEvent name="refreshProductList" type="c:BRCReloadPricebookListEvent"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:card title="Create New Discount Pricebook" class="card">
+        <lightning:recordEditForm
+                objectApiName="Pricebook2">
+            <lightning:messages/>
+            <lightning:layout multipleRows="true" horizontalAlign="center">
+                <lightning:layoutItem size="2"/>
+                <lightning:layoutItem size="6">
+                    <lightning:inputField fieldName="Name" value="{!v.pricebook.Name}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1">
+                    <lightning:inputField fieldName="Start_Date__c" value="{!v.pricebook.Start_Date__c}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1">
+                    <lightning:inputField fieldName="End_Date__c" value="{!v.pricebook.End_Date__c}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="2" class="createButton">
+                        <lightning:button variant="neutral" onclick="{!c.createPricebook}"
+                                          label="{!$Label.c.Button_Create}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </lightning:recordEditForm>
+    </lightning:card>
+
+</aura:component>

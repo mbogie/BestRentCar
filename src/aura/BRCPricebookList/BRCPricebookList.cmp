@@ -1,0 +1,41 @@
+<aura:component description="BRCPricebookList" controller="BRCDiscountController" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="pricebookList" type="Pricebook2[]"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:BRCReloadPricebookListEvent" action="{!c.doInit}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:card title="" class="card">
+            <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center" class="listItem">
+                <lightning:layoutItem size="7">
+                        Name
+                </lightning:layoutItem>
+                <lightning:layoutItem size="2">
+                        Start Date
+                </lightning:layoutItem>
+                <lightning:layoutItem size="2">
+                        End Date
+                </lightning:layoutItem>
+               <lightning:layoutItem size="1">
+                        Active
+                </lightning:layoutItem>
+            </lightning:layout>
+        <lightning:layout multipleRows="true" verticalAlign="center" class="listItem">
+            <aura:iteration var="pricebook" items="{!v.pricebookList}" indexVar="index">
+                    <lightning:layoutItem size="7">
+                        {!pricebook.Name}
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
+                        {!pricebook.Start_Date__c}
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
+                       {!pricebook.End_Date__c}
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1">
+                        <ui:outputCheckbox aura:id="output" value="{!pricebook.IsActive}"/>
+                    </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

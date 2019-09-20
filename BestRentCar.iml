@@ -40,6 +40,10 @@
                             <option name="name" value="BRCContentDocumentLinkHandler" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCDiscountController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCDivisionController" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -701,6 +705,10 @@
                             <option name="name" value="BRCCustomToast" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCDiscountManager" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCDivisionDetails" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -870,6 +878,14 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="setStartUrl" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPricebookList" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCReloadPricebookListEvent" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1697,6 +1713,9 @@
                             <option name="name" value="Button_Clear" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Button_Create" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Button_Delete" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2153,11 +2172,11 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="CustomLabels" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="CustomLabels" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="CustomMetadata" />
@@ -3880,6 +3899,9 @@
                             <option name="name" value="PartnerMarketingBudget.My_Partner_Marketing_Budgets" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Pricebook2.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product2.AllProducts" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -5450,7 +5472,7 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="BRC Service.Customer_Members" />
+                            <option name="name" value="BRC Service.Partner_and_Customer_members" />
                           </MetadataEntry>
                         </list>
                       </option>
