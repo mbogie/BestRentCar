@@ -1,14 +1,13 @@
 ({
     doInit: function(component, event, helper) {
-        let idsJson = sessionStorage.getItem("productSearch--recordIds");
+        let productsJson = sessionStorage.getItem("productSearch--products");
         let searchText = sessionStorage.getItem("productSearch--searchText");
-        if (!$A.util.isUndefinedOrNull(idsJson)) {
-            let results = JSON.parse(idsJson);
+        if (!$A.util.isUndefinedOrNull(productsJson)) {
+            let results = JSON.parse(productsJson);
             component.set("v.results", results);
             component.set("v.shownResults", results);
         }
         if (!$A.util.isUndefinedOrNull(searchText)) {
-            let results = JSON.parse(idsJson);
             component.set("v.searchText", searchText);
         }
         helper.initBrands(component, event, helper);
