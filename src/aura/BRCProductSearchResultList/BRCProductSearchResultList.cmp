@@ -18,7 +18,7 @@
                                                              maxPrice: 'Max Price'
                                                              }"/>
 
-    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
     <lightning:layout horizontalAlign="center" multipleRows="false" class="mainPanel">
         <lightning:layoutItem size="3" class="leftPanel">
@@ -41,10 +41,10 @@
             </div>
             <div class="filterItem">
                 <div class="filterPrice">
-                    <ui:inputCurrency label="{!v.filterLabels.minPrice}" value="{!v.minPrice}"/>
+                    <lightning:input type="number" formatter="currency" label="{!v.filterLabels.minPrice}" value="{!v.minPrice}"/>
                 </div>
                 <div class="filterPrice">
-                    <ui:inputCurrency label="{!v.filterLabels.maxPrice}" value="{!v.maxPrice}"/>
+                    <lightning:input type="number" formatter="currency" label="{!v.filterLabels.maxPrice}" value="{!v.maxPrice}"/>
                 </div>
             </div>
             <div class="filterButton" style="clear:both">

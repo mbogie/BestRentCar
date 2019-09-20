@@ -18,8 +18,7 @@
         </div>
         <h1>{!$Label.c.BRC_Price}</h1>
         <div class="price" onclick="{!c.navigateToRecord}">
-            <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"
-                                       currencyCode="EUR"/>
+            <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice}" style="currency"/>
             <span class="dashDay">{!$Label.c.BRC_Dash_Day}</span>
         </div>
         <div class="overlay">
@@ -30,8 +29,7 @@
                     {!v.resultItem.product.Name}
             </div>
             <div class="overlayPrice" onclick="{!c.navigateToRecord}">
-                <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"
-                                           currencyCode="EUR"/>
+                <lightning:formattedNumber value="{!v.resultItem.price[0].UnitPrice*v.daysNumber}" style="currency"/>
             </div>
             <lightning:layout multipleRows="false" verticalAlign="center" horizontalAlign="center"
                               class="buttonsSection">
