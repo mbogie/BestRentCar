@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryRenderer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryRenderer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCustomToast/BRCCustomToastController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImages.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImages.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductImages/BRCProductImagesHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductImagesController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductImagesController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/labels/CustomLabels.labels" beforeDir="false" afterPath="$PROJECT_DIR$/src/labels/CustomLabels.labels" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,18 +28,18 @@
         <option value="Lightning Application Event" />
         <option value="Lightning Component" />
         <option value="Lightning Controller" />
-        <option value="Lightning Helper" />
         <option value="Lightning Style" />
         <option value="Class" />
         <option value="Apex Class" />
         <option value="Apex Metadata" />
+        <option value="Lightning Helper" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/7.Basket" />
+        <entry key="$PROJECT_DIR$" value="feature/9.DiscountManager" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,10 +82,10 @@
                     <map>
                       <entry key="AURA/BRCCAROUSELGALLERY" value="1568885829832" />
                       <entry key="AURA/BRCCUSTOMTOAST" value="1568885893086" />
-                      <entry key="AURA/BRCIMAGELISTITEM" value="1568886581233" />
-                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568886884144" />
-                      <entry key="AURA/BRCPRODUCTIMAGES" value="1568886768410" />
-                      <entry key="AURA/BRCPRODUCTPRICE" value="1568887834183" />
+                      <entry key="AURA/BRCIMAGELISTITEM" value="1568974749441" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568974793556" />
+                      <entry key="AURA/BRCPRODUCTIMAGES" value="1568975341606" />
+                      <entry key="AURA/BRCPRODUCTPRICE" value="1568976309198" />
                       <entry key="AURA/BRCRELOADRECORDPAGEEVENT" value="1568559395000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
                       <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
