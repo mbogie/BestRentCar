@@ -3,25 +3,17 @@
    padding-right: 1rem;
 }
 
-.THIS .iconContainer {
-    float:right;
-}
-
 .THIS .basket svg {
     fill: #ebedf0;
     height: 40px;
 }
 
-.THIS .slds-modal__container {
-    position: absolute;
-    right: 100px;
-}
-
-.THIS .slds-modal__content {
-    position: absolute;
-    width: 100%;
-    top: 50px;
+.THIS .modalContent {
+    border: 1px solid lightgray;
+    padding: 10px;
+    position: relative;
+    width: 600px;
+    transform: translate(-50%, 0);
     background-color: #ebedf0;
     border-radius: 10px;
-    border: 1px solid lightgray;
 }

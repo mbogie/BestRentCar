@@ -19,20 +19,14 @@
             </div>
         </lightning:layoutItem>
         <lightning:layoutItem size="1">
-            <div onmouseenter="{!c.showBasket}" class="iconContainer">
+            <div onmouseenter="{!c.showBasket}" class="iconContainer" onmouseleave="{!c.closeBasket}">
                 <lightning:icon class="basket" iconName="utility:cart" size="large" alternativeText=""/>
+                <aura:if isTrue="{!v.openCart}">
+                    <div class="modalContent">
+                        <c:BRCProductBasketCart/>
+                    </div>
+                </aura:if>
             </div>
         </lightning:layoutItem>
     </lightning:layout>
-    <aura:if isTrue="{!v.openCart}">
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
-                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container">
-                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1"
-                     onmouseleave="{!c.closeBasket}">
-                    <c:BRCProductBasketCart/>
-                </div>
-            </div>
-        </section>
-    </aura:if>
 </aura:component>
