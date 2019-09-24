@@ -38,7 +38,7 @@
         let action = component.get("c.createOrder");
         action.setParams({
             "newOrder": order,
-            "wrapperList": basketList
+            "wrapperList": cartJson
         });
         action.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {

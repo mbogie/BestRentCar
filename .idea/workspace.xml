@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.cmp" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +64,7 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
+<<<<<<< Updated upstream
                       <entry key="AURA/BRCCARTITEM" value="1568978409644" />
                       <entry key="AURA/BRCCARTPAGE" value="1568981114538" />
                       <entry key="AURA/BRCCARTPAGEITEM" value="1569310700289" />
@@ -70,6 +75,15 @@
                       <entry key="AURA/BRCSEARCHPRODUCTS" value="1568987002538" />
                       <entry key="CLASSES/BRCCARTPAGECONTROLLER.CLS" value="1568929154125" />
                       <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1568981243352" />
+=======
+                      <entry key="AURA/BRCDISCOUNTMANAGER" value="1569330757178" />
+                      <entry key="AURA/BRCPASSPRICEBOOKEVENT" value="1569172982122" />
+                      <entry key="AURA/BRCPASSPRICEBOOKIDEVENT" value="1569171411000" />
+                      <entry key="AURA/BRCPRICEBOOKENTRYLIST" value="1569314494445" />
+                      <entry key="AURA/BRCPRICEBOOKLIST" value="1569280799113" />
+                      <entry key="AURA/BRCRELOADPRICEBOOKLISTEVENT" value="1568967745316" />
+                      <entry key="CLASSES/BRCDISCOUNTCONTROLLER.CLS" value="1569313240822" />
+>>>>>>> Stashed changes
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
