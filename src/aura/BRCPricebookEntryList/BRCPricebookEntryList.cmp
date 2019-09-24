@@ -34,14 +34,15 @@
                     <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
                                       class="listItem">
                         <lightning:layoutItem size="5">
-                                {!entry.Name}
+                            <div onclick="{!c.navigateToRecord}" data-index="{!index}" class="entryName">
+                                    {!entry.Name}
+                            </div>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="3">
                             <aura:if isTrue="{!not(index == v.selectedIndex)}">
                                 <lightning:formattedNumber value="{!entry.UnitPrice}" style="currency"/>
                                 <aura:set attribute="else">
-                                    <lightning:input type="number" formatter="currency" label="" variant="label-hidden"
-                                                     value="{!entry.UnitPrice}"/>
+                                    <ui:inputCurrency label="" value="{!entry.UnitPrice}"/>
                                 </aura:set>
                             </aura:if>
                         </lightning:layoutItem>

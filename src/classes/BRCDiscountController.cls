@@ -57,7 +57,7 @@ public with sharing class BRCDiscountController {
     public static List<PricebookEntry> getPricebookEntries(String pricebookId) {
         try {
             List<PricebookEntry> entryList = new List<PricebookEntry>();
-            entryList = [SELECT Name, Pricebook2Id, Standard_Price__c, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
+            entryList = [SELECT Name, Pricebook2Id, Product2Id, Standard_Price__c, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
             System.debug(entryList);
             return entryList;
         } catch (Exception e) {
@@ -96,7 +96,7 @@ public with sharing class BRCDiscountController {
     }
 
     public static Double getDiscountPrice(Decimal oldPrice, Decimal price, String discountType) {
-        if (discountType == 'Percent') return oldPrice - oldPrice * price;
+        if (discountType == 'Percent') return oldPrice - oldPrice * price/100;
         else {
             Double newPrice = oldPrice - price;
             return (oldPrice - price < 1) ? 1 : newPrice;

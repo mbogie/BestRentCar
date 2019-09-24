@@ -1,6 +1,8 @@
 ({
    BRCPassPricebookEvent: function(component, event, helper) {
        helper.initEntryList(component, event,helper);
+       component.set("v.selectedIndex", -1);
+       component.set("v.blockButtons", false);
    },
 
     deleteItem: function(component, event, helper) {
@@ -57,6 +59,18 @@
         });
         $A.enqueueAction(action);
         }
+    },
+
+    navigateToRecord: function(component, event, helper) {
+        let selectedItem = event.currentTarget;
+        let index = selectedItem.dataset.index;
+        let entryList = component.get("v.pricebookEntryList");
+        let entry = entryList[index];
+        var navEvt = $A.get("e.force:navigateToSObject");
+        navEvt.setParams({
+            "recordId": entry.Product2Id
+        });
+        navEvt.fire();
     },
 
 })

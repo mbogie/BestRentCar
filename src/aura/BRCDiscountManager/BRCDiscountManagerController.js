@@ -62,6 +62,8 @@
             component.find("toastCmp").showToastModel("Brand is required", "error");
         } else if(selectedOption == 'Single' && (product.ProductCode == null || product.ProductCode =='')){
                 component.find("toastCmp").showToastModel("Brand is required", "error");
+        } else if(discountType == 'Percent' && (priceDiscount <= 0 || priceDiscount >= 100)){
+                component.find("toastCmp").showToastModel("Percent Discount must be between 1 and 99", "error");
         } else {
     	let action = component.get("c.addProducts");
     	action.setParams({

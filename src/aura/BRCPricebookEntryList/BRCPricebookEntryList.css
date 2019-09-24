@@ -35,12 +35,12 @@
     border-radius: 5px;
 }
 
-.THIS .productName {
+.THIS .entryName {
     cursor: pointer;
     margin-right: 10px;
 }
 
-.THIS .productName:hover {
+.THIS .entryName:hover {
     font-weight: bold;
     color: darkblue;
 }

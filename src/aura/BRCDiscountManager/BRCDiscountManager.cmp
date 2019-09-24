@@ -16,25 +16,25 @@
 
     <lightning:card title="Create New Discount Pricebook" class="card">
         <aura:if isTrue="{!v.reload}">
-        <lightning:recordEditForm
-                objectApiName="Pricebook2">
-            <lightning:messages/>
-            <lightning:layout multipleRows="true" horizontalAlign="center">
-                <lightning:layoutItem size="7">
-                    <lightning:inputField fieldName="Name" value="{!v.pricebook.Name}"/>
-                </lightning:layoutItem>
-                <lightning:layoutItem size="2">
-                    <lightning:inputField fieldName="Start_Date__c" value="{!v.pricebook.Start_Date__c}"/>
-                </lightning:layoutItem>
-                <lightning:layoutItem size="2">
-                    <lightning:inputField fieldName="End_Date__c" value="{!v.pricebook.End_Date__c}"/>
-                </lightning:layoutItem>
-                <lightning:layoutItem size="1" class="createButton">
-                    <lightning:button variant="brand" onclick="{!c.createPricebook}"
-                                      label="{!$Label.c.Button_Create}"/>
-                </lightning:layoutItem>
-            </lightning:layout>
-        </lightning:recordEditForm>
+            <lightning:recordEditForm
+                    objectApiName="Pricebook2">
+                <lightning:messages/>
+                <lightning:layout multipleRows="true" horizontalAlign="center">
+                    <lightning:layoutItem size="7">
+                        <lightning:inputField fieldName="Name" value="{!v.pricebook.Name}"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
+                        <lightning:inputField fieldName="Start_Date__c" value="{!v.pricebook.Start_Date__c}"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
+                        <lightning:inputField fieldName="End_Date__c" value="{!v.pricebook.End_Date__c}"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1" class="createButton">
+                        <lightning:button variant="brand" onclick="{!c.createPricebook}"
+                                          label="{!$Label.c.Button_Create}"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </lightning:recordEditForm>
         </aura:if>
     </lightning:card>
     <aura:if isTrue="{!v.openModal}">
@@ -70,18 +70,17 @@
                         <lightning:layoutItem size="1"/>
                         <lightning:layoutItem size="5">
                             <aura:if isTrue="{!v.discountType == 'Unit'}">
-                                <lightning:input type="number" formatter="currency" label="Discount Amount"
-                                                 value="{!v.priceDiscount}" min="0"/>
+                                <ui:inputCurrency label="Discount Amount" value="{!v.priceDiscount}"/>
                             </aura:if>
                             <aura:if isTrue="{!v.discountType == 'Percent'}">
-                                <lightning:input type="number" formatter="percent" label="Discount Amount"
-                                                 value="{!v.priceDiscount}" step="0.01" min="0" max="0.99"/>
+                                <lightning:input type="number" label="Discount Amount" value="{!v.priceDiscount}"
+                                                 step="1"/>
                             </aura:if>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="12">
-                                <lightning:recordEditForm
-                                        objectApiName="Product2">
-                                    <lightning:layout multipleRows="false" horizontalAlign="center">
+                            <lightning:recordEditForm
+                                    objectApiName="Product2">
+                                <lightning:layout multipleRows="false" horizontalAlign="center">
                                     <aura:if isTrue="{!v.selectProductsOption == 'Brand'}">
                                         <lightning:layoutItem size="6">
                                             <lightning:inputField fieldName="Brand__c"
@@ -94,11 +93,12 @@
                                     </aura:if>
                                     <aura:if isTrue="{!v.selectProductsOption == 'Single'}">
                                         <lightning:layoutItem size="12">
-                                        <lightning:input label="Add By Product Code" value="{!v.searchedProduct.ProductCode}"/>
+                                            <lightning:input label="Add By Product Code"
+                                                             value="{!v.searchedProduct.ProductCode}"/>
                                         </lightning:layoutItem>
                                     </aura:if>
-                                    </lightning:layout>
-                                </lightning:recordEditForm>
+                                </lightning:layout>
+                            </lightning:recordEditForm>
                         </lightning:layoutItem>
                     </lightning:layout>
                 </div>
