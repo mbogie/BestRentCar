@@ -1,16 +1,105 @@
 public with sharing class BRCDiscountController {
 
+    public final static String STANDARD_PRICEBOOK_ID = '01s2p000001DmINAA0';
+
     @AuraEnabled
-    public static List<Pricebook2> getAllPricebooks(){
-        List<Pricebook2> pricebookList = new List<Pricebook2>();
-        pricebookList = [SELECT Id,Name,Start_Date__c,End_Date__c,IsActive FROM Pricebook2];
-        return pricebookList;
+    public static List<Pricebook2> getAllPricebooks() {
+        try {
+            List<Pricebook2> pricebookList = new List<Pricebook2>();
+            pricebookList = [SELECT Id,Name,Start_Date__c,End_Date__c,IsActive FROM Pricebook2 WHERE IsStandard = false ORDER BY End_Date__c DESC];
+            return pricebookList;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
     }
 
     @AuraEnabled
-    public static void createPb(Pricebook2 pricebook){
+    public static String upsertPb(Pricebook2 pricebook) {
         Pricebook2 newPricebook = (Pricebook2) pricebook;
-        insert newPricebook;
+        Database.UpsertResult result = Database.upsert(newPricebook);
+        if (result.isSuccess()) return result.getId(); else throw new AuraHandledException(System.Label.BRC_Server_Error);
     }
 
+    @AuraEnabled
+    public static void upsertEntry(PricebookEntry pricebookEntry) {
+        try {
+            upsert pricebookEntry;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }
+
+    @AuraEnabled
+    public static void deleteEntry(String entryId) {
+        try {
+            PricebookEntry entry = new PricebookEntry(Id = entryId);
+            delete entry;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }
+
+    @AuraEnabled
+    public static void deletePb(String pricebookId) {
+        try {
+            Pricebook2 pricebook = new Pricebook2(Id = pricebookId);
+            delete pricebook;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }
+
+    @AuraEnabled
+    public static List<PricebookEntry> getPricebookEntries(String pricebookId) {
+        try {
+            List<PricebookEntry> entryList = new List<PricebookEntry>();
+            entryList = [SELECT Name, Pricebook2Id, Standard_Price__c, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
+            System.debug(entryList);
+            return entryList;
+        } catch (Exception e) {
+            System.debug(e.getMessage());
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }
+
+    @AuraEnabled
+    public static void addProducts(String discountType, String selectedOption, String pricebookId, Product2 product, Decimal price) {
+        List<PricebookEntry> newEntriesList = new List<PricebookEntry>();
+        Map<Id, Product2> productsList = new Map<Id, Product2>();
+        if (selectedOption == 'All') {
+            productsList = new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2]);
+        } else if (selectedOption == 'Brand') {
+            productsList = (String.isBlank(product.Model__c)) ? new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE Brand__c LIKE :product.Brand__c]) :
+                    new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE Brand__c LIKE :product.Brand__c AND Model__c LIKE :product.Model__c]);
+            if (productsList.isEmpty()) throw new AuraHandledException('There are no products');
+        } else if (selectedOption == 'Single') {
+            productsList = new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE ProductCode = :product.ProductCode]);
+            if (productsList.isEmpty()) throw new AuraHandledException('There is no product with that ProductCode');
+        }
+        List<PricebookEntry> standardPriceList = [SELECT Id, Pricebook2Id, Product2Id, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :STANDARD_PRICEBOOK_ID AND Product2Id in :productsList.keySet()];
+        for (Id productId : productsList.keySet()) {
+            for (PricebookEntry entry : standardPriceList) {
+                if (entry.Product2Id == productId) {
+                    newEntriesList.add(new PricebookEntry(Product2Id = productId, Pricebook2Id = pricebookId, Standard_Price__c = entry.UnitPrice, UnitPrice = getDiscountPrice(entry.UnitPrice, price, discountType)));
+                }
+            }
+        }
+        try {
+            upsert newEntriesList;
+        } catch (Exception e) {
+            throw new AuraHandledException(System.Label.BRC_Server_Error);
+        }
+    }
+
+    public static Double getDiscountPrice(Decimal oldPrice, Decimal price, String discountType) {
+        if (discountType == 'Percent') return oldPrice - oldPrice * price;
+        else {
+            Double newPrice = oldPrice - price;
+            return (oldPrice - price < 1) ? 1 : newPrice;
+        }
+    }
 }

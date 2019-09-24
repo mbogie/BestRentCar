@@ -58,11 +58,3 @@
     border: 2px solid red;
     border-radius: 5px;
 }
-
-.THIS .greenIcon svg {
-    fill: green;
-}
-
-.THIS .redIcon svg {
-    fill: red;
-}

@@ -5,3 +5,8 @@
 .THIS .createButton {
     padding-top: 23px;
 }
+
+.THIS .modal {
+    background-color : white;
+    padding: 20px;
+}

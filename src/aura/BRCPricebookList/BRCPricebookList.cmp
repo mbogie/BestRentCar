@@ -1,41 +1,119 @@
-<aura:component description="BRCPricebookList" controller="BRCDiscountController" implements="flexipage:availableForAllPageTypes" access="global">
+<aura:component description="BRCPricebookList" controller="BRCDiscountController"
+                implements="flexipage:availableForAllPageTypes" access="global">
 
     <aura:attribute name="pricebookList" type="Pricebook2[]"/>
+    <aura:attribute name="selectedIndex" type="Integer" default="-1"/>
+    <aura:attribute name="blockButtons" type="Boolean" default="false"/>
+    <aura:attribute name="selectedPricebook" type="Integer" default="-1"/>
+    <aura:attribute name="currentDate" type="Date" default=""/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <aura:handler event="c:BRCReloadPricebookListEvent" action="{!c.doInit}"/>
+    <aura:registerEvent name="passPricebookId" type="c:BRCPassPricebookEvent"/>
+
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card title="" class="card">
-            <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center" class="listItem">
-                <lightning:layoutItem size="7">
-                        Name
-                </lightning:layoutItem>
-                <lightning:layoutItem size="2">
+        <aura:if isTrue="{!empty(v.pricebookList)}">
+            <div class="listHeader" style="text-align: center">
+                Create new Discount Pricebook.
+            </div>
+            <aura:set attribute="else">
+                <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center"
+                                  class="listHeader">
+                    <lightning:layoutItem size="6">
+                        Pricebook Name
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
                         Start Date
-                </lightning:layoutItem>
-                <lightning:layoutItem size="2">
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
                         End Date
-                </lightning:layoutItem>
-               <lightning:layoutItem size="1">
-                        Active
-                </lightning:layoutItem>
-            </lightning:layout>
-        <lightning:layout multipleRows="true" verticalAlign="center" class="listItem">
-            <aura:iteration var="pricebook" items="{!v.pricebookList}" indexVar="index">
-                    <lightning:layoutItem size="7">
-                        {!pricebook.Name}
-                    </lightning:layoutItem>
-                    <lightning:layoutItem size="2">
-                        {!pricebook.Start_Date__c}
-                    </lightning:layoutItem>
-                    <lightning:layoutItem size="2">
-                       {!pricebook.End_Date__c}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
-                        <ui:outputCheckbox aura:id="output" value="{!pricebook.IsActive}"/>
+                        Active
                     </lightning:layoutItem>
-            </aura:iteration>
-        </lightning:layout>
+                    <lightning:layoutItem size="1">
+                        Actions
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <aura:iteration var="pricebook" items="{!v.pricebookList}" indexVar="index">
+                    <lightning:layout verticalAlign="center"
+                                      class="{!if(index == v.selectedPricebook,'selectedListItem','listItem')}"
+                                      horizontalAlign="end">
+                        <aura:if isTrue="{!not(index == v.selectedIndex)}">
+                            <lightning:layoutItem size="5">
+                                <div onclick="{!c.openDetails}" data-index="{!index}" class="productName">
+                                        {!pricebook.Name}
+                                </div>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="1">
+                                <aura:if
+                                        isTrue="{!and(lessthanorequal(v.currentDate, pricebook.End_Date__c),greaterthanorequal(v.currentDate, pricebook.Start_Date__c))}">
+                                    <lightning:icon alternativeText="" iconName="utility:check" size="small"
+                                                    class="greenIcon"/>
+                                    <aura:set attribute="else">
+                                        <lightning:icon alternativeText="" iconName="utility:close" size="small"
+                                                        class="redIcon"/>
+                                    </aura:set>
+                                </aura:if>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2">
+                                    {!pricebook.Start_Date__c}
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2">
+                                    {!pricebook.End_Date__c}
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="1">
+                                <ui:outputCheckbox aura:id="output" value="{!pricebook.IsActive}"/>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="1">
+                                <aura:if isTrue="{!not(v.blockButtons)}">
+                                    <div onclick="{!c.editItem}" data-index="{!index}" class="listButton">
+                                        <lightning:buttonIcon alternativeText="" iconName="utility:edit" size="large"
+                                                              variant="bare"/>
+                                    </div>
+                                    <div onclick="{!c.deleteItem}" data-index="{!index}" class="listButton">
+                                        <lightning:buttonIcon alternativeText="" iconName="utility:clear" size="large"
+                                                              variant="bare"/>
+                                    </div>
+                                </aura:if>
+                            </lightning:layoutItem>
+                            <aura:set attribute="else">
+                                <lightning:layoutItem size="6">
+                                    <lightning:input label="" value="{!pricebook.Name}" variant="label-hidden"
+                                                     required="true"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="2">
+                                    <lightning:input type="date" label="" value="{!pricebook.Start_Date__c}"
+                                                     variant="label-hidden"
+                                                     required="true"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="2">
+                                    <lightning:input type="date" label="" value="{!pricebook.End_Date__c}"
+                                                     variant="label-hidden"
+                                                     required="true"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="1">
+                                    <div style="margin-left: 5px;">
+                                        <ui:inputCheckbox label="" value="{!pricebook.IsActive}"/>
+                                    </div>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="1">
+                                    <div onclick="{!c.saveItem}" data-index="{!index}" class="listButton">
+                                        <lightning:buttonIcon alternativeText="" iconName="utility:save" size="large"
+                                                              variant="bare"/>
+                                    </div>
+                                    <div onclick="{!c.undoItem}" data-index="{!index}" class="listButton">
+                                        <lightning:buttonIcon alternativeText="" iconName="utility:undo" size="large"
+                                                              variant="bare"/>
+                                    </div>
+                                </lightning:layoutItem>
+                            </aura:set>
+                        </aura:if>
+                    </lightning:layout>
+                </aura:iteration>
+            </aura:set>
+        </aura:if>
     </lightning:card>
 </aura:component>

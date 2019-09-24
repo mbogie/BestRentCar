@@ -1,0 +1,79 @@
+<aura:component description="BRCPricebookEntryList" controller="BRCDiscountController"
+                implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="pricebookEntryList" type="PricebookEntry[]"/>
+    <aura:attribute name="pricebookId" type="String"/>
+    <aura:attribute name="selectedIndex" type="Integer"/>
+    <aura:attribute name="emptyList" type="Boolean" default="true"/>
+    <aura:attribute name="blockButtons" type="Boolean" default="false"/>
+    <aura:handler event="c:BRCPassPricebookEvent" action="{!c.BRCPassPricebookEvent}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:card title="" class="card">
+        <aura:if isTrue="{!v.emptyList}">
+            <div class="listHeader" style="text-align: center">
+                Click on Pricebook Name to see its Products.
+            </div>
+            <aura:set attribute="else">
+                <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center"
+                                  class="listHeader">
+                    <lightning:layoutItem size="5">
+                        Product Name
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="3">
+                        Discount Price
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="3">
+                        Standard Price
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1">
+                        Actions
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <aura:iteration var="entry" items="{!v.pricebookEntryList}" indexVar="index">
+                    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                                      class="listItem">
+                        <lightning:layoutItem size="5">
+                                {!entry.Name}
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3">
+                            <aura:if isTrue="{!not(index == v.selectedIndex)}">
+                                <lightning:formattedNumber value="{!entry.UnitPrice}" style="currency"/>
+                                <aura:set attribute="else">
+                                    <lightning:input type="number" formatter="currency" label="" variant="label-hidden"
+                                                     value="{!entry.UnitPrice}"/>
+                                </aura:set>
+                            </aura:if>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3">
+                            <lightning:formattedNumber value="{!entry.Standard_Price__c}" style="currency"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="1">
+                            <aura:if isTrue="{!not(v.blockButtons)}">
+                                <div onclick="{!c.editItem}" data-index="{!index}" class="listButton">
+                                    <lightning:buttonIcon alternativeText="" iconName="utility:edit" size="large"
+                                                          variant="bare"/>
+                                </div>
+                                <div onclick="{!c.deleteItem}" data-index="{!index}" class="listButton">
+                                    <lightning:buttonIcon alternativeText="" iconName="utility:clear" size="large"
+                                                          variant="bare"/>
+                                </div>
+                            </aura:if>
+                            <aura:if isTrue="{!index == v.selectedIndex}">
+                                <div onclick="{!c.saveItem}" data-index="{!index}" class="listButton">
+                                    <lightning:buttonIcon alternativeText="" iconName="utility:save" size="large"
+                                                          variant="bare"/>
+                                </div>
+                                <div onclick="{!c.undoItem}" data-index="{!index}" class="listButton">
+                                    <lightning:buttonIcon alternativeText="" iconName="utility:undo" size="large"
+                                                          variant="bare"/>
+                                </div>
+                            </aura:if>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:iteration>
+            </aura:set>
+        </aura:if>
+    </lightning:card>
+
+</aura:component>

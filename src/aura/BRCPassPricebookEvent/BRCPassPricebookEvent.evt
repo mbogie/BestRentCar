@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="BRCPassPricebookEvent">
+    <aura:attribute name="pricebook" type="String"/>
+</aura:event>

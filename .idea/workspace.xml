@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManagerController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookListController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookListHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadPricebookListEvent/BRCReloadPricebookListEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BRCReloadPricebookListEvent/BRCReloadPricebookListEvent.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManagerHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPassPricebookEvent/BRCPassPricebookEvent.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPassPricebookEvent/BRCPassPricebookEvent.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPassPricebookEvent/BRCPassPricebookIdEvent.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryList.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryList.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Pricebook2.object" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Pricebook2.object" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManagerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCDiscountManager/BRCDiscountManagerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCPricebookList/BRCPricebookListController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCDiscountController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCDiscountController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +37,10 @@
         <option value="Apex Class" />
         <option value="Lightning Component" />
         <option value="Lightning Style" />
-        <option value="Lightning Helper" />
         <option value="Lightning Controller" />
         <option value="Lightning Application Event" />
         <option value="Apex Metadata" />
+        <option value="Lightning Helper" />
       </list>
     </option>
   </component>
@@ -53,7 +58,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1568967585038" />
+              <option name="moduleContentsLastModified" value="1569272141581" />
               <option name="serverMetadataLastPopulated" value="1568963455557" />
             </ModuleWorkspaceSettings>
           </value>
@@ -82,10 +87,13 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCDISCOUNTMANAGER" value="1568967747681" />
-                      <entry key="AURA/BRCPRICEBOOKLIST" value="1568967743088" />
+                      <entry key="AURA/BRCDISCOUNTMANAGER" value="1569306547531" />
+                      <entry key="AURA/BRCPASSPRICEBOOKEVENT" value="1569172982122" />
+                      <entry key="AURA/BRCPASSPRICEBOOKIDEVENT" value="1569171411000" />
+                      <entry key="AURA/BRCPRICEBOOKENTRYLIST" value="1569281201962" />
+                      <entry key="AURA/BRCPRICEBOOKLIST" value="1569280799113" />
                       <entry key="AURA/BRCRELOADPRICEBOOKLISTEVENT" value="1568967745316" />
-                      <entry key="CLASSES/BRCDISCOUNTCONTROLLER.CLS" value="1568966848000" />
+                      <entry key="CLASSES/BRCDISCOUNTCONTROLLER.CLS" value="1569279535732" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -2285,7 +2293,7 @@
         <option name="retrieveAndMergeDefault" value="false" />
         <option name="soqlQuerySettings">
           <SoqlQuerySettings>
-            <option name="documentText" value="SELECT CreatedById,&#10;        CreatedDate,&#10;        Description,&#10;        Id,&#10;        IsActive,&#10;        IsArchived,&#10;        IsDeleted,&#10;        IsStandard,&#10;        LastModifiedById,&#10;        LastModifiedDate,&#10;        LastReferencedDate,&#10;        LastViewedDate,&#10;        Name,&#10;        SystemModstamp&#10;FROM Pricebook2" />
+            <option name="documentText" value="SELECT&#10;        CreatedById,&#10;        CreatedDate,&#10;        Id,&#10;        IsActive,&#10;        IsArchived,&#10;        IsDeleted,&#10;        LastModifiedById,&#10;        LastModifiedDate,&#10;        Name,&#10;        Pricebook2Id,&#10;        Product2Id,&#10;        ProductCode,&#10;        SystemModstamp,&#10;        UnitPrice,&#10;        UseStandardPrice&#10;FROM PricebookEntry" />
           </SoqlQuerySettings>
         </option>
       </ProjectWorkspaceSettings>
@@ -2332,7 +2340,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
