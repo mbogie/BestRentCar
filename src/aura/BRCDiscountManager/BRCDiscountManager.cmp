@@ -63,7 +63,7 @@
                         <lightning:layoutItem size="5">
                             <lightning:select aura:id="discountTypeSelect" name="select" label="Choose Discount Type"
                                               onchange="{!c.discountSelect}">
-                                <option value="Amount">Unit</option>
+                                <option value="Unit">Amount</option>
                                 <option value="Percent">Percent</option>
                             </lightning:select>
                         </lightning:layoutItem>
