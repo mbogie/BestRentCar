@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCartPageItem/BRCCartPageItem.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductBasketCart/BRCProductBasketCart.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCSearchProducts/BRCSearchProducts.css" afterDir="false" />
     </list>
@@ -60,9 +62,9 @@
                     <map>
                       <entry key="AURA/BRCCARTITEM" value="1568978409644" />
                       <entry key="AURA/BRCCARTPAGE" value="1568981114538" />
-                      <entry key="AURA/BRCCARTPAGEITEM" value="1568980941000" />
+                      <entry key="AURA/BRCCARTPAGEITEM" value="1569310700289" />
                       <entry key="AURA/BRCCUSTOMTOAST" value="1568980651442" />
-                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1568980941000" />
+                      <entry key="AURA/BRCPRODUCTBASKETCART" value="1569310674050" />
                       <entry key="AURA/BRCREFRESHCARTLIST" value="1568932228628" />
                       <entry key="AURA/BRCREFRESHCARTLISTEVENT" value="1568980941000" />
                       <entry key="AURA/BRCSEARCHPRODUCTS" value="1568987002538" />

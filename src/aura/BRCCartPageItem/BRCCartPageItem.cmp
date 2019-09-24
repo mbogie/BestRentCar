@@ -38,7 +38,7 @@
             </div>
         </lightning:layoutItem>
         <lightning:layoutItem size="1" class="center">
-            <lightning:button label="" variant="base" title="Delete" onclick="{!c.deleteItem}" class="daysButton">
+            <lightning:button label="" variant="base" title="{!$Label.c.Button_Delete}" onclick="{!c.deleteItem}" class="daysButton">
                 <lightning:icon iconName="utility:clear" size="medium" class="red" alternativeText=""/>
             </lightning:button>
         </lightning:layoutItem>

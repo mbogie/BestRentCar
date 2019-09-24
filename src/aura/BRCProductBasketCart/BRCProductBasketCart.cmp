@@ -59,7 +59,7 @@
                 </div>
             </lightning:layoutItem>
             <lightning:layoutItem size="1">
-                <button label="" title="Delete" onclick="{!c.deleteItem}" data-index="{!index}" class="daysButton">
+                <button label="" title="{!$Label.c.Button_Delete}" onclick="{!c.deleteItem}" data-index="{!index}" class="daysButton">
                     <lightning:icon iconName="utility:clear" size="small" class="red" alternativeText=""/>
                 </button>
             </lightning:layoutItem>
