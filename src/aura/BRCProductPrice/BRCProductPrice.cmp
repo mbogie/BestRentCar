@@ -23,7 +23,15 @@
                 <lightning:layoutItem size="12" class="priceLabel">
                         {!$Label.c.BRC_Price}
                 </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="oldPrice">
+                    <aura:if isTrue="{!not(empty(v.priceList[0].Standard_Price__c))}">
+                        <lightning:formattedNumber value="{!v.priceList[0].Standard_Price__c}" style="currency"/>
+                    </aura:if>
+                </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="price">
+                    <aura:if isTrue="{!empty(v.priceList[0].Standard_Price__c)}">
+
+                    </aura:if>
                     <lightning:formattedNumber value="{!v.priceList[0].UnitPrice}" style="currency"/>
                     <span class="perDay"> {!$Label.c.BRC_Dash_Day}</span>
                 </lightning:layoutItem>

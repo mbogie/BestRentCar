@@ -29,8 +29,13 @@
     text-align: left;
 }
 
+.THIS .oldPrice {
+    margin-left: 20px;
+    text-align: left;
+    text-decoration: line-through;
+}
+
 .THIS .price {
-    padding-top: 10px;
     color: red;
     font-size: 30px;
     font-weight: bold;
