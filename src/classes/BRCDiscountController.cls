@@ -6,7 +6,7 @@ public with sharing class BRCDiscountController {
     public static List<Pricebook2> getAllPricebooks() {
         try {
             List<Pricebook2> pricebookList = new List<Pricebook2>();
-            pricebookList = [SELECT Id,Name,Start_Date__c,End_Date__c,IsActive FROM Pricebook2 WHERE IsStandard = false ORDER BY End_Date__c DESC];
+            pricebookList = [SELECT Id,Name,Start_Date__c,End_Date__c,IsActive, Discount_Amount__c, Discount_Type__c FROM Pricebook2 WHERE IsStandard = false ORDER BY End_Date__c DESC];
             return pricebookList;
         } catch (Exception e) {
             System.debug(e.getMessage());
@@ -57,8 +57,7 @@ public with sharing class BRCDiscountController {
     public static List<PricebookEntry> getPricebookEntries(String pricebookId) {
         try {
             List<PricebookEntry> entryList = new List<PricebookEntry>();
-            entryList = [SELECT Name, Pricebook2Id, Product2Id, Standard_Price__c, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
-            System.debug(entryList);
+            entryList = [SELECT Name, Pricebook2Id, Product2.Name, Product2Id, Standard_Price__c, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId ORDER BY Product2.Name];
             return entryList;
         } catch (Exception e) {
             System.debug(e.getMessage());
@@ -80,17 +79,30 @@ public with sharing class BRCDiscountController {
             productsList = new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE ProductCode = :product.ProductCode]);
             if (productsList.isEmpty()) throw new AuraHandledException('There is no product with that ProductCode');
         }
+
+        List<PricebookEntry> oldEntriesList = [SELECT Id, Product2Id, Pricebook2Id FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
+        if(!oldEntriesList.isEmpty()){
+            Boolean inList = false;
+            for(PricebookEntry oldEntry : oldEntriesList){
+                if(productsList.containsKey(oldEntry.Product2Id)){
+                    productsList.remove(oldEntry.Product2Id);
+                }
+            }
+        }
         List<PricebookEntry> standardPriceList = [SELECT Id, Pricebook2Id, Product2Id, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :STANDARD_PRICEBOOK_ID AND Product2Id in :productsList.keySet()];
         for (Id productId : productsList.keySet()) {
             for (PricebookEntry entry : standardPriceList) {
                 if (entry.Product2Id == productId) {
-                    newEntriesList.add(new PricebookEntry(Product2Id = productId, Pricebook2Id = pricebookId, Standard_Price__c = entry.UnitPrice, UnitPrice = getDiscountPrice(entry.UnitPrice, price, discountType)));
+                    newEntriesList.add(new PricebookEntry(Product2Id = productId, IsActive = true, Pricebook2Id = pricebookId, Standard_Price__c = entry.UnitPrice, UnitPrice = getDiscountPrice(entry.UnitPrice, price, discountType)));
                 }
             }
         }
+        if(newEntriesList.isEmpty()) throw new AuraHandledException('Products Already In Pricebook');
         try {
             upsert newEntriesList;
+            upsert new Pricebook2(Id = pricebookId, Discount_Type__c = discountType, Discount_Amount__c = price);
         } catch (Exception e) {
+            System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
         }
     }

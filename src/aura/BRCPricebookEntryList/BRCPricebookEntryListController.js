@@ -31,9 +31,7 @@
     },
 
     undoItem: function(component, event, helper) {
-        component.set("v.selectedIndex", -1);
-        component.set("v.blockButtons", false);
-        helper.reloadEntryList(component, event,helper);
+        helper.resetAttributes(component, event,helper);
     },
 
     saveItem: function(component, event, helper) {
@@ -50,15 +48,56 @@
             });
         action.setCallback( this, function( response ) {
             if ( component.isValid() && response.getState() === "SUCCESS" ) {
-                component.set("v.selectedIndex", -1);
-                component.set("v.blockButtons", false);
-                helper.reloadEntryList(component, event,helper);
+                helper.resetAttributes(component, event,helper);
             } else {
                 component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
             }
         });
         $A.enqueueAction(action);
         }
+    },
+
+    addProductsToPricebook: function(component, event, helper) {
+        helper.resetAttributes(component, event,helper);
+        component.set("v.openModal",true);
+    },
+
+   addPricebookEntityList: function(component, event, helper) {
+        let selectedOption = component.get("v.selectProductsOption");
+        let pricebook = component.get("v.pricebook");
+        let product = component.get("v.searchedProduct");
+        if(selectedOption == 'Brand' && (product.Brand__c == null || product.Brand__c == '')){
+            component.find("toastCmp").showToastModel("Brand is required", "error");
+        } else if(selectedOption == 'Single' && (product.ProductCode == null || product.ProductCode =='')){
+                component.find("toastCmp").showToastModel("ProductCode is required", "error");
+        } else {
+    	let action = component.get("c.addProducts");
+    	action.setParams({
+    	    "discountType": pricebook.Discount_Type__c,
+    	    "selectedOption": selectedOption,
+    	    "pricebookId": pricebook.Id,
+            "product": product,
+            "price": pricebook.Discount_Amount__c,
+            });
+        action.setCallback( this, function( response ) {
+            if ( component.isValid() && response.getState() === "SUCCESS" ) {
+                component.find("toastCmp").showToastModel("Products was added", "success");
+                helper.resetAttributes(component, event,helper);
+            } else {
+                component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
+            }
+        });
+      $A.enqueueAction(action);
+      }
+   },
+
+    closeModel: function(component, event, helper) {
+        helper.resetAttributes(component, event,helper);
+    },
+
+    changeProductsType: function(component, event, helper) {
+        let products = component.find("productSelect").get("v.value");
+        component.set("v.selectProductsOption", products);
     },
 
     navigateToRecord: function(component, event, helper) {

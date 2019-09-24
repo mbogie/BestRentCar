@@ -58,3 +58,8 @@
     border: 2px solid red;
     border-radius: 5px;
 }
+
+.THIS .modal {
+    background-color : white;
+    padding: 20px;
+}

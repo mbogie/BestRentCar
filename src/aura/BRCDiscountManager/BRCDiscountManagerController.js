@@ -61,7 +61,7 @@
         } else if(selectedOption == 'Brand' && (product.Brand__c == null || product.Brand__c == '')){
             component.find("toastCmp").showToastModel("Brand is required", "error");
         } else if(selectedOption == 'Single' && (product.ProductCode == null || product.ProductCode =='')){
-                component.find("toastCmp").showToastModel("Brand is required", "error");
+                component.find("toastCmp").showToastModel("ProductCode is required", "error");
         } else if(discountType == 'Percent' && (priceDiscount <= 0 || priceDiscount >= 100)){
                 component.find("toastCmp").showToastModel("Percent Discount must be between 1 and 99", "error");
         } else {

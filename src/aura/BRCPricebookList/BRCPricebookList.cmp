@@ -21,8 +21,11 @@
             <aura:set attribute="else">
                 <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center"
                                   class="listHeader">
-                    <lightning:layoutItem size="6">
+                    <lightning:layoutItem size="4">
                         Pricebook Name
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2">
+                        Discount
                     </lightning:layoutItem>
                     <lightning:layoutItem size="2">
                         Start Date
@@ -42,9 +45,20 @@
                                       class="{!if(index == v.selectedPricebook,'selectedListItem','listItem')}"
                                       horizontalAlign="end">
                         <aura:if isTrue="{!not(index == v.selectedIndex)}">
-                            <lightning:layoutItem size="5">
+                            <lightning:layoutItem size="4">
                                 <div onclick="{!c.openDetails}" data-index="{!index}" class="productName">
                                         {!pricebook.Name}
+                                </div>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="1">
+                                <div onclick="{!c.openDetails}" data-index="{!index}">
+                                    <aura:if isTrue="{!pricebook.Discount_Type__c == 'Percent'}">
+                                            {!pricebook.Discount_Amount__c + '%'}
+                                    </aura:if>
+                                    <aura:if isTrue="{!pricebook.Discount_Type__c == 'Unit'}">
+                                        <lightning:formattedNumber value="{!pricebook.Discount_Amount__c}"
+                                                                   style="currency"/>
+                                    </aura:if>
                                 </div>
                             </lightning:layoutItem>
                             <lightning:layoutItem size="1">

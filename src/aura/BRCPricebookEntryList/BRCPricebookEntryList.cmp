@@ -2,14 +2,23 @@
                 implements="flexipage:availableForAllPageTypes" access="global">
 
     <aura:attribute name="pricebookEntryList" type="PricebookEntry[]"/>
+    <aura:attribute name="pricebook" type="Pricebook2"/>
     <aura:attribute name="pricebookId" type="String"/>
     <aura:attribute name="selectedIndex" type="Integer"/>
     <aura:attribute name="emptyList" type="Boolean" default="true"/>
+    <aura:attribute name="openModal" type="Boolean" default="false"/>
     <aura:attribute name="blockButtons" type="Boolean" default="false"/>
+    <aura:attribute name="searchedProduct" type="Product2" default="{}"/>
+    <aura:attribute name="selectProductsOption" type="String" default="All"/>
     <aura:handler event="c:BRCPassPricebookEvent" action="{!c.BRCPassPricebookEvent}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card title="" class="card">
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!not(v.emptyList)}">
+                <lightning:button label="Add Products" onclick="{!c.addProductsToPricebook}" variant="brand"/>
+            </aura:if>
+        </aura:set>
         <aura:if isTrue="{!v.emptyList}">
             <div class="listHeader" style="text-align: center">
                 Click on Pricebook Name to see its Products.
@@ -21,10 +30,10 @@
                         Product Name
                     </lightning:layoutItem>
                     <lightning:layoutItem size="3">
-                        Discount Price
+                        Standard Price
                     </lightning:layoutItem>
                     <lightning:layoutItem size="3">
-                        Standard Price
+                        Discount Price
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
                         Actions
@@ -39,15 +48,15 @@
                             </div>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="3">
+                            <lightning:formattedNumber value="{!entry.Standard_Price__c}" style="currency"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3">
                             <aura:if isTrue="{!not(index == v.selectedIndex)}">
                                 <lightning:formattedNumber value="{!entry.UnitPrice}" style="currency"/>
                                 <aura:set attribute="else">
                                     <ui:inputCurrency label="" value="{!entry.UnitPrice}"/>
                                 </aura:set>
                             </aura:if>
-                        </lightning:layoutItem>
-                        <lightning:layoutItem size="3">
-                            <lightning:formattedNumber value="{!entry.Standard_Price__c}" style="currency"/>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="1">
                             <aura:if isTrue="{!not(v.blockButtons)}">
@@ -76,5 +85,66 @@
             </aura:set>
         </aura:if>
     </lightning:card>
-
+    <aura:if isTrue="{!v.openModal}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{!c.closeModel}"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Choose Products and Input
+                        Discount</h2>
+                </header>
+                <div class="modal">
+                    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="end">
+                        <lightning:layoutItem size="12">
+                            <lightning:select aura:id="productSelect" name="select" label="Choose Products"
+                                              onchange="{!c.changeProductsType}">
+                                <option value="All">All</option>
+                                <option value="Brand">Select Brand/Model</option>
+                                <option value="Single">Single Product</option>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <lightning:recordEditForm
+                                    objectApiName="Product2">
+                                <lightning:layout multipleRows="false" horizontalAlign="center">
+                                    <aura:if isTrue="{!v.selectProductsOption == 'Brand'}">
+                                        <lightning:layoutItem size="6">
+                                            <lightning:inputField fieldName="Brand__c"
+                                                                  value="{!v.searchedProduct.Brand__c}"/>
+                                        </lightning:layoutItem>
+                                        <lightning:layoutItem size="6">
+                                            <lightning:inputField fieldName="Model__c"
+                                                                  value="{!v.searchedProduct.Model__c}"/>
+                                        </lightning:layoutItem>
+                                    </aura:if>
+                                    <aura:if isTrue="{!v.selectProductsOption == 'Single'}">
+                                        <lightning:layoutItem size="12">
+                                            <lightning:input label="Add By Product Code"
+                                                             value="{!v.searchedProduct.ProductCode}"/>
+                                        </lightning:layoutItem>
+                                    </aura:if>
+                                </lightning:layout>
+                            </lightning:recordEditForm>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{!c.closeModel}"/>
+                    <lightning:button variant="brand"
+                                      label="Add"
+                                      title="Add"
+                                      onclick="{!c.addPricebookEntityList}"/>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
 </aura:component>
