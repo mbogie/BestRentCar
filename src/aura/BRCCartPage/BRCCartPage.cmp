@@ -1,0 +1,88 @@
+<aura:component description="BRCCartPage" controller="BRCCartPageController"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="global">
+
+    <aura:attribute name="productList" type="Object[]"/>
+    <aura:attribute name="emptyCard" type="Boolean" default="true"/>
+    <aura:attribute name="totalPrice" type="Currency" default="0"/>
+    <aura:attribute name="userId" type="String" default=""/>
+    <aura:attribute name="order" type="Order" default="{}"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:BRCRefreshCartListEvent" action="{!c.BRCRefreshCartListEvent}"/>
+
+    <lightning:layout multipleRows="false">
+        <aura:if isTrue="{!not(v.emptyCard)}">
+            <lightning:layoutItem size="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="header">
+                    <lightning:layoutItem size="6">
+                            {!$Label.c.BRC_Cart_Label}
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="5">
+                        <div class="priceLabel">
+                                {!$Label.c.BRC_Total_Price}
+                        </div>
+                        <div class="price">
+                            <lightning:formattedNumber value="{!v.totalPrice}" style="currency"/>
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1">
+                        <lightning:button label="" variant="base" title="{!$Label.c.Button_Delete}"
+                                          onclick="{!c.clearCart}" class="daysButton">
+                            <lightning:icon iconName="utility:delete" size="large" class="red" alternativeText=""/>
+                        </lightning:button>
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <aura:iteration var="product" items="{!v.productList}" indexVar="index">
+                    <c:BRCCartPageItem index="{!index}" productListItem="{!product}"/>
+                </aura:iteration>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4" class="address">
+                <div class="addressLabel">
+                        {!$Label.c.BRC_Pickup_Address}
+                </div>
+                <lightning:recordEditForm
+                        objectApiName="Order">
+                    <lightning:messages/>
+                    <lightning:layout multipleRows="true" horizontalAlign="center">
+                        <lightning:layoutItem size="12">
+                            <lightning:inputField fieldName="ShippingStreet" value="{!v.order.ShippingStreet}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <lightning:inputField fieldName="ShippingPostalCode" value="{!v.order.ShippingPostalCode}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <lightning:inputField fieldName="ShippingCity" value="{!v.order.ShippingCity}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <lightning:inputField fieldName="ShippingState" value="{!v.order.ShippingState}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <lightning:inputField fieldName="ShippingCountry" value="{!v.order.ShippingCountry}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:recordEditForm>
+                <div style="float:right">
+                    <lightning:button variant="base" onclick="{!c.order}" class="customButton"
+                                      label="{!$Label.c.BRC_Submit_Order}"/>
+                </div>
+            </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.emptyCard}">
+            <lightning:layout horizontalAlign="center" class="emptyBasket" multipleRows="true">
+                <lightning:layoutItem size="12" class="thankYouNote">
+                        Thank You For Ordering Our Products.
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="infoNote">
+                        To see Your orders go to 'My Profile' and 'Orders List' tab.
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="paymentNote">
+                    Send Payment to: <br/>
+                    BRC BEST RENT CAR <br/>
+                    Morwowa 1, 20-704 Lublin <br/>
+                    PL67 1234 5678 0000 0000 1234 5678
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+    </lightning:layout>
+</aura:component>

@@ -1,0 +1,12 @@
+<aura:component description="BRCProductPosterPath" controller="BRCSearchProductsController"
+                implements="force:hasRecordId" access="global">
+
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="posterPath" type="String"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+    <lightning:layout multipleRows="false" class="image" horizontalAlign="center" verticalAlign="center">
+        <img src="{!v.posterPath}" class="poster" style="border-radius: 5px; width: 60px;"/>
+    </lightning:layout>
+</aura:component>

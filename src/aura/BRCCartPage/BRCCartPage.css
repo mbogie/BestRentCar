@@ -1,0 +1,66 @@
+.THIS .header {
+    font-size : 25px;
+    border-bottom: 3px solid lightgray;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.THIS .price {
+    float:left;
+    color: red;
+}
+
+.THIS .priceLabel {
+    float:left;
+    padding-right:10px;
+}
+
+.THIS .address {
+    margin-left: 15px;
+    padding: 15px;
+    border-left: 3px solid lightgray;
+}
+
+.THIS .addressLabel {
+    font-size : 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid lightgray;
+}
+
+.THIS .customButton {
+    margin: 15px;
+    padding: 0 15px 0 15px;
+    background-color: #75a8e6;
+    color: #ebedf0;;
+}
+
+.THIS .customButton:hover {
+    background-color: #3580db;
+}
+
+.THIS .emptyBasket {
+    border: 2px solid #ebedf0;
+    border-radius: 10px;
+    width:100%;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.THIS .thankYouNote {
+    font-size: 30px;
+    color: green;
+}
+
+.THIS .infoNote {
+    margin-bottom: 20px;
+}
+
+.THIS .paymentNote {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.THIS .red svg:hover {
+    fill: darkred;
+}

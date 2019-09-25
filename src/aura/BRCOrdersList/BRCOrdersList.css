@@ -1,0 +1,15 @@
+.THIS.mainPanel {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.THIS .listHeader {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
