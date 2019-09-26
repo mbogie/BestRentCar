@@ -6,11 +6,9 @@
     createPricebook: function(component, event, helper) {
         let pricebook = component.get("v.pricebook");
         let currentDate = new Date().toISOString().slice(0, 10);
-        if (pricebook.End_Date__c == null || pricebook.Start_Date__c == null) {
+        if (!pricebook.End_Date__c || !pricebook.Start_Date__c || !pricebook.Name) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
-        } else if (pricebook.End_Date__c < currentDate) {
-            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_EndDate_Error}"), "error");
-        } else if (pricebook.Start_Date__c > pricebook.End_Date__c) {
+        } else if (pricebook.End_Date__c < currentDate || pricebook.Start_Date__c > pricebook.End_Date__c) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_EndDate_Error}"), "error");
         } else {
             pricebook.IsActive = true;
@@ -54,11 +52,11 @@
         let product = component.get("v.searchedProduct");
         let discountType = component.get("v.discountType");
         let priceDiscount = component.get("v.priceDiscount");
-        if (priceDiscount == null || priceDiscount == 0) {
+        if (!priceDiscount || priceDiscount == 0) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
-        } else if (selectedOption == selectProductsOptions[1] && (product.Brand__c == null || product.Brand__c == '')) {
+        } else if (selectedOption == selectProductsOptions[1] && !product.Brand__c) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Brand}"), "error");
-        } else if (selectedOption == selectProductsOptions[2] && (product.ProductCode == null || product.ProductCode == '')) {
+        } else if (selectedOption == selectProductsOptions[2] && !product.ProductCode) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
         } else if (discountType == discountTypes[1] && (priceDiscount <= 0 || priceDiscount >= 100)) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Percent_Error}"), "error");

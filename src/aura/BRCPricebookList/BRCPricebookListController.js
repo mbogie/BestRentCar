@@ -51,11 +51,9 @@
         let pricebookList = component.get("v.pricebookList");
         let pricebook = pricebookList[index];
         let currentDate = new Date().toISOString().slice(0, 10);
-        if (pricebook.End_Date__c == null || pricebook.Start_Date__c == null) {
+        if (!pricebook.End_Date__c || !pricebook.Start_Date__c || !pricebook.Name) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
-        } else if (pricebook.End_Date__c < currentDate) {
-            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_EndDate_Error}"), "error");
-        } else if (pricebook.Start_Date__c > pricebook.End_Date__c) {
+        } else if (pricebook.End_Date__c < currentDate || pricebook.Start_Date__c > pricebook.End_Date__c) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_EndDate_Error}"), "error");
         } else {
             let action = component.get("c.upsertPb");

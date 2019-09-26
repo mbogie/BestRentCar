@@ -40,7 +40,7 @@
         let index = selectedItem.dataset.index;
         let entryList = component.get("v.pricebookEntryList");
         let entry = entryList[index];
-        if (entry.UnitPrice == null || entry.UnitPrice >= entry.Standard_Price__c || entry.UnitPrice <= 0) {
+        if (!entry.UnitPrice || entry.UnitPrice >= entry.Standard_Price__c || entry.UnitPrice <= 0) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Amount_Error}"), "error");
         } else {
             let action = component.get("c.upsertEntry");
@@ -68,9 +68,9 @@
         let selectProductsOptions = component.get("v.selectProductsOptions");
         let pricebook = component.get("v.pricebook");
         let product = component.get("v.searchedProduct");
-        if (selectedOption == selectProductsOptions[1] && (product.Brand__c == null || product.Brand__c == '')) {
+        if (selectedOption == selectProductsOptions[1] && !product.Brand__c) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Brand}"), "error");
-        } else if (selectedOption == selectProductsOptions[2] && (product.ProductCode == null || product.ProductCode == '')) {
+        } else if (selectedOption == selectProductsOptions[2] && !product.ProductCode) {
             component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
         } else {
             let action = component.get("c.addProducts");
