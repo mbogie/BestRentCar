@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Action_Dissmiss</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Action Dismiss</shortDescription>
+        <value>Dismiss</value>
+    </labels>
+    <labels>
+        <fullName>Actions_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Actions Label</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>Add_New_Mechanic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add New Mechanic</shortDescription>
+        <value>Add New Mechanic</value>
+    </labels>
+    <labels>
+        <fullName>Add_New_Workshop</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add New Workshop</shortDescription>
+        <value>Add New Workshop</value>
+    </labels>
+    <labels>
+        <fullName>Agreement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Agreement</shortDescription>
+        <value>Agreement</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Add_Products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Add Products</shortDescription>
+        <value>Add Products</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Add_To_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Add To Cart</shortDescription>
+        <value>Add To Cart</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Amount_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Amount Error</shortDescription>
+        <value>Discount Price must be higher than 0 and less then standard price.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Cart_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Cart Label</shortDescription>
+        <value>Your Cart:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Choose_Discount_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Choose Discount Type</shortDescription>
+        <value>Choose Discount Type</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Contact_Form_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Contact Form Header</shortDescription>
+        <value>Leave contact for custom quote</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Contact_Form_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Contact Form Label</shortDescription>
+        <value>BRC Contact Form</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Create_New_Discount_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Create New Discount Pricebook</shortDescription>
+        <value>Create New Discount Pricebook</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Dash_Day</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Dash Day</shortDescription>
+        <value>/day</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Days_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Days Label</shortDescription>
+        <value>Days:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Discount_Amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Discount Amount</shortDescription>
+        <value>Discount Amount</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Discount_Products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Discount Products</shortDescription>
+        <value>Choose Products</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Close_Detail_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Close Detail Message</shortDescription>
+        <value>Click on Division Name on Division List to see details.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Close_Map_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Close Map Message</shortDescription>
+        <value>Search for Divisions to see map.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Details_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Details Label</shortDescription>
+        <value>Division Details</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Empty_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Empty List Message</shortDescription>
+        <value>No Divisions to show.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_List_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division List Label</shortDescription>
+        <value>Divisions Result List</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Map_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Map Label</shortDescription>
+        <value>Divisions Map</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Division_Search_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Division Search Label</shortDescription>
+        <value>Divisions Search</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Empty_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Cart</shortDescription>
+        <value>Your Cart is Empty.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Empty_Discount_Pricebook_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Discount Pricebook List Message</shortDescription>
+        <value>Create new Discount Pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Empty_Orders_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Orders List Message</shortDescription>
+        <value>Your Order List is Empty.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_EndDate_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC EndDate Error</shortDescription>
+        <value>End Date must be after Start Day and Today.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Error_Product_In_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Error Product In Cart</shortDescription>
+        <value>Product Already in Cart</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Error_Wrong_Days_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Error Wrong Days Number</shortDescription>
+        <value>Input Proper Days Number</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Filters_Panel_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Filters Panel Label</shortDescription>
+        <value>Filters:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_No_Available</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC No Available</shortDescription>
+        <value>Product Not Available. Sorry.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_No_Products_To_Add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC No Products To Add</shortDescription>
+        <value>No Products To Add</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Order_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Order on Product Page</shortDescription>
+        <value>Order Now</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Order_ThankYou_Note</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Order ThankYou Note</shortDescription>
+        <value>Thank You For Ordering Our Products</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Orders_List_Note</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Orders List Note</shortDescription>
+        <value>To see Your orders go to &apos;My Profile&apos; and &apos;Orders List&apos; tab</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Payment_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Payment Address</shortDescription>
+        <value>Send Payment to:&lt;/br&gt;
+BRC BEST RENT CAR&lt;/br&gt;
+Morwowa 1, 20-704 Lublin&lt;/br&gt;
+ PL67 1234 5678 0000 0000 1234 5678</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Percent_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Percent Error</shortDescription>
+        <value>Percent Discount must be between 1 and 99.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Pickup_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Pickup Address</shortDescription>
+        <value>Shipping Address:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Price</shortDescription>
+        <value>Price:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Pricebook_Entries_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Pricebook Entries List Message</shortDescription>
+        <value>Click on Pricebook Name to see its Products.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Added_to_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Added to Cart</shortDescription>
+        <value>Product Added to Cart</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Description</shortDescription>
+        <value>Description:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Details</shortDescription>
+        <value>Details:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Name</shortDescription>
+        <value>Product Name:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Product_Search_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Product Search Label</shortDescription>
+        <value>Results for:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Required_Brand</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Required Brand</shortDescription>
+        <value>Brand is required.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Required_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Required Field Error</shortDescription>
+        <value>All fields are required.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Server_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Server Error</shortDescription>
+        <value>Server error. Sorry for inconvenience.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Submit_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Submit Order</shortDescription>
+        <value>Submit Order</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Survey_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Survey Name</shortDescription>
+        <value>Join Survey Answers</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Survey_Required_Field</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Survey Required Field</shortDescription>
+        <value>Please fill out all required fields</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Thank_You_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Thank You Message</shortDescription>
+        <value>Thank you for your time.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Total_Price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Total Price</shortDescription>
+        <value>Total Cost:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Web_Form_Lead_Source</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Contact Form Lead Source</shortDescription>
+        <value>Web</value>
+    </labels>
+    <labels>
+        <fullName>Bad_File_Extension</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bad File Extension</shortDescription>
+        <value>Bad file extension. Only {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Body</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Body</shortDescription>
+        <value>The batch Apex job completed on {0},
+Number Of Processed Logs : {1}
+Number Of Success : {2},
+Number Of Fails : {3}.</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Group</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Group</shortDescription>
+        <value>System_Administrators</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Mail_Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Batch Mail Subject</shortDescription>
+        <value>Repeats Callouts</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add_Image</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add Image</shortDescription>
+        <value>Add Image</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add_Poster</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Add Poster</shortDescription>
+        <value>Select As Poster</value>
+    </labels>
+    <labels>
+        <fullName>Button_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Button_Clear</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Button_Create</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Create</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>Button_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Button_Deselect_All</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Deselect All</shortDescription>
+        <value>Deselect All</value>
+    </labels>
+    <labels>
+        <fullName>Button_Download_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Download Template</shortDescription>
+        <value>Download Template .csv</value>
+    </labels>
+    <labels>
+        <fullName>Button_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Button_Hire</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Hire</shortDescription>
+        <value>Hire</value>
+    </labels>
+    <labels>
+        <fullName>Button_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Import</shortDescription>
+        <value>Import</value>
+    </labels>
+    <labels>
+        <fullName>Button_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Order</shortDescription>
+        <value>Order</value>
+    </labels>
+    <labels>
+        <fullName>Button_Process</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Process</shortDescription>
+        <value>Process</value>
+    </labels>
+    <labels>
+        <fullName>Button_Remove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Button_Reverse_Selection</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Reverse Selection</shortDescription>
+        <value>Reverse Selection</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_To_Json</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save To Json</shortDescription>
+        <value>Export to .json</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_To_Pdf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Save To Pdf</shortDescription>
+        <value>Save To .pdf</value>
+    </labels>
+    <labels>
+        <fullName>Button_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Button_Select_All</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Select All</shortDescription>
+        <value>Select All</value>
+    </labels>
+    <labels>
+        <fullName>Button_Send</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Send</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>Button_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Template</shortDescription>
+        <value>Template</value>
+    </labels>
+    <labels>
+        <fullName>Button_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>Contract_End_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract End Date</shortDescription>
+        <value>End Date</value>
+    </labels>
+    <labels>
+        <fullName>Contract_Start_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract Start Date</shortDescription>
+        <value>Start Date</value>
+    </labels>
+    <labels>
+        <fullName>Copy_To_Clipboard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copy To Clipboard</shortDescription>
+        <value>Copy To Clipboard</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirm_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirm Message</shortDescription>
+        <value>Confirm?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirm_Popup</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirm Popup</shortDescription>
+        <value>Delete?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Message</shortDescription>
+        <value>Are you sure you want to remove profile picture?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Picture</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Mechanic_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Mechanic Header</shortDescription>
+        <value>Edit {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Picture</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Workshop_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Workshop Header</shortDescription>
+        <value>Edit {0}</value>
+    </labels>
+    <labels>
+        <fullName>Email_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Message</shortDescription>
+        <value>Message:</value>
+    </labels>
+    <labels>
+        <fullName>Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Subject</shortDescription>
+        <value>Subject:</value>
+    </labels>
+    <labels>
+        <fullName>Employees_To_Hire</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Employees To Hire</shortDescription>
+        <value>Employees To Hire</value>
+    </labels>
+    <labels>
+        <fullName>Error_Delete_With_Contracts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Delete With Contracts</shortDescription>
+        <value>Your attempt to delete {0} could not be completed because it is associated with contracts.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Field_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Field Required</shortDescription>
+        <value>This field is required</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_Object_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No Object Type</shortDescription>
+        <value>No Trigger Handler registered for Object Type:</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_On_Country_List</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No On Country List</shortDescription>
+        <value>Country not allowed. Only: {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Error_No_SOAP_SessionId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error No SOAP SessionId</shortDescription>
+        <value>No SessionId</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping</shortDescription>
+        <value>Overlapping Dates:</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping_From</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping From</shortDescription>
+        <value>{0}: {1} - without notice.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Overlapping_From_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Overlapping From To</shortDescription>
+        <value>{0}: {1} - {2}.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Phone_Pattern</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Phone Pattern</shortDescription>
+        <value>Invalid phone. Only numbers space and &apos;-&apos;. Starts with or without &apos;+&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Error_To_Big_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error To Big File</shortDescription>
+        <value>The file is to big. Max size 1MB.</value>
+    </labels>
+    <labels>
+        <fullName>Error_WebService</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error WebService</shortDescription>
+        <value>Fail: Error In WebService</value>
+    </labels>
+    <labels>
+        <fullName>Error_Wrong_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Wrong Type</shortDescription>
+        <value>Wrong type. Only .jpg and .png.</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_Json</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To Json</shortDescription>
+        <value>Export to .json</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_Pdf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To Pdf</shortDescription>
+        <value>Export to .pdf</value>
+    </labels>
+    <labels>
+        <fullName>Export_To_XML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export To XML</shortDescription>
+        <value>Export to .xml</value>
+    </labels>
+    <labels>
+        <fullName>Export_to_CSV</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Export to CSV</shortDescription>
+        <value>Export to .csv</value>
+    </labels>
+    <labels>
+        <fullName>Group_PL_Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group PL Users</shortDescription>
+        <value>PL_Users</value>
+    </labels>
+    <labels>
+        <fullName>Group_Usa_Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Usa Users</shortDescription>
+        <value>USA_Users</value>
+    </labels>
+    <labels>
+        <fullName>Hire_Workshop_Popup_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hire Workshop Popup Label</shortDescription>
+        <value>Hire Employees To {0}</value>
+    </labels>
+    <labels>
+        <fullName>Import_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import File</shortDescription>
+        <value>Choose .csv file:</value>
+    </labels>
+    <labels>
+        <fullName>Import_Mechanic_Table</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Mechanic Table</shortDescription>
+        <value>Mechanics to import:</value>
+    </labels>
+    <labels>
+        <fullName>Import_Status_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Status Failed</shortDescription>
+        <value>Failed</value>
+    </labels>
+    <labels>
+        <fullName>Import_Status_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Status Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>Info</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Info</shortDescription>
+        <value>Info</value>
+    </labels>
+    <labels>
+        <fullName>Input_No_File</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Input No File</shortDescription>
+        <value>No file. Choose one.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_AddQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Question</shortDescription>
+        <value>Add Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Anonymous</shortDescription>
+        <value>Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Answer_as</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Answer as</shortDescription>
+        <value>Answer as</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter_Link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter Link</shortDescription>
+        <value>Chatter Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Community</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Community</shortDescription>
+        <value>Community</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link, Anonymous</shortDescription>
+        <value>Email Link, Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Case_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact &amp; Case Merge</shortDescription>
+        <value>Email Link w/ Contact &amp; Case Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact Merge</shortDescription>
+        <value>Email Link w/ Contact Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_External_Please_Create_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For external facing surveys, please create a site first.  You may still create i</shortDescription>
+        <value>For external facing surveys, please create a site first.  You may still create internal surveys without creating a site.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_For_community_assistance_with_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Survey Force</shortDescription>
+        <value>For community assistance with Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Getting_Help</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_HeaderAndThankYou</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Header and Thank You</shortDescription>
+        <value>Header, Thank You &amp; CSS</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Installation_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Installation Guide</shortDescription>
+        <value>Installation Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Learn_More</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Learn More</shortDescription>
+        <value>Learn More</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeANewSurvey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make A New Survey</shortDescription>
+        <value>Make A New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeNewSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make New Survey</shortDescription>
+        <value>Make New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Make_a_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make a Sample Survey</shortDescription>
+        <value>Make a Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Next_Steps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_PleaseEnterTheList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter the list</shortDescription>
+        <value>Please enter the list of answers/responses in the field below. Each value should be separated by a new line.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Question</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Question</shortDescription>
+        <value>Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required</shortDescription>
+        <value>required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_RequiredQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Question</shortDescription>
+        <value>Required Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Resources</shortDescription>
+        <value>Resources</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Results</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTTYPE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>--SELECT--</shortDescription>
+        <value>--SELECT--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Salesforce_Answers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce Answers</shortDescription>
+        <value>Salesforce Answers</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SaveOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Order</shortDescription>
+        <value>Save Order</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectQuestionType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Question Type</shortDescription>
+        <value>Select Question Type</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share</shortDescription>
+        <value>Share</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share_My_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share My Survey</shortDescription>
+        <value>Share My Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Sharing_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing Options</shortDescription>
+        <value>Sharing Options</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SubmitSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit Survey</shortDescription>
+        <value>Submit Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyForceIsOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SurveyForceIsOpenSource</shortDescription>
+        <value>Survey Force is Open Source software.  We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_is_unsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force is unsupported</shortDescription>
+        <value>Survey Force is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_on_Github</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force on Github</shortDescription>
+        <value>Survey Force on Github</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Submitted_Thank_you</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your survey has been submitted. Thank you for taking our survey.</shortDescription>
+        <value>Your survey has been submitted. Thank you for taking our survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_To_submit_ideas_or_issues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues</shortDescription>
+        <value>To submit ideas or issues</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_User_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User Guide</shortDescription>
+        <value>User Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Results_In_New_Window</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Results In New Window</shortDescription>
+        <value>View Results In New Window</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Sample Survey</shortDescription>
+        <value>View Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Welcome_to_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Survey Force</shortDescription>
+        <value>Welcome to Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X1_Create_a_sample_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>1. Create a sample survey by clicking the button below.</shortDescription>
+        <value>1. Create a sample survey by clicking the button below.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X2_External_Setup_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>2. Set up a site if you would like to have external-facing surveys.</shortDescription>
+        <value>2. Set up a site if you would like to have external-facing surveys.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X3_Start_creating_your_first_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>3. Start creating your first survey.</shortDescription>
+        <value>3. Start creating your first survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_You_have_already_taken_this_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You have already taken this survey!</shortDescription>
+        <value>You have already taken this survey!</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Your_next_few_steps_are_easy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_please_visit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>please visit</shortDescription>
+        <value>please visit</value>
+    </labels>
+    <labels>
+        <fullName>Map_Unactive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Map Unactive</shortDescription>
+        <value>Map not active without Address and City.</value>
+    </labels>
+    <labels>
+        <fullName>Mechanic_Hire_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mechanic Hire Label</shortDescription>
+        <value>Hire {0} to...</value>
+    </labels>
+    <labels>
+        <fullName>Mechanic_Search_Page_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mechanic Search Page Label</shortDescription>
+        <value>Search Mechanic</value>
+    </labels>
+    <labels>
+        <fullName>Phone_Pattern</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Phone Pattern</shortDescription>
+        <value>[+]{0,1}+[1-9-\ ]{0,15}</value>
+    </labels>
+    <labels>
+        <fullName>Picture_Default</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Picture Default</shortDescription>
+        <value>Default Picture</value>
+    </labels>
+    <labels>
+        <fullName>Picture_Profile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Picture Profile</shortDescription>
+        <value>Profile Picture</value>
+    </labels>
+    <labels>
+        <fullName>Required_Input_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Input Field Error</shortDescription>
+        <value>{0} is required.</value>
+    </labels>
+    <labels>
+        <fullName>Search_Empty_Record_List</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Empty Result List</shortDescription>
+        <value>Result list is empty.</value>
+    </labels>
+    <labels>
+        <fullName>Search_For</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search For</shortDescription>
+        <value>Search For:</value>
+    </labels>
+    <labels>
+        <fullName>Search_Results_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Results Label</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>Search_for_Tomeks_Mechanics</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search for Tomeks Mechanics</shortDescription>
+        <value>Search for Tomek&apos;s Mechanics</value>
+    </labels>
+    <labels>
+        <fullName>Search_for_Tomeks_Workshops</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search for Tomeks Workshops</shortDescription>
+        <value>Search for Tomek&apos;s Workshops</value>
+    </labels>
+    <labels>
+        <fullName>Section_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Address</shortDescription>
+        <value>Address</value>
+    </labels>
+    <labels>
+        <fullName>Section_Agreements</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Agreements</shortDescription>
+        <value>Agreements</value>
+    </labels>
+    <labels>
+        <fullName>Section_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Section_History_Tracking</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Section History Tracking</shortDescription>
+        <value>History Tracking</value>
+    </labels>
+    <labels>
+        <fullName>Select</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>Select_Option_None</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Option None</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>Send_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Email</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>Send_Email_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Email To</shortDescription>
+        <value>To {0}:</value>
+    </labels>
+    <labels>
+        <fullName>Sign_Down</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sign Down</shortDescription>
+        <value>▼</value>
+    </labels>
+    <labels>
+        <fullName>Sign_Up</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sign Up</shortDescription>
+        <value>▲</value>
+    </labels>
+    <labels>
+        <fullName>Status_Abandoned</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Abandoned</shortDescription>
+        <value>Abandoned</value>
+    </labels>
+    <labels>
+        <fullName>Status_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Status_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>Table_All_Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table All Records</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>Table_Page_Of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Page Of</shortDescription>
+        <value>Page: {0} of {1}</value>
+    </labels>
+    <labels>
+        <fullName>Table_Pagination_Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Pagination Next</shortDescription>
+        <value>Next »</value>
+    </labels>
+    <labels>
+        <fullName>Table_Pagination_Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Pagination Previous</shortDescription>
+        <value>« Previous</value>
+    </labels>
+    <labels>
+        <fullName>Table_Records_Per_Page</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Table Records Per Page</shortDescription>
+        <value>Records per page:</value>
+    </labels>
+    <labels>
+        <fullName>To_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To Import</shortDescription>
+        <value>To Import</value>
+    </labels>
+    <labels>
+        <fullName>Tomek_Workshop_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Name</shortDescription>
+        <value>Workshop Name</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Oath2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Oath2</shortDescription>
+        <value>https://login.salesforce.com/services/oauth2/token?grant_type=password&amp;client_id={0}&amp;client_secret={1}&amp;username={2}&amp;password={3}</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_City</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Country</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Phone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Website</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Website</shortDescription>
+        <value>Website</value>
+    </labels>
+    <labels>
+        <fullName>Tomeks_Workshop_Zip_Code</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tomeks Workshop Zip Code</shortDescription>
+        <value>Zip Code</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Picture</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Upload Picture</shortDescription>
+        <value>Upload</value>
+    </labels>
+    <labels>
+        <fullName>Workshop_Hire_Block_Button_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Workshop Hire Block Button Message</shortDescription>
+        <value>Must save first.</value>
+    </labels>
+    <labels>
+        <fullName>Workshop_Hire_Template_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Workshop Hire Template Message</shortDescription>
+        <value>Empty Date can&apos;t be copied.</value>
+    </labels>
+</CustomLabels>
