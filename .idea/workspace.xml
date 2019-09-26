@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPrice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCCarouselGallery/BRCCarouselGalleryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCImageListItem/BRCImageListItemHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductPrice/BRCProductPriceHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductDetailController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,19 +80,19 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/BRCCAROUSELGALLERY" value="1568885829832" />
+                      <entry key="AURA/BRCCAROUSELGALLERY" value="1569507752000" />
                       <entry key="AURA/BRCCUSTOMTOAST" value="1568885893086" />
-                      <entry key="AURA/BRCIMAGELISTITEM" value="1568974749441" />
-                      <entry key="AURA/BRCPRODUCTDETAILS" value="1568974793556" />
+                      <entry key="AURA/BRCIMAGELISTITEM" value="1569507753000" />
+                      <entry key="AURA/BRCPRODUCTDETAILS" value="1569507543000" />
                       <entry key="AURA/BRCPRODUCTIMAGES" value="1568975341606" />
-                      <entry key="AURA/BRCPRODUCTPRICE" value="1569309387301" />
+                      <entry key="AURA/BRCPRODUCTPRICE" value="1569507753000" />
                       <entry key="AURA/BRCRELOADRECORDPAGEEVENT" value="1568559395000" />
                       <entry key="CLASSES/BRCCONTENTDOCUMENTLINKHANDLER.CLS" value="1568103146248" />
                       <entry key="CLASSES/BRCITRIGGER.CLS" value="1567064914000" />
-                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1569308697288" />
+                      <entry key="CLASSES/BRCPRODUCTDETAILCONTROLLER.CLS" value="1569507362819" />
                       <entry key="CLASSES/BRCPRODUCTIMAGESCONTROLLER.CLS" value="1568891916947" />
                       <entry key="CLASSES/BRCTRIGGERFACTORY.CLS" value="1567065252714" />
-                      <entry key="CLASSES/BRCUTILS.CLS" value="1568187674055" />
+                      <entry key="CLASSES/BRCUTILS.CLS" value="1569507375849" />
                       <entry key="TRIGGERS/BRCCHANGEVISIBILITY.TRIGGER" value="1568104036745" />
                     </map>
                   </option>

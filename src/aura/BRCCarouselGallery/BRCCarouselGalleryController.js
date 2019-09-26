@@ -65,7 +65,6 @@
     openImage: function (component, event, controller) {
         let index = event.currentTarget.dataset.index;
         let images = component.get("v.images");
-        console.log(images[index]);
         component.set("v.selectedImage", images[index]);
         component.set("v.isOpen", true);
     },

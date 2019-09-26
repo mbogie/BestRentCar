@@ -7,7 +7,6 @@
             "documentId": docId
         });
         deleteAction.setCallback(this, function(response) {
-            console.log(response.getState());
             if (response.getState() === "SUCCESS") {
                 component.set("v.openModal", false);
                 let reloadImages = $A.get("e.c:BRCReloadRecordPageEvent");
@@ -31,7 +30,6 @@
         });
         setType.setCallback(this, function(response) {
             if (response.getState() === "SUCCESS") {
-                console.log(response.getReturnValue());
                 component.set("v.openModal", false);
                 let reload = $A.get("e.c:BRCReloadRecordPageEvent");
                 reload.fire();

@@ -22,7 +22,6 @@
         action.setCallback(this, function(response) {
             if (component.isValid() && response.getState() === 'SUCCESS') {
                 component.set("v.fieldLabels", response.getReturnValue());
-                console.log(response.getReturnValue());
             } else {
                 component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
             }

@@ -8,7 +8,6 @@
             if (response.getState() === "SUCCESS") {
                 let result = response.getReturnValue();
                 component.set("v.priceList", result);
-                console.log(response.getReturnValue());
             } else {
                 component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
             }

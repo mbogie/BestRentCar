@@ -1,7 +1,7 @@
 global without sharing class BRCProductDetailController {
 
     global static String IMAGE_TYPE = BRCUtils.getValues('GalleryPoster');
-    global static String STANDARD_PRICEBOOK_ID = '01s2p000001DmINAA0';
+    global static String STANDARD_PRICEBOOK_ID = BRCUtils.getValues('StandardPricebookId');
 
     @AuraEnabled
     global static List<String> getProductImages(String recordId) {
