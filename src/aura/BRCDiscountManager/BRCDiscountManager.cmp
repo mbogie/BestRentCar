@@ -6,15 +6,17 @@
     <aura:attribute name="reload" type="Boolean" default="true"/>
     <aura:attribute name="openModal" type="Boolean" default="false"/>
     <aura:attribute name="priceDiscount" type="Currency" default="0"/>
-    <aura:attribute name="discountType" type="String" default="Unit"/>
-    <aura:attribute name="selectProductsOption" type="String" default="All"/>
+    <aura:attribute name="discountTypes" type="String[]"/>
+    <aura:attribute name="selectProductsOptions" type="String[]"/>
+    <aura:attribute name="discountType" type="String"/>
+    <aura:attribute name="selectProductsOption" type="String"/>
     <aura:attribute name="searchedProduct" type="Product2" default="{}"/>
 
     <aura:registerEvent name="refreshProductList" type="c:BRCReloadPricebookListEvent"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
 
-    <lightning:card title="Create New Discount Pricebook" class="card">
+    <lightning:card title="{!$Label.c.BRC_Create_New_Discount_Pricebook}" class="card">
         <aura:if isTrue="{!v.reload}">
             <lightning:recordEditForm
                     objectApiName="Pricebook2">
@@ -44,7 +46,7 @@
                 <header class="slds-modal__header">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{!c.closeModel}"
-                                          alternativeText="close"
+                                          alternativeText="{!$Label.c.Button_Cancel}"
                                           variant="bare-inverse"
                                           class="slds-modal__close"/>
                     <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Choose Products and Input
@@ -53,27 +55,31 @@
                 <div class="modal">
                     <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="end">
                         <lightning:layoutItem size="12">
-                            <lightning:select aura:id="productSelect" name="select" label="Choose Products"
+                            <lightning:select aura:id="productSelect" name="select"
+                                              label="{!$Label.c.BRC_Discount_Products}"
                                               onchange="{!c.changeProductsType}">
-                                <option value="All">All</option>
-                                <option value="Brand">Select Brand/Model</option>
-                                <option value="Single">Single Product</option>
+                                <aura:iteration items="{!v.selectProductsOptions}" var="option">
+                                    <option value="{!option}">{!option}</option>
+                                </aura:iteration>
                             </lightning:select>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="5">
-                            <lightning:select aura:id="discountTypeSelect" name="select" label="Choose Discount Type"
+                            <lightning:select aura:id="discountTypeSelect" name="select"
+                                              label="{!$Label.c.BRC_Choose_Discount_Type}"
                                               onchange="{!c.discountSelect}">
-                                <option value="Unit">Amount</option>
-                                <option value="Percent">Percent</option>
+                                <aura:iteration items="{!v.discountTypes}" var="dType">
+                                    <option value="{!dType}">{!dType}</option>
+                                </aura:iteration>
                             </lightning:select>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="1"/>
                         <lightning:layoutItem size="5">
-                            <aura:if isTrue="{!v.discountType == 'Unit'}">
-                                <ui:inputCurrency label="Discount Amount" value="{!v.priceDiscount}"/>
+                            <aura:if isTrue="{!v.discountType == v.discountTypes[0]}">
+                                <ui:inputCurrency label="{!$Label.c.BRC_Discount_Amount}" value="{!v.priceDiscount}"/>
                             </aura:if>
-                            <aura:if isTrue="{!v.discountType == 'Percent'}">
-                                <lightning:input type="number" label="Discount Amount" value="{!v.priceDiscount}"
+                            <aura:if isTrue="{!v.discountType == v.discountTypes[1]}">
+                                <lightning:input type="number" label="{!$Label.c.BRC_Discount_Amount}"
+                                                 value="{!v.priceDiscount}"
                                                  step="1"/>
                             </aura:if>
                         </lightning:layoutItem>
@@ -81,7 +87,7 @@
                             <lightning:recordEditForm
                                     objectApiName="Product2">
                                 <lightning:layout multipleRows="false" horizontalAlign="center">
-                                    <aura:if isTrue="{!v.selectProductsOption == 'Brand'}">
+                                    <aura:if isTrue="{!v.selectProductsOption == v.selectProductsOptions[1]}">
                                         <lightning:layoutItem size="6">
                                             <lightning:inputField fieldName="Brand__c"
                                                                   value="{!v.searchedProduct.Brand__c}"/>
@@ -91,10 +97,10 @@
                                                                   value="{!v.searchedProduct.Model__c}"/>
                                         </lightning:layoutItem>
                                     </aura:if>
-                                    <aura:if isTrue="{!v.selectProductsOption == 'Single'}">
+                                    <aura:if isTrue="{!v.selectProductsOption == v.selectProductsOptions[2]}">
                                         <lightning:layoutItem size="12">
-                                            <lightning:input label="Add By Product Code"
-                                                             value="{!v.searchedProduct.ProductCode}"/>
+                                            <lightning:inputField fieldName="ProductCode"
+                                                                  value="{!v.searchedProduct.ProductCode}"/>
                                         </lightning:layoutItem>
                                     </aura:if>
                                 </lightning:layout>
@@ -104,12 +110,12 @@
                 </div>
                 <footer class="slds-modal__footer">
                     <lightning:button variant="neutral"
-                                      label="Cancel"
-                                      title="Cancel"
+                                      label="{!$Label.c.Button_Cancel}"
+                                      title="{!$Label.c.Button_Cancel}"
                                       onclick="{!c.closeModel}"/>
                     <lightning:button variant="brand"
-                                      label="Create"
-                                      title="Create"
+                                      label="{!$Label.c.Button_Create}"
+                                      title="{!$Label.c.Button_Create}"
                                       onclick="{!c.createPricebookEntityList}"/>
                 </footer>
             </div>

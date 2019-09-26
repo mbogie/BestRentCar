@@ -6,6 +6,9 @@
     <aura:attribute name="blockButtons" type="Boolean" default="false"/>
     <aura:attribute name="selectedPricebook" type="Integer" default="-1"/>
     <aura:attribute name="currentDate" type="Date" default=""/>
+    <aura:attribute name="discountTypes" type="String[]"/>
+    <aura:attribute name="fieldsLabels" type="String[]"
+                    default="['Pricebook Name', 'Discount', 'Start Date', 'End Date', 'Active', 'Actions']"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <aura:handler event="c:BRCReloadPricebookListEvent" action="{!c.doInit}"/>
@@ -15,29 +18,29 @@
 
     <lightning:card title="" class="card">
         <aura:if isTrue="{!empty(v.pricebookList)}">
-            <div class="listHeader" style="text-align: center">
-                Create new Discount Pricebook.
+            <div class="listHeader" style="text-align:center">
+                    {!$Label.c.BRC_Empty_Discount_Pricebook_List_Message}
             </div>
             <aura:set attribute="else">
                 <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center"
                                   class="listHeader">
                     <lightning:layoutItem size="4">
-                        Pricebook Name
+                            {!v.fieldsLabels[0]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="2">
-                        Discount
+                            {!v.fieldsLabels[1]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="2">
-                        Start Date
+                            {!v.fieldsLabels[2]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="2">
-                        End Date
+                            {!v.fieldsLabels[3]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
-                        Active
+                            {!v.fieldsLabels[4]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
-                        Actions
+                            {!v.fieldsLabels[5]}
                     </lightning:layoutItem>
                 </lightning:layout>
                 <aura:iteration var="pricebook" items="{!v.pricebookList}" indexVar="index">
@@ -52,10 +55,10 @@
                             </lightning:layoutItem>
                             <lightning:layoutItem size="1">
                                 <div onclick="{!c.openDetails}" data-index="{!index}">
-                                    <aura:if isTrue="{!pricebook.Discount_Type__c == 'Percent'}">
+                                    <aura:if isTrue="{!pricebook.Discount_Type__c == v.discountTypes[1]}">
                                             {!pricebook.Discount_Amount__c + '%'}
                                     </aura:if>
-                                    <aura:if isTrue="{!pricebook.Discount_Type__c == 'Unit'}">
+                                    <aura:if isTrue="{!pricebook.Discount_Type__c == v.discountTypes[0]}">
                                         <lightning:formattedNumber value="{!pricebook.Discount_Amount__c}"
                                                                    style="currency"/>
                                     </aura:if>

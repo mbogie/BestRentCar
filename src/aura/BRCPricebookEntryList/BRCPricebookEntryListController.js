@@ -1,21 +1,22 @@
 ({
-   BRCPassPricebookEvent: function(component, event, helper) {
-       helper.initEntryList(component, event,helper);
-       component.set("v.selectedIndex", -1);
-       component.set("v.blockButtons", false);
-   },
+    BRCPassPricebookEvent: function(component, event, helper) {
+        helper.initEntryList(component, event, helper);
+        helper.initSelectOptions(component, event, helper);
+        component.set("v.selectedIndex", -1);
+        component.set("v.blockButtons", false);
+    },
 
     deleteItem: function(component, event, helper) {
         let selectedItem = event.currentTarget;
         let index = selectedItem.dataset.index;
         let entryList = component.get("v.pricebookEntryList");
-    	let action = component.get("c.deleteEntry");
-    	action.setParams({
+        let action = component.get("c.deleteEntry");
+        action.setParams({
             "entryId": entryList[index].Id
-            });
-        action.setCallback( this, function( response ) {
-            if ( component.isValid() && response.getState() === "SUCCESS" ) {
-                helper.reloadEntryList(component, event,helper);
+        });
+        action.setCallback(this, function(response) {
+            if (component.isValid() && response.getState() === "SUCCESS") {
+                helper.initEntryList(component, event, helper);
             } else {
                 component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
             }
@@ -31,7 +32,7 @@
     },
 
     undoItem: function(component, event, helper) {
-        helper.resetAttributes(component, event,helper);
+        helper.resetAttributes(component, event, helper);
     },
 
     saveItem: function(component, event, helper) {
@@ -39,60 +40,60 @@
         let index = selectedItem.dataset.index;
         let entryList = component.get("v.pricebookEntryList");
         let entry = entryList[index];
-        if(entry.UnitPrice == null || entry.UnitPrice >= entry.Standard_Price__c || entry.UnitPrice <= 1){
-            component.find("toastCmp").showToastModel('Discount Price must be less then standard price and higher than 0', "error");
+        if (entry.UnitPrice == null || entry.UnitPrice >= entry.Standard_Price__c || entry.UnitPrice <= 0) {
+            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Amount_Error}"), "error");
         } else {
-    	let action = component.get("c.upsertEntry");
-    	action.setParams({
-            "pricebookEntry": entry
+            let action = component.get("c.upsertEntry");
+            action.setParams({
+                "pricebookEntry": entry
             });
-        action.setCallback( this, function( response ) {
-            if ( component.isValid() && response.getState() === "SUCCESS" ) {
-                helper.resetAttributes(component, event,helper);
-            } else {
-                component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
-            }
-        });
-        $A.enqueueAction(action);
+            action.setCallback(this, function(response) {
+                if (component.isValid() && response.getState() === "SUCCESS") {
+                    helper.resetAttributes(component, event, helper);
+                } else {
+                    component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
+                }
+            });
+            $A.enqueueAction(action);
         }
     },
 
     addProductsToPricebook: function(component, event, helper) {
-        helper.resetAttributes(component, event,helper);
-        component.set("v.openModal",true);
+        helper.resetAttributes(component, event, helper);
+        component.set("v.openModal", true);
     },
 
-   addPricebookEntityList: function(component, event, helper) {
+    addPricebookEntityList: function(component, event, helper) {
         let selectedOption = component.get("v.selectProductsOption");
+        let selectProductsOptions = component.get("v.selectProductsOptions");
         let pricebook = component.get("v.pricebook");
         let product = component.get("v.searchedProduct");
-        if(selectedOption == 'Brand' && (product.Brand__c == null || product.Brand__c == '')){
-            component.find("toastCmp").showToastModel("Brand is required", "error");
-        } else if(selectedOption == 'Single' && (product.ProductCode == null || product.ProductCode =='')){
-                component.find("toastCmp").showToastModel("ProductCode is required", "error");
+        if (selectedOption == selectProductsOptions[1] && (product.Brand__c == null || product.Brand__c == '')) {
+            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Brand}"), "error");
+        } else if (selectedOption == selectProductsOptions[2] && (product.ProductCode == null || product.ProductCode == '')) {
+            component.find("toastCmp").showToastModel($A.get("{!$Label.c.BRC_Required_Field_Error}"), "error");
         } else {
-    	let action = component.get("c.addProducts");
-    	action.setParams({
-    	    "discountType": pricebook.Discount_Type__c,
-    	    "selectedOption": selectedOption,
-    	    "pricebookId": pricebook.Id,
-            "product": product,
-            "price": pricebook.Discount_Amount__c,
+            let action = component.get("c.addProducts");
+            action.setParams({
+                "discountType": pricebook.Discount_Type__c,
+                "selectedOption": selectedOption,
+                "pricebookId": pricebook.Id,
+                "product": product,
+                "price": pricebook.Discount_Amount__c,
             });
-        action.setCallback( this, function( response ) {
-            if ( component.isValid() && response.getState() === "SUCCESS" ) {
-                component.find("toastCmp").showToastModel("Products was added", "success");
-                helper.resetAttributes(component, event,helper);
-            } else {
-                component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
-            }
-        });
-      $A.enqueueAction(action);
-      }
-   },
+            action.setCallback(this, function(response) {
+                if (component.isValid() && response.getState() === "SUCCESS") {
+                    helper.resetAttributes(component, event, helper);
+                } else {
+                    component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
+                }
+            });
+            $A.enqueueAction(action);
+        }
+    },
 
     closeModel: function(component, event, helper) {
-        helper.resetAttributes(component, event,helper);
+        helper.resetAttributes(component, event, helper);
     },
 
     changeProductsType: function(component, event, helper) {
@@ -111,5 +112,4 @@
         });
         navEvt.fire();
     },
-
 })

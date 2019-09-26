@@ -10,33 +10,39 @@
     <aura:attribute name="blockButtons" type="Boolean" default="false"/>
     <aura:attribute name="searchedProduct" type="Product2" default="{}"/>
     <aura:attribute name="selectProductsOption" type="String" default="All"/>
+    <aura:attribute name="selectProductsOptions" type="String[]"/>
+    <aura:attribute name="fieldsLabels" type="String[]"
+                    default="['Pricebook Name', 'Standard Price', 'Discount Price', 'Actions']"/>
+
+
     <aura:handler event="c:BRCPassPricebookEvent" action="{!c.BRCPassPricebookEvent}"/>
     <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:card title="" class="card">
         <aura:set attribute="actions">
             <aura:if isTrue="{!not(v.emptyList)}">
-                <lightning:button label="Add Products" onclick="{!c.addProductsToPricebook}" variant="brand"/>
+                <lightning:button label="{!$Label.c.BRC_Add_Products}" onclick="{!c.addProductsToPricebook}"
+                                  variant="brand"/>
             </aura:if>
         </aura:set>
         <aura:if isTrue="{!v.emptyList}">
             <div class="listHeader" style="text-align: center">
-                Click on Pricebook Name to see its Products.
+                    {!$Label.c.BRC_Pricebook_Entries_List_Message}
             </div>
             <aura:set attribute="else">
                 <lightning:layout multipleRows="false" horizontalAlign="center" verticalAlign="center"
                                   class="listHeader">
                     <lightning:layoutItem size="5">
-                        Product Name
+                            {!v.fieldsLabels[0]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="3">
-                        Standard Price
+                            {!v.fieldsLabels[1]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="3">
-                        Discount Price
+                            {!v.fieldsLabels[2]}
                     </lightning:layoutItem>
                     <lightning:layoutItem size="1">
-                        Actions
+                            {!v.fieldsLabels[3]}
                     </lightning:layoutItem>
                 </lightning:layout>
                 <aura:iteration var="entry" items="{!v.pricebookEntryList}" indexVar="index">
@@ -92,7 +98,7 @@
                 <header class="slds-modal__header">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{!c.closeModel}"
-                                          alternativeText="close"
+                                          alternativeText=""
                                           variant="bare-inverse"
                                           class="slds-modal__close"/>
                     <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Choose Products and Input
@@ -101,18 +107,19 @@
                 <div class="modal">
                     <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="end">
                         <lightning:layoutItem size="12">
-                            <lightning:select aura:id="productSelect" name="select" label="Choose Products"
+                            <lightning:select aura:id="productSelect" name="select"
+                                              label="{!$Label.c.BRC_Discount_Products}"
                                               onchange="{!c.changeProductsType}">
-                                <option value="All">All</option>
-                                <option value="Brand">Select Brand/Model</option>
-                                <option value="Single">Single Product</option>
+                                <aura:iteration items="{!v.selectProductsOptions}" var="option">
+                                    <option value="{!option}">{!option}</option>
+                                </aura:iteration>
                             </lightning:select>
                         </lightning:layoutItem>
                         <lightning:layoutItem size="12">
                             <lightning:recordEditForm
                                     objectApiName="Product2">
                                 <lightning:layout multipleRows="false" horizontalAlign="center">
-                                    <aura:if isTrue="{!v.selectProductsOption == 'Brand'}">
+                                    <aura:if isTrue="{!v.selectProductsOption == v.selectProductsOptions[1]}">
                                         <lightning:layoutItem size="6">
                                             <lightning:inputField fieldName="Brand__c"
                                                                   value="{!v.searchedProduct.Brand__c}"/>
@@ -122,7 +129,7 @@
                                                                   value="{!v.searchedProduct.Model__c}"/>
                                         </lightning:layoutItem>
                                     </aura:if>
-                                    <aura:if isTrue="{!v.selectProductsOption == 'Single'}">
+                                    <aura:if isTrue="{!v.selectProductsOption == v.selectProductsOptions[2]}">
                                         <lightning:layoutItem size="12">
                                             <lightning:input label="Add By Product Code"
                                                              value="{!v.searchedProduct.ProductCode}"/>
@@ -135,12 +142,12 @@
                 </div>
                 <footer class="slds-modal__footer">
                     <lightning:button variant="neutral"
-                                      label="Cancel"
-                                      title="Cancel"
+                                      label="{!$Label.c.Button_Cancel}"
+                                      title="{!$Label.c.Button_Cancel}"
                                       onclick="{!c.closeModel}"/>
                     <lightning:button variant="brand"
-                                      label="Add"
-                                      title="Add"
+                                      label="{!$Label.c.BRC_Add_Products}"
+                                      title="{!$Label.c.BRC_Add_Products}"
                                       onclick="{!c.addPricebookEntityList}"/>
                 </footer>
             </div>

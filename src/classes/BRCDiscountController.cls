@@ -1,6 +1,8 @@
 public with sharing class BRCDiscountController {
 
-    public final static String STANDARD_PRICEBOOK_ID = '01s2p000001DmINAA0';
+    public final static String STANDARD_PRICEBOOK_ID = BRCUtils.getValues('StandardPricebookId');
+    public final static List<String> ADD_PRODUCTS_OPTIONS = BRCUtils.getValues('AddProductsOptions').split(',');
+    public final static List<String> DISCOUNT_TYPES = BRCUtils.getValues('DiscountType').split(',');
 
     @AuraEnabled
     public static List<Pricebook2> getAllPricebooks() {
@@ -69,15 +71,15 @@ public with sharing class BRCDiscountController {
     public static void addProducts(String discountType, String selectedOption, String pricebookId, Product2 product, Decimal price) {
         List<PricebookEntry> newEntriesList = new List<PricebookEntry>();
         Map<Id, Product2> productsList = new Map<Id, Product2>();
-        if (selectedOption == 'All') {
+        if (selectedOption == ADD_PRODUCTS_OPTIONS.get(0)) {
             productsList = new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2]);
-        } else if (selectedOption == 'Brand') {
+        } else if (selectedOption == ADD_PRODUCTS_OPTIONS.get(1)) {
             productsList = (String.isBlank(product.Model__c)) ? new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE Brand__c LIKE :product.Brand__c]) :
                     new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE Brand__c LIKE :product.Brand__c AND Model__c LIKE :product.Model__c]);
-            if (productsList.isEmpty()) throw new AuraHandledException('There are no products');
-        } else if (selectedOption == 'Single') {
+            if (productsList.isEmpty()) throw new AuraHandledException(System.Label.BRC_No_Products_To_Add);
+        } else if (selectedOption == ADD_PRODUCTS_OPTIONS.get(2)) {
             productsList = new Map<Id, Product2>([SELECT Id, Name, ProductCode FROM Product2 WHERE ProductCode = :product.ProductCode]);
-            if (productsList.isEmpty()) throw new AuraHandledException('There is no product with that ProductCode');
+            if (productsList.isEmpty()) throw new AuraHandledException(System.Label.BRC_No_Products_To_Add);
         }
 
         List<PricebookEntry> oldEntriesList = [SELECT Id, Product2Id, Pricebook2Id FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
@@ -97,7 +99,7 @@ public with sharing class BRCDiscountController {
                 }
             }
         }
-        if(newEntriesList.isEmpty()) throw new AuraHandledException('Products Already In Pricebook');
+        if(newEntriesList.isEmpty()) throw new AuraHandledException(System.Label.BRC_No_Products_To_Add);
         try {
             upsert newEntriesList;
             upsert new Pricebook2(Id = pricebookId, Discount_Type__c = discountType, Discount_Amount__c = price);
@@ -108,10 +110,20 @@ public with sharing class BRCDiscountController {
     }
 
     public static Double getDiscountPrice(Decimal oldPrice, Decimal price, String discountType) {
-        if (discountType == 'Percent') return oldPrice - oldPrice * price/100;
+        if (discountType == DISCOUNT_TYPES.get(1)) return oldPrice - oldPrice * price/100;
         else {
             Double newPrice = oldPrice - price;
             return (oldPrice - price < 1) ? 1 : newPrice;
         }
+    }
+
+    @AuraEnabled
+    public static List<String> getSelectProductsOption(){
+        return ADD_PRODUCTS_OPTIONS;
+    }
+
+    @AuraEnabled
+    public static List<String> getDiscountTypes(){
+        return DISCOUNT_TYPES;
     }
 }
