@@ -25,9 +25,9 @@ public with sharing class BRCContactPageController {
     public String webToLeadOid {get; set;}
 
     public BRCContactPageController(ApexPages.StandardController stdController) {
-        retURL = BRCUtils.getCredentialsValues('BRCContactFormRetUrl');
-        leadSource = BRCUtils.getCredentialsValues('BRCWebFormLeadSource');
-        webToLeadOid = BRCUtils.getCredentialsValues('BRCContactFormWebToLeadOid');
+        retURL = BRCUtils.getValues('ContactFormRetUrl');
+        leadSource = BRCUtils.getValues('WebFormLeadSource');
+        webToLeadOid = BRCUtils.getValues('ContactFormWebToLeadOid');
         surveyId = ApexPages.currentPage().getParameters().get('id');
         leadId = ApexPages.currentPage().getParameters().get('lId');
         init();

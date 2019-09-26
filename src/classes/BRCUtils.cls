@@ -1,11 +1,11 @@
 public with sharing class BRCUtils {
 
-    public static String getCredentialsValues(String csName) {
-        Cs_Settings__c csItem = Cs_Settings__c.getInstance(csName);
-        if (csItem == null) {
+    public static String getValues(String brcName) {
+        BRC_Settings__c brcItem = BRC_Settings__c.getInstance(brcName);
+        if (brcItem == null) {
             return '';
         } else {
-            return csItem.Value__c;
+            return brcItem.Value__c;
         }
     }
 }

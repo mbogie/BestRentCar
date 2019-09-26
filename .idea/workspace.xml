@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/objects/Account.object" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Contact.object" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Order.object" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Pricebook2.object" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Product2.object" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BRCContact.page" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BRCContact.page" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/BRC_SalesRep.profile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/BRC_Service.profile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sites/BRC_Contact.site" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sites/BRC_Service.site" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
     </list>
     <list id="0fcd7a4a-a4eb-484a-972b-9fc84d9b8112" name="renaeEvents" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,53 +25,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>setupQuestionList</find>
-      <find>getAQuestion</find>
-      <find>qQuestion</find>
-      <find>qChoices</find>
-      <find>surveyName</find>
-      <find>surveyHeader</find>
-      <find>questionName</find>
-      <find>questionRequired</find>
-      <find>singleOptions</find>
-      <find>responses</find>
-      <find>questionType</find>
-      <find>surveyThankYouText</find>
-      <find>surveyContainerCss</find>
-      <find>surveyThankYouURL</find>
-      <find>caseId</find>
-      <find>contactId</find>
-      <find>allQuestionsSize</find>
-      <find>anonymousOrUser</find>
-      <find>urlBase</find>
-      <find>userId</find>
-      <find>userName</find>
-      <find>surveyTakerId</find>
-      <find>thankYouRendered</find>
-      <find>newOrder</find>
-      <find>anonymousAnswer</find>
-      <find>isInternal</find>
-      <find>renderSurveyPreview</find>
-      <find>templateURL</find>
-      <find>uiMessage</find>
-      <find>baseURL</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>BRCPostToChatterAction</replace>
-      <replace>BRCConnectApiHelper</replace>
-      <replace>BRCContactPageController</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/6.ProductPage" />
+        <entry key="$PROJECT_DIR$" value="feature/2.Divisions" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -103,9 +56,9 @@
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
                       <entry key="CLASSES/BRCCONNECTAPIHELPER.CLS" value="1566405329294" />
-                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1566552895607" />
+                      <entry key="CLASSES/BRCCONTACTPAGECONTROLLER.CLS" value="1569504340392" />
                       <entry key="CLASSES/BRCPOSTTOCHATTERACTION.CLS" value="1566405329294" />
-                      <entry key="CLASSES/BRCUTILS.CLS" value="1566481140478" />
+                      <entry key="CLASSES/BRCUTILS.CLS" value="1569502733216" />
                       <entry key="COMPONENTS/BRCUIMESSAGE.COMPONENT" value="1566405271190" />
                       <entry key="PAGES/BRCCONTACT.PAGE" value="1566827551513" />
                     </map>
@@ -1714,6 +1667,9 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1753,77 +1709,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Illuminated Cloud|BestRentCar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
