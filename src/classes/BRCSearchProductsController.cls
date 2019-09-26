@@ -1,7 +1,7 @@
 public with sharing class BRCSearchProductsController {
 
     public static final String TYPE_POSTER = BRCUtils.getValues('GalleryPoster');
-    public static String STANDARD_PRICEBOOK_ID = '01s2p000001DmINAA0';
+    public static String STANDARD_PRICEBOOK_ID = BRCUtils.getValues('StandardPricebookId');
 
     public class SearchResultItem {
         @AuraEnabled public Product2 product = new Product2();

@@ -53,6 +53,12 @@
     font-weight: bold;
 }
 
+.THIS .noAvailable {
+    color : black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .THIS .dashDay {
     font-size: 12px;
     color: black;
