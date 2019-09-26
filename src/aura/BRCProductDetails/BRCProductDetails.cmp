@@ -1,0 +1,100 @@
+<aura:component description="BRCProductDetails" controller="BRCProductDetailController"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="listOfImageUrls" type="String[]"/>
+    <aura:attribute name="count" type="Double" default="0"/>
+    <aura:attribute name="sum" type="Integer" default="0"/>
+
+    <aura:attribute name="selectedTab" type="String" default="tab2"/>
+    <aura:attribute name="fieldLabels" type="Map" default="{'name': 'Product Name',
+                                                            'production_year__c': 'Production Year',
+                                                            'brand__c': 'Brand',
+                                                            'model__c': 'Model',
+                                                            'engine__c': 'Engine',
+                                                            'productcode': 'Product Code',
+                                                            'number_of_doors__c': 'Number of Doors',
+                                                            'description': 'Product Description'}"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:BRCPassAverageReviewsEvent" action="{!c.BRCPassAverageReviewsEvent}"/>
+
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:card class="card" title="">
+        <lightning:recordViewForm aura:id="viewForm" recordId="{!v.recordId}" objectApiName="Product2"
+                                  class="mainPanel">
+            <lightning:layout multipleRows="false" verticalAlign="center">
+                <lightning:layoutItem size="12">
+                    <lightning:outputField fieldName="Name" class="headerName" variant="label-hidden"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <div class="sectionDetails">
+                <lightning:layout multipleRows="false">
+                    <lightning:layoutItem size="7">
+                        <img src="{!empty(v.listOfImageUrls) ? $Resource.BRCDefault : v.listOfImageUrls[0]}"
+                             width="600"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem class="details" size="5">
+                        <div>
+                            <p class="detailHeader">{!$Label.c.BRC_Product_Details}</p>
+                            <div class="detailItem">{!v.fieldLabels.production_year__c}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Production_Year__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">{!v.fieldLabels.productcode}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="ProductCode"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">{!v.fieldLabels.brand__c}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Brand__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">{!v.fieldLabels.model__c}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Model__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">{!v.fieldLabels.engine__c}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Engine__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="detailItem">{!v.fieldLabels.number_of_doors__c}:</div>
+                            <div class="detailItem">
+                                <lightning:outputField variant="label-hidden" fieldName="Number_of_Doors__c"/>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="rating" style="{!'background-image: url('+ $Resource.BRCstar + ')'}">
+                            {!v.sum} <span class="ratingSmall">({!v.count})</span>
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            <div class="sectionImages">
+                <c:BRCCarouselGallery images="{!v.listOfImageUrls}"/>
+            </div>
+            <lightning:tabset variant="default" selectedTabId="{!v.selectedTab}" aura:id="details">
+                <lightning:tab label="{!v.fieldLabels.description}" id="tab1">
+                    <lightning:layout multipleRows="true">
+                        <div style="text-align: justify">
+                            <img src="{!$Resource.BRCEngineIcon}" class="textWrap" alt=""/>
+                            <p style="margin-top: 10px;">
+                                <lightning:outputField variant="label-hidden" fieldName="Description" class="innerText"/>
+                            </p>
+                        </div>
+                    </lightning:layout>
+                </lightning:tab>
+                <lightning:tab label="Reviews" id="tab2">
+                    <lightning:layout multipleRows="true">
+                        <c:BRCProductReviews recordId="{!v.recordId}"/>
+                    </lightning:layout>
+                </lightning:tab>
+            </lightning:tabset>
+        </lightning:recordViewForm>
+    </lightning:card>
+</aura:component>

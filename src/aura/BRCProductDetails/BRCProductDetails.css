@@ -1,0 +1,98 @@
+.THIS .mainPanel {
+    padding-right: 30px;
+}
+
+.THIS.card {
+     padding-left: 30px;
+     padding-right: 30px;
+     border: 0 !important;
+     padding-bottom: 20px;
+}
+
+.THIS .headerName .slds-form-element__static {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.THIS .details {
+    padding-left: 20px;
+}
+
+.THIS .rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width:120px;
+    text-align: center;
+    padding-top: 27px;
+}
+
+.THIS .ratingSmall {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.THIS .detailHeader {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.THIS .sectionDetails {
+    border-bottom : 1px solid gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.THIS .sectionImages {
+    border-bottom : 1px solid gray;
+}
+
+.THIS .detailItem {
+    float:left;
+    font-size: 15px;
+    margin-left: 15px;
+    color : gray;
+}
+
+.THIS .detailItem .slds-form-element__static {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.THIS .textWrap {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100px;
+    float: right;
+}
+
+.THIS .innerText .slds-form-element__static {
+    padding-top: 10px;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.THIS .slds-tabs_default__item {
+    font-size: 15px;
+    color: black;
+}
+
+.THIS .slds-tabs_default__item.slds-is-active {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 0!important;
+}
+
+.THIS .starsRating {
+    margin-bottom: 15px;
+}

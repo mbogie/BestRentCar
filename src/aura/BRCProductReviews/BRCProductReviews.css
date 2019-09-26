@@ -1,0 +1,45 @@
+.THIS .buttonSave {
+    padding: 0 7px 9px 0;
+    text-align:right;
+}
+
+.THIS.emptyList {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.THIS .listPanel {
+    height: 400px;
+}
+
+.THIS.listItem {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    margin-bottom: 5px;
+}
+
+.THIS .reviewTitle {
+    padding: 10px 0 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+}
+
+.THIS .stars {
+    padding: 10px 200px 5px 0;
+    border: 1px solid lightgray;
+    background-color: gray;
+    float: right;
+}
+
+.THIS .comment {
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}

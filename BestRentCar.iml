@@ -64,6 +64,10 @@
                             <option name="name" value="BRCProductImagesController" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCProductRatingController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCQueryBuilder" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -729,6 +733,10 @@
                             <option name="name" value="BRCDragDrop" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCFiveStarRating" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCImageListItem" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -763,6 +771,7 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductDetails" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductEditPage" />
@@ -775,6 +784,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductPrice" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductReviews" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductSearchResultList" />
@@ -907,6 +920,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="setStartUrl" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPassAverageReviewsEvent" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1466,6 +1483,9 @@
                             <option name="name" value="Review__c.Id__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Review__c.Product__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Review__c.Rating__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1692,6 +1712,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_No_Products_To_Add" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_No_Reviews" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Order_Product" />
@@ -5404,6 +5427,7 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="fivestar" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="iEditCSS" />
@@ -5548,7 +5572,7 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="BRC Service.Customer_Members" />
+                            <option name="name" value="BRC Service.Partner_and_Customer_members" />
                           </MetadataEntry>
                         </list>
                       </option>

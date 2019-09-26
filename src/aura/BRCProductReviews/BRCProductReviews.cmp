@@ -1,0 +1,66 @@
+<aura:component description="BRCProductReviews" controller="BRCProductRatingController"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId"
+                access="global">
+
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="reviews" type="Review__c[]" access="private"/>
+    <aura:attribute name="review" type="Review__c" default="{'sObjectType':'Review', 'Name':'', 'Comment__c':'', 'Rating__c':'0'}"/>
+    <aura:attribute name="reload" type="Boolean" default="true"/>
+
+    <aura:registerEvent name="reviewsEvent" type="c:BRCPassAverageReviews"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
+
+    <lightning:recordEditForm objectApiName="Review__c">
+        <lightning:layout multipleRows="true" verticalAlign="end" horizontalAlign="center">
+            <lightning:layoutItem size="10">
+                <lightning:inputField fieldName="Name" value="{!v.review.Name}"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="2" class="buttonSave">
+                <lightning:button iconName="utility:save" label="{!$Label.c.Button_Save}" onclick="{!c.onSave}"
+                                  variant="brand"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12">
+                <lightning:inputRichText value="{!v.review.Comment__c}" disabledCategories="FORMAT_FONT"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12" class="starsRating">
+                <aura:if isTrue="{!v.reload}">
+                <c:FiveStarRating value="{!v.review.Rating__c}"/>
+                </aura:if>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:recordEditForm>
+
+    <aura:if isTrue="{!v.reviews.length==0}">
+        <div class="emptyList">
+                {!$Label.c.BRC_No_Reviews}
+        </div>
+    </aura:if>
+    <aura:iteration items="{!v.reviews}" var="review">
+        <lightning:layout multipleRows="true" class="listItem">
+            <lightning:layoutItem size="1">
+                <img alt="" src="{!review.CreatedBy.SmallPhotoUrl}" title=""/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="11">
+                <div style="float:left; padding-left:10px">
+                        {!review.CreatedBy.Name}
+                </div>
+                <div style="float:right; padding-right:10px">
+                    <lightning:formattedDateTime value="{!review.CreatedDate}"
+                                                 year="numeric" month="short" day="numeric"
+                                                 hour="2-digit" minute="2-digit" hour12="true"/>
+                </div>
+                <div style="clear:both"/>
+                <div class="reviewTitle">
+                        {!review.Name}
+                </div>
+                <div class="stars">
+                    <c:FiveStarRating aura:id="FiveStarRating" value="{!review.Rating__c}" readonly="true"/>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12" class="comment">
+                <ui:outputRichText value="{!review.Comment__c}"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </aura:iteration>
+</aura:component>

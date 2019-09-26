@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="BRCPassAverageReviewsEvent">
+    <aura:attribute name="count" type="Integer"/>
+    <aura:attribute name="sum" type="Double"/>
+</aura:event>
