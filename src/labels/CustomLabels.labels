@@ -36,6 +36,13 @@
         <value>Agreement</value>
     </labels>
     <labels>
+        <fullName>BRC_Add_Products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Add Products</shortDescription>
+        <value>Add Products</value>
+    </labels>
+    <labels>
         <fullName>BRC_Add_To_Cart</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -43,11 +50,25 @@
         <value>Add To Cart</value>
     </labels>
     <labels>
+        <fullName>BRC_Amount_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Amount Error</shortDescription>
+        <value>Discount Price must be higher than 0 and less then standard price.</value>
+    </labels>
+    <labels>
         <fullName>BRC_Cart_Label</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Cart Label</shortDescription>
         <value>Your Cart:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Choose_Discount_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Choose Discount Type</shortDescription>
+        <value>Choose Discount Type</value>
     </labels>
     <labels>
         <fullName>BRC_Contact_Form_Header</fullName>
@@ -64,6 +85,13 @@
         <value>BRC Contact Form</value>
     </labels>
     <labels>
+        <fullName>BRC_Create_New_Discount_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Create New Discount Pricebook</shortDescription>
+        <value>Create New Discount Pricebook</value>
+    </labels>
+    <labels>
         <fullName>BRC_Dash_Day</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -76,6 +104,20 @@
         <protected>true</protected>
         <shortDescription>BRC Days Label</shortDescription>
         <value>Days:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Discount_Amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Discount Amount</shortDescription>
+        <value>Discount Amount</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Discount_Products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Discount Products</shortDescription>
+        <value>Choose Products</value>
     </labels>
     <labels>
         <fullName>BRC_Division_Close_Detail_Message</fullName>
@@ -127,6 +169,34 @@
         <value>Divisions Search</value>
     </labels>
     <labels>
+        <fullName>BRC_Empty_Cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Cart</shortDescription>
+        <value>Your Cart is Empty.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Empty_Discount_Pricebook_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Discount Pricebook List Message</shortDescription>
+        <value>Create new Discount Pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Empty_Orders_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Empty Orders List Message</shortDescription>
+        <value>Your Order List is Empty.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_EndDate_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC EndDate Error</shortDescription>
+        <value>End Date must be after Start Day and Today.</value>
+    </labels>
+    <labels>
         <fullName>BRC_Error_Product_In_Cart</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -155,6 +225,13 @@
         <value>Product Not Available. Sorry.</value>
     </labels>
     <labels>
+        <fullName>BRC_No_Products_To_Add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC No Products To Add</shortDescription>
+        <value>No Products To Add</value>
+    </labels>
+    <labels>
         <fullName>BRC_Order_Product</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -162,11 +239,42 @@
         <value>Order Now</value>
     </labels>
     <labels>
+        <fullName>BRC_Order_ThankYou_Note</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Order ThankYou Note</shortDescription>
+        <value>Thank You For Ordering Our Products</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Orders_List_Note</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Orders List Note</shortDescription>
+        <value>To see Your orders go to &apos;My Profile&apos; and &apos;Orders List&apos; tab</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Payment_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Payment Address</shortDescription>
+        <value>Send Payment to:&lt;/br&gt;
+BRC BEST RENT CAR&lt;/br&gt;
+Morwowa 1, 20-704 Lublin&lt;/br&gt;
+ PL67 1234 5678 0000 0000 1234 5678</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Percent_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Percent Error</shortDescription>
+        <value>Percent Discount must be between 1 and 99.</value>
+    </labels>
+    <labels>
         <fullName>BRC_Pickup_Address</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Pickup Address</shortDescription>
-        <value>Pickup Address:</value>
+        <value>Shipping Address:</value>
     </labels>
     <labels>
         <fullName>BRC_Price</fullName>
@@ -174,6 +282,13 @@
         <protected>true</protected>
         <shortDescription>BRC Price</shortDescription>
         <value>Price:</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Pricebook_Entries_List_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Pricebook Entries List Message</shortDescription>
+        <value>Click on Pricebook Name to see its Products.</value>
     </labels>
     <labels>
         <fullName>BRC_Product_Added_to_Cart</fullName>
@@ -211,11 +326,32 @@
         <value>Results for:</value>
     </labels>
     <labels>
+        <fullName>BRC_Required_Brand</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Required Brand</shortDescription>
+        <value>Brand is required.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Required_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Required Field Error</shortDescription>
+        <value>All fields are required.</value>
+    </labels>
+    <labels>
         <fullName>BRC_Server_Error</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BRC Server Error</shortDescription>
         <value>Server error. Sorry for inconvenience.</value>
+    </labels>
+    <labels>
+        <fullName>BRC_Submit_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRC Submit Order</shortDescription>
+        <value>Submit Order</value>
     </labels>
     <labels>
         <fullName>BRC_Survey_Name</fullName>
@@ -317,6 +453,13 @@ Number Of Fails : {3}.</value>
         <protected>true</protected>
         <shortDescription>Button Clear</shortDescription>
         <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Button_Create</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Button Create</shortDescription>
+        <value>Create</value>
     </labels>
     <labels>
         <fullName>Button_Delete</fullName>

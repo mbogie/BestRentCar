@@ -10,6 +10,7 @@
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <aura:handler event="c:BRCRefreshCartListEvent" action="{!c.BRCRefreshCartListEvent}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:layout multipleRows="false">
         <aura:if isTrue="{!not(v.emptyCard)}">
@@ -70,11 +71,14 @@
         </aura:if>
         <aura:if isTrue="{!v.emptyCard}">
             <lightning:layout horizontalAlign="center" class="emptyBasket" multipleRows="true">
-                <lightning:layoutItem size="12">
-                        {!$Label.c.BRC_Empty_Cart}
+                <lightning:layoutItem size="12" class="thankYouNote">
+                        {!$Label.c.BRC_Order_ThankYou_Note}
                 </lightning:layoutItem>
-                <lightning:layoutItem size="12">
-                    <img src="{!$Resource.BRCEmptyCart}" class="icon"/>
+                <lightning:layoutItem size="12" class="infoNote">
+                        {!$Label.c.BRC_Orders_List_Note}
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" class="paymentNote">
+                    <aura:unescapedHtml value="{!$Label.c.BRC_Payment_Address}"/>
                 </lightning:layoutItem>
             </lightning:layout>
         </aura:if>
