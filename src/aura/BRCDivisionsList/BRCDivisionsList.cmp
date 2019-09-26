@@ -4,7 +4,7 @@
 
     <aura:handler event="c:BRCPassDivisionsListEvent" action="{!c.BRCPassDivisionsListEvent}"/>
 
-    <lightning:card title="{!$Label.c.BRC_Division_List_Label}" class="slds-container--small">
+    <lightning:card title="{!$Label.c.BRC_Division_List_Label}">
         <div class="slds-p-left_medium slds-p-right_medium">
             <ul class="slds-list_vertical slds-has-dividers_top-space">
                 <aura:if isTrue="{!not(empty(v.divisions))}">

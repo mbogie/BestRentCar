@@ -11,7 +11,7 @@
 
     <c:BRCCustomToast aura:id="toastCmp"/>
 
-    <lightning:card title="{!$Label.c.BRC_Division_Search_Label}" class="slds-container--small">
+    <lightning:card title="{!$Label.c.BRC_Division_Search_Label}">
             <form class="slds-form-element" style="padding:0px 20px 0px 20px">
                 <lightning:input aura:id="searchForm"
                                  label="{!v.searchFieldLabels.billingcountry}"
