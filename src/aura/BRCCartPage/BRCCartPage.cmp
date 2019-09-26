@@ -10,6 +10,7 @@
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <aura:handler event="c:BRCRefreshCartListEvent" action="{!c.BRCRefreshCartListEvent}"/>
+    <c:BRCCustomToast aura:id="toastCmp"/>
 
     <lightning:layout multipleRows="false">
         <aura:if isTrue="{!not(v.emptyCard)}">
@@ -71,16 +72,13 @@
         <aura:if isTrue="{!v.emptyCard}">
             <lightning:layout horizontalAlign="center" class="emptyBasket" multipleRows="true">
                 <lightning:layoutItem size="12" class="thankYouNote">
-                        Thank You For Ordering Our Products.
+                        {!$Label.c.BRC_Order_ThankYou_Note}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="infoNote">
-                        To see Your orders go to 'My Profile' and 'Orders List' tab.
+                        {!$Label.c.BRC_Orders_List_Note}
                 </lightning:layoutItem>
                 <lightning:layoutItem size="12" class="paymentNote">
-                    Send Payment to: <br/>
-                    BRC BEST RENT CAR <br/>
-                    Morwowa 1, 20-704 Lublin <br/>
-                    PL67 1234 5678 0000 0000 1234 5678
+                    <aura:unescapedHtml value="{!$Label.c.BRC_Payment_Address}"/>
                 </lightning:layoutItem>
             </lightning:layout>
         </aura:if>

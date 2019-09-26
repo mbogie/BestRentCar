@@ -7,18 +7,17 @@
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
 
     <lightning:layout multipleRows="true" class="mainPanel">
-    <aura:if isTrue="{!empty(v.ordersList)}">
-        <div class="listHeader" style="text-align: center">
-            Your Order List is Empty.
-        </div>
-    <aura:set attribute="else">
-        <aura:iteration items="{!v.ordersList}" var="order">
-            <lightning:layoutItem size="12">
-                <c:BRCOrdersListItem order="{!order}"/>
-            </lightning:layoutItem>
-        </aura:iteration>
-
-    </aura:set>
-    </aura:if>
+        <aura:if isTrue="{!empty(v.ordersList)}">
+            <div class="listHeader" style="text-align: center">
+                    {!$Label.c.BRC_Empty_Orders_List_Message}
+            </div>
+            <aura:set attribute="else">
+                <aura:iteration items="{!v.ordersList}" var="order">
+                    <lightning:layoutItem size="12">
+                        <c:BRCOrdersListItem order="{!order}"/>
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </aura:set>
+        </aura:if>
     </lightning:layout>
 </aura:component>

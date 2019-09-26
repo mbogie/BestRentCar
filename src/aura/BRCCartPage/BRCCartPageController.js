@@ -2,6 +2,7 @@
     doInit: function(component, event, helper) {
         helper.initList(component, event, helper);
         helper.initTotalPrice(component, event, helper);
+        helper.initUserAddress(component, event, helper);
     },
 
     clearCart: function(component, event, helper) {
