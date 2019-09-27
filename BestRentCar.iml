@@ -746,6 +746,13 @@
                             <option name="name" value="BRCOrdersListItem" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCPassAverageReviews" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPassAverageReviewsEvent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCPassDivisionDetailEvent" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -920,10 +927,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="setStartUrl" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BRCPassAverageReviewsEvent" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1760,6 +1763,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Required_Field_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Required_Title" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Server_Error" />
@@ -5399,6 +5405,9 @@
                             <option name="name" value="BRCOrder" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCstar" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="DefaultPicture" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -5430,6 +5439,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="fivestarCommunityVersion" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="iEditCSS" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -5440,6 +5453,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="jQueryUI" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="stars" />
                           </MetadataEntry>
                         </list>
                       </option>

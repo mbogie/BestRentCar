@@ -4,7 +4,8 @@
 
     <aura:attribute name="recordId" type="String"/>
     <aura:attribute name="reviews" type="Review__c[]" access="private"/>
-    <aura:attribute name="review" type="Review__c" default="{'sObjectType':'Review', 'Name':'', 'Comment__c':'', 'Rating__c':'0'}"/>
+    <aura:attribute name="review" type="Review__c"
+                    default="{'sObjectType':'Review__c', 'Name':'', 'Comment__c':'', 'Rating__c':'0'}"/>
     <aura:attribute name="reload" type="Boolean" default="true"/>
 
     <aura:registerEvent name="reviewsEvent" type="c:BRCPassAverageReviews"/>
@@ -25,12 +26,11 @@
             </lightning:layoutItem>
             <lightning:layoutItem size="12" class="starsRating">
                 <aura:if isTrue="{!v.reload}">
-                <c:FiveStarRating value="{!v.review.Rating__c}"/>
+                    <c:BRCFiveStarRating value="{!v.review.Rating__c}"/>
                 </aura:if>
             </lightning:layoutItem>
         </lightning:layout>
     </lightning:recordEditForm>
-
     <aura:if isTrue="{!v.reviews.length==0}">
         <div class="emptyList">
                 {!$Label.c.BRC_No_Reviews}
@@ -55,7 +55,7 @@
                         {!review.Name}
                 </div>
                 <div class="stars">
-                    <c:FiveStarRating aura:id="FiveStarRating" value="{!review.Rating__c}" readonly="true"/>
+                    <c:BRCFiveStarRating aura:id="FiveStarRating" value="{!review.Rating__c}" readonly="true"/>
                 </div>
             </lightning:layoutItem>
             <lightning:layoutItem size="12" class="comment">

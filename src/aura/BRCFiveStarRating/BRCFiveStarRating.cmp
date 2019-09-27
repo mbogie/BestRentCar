@@ -5,7 +5,8 @@
     <aura:attribute name="value" type="Integer" default='0'/>
     <aura:attribute name="readonly" type="boolean" default='false'/>
 
-    <ltng:require styles="{!$Resource.fivestar + '/rating.css'}" scripts="{!$Resource.fivestar + '/rating.js'}"
+    <ltng:require styles="{!$Resource.fivestarCommunityVersion + '/rating.css'}"
+                  scripts="{!$Resource.fivestarCommunityVersion + '/rating.js'}"
                   afterScriptsLoaded="{!c.afterScriptsLoaded}"/>
     <aura:handler name="change" value="{!v.value}" action="{!c.onValueChange}"/>
 

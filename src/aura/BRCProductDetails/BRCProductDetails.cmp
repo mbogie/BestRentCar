@@ -84,7 +84,8 @@
                         <div style="text-align: justify">
                             <img src="{!$Resource.BRCEngineIcon}" class="textWrap" alt=""/>
                             <p style="margin-top: 10px;">
-                                <lightning:outputField variant="label-hidden" fieldName="Description" class="innerText"/>
+                                <lightning:outputField variant="label-hidden" fieldName="Description"
+                                                       class="innerText"/>
                             </p>
                         </div>
                     </lightning:layout>

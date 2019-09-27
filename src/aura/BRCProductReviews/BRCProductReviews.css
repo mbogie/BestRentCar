@@ -33,9 +33,8 @@
 }
 
 .THIS .stars {
-    padding: 10px 200px 5px 0;
-    border: 1px solid lightgray;
-    background-color: gray;
+    padding: 10px 130px 5px 0;
+    text-align: right;
     float: right;
 }
 
