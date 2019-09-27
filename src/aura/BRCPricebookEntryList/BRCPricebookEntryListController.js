@@ -1,6 +1,7 @@
 ({
     BRCPassPricebookEvent: function(component, event, helper) {
-        helper.initEntryList(component, event, helper);
+        let pricebook = event.getParam("pricebook");
+        helper.initEntryList(component, event, pricebook);
         helper.initSelectOptions(component, event, helper);
         component.set("v.selectedIndex", -1);
         component.set("v.blockButtons", false);
@@ -16,7 +17,8 @@
         });
         action.setCallback(this, function(response) {
             if (component.isValid() && response.getState() === "SUCCESS") {
-                helper.initEntryList(component, event, helper);
+                let pricebook = component.get("v.pricebook");
+                helper.initEntryList(component, event, pricebook);
             } else {
                 component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
             }
@@ -33,6 +35,8 @@
 
     undoItem: function(component, event, helper) {
         helper.resetAttributes(component, event, helper);
+        let pricebook = component.get("v.pricebook");
+        helper.initEntryList(component, event, pricebook);
     },
 
     saveItem: function(component, event, helper) {
@@ -49,6 +53,8 @@
             });
             action.setCallback(this, function(response) {
                 if (component.isValid() && response.getState() === "SUCCESS") {
+                    let pricebook = component.get("v.pricebook");
+                    helper.initEntryList(component, event, pricebook);
                     helper.resetAttributes(component, event, helper);
                 } else {
                     component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
@@ -60,6 +66,8 @@
 
     addProductsToPricebook: function(component, event, helper) {
         helper.resetAttributes(component, event, helper);
+        let pricebook = component.get("v.pricebook");
+        helper.initEntryList(component, event, pricebook);
         component.set("v.openModal", true);
     },
 
@@ -84,6 +92,7 @@
             action.setCallback(this, function(response) {
                 if (component.isValid() && response.getState() === "SUCCESS") {
                     helper.resetAttributes(component, event, helper);
+                    helper.initEntryList(component, event, pricebook);
                 } else {
                     component.find("toastCmp").showToastModel(response.getError()[0].message, "error");
                 }
@@ -94,6 +103,8 @@
 
     closeModel: function(component, event, helper) {
         helper.resetAttributes(component, event, helper);
+        let pricebook = component.get("v.pricebook");
+        helper.initEntryList(component, event, pricebook);
     },
 
     changeProductsType: function(component, event, helper) {

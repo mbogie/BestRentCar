@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/BestRentCar/OfflineSymbolTable.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCPricebookEntryList/BRCPricebookEntryListHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCDiscountController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCDiscountController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,10 +75,10 @@
                       <entry key="AURA/BRCDISCOUNTMANAGER" value="1569570828355" />
                       <entry key="AURA/BRCPASSPRICEBOOKEVENT" value="1569172982122" />
                       <entry key="AURA/BRCPASSPRICEBOOKIDEVENT" value="1569171411000" />
-                      <entry key="AURA/BRCPRICEBOOKENTRYLIST" value="1569509246439" />
-                      <entry key="AURA/BRCPRICEBOOKLIST" value="1569570821284" />
+                      <entry key="AURA/BRCPRICEBOOKENTRYLIST" value="1569589535074" />
+                      <entry key="AURA/BRCPRICEBOOKLIST" value="1569586764776" />
                       <entry key="AURA/BRCRELOADPRICEBOOKLISTEVENT" value="1568967745316" />
-                      <entry key="CLASSES/BRCDISCOUNTCONTROLLER.CLS" value="1569486379339" />
+                      <entry key="CLASSES/BRCDISCOUNTCONTROLLER.CLS" value="1569589751669" />
                       <entry key="CLASSES/BRCUTILS.CLS" value="1569508599000" />
                     </map>
                   </option>

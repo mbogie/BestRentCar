@@ -96,6 +96,7 @@ public with sharing class BRCDiscountController {
             for (PricebookEntry entry : standardPriceList) {
                 if (entry.Product2Id == productId) {
                     newEntriesList.add(new PricebookEntry(Product2Id = productId, IsActive = true, Pricebook2Id = pricebookId, Standard_Price__c = entry.UnitPrice, UnitPrice = getDiscountPrice(entry.UnitPrice, price, discountType)));
+                    break;
                 }
             }
         }

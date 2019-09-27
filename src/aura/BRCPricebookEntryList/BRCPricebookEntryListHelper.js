@@ -1,10 +1,6 @@
 ({
-    initEntryList: function(component, event, helper) {
-        let pricebook = component.get("v.pricebook");
-        if (!pricebook) {
-            pricebook = event.getParam("pricebook");
-            component.set("v.pricebook", pricebook);
-        }
+    initEntryList: function(component, event, pricebook) {
+        component.set("v.pricebook", pricebook);
         if (pricebook == null) {
             component.set("v.emptyList", true);
         } else {
@@ -47,6 +43,5 @@
         let selectProductsOptions = component.get("v.selectProductsOptions");
         component.set("v.selectProductsOption", selectProductsOptions[0]);
         component.set("v.searchedProduct", {});
-        helper.initEntryList(component, event, helper);
     },
 })
