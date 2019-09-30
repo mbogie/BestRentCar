@@ -28,14 +28,33 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="AntClass" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AntClassTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCAccountHelper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCCartPageController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCConnectApiHelper" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCContactPageController" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCContentDocumentHelper" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCContentDocumentLinkHandler" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDiscountController" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCDivisionController" />
@@ -48,11 +67,24 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCOrdersListController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCPostToChatterAction" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductDetailController" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductHelper" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductImagesController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductRatingController" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCQueryBuilder" />
@@ -402,7 +434,7 @@
                             <option name="name" value="viewSurveyResultsComponentController" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCProductImagesController" />
+                            <option name="name" value="BRCPricebookHelper" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
@@ -690,11 +722,23 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCCartItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCCartPage" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCCartPageItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCClearDivisionDetailsEvent" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCCustomToast" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCDiscountManager" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCDivisionDetails" />
@@ -715,8 +759,23 @@
                             <option name="name" value="BRCDragDrop" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCFiveStarRating" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCImageListItem" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCOrdersList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCOrdersListItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPassAverageReviews" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPassAverageReviewsEvent" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCPassDivisionDetailEvent" />
@@ -728,6 +787,21 @@
                             <option name="name" value="BRCPassMapMarkersEvent" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCPassPricebookEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPassPricebookIdEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPricebookEntryList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCPricebookList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductBasketCart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCProductDetails" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -735,14 +809,43 @@
                             <option name="name" value="BRCProductEditPage" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCProductImages" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductPosterPath" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCProductPrice" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductReviews" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductSearchResultList" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCProductSearchResultListItem" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCProductSearchResultTile" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCRefreshCartList" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCRefreshCartListEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCReloadImagesAfterDelete" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCReloadPricebookListEvent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCReloadRecordPageEvent" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRCSearchProducts" />
@@ -851,18 +954,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="setStartUrl" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BRCProductImages" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BRCProductImagesController.java" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BRCReloadRecordPageEvent" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1378,6 +1469,21 @@
                             <option name="name" value="Opportunity.TrackingNumber__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Pricebook2.Discount_Amount__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Pricebook2.Discount_Type__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Pricebook2.End_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Pricebook2.Start_Date__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="PricebookEntry.Standard_Price__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Product2.Brand__c" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -1411,6 +1517,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Review__c.Id__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Review__c.Product__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Review__c.Rating__c" />
@@ -1557,13 +1666,40 @@
                             <option name="name" value="Agreement" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="BRCCustomerCommunityProfile" />
+                            <option name="name" value="BRC_Add_Products" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Add_To_Cart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Amount_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Cart_Label" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Choose_Discount_Type" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Contact_Form_Header" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Contact_Form_Label" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Create_New_Discount_Pricebook" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Dash_Day" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Days_Label" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Discount_Amount" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Discount_Products" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Division_Close_Detail_Message" />
@@ -1587,13 +1723,88 @@
                             <option name="name" value="BRC_Division_Search_Label" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Empty_Cart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Empty_Discount_Pricebook_List_Message" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Empty_Orders_List_Message" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_EndDate_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Error_Product_In_Cart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Error_Wrong_Days_Number" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Filters_Panel_Label" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_No_Available" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_No_Products_To_Add" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_No_Reviews" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Order_Product" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Order_ThankYou_Note" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Orders_List_Note" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Payment_Address" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Percent_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Pickup_Address" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Price" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Pricebook_Entries_List_Message" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Product_Added_to_Cart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRC_Product_Description" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Product_Details" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Product_Name" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Product_Search_Label" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Required_Brand" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Required_Field_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Required_Title" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRC_Server_Error" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Submit_Order" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Survey_Name" />
@@ -1603,6 +1814,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Thank_You_Message" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRC_Total_Price" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BRC_Web_Form_Lead_Source" />
@@ -1635,6 +1849,9 @@
                             <option name="name" value="Button_Clear" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Button_Create" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Button_Delete" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1651,6 +1868,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Button_Import" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Button_Order" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Button_Process" />
@@ -2569,6 +2789,9 @@
                             <option name="name" value="Contract__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Discount_Manager" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Divisions" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3120,7 +3343,13 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="BRC_Product_Page" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Case_Record_Page" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Discount_Manager" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Divisions" />
@@ -3142,6 +3371,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product_Record_Page" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Product_Record_Page1" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Rent_Car_UtilityBar" />
@@ -3455,7 +3687,7 @@
                             <option name="name" value="PricebookEntry-Price Book Entry Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Product2-BRC Product Community Layout" />
+                            <option name="name" value="Product2-BRC Page Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product2-Product Layout" />
@@ -3805,6 +4037,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="PartnerMarketingBudget.My_Partner_Marketing_Budgets" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Pricebook2.All" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product2.AllProducts" />
@@ -5190,6 +5425,9 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="BRCEmptyCart" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BRCEngineIcon" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -5208,6 +5446,9 @@
                           <MetadataEntry>
                             <option name="name" value="BRCOrder" />
                             <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BRCstar" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="DefaultPicture" />
@@ -5240,6 +5481,9 @@
                             <option name="name" value="fivestar" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="fivestarCommunityVersion" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="iEditCSS" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -5250,6 +5494,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="jQueryUI" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="stars" />
                           </MetadataEntry>
                         </list>
                       </option>

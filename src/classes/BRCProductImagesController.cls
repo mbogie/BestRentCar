@@ -1,39 +1,14 @@
-global with sharing class BRCProductImagesController {
+public with sharing class BRCProductImagesController {
 
-    global static String POSTER_TYPE = BRCUtils.getValues('GalleryPoster');
-    global static String IMAGE_TYPE = BRCUtils.getValues('GalleryImage');
-
-    global class ProductImages {
-        @AuraEnabled global ContentDistribution poster;
-        @AuraEnabled global List<ContentDistribution> images;
+    public class ProductImages {
+        @AuraEnabled public ContentDistribution poster;
+        @AuraEnabled public List<ContentDistribution> images;
     }
 
     @AuraEnabled
-    global static ProductImages getProductImages(String recordId) {
+    public static ProductImages getProductImages(String recordId) {
         try {
-            List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :recordId];
-            Set<Id> contentIds = new Set<Id>();
-            for (ContentDocumentLink link : documentLinks) {
-                contentIds.add(link.ContentDocumentId);
-            }
-            List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') ORDER BY SystemModstamp DESC];
-            ProductImages pictures = new ProductImages();
-            Set<Id> contentVersionImagesIds = new Set<Id>();
-            Set<Id> contentVersionPosterIds = new Set<Id>();
-            for (ContentVersion version : contentVersions) {
-                if (version.Type__c == POSTER_TYPE) {
-                    contentVersionPosterIds.add(version.Id);
-                } else {
-                    contentVersionImagesIds.add(version.Id);
-                }
-            }
-            List<ContentDistribution> posterDistributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionPosterIds];
-            List<ContentDistribution> imageDistributions = [SELECT Id, DistributionPublicUrl, ContentDownloadUrl, ContentDocumentId FROM ContentDistribution WHERE ContentVersionId IN :contentVersionImagesIds];
-            for (ContentDistribution cd : posterDistributions) {
-                pictures.poster = cd;
-            }
-            pictures.images = imageDistributions;
-            return pictures;
+            return BRCContentDocumentHelper.getProductDistributions(recordId);
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
@@ -41,34 +16,9 @@ global with sharing class BRCProductImagesController {
     }
 
     @AuraEnabled
-    global static void setImageType(String documentId, String imageType, String recordId) {
+    public static void setImageType(String documentId, String imageType, String recordId) {
         try {
-            if (imageType == POSTER_TYPE) {
-                List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :recordId];
-                Set<Id> contentIds = new Set<Id>();
-                for (ContentDocumentLink link : documentLinks) {
-                    contentIds.add(link.ContentDocumentId);
-                }
-                List<ContentVersion> contentVersions = [SELECT Id, Type__c, ContentDocumentId FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND Type__c LIKE :POSTER_TYPE];
-                for (ContentVersion content : contentVersions) {
-                    content.Type__c = IMAGE_TYPE;
-                }
-                upsert contentVersions;
-            }
-            List<ContentVersion> contentVersions = [SELECT Id, Type__c FROM ContentVersion WHERE ContentDocumentId = :documentId];
-            if (imageType == IMAGE_TYPE) {
-                ContentDistribution cd = new ContentDistribution();
-                cd.Name = IMAGE_TYPE;
-                cd.ContentVersionId = contentVersions[0].Id;
-                cd.PreferencesAllowViewInBrowser = true;
-                cd.PreferencesLinkLatestVersion = true;
-                cd.PreferencesNotifyOnVisit = false;
-                cd.PreferencesPasswordRequired = false;
-                cd.PreferencesAllowOriginalDownload = true;
-                insert cd;
-            }
-            contentVersions[0].Type__c = imageType;
-            upsert contentVersions[0];
+            BRCContentDocumentHelper.setImageType(documentId, imageType, recordId);
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
@@ -76,10 +26,9 @@ global with sharing class BRCProductImagesController {
     }
 
     @AuraEnabled
-    global static void deleteDocument(String documentId) {
+    public static void deleteDocument(String documentId) {
         try {
-            ContentDocument doc = new ContentDocument(Id = documentId);
-            delete doc;
+            BRCContentDocumentHelper.deleteDocument(documentId);
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
