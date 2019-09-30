@@ -10,14 +10,14 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static List<SearchResultItem> searchForProducts(String searchText) {
         try {
-            List<List<SObject>> results = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
+            List<List<SObject>> soslResults = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
             List<BRCSearchProductsController.SearchResultItem> searchResults = new List<BRCSearchProductsController.SearchResultItem>();
             List<String> ids = new List<String>();
-            for (List<SObject> sobjs : results) {
-                for (SObject sobj : sobjs) {
-                    ids.add(sobj.Id);
+            for (List<SObject> resultList : soslResults) {
+                for (SObject singleObjectFromSoslList : resultList) {
+                    ids.add(singleObjectFromSoslList.Id);
                     SearchResultItem item = new SearchResultItem();
-                    item.product = (Product2) sobj;
+                    item.product = (Product2) singleObjectFromSoslList;
                     searchResults.add(item);
                 }
             }
