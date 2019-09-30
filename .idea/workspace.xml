@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCFiveStarRating/BRCFiveStarRating.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCFiveStarRating/BRCFiveStarRating.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCFiveStarRating/BRCFiveStarRatingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCFiveStarRating/BRCFiveStarRatingController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetails.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductDetails/BRCProductDetailsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviews.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviews.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviews.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviewsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviewsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviewsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductReviews/BRCProductReviewsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCProductRatingController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCProductRatingController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/9.DiscountManager" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">

@@ -13,7 +13,6 @@ public with sharing class BRCProductRatingController {
     @AuraEnabled
     public static void createReview(Review__c review) {
         try {
-            System.debug(review);
             upsert review;
         } catch (Exception e) {
             System.debug(e.getMessage());
