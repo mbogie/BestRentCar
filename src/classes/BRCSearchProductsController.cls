@@ -1,6 +1,5 @@
 public with sharing class BRCSearchProductsController {
 
-    public static final String TYPE_POSTER = BRCUtils.getValues('GalleryPoster');
     public static String STANDARD_PRICEBOOK_ID = BRCUtils.getValues('StandardPricebookId');
 
     public class SearchResultItem {
@@ -11,14 +10,14 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static List<SearchResultItem> searchForProducts(String searchText) {
         try {
-            List<List<SObject>> results = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
+            List<List<SObject>> soslResults = [FIND :searchText IN ALL FIELDS RETURNING Product2(Id, Name, Brand__c, Production_Year__c, Engine__c, Number_of_Doors__c WHERE IsActive = true)];
             List<BRCSearchProductsController.SearchResultItem> searchResults = new List<BRCSearchProductsController.SearchResultItem>();
             List<String> ids = new List<String>();
-            for (List<SObject> sobjs : results) {
-                for (SObject sobj : sobjs) {
-                    ids.add(sobj.Id);
+            for (List<SObject> resultList : soslResults) {
+                for (SObject singleObjectFromSoslList : resultList) {
+                    ids.add(singleObjectFromSoslList.Id);
                     SearchResultItem item = new SearchResultItem();
-                    item.product = (Product2) sobj;
+                    item.product = (Product2) singleObjectFromSoslList;
                     searchResults.add(item);
                 }
             }
@@ -30,6 +29,7 @@ public with sharing class BRCSearchProductsController {
                 for (SearchResultItem item : searchResults) {
                     if (entry.Product2Id == item.product.Id) {
                         item.price.add(entry);
+                        break;
                     }
                 }
             }
@@ -37,6 +37,7 @@ public with sharing class BRCSearchProductsController {
                 for (SearchResultItem item : searchResults) {
                     if (entry.Product2Id == item.product.Id) {
                         item.price.add(entry);
+                        break;
                     }
                 }
             }
@@ -50,18 +51,7 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static String getProductPoster(String recordId) {
         try {
-            String posterUrl = '';
-            List<ContentDocumentLink> documentLinks = [SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId = :recordId];
-            Set<Id> contentIds = new Set<Id>();
-            for (ContentDocumentLink link : documentLinks) {
-                contentIds.add(link.ContentDocumentId);
-            }
-            List<ContentVersion> contentVersions = [SELECT Id,Type__c FROM ContentVersion WHERE ContentDocumentId IN :contentIds AND FileType IN ('JPG', 'JPEG', 'PNG') AND Type__c = :TYPE_POSTER];
-            if (!contentVersions.isEmpty()) {
-                List<ContentDistribution> distributions = [SELECT ContentDownloadUrl FROM ContentDistribution WHERE ContentVersionId = :contentVersions.get(0).Id];
-                posterUrl = distributions.get(0).ContentDownloadUrl;
-            }
-            return posterUrl;
+            return BRCContentDocumentHelper.getProductPoster(recordId);
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
@@ -71,13 +61,7 @@ public with sharing class BRCSearchProductsController {
     @AuraEnabled
     public static List<String> getBrands() {
         try {
-            List<String> pickListValuesList = new List<String>();
-            Schema.DescribeFieldResult fieldResult = Product2.Brand__c.getDescribe();
-            List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
-            for (Schema.PicklistEntry pickListVal : ple) {
-                pickListValuesList.add(pickListVal.getLabel());
-            }
-            return pickListValuesList;
+            return BRCProductHelper.getBrands();
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
