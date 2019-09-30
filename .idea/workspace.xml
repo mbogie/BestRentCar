@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2b8940-0640-49fd-acac-e0a467526780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCContentDocumentHelper.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCContentDocumentHelper.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCProductHelper.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BRCProductHelper.cls-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestRentCar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BestRentCar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultListItem/BRCProductSearchResultListItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BRCProductSearchResultTile/BRCProductSearchResultTile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCSearchProductsController.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,13 +23,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Apex Class" />
         <option value="Lightning Design" />
         <option value="Lightning Component" />
-        <option value="Apex Metadata" />
         <option value="Lightning Style" />
         <option value="Lightning Controller" />
         <option value="Lightning Helper" />
+        <option value="Apex Class" />
+        <option value="Apex Metadata" />
       </list>
     </option>
   </component>
@@ -47,7 +47,7 @@
         <entry key="BestRentCar">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1569504594324" />
+              <option name="moduleContentsLastModified" value="1569825885763" />
               <option name="serverMetadataLastPopulated" value="1569504590473" />
             </ModuleWorkspaceSettings>
           </value>
@@ -70,7 +70,10 @@
                       <entry key="AURA/BRCPRODUCTSEARCHRESULTLISTITEM" value="1569506654628" />
                       <entry key="AURA/BRCPRODUCTSEARCHRESULTTILE" value="1569507177306" />
                       <entry key="AURA/BRCSEARCHPRODUCTS" value="1568978150952" />
-                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1569505459127" />
+                      <entry key="CLASSES/BRCCONTENTDOCUMENTHELPER.CLS" value="1569826592297" />
+                      <entry key="CLASSES/BRCPRODUCTHELPER.CLS" value="1569826588683" />
+                      <entry key="CLASSES/BRCSEARCHPRODUCTSCONTROLLER.CLS" value="1569826574419" />
+                      <entry key="CLASSES/BRCUTILS.CLS" value="1569826601402" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
