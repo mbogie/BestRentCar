@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d8223c-8e06-487d-92f4-c942ccdaa183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCContactPageController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
     </list>
     <list id="0fcd7a4a-a4eb-484a-972b-9fc84d9b8112" name="renaeEvents" comment="" />
