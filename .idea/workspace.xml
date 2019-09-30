@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f72274-300d-481c-a380-e65fc931740f" name="Default Changelist" comment="" />
+    <list default="true" id="59f72274-300d-481c-a380-e65fc931740f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCCartPageController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCCartPageController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BRCUtils.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BRCUtils.cls" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,7 @@
         <entry key="$PROJECT_DIR$" value="feature/7.Basket" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -43,8 +49,9 @@
                       <entry key="AURA/BRCORDERSLIST" value="1569508485000" />
                       <entry key="AURA/BRCORDERSLISTITEM" value="1569490181439" />
                       <entry key="AURA/BRCPRODUCTPOSTERPATH" value="1569489847264" />
-                      <entry key="CLASSES/BRCCARTPAGECONTROLLER.CLS" value="1569508485000" />
+                      <entry key="CLASSES/BRCCARTPAGECONTROLLER.CLS" value="1569590900309" />
                       <entry key="CLASSES/BRCORDERSLISTCONTROLLER.CLS" value="1569489640055" />
+                      <entry key="CLASSES/BRCUTILS.CLS" value="1569590496024" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -2281,6 +2288,7 @@
       </ProjectWorkspaceSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1RXrCCdyaX9G5k4o6V1iCzZi1vZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
@@ -2303,9 +2311,25 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59f72274-300d-481c-a380-e65fc931740f" name="Default Changelist" comment="" />
+      <created>1569824152674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569824152674</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">

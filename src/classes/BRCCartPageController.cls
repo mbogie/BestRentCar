@@ -2,6 +2,8 @@ public with sharing class BRCCartPageController {
 
     public static final String BRC_COMMUNITY_ACCOUNT = BRCUtils.getValues('CommunityAccountId');
     public static final String STANDARD_PRICEBOOK = BRCUtils.getValues('StandardPricebookId');
+    public static final List<String> ORDER_STATUS = BRCUtils.getOrdersStatusList();
+    public static final List<String> CONTRACT_STATUS = BRCUtils.getContractStatusList();
 
     public class BasketWrapper {
         public Integer days;
@@ -26,7 +28,7 @@ public with sharing class BRCCartPageController {
                 orderItemList.add(item);
             }
             upsert orderItemList;
-            Order updateOrder = new Order(Id = orderId, Status = 'Awaiting For Payment');
+            Order updateOrder = new Order(Id = orderId, Status = ORDER_STATUS.get(2));
             upsert updateOrder;
         } catch (Exception e) {
             System.debug(e.getMessage());
@@ -45,13 +47,13 @@ public with sharing class BRCCartPageController {
         if (contractList.isEmpty()) {
             Contract newContract = new Contract();
             newContract.AccountId = BRC_COMMUNITY_ACCOUNT;
-            newContract.Status = 'Draft';
+            newContract.Status = CONTRACT_STATUS.get(2);
             newContract.StartDate = System.today();
             newContract.ContractTerm = 1;
             Database.UpsertResult result = Database.upsert(newContract);
             if (result.isSuccess()) {
                 newContract.Id = result.getId();
-                newContract.Status = 'Activated';
+                newContract.Status = CONTRACT_STATUS.get(1);
                 result = Database.upsert(newContract);
                 return (result.isSuccess()) ? result.getId() : null;
             } else return null;
@@ -63,7 +65,7 @@ public with sharing class BRCCartPageController {
     private static Id getOrderId(Id contractId, Order orderFromSite) {
         Order newOrder = orderFromSite;
         newOrder.AccountId = BRC_COMMUNITY_ACCOUNT;
-        newOrder.Status = 'Draft';
+        newOrder.Status = ORDER_STATUS.get(0);
         newOrder.ContractId = contractId;
         newOrder.EffectiveDate = System.today();
         newOrder.Pricebook2Id = STANDARD_PRICEBOOK;
@@ -74,8 +76,7 @@ public with sharing class BRCCartPageController {
     @AuraEnabled
     public static User getContractAddress() {
         try {
-            User user = [SELECT Id, Address FROM User WHERE Id = :UserInfo.getUserId() LIMIT 1];
-            return user;
+            return BRCUtils.getUserAddress();
         } catch (Exception e) {
             System.debug(e.getMessage());
             throw new AuraHandledException(System.Label.BRC_Server_Error);
